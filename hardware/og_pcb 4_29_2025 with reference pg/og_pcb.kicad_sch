@@ -1,0 +1,284 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e4ef350a-b140-44e0-8bc3-973fc24bf90a")
+	(paper "A2")
+	(lib_symbols)
+	(text "RF Module"
+		(exclude_from_sim no)
+		(at 224.155 195.58 0)
+		(effects
+			(font
+				(size 10 10)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "614e2bf6-ee3c-4323-929a-706d3927acf8")
+	)
+	(text "Reference"
+		(exclude_from_sim no)
+		(at 81.915 92.075 0)
+		(effects
+			(font
+				(size 10 10)
+				(thickness 2)
+				(bold yes)
+			)
+		)
+		(uuid "67bd9585-641d-411f-812a-6203e0487887")
+	)
+	(text "Power"
+		(exclude_from_sim no)
+		(at 73.66 188.595 0)
+		(effects
+			(font
+				(size 10 10)
+				(thickness 2)
+				(bold yes)
+			)
+		)
+		(uuid "70230e2b-11c0-48f3-bd37-2ded5b86e98f")
+	)
+	(text "RP2040 MCU"
+		(exclude_from_sim no)
+		(at 225.425 97.155 0)
+		(effects
+			(font
+				(size 10 10)
+				(thickness 2)
+				(bold yes)
+			)
+		)
+		(uuid "78516cc1-5de1-4734-ae68-b6343c5a0f58")
+	)
+	(text "Sensors"
+		(exclude_from_sim no)
+		(at 377.825 97.79 0)
+		(effects
+			(font
+				(size 10 10)
+				(thickness 1.6)
+				(bold yes)
+			)
+		)
+		(uuid "cd67d965-c5bb-4170-bca0-236f508749ff")
+	)
+	(sheet
+		(at 173.355 59.055)
+		(size 104.14 74.295)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "06e07132-39d3-4769-b65c-2c1064b388d8")
+		(property "Sheetname" "RP2040 MCU"
+			(at 173.355 58.3434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp2040.kicad_sch"
+			(at 173.355 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.115 165.735)
+		(size 95.25 59.055)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "10597755-0134-48c2-addf-e26d4e398c8f")
+		(property "Sheetname" "Power"
+			(at 31.115 165.0234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 31.115 225.3746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 316.23 59.055)
+		(size 119.38 74.295)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3ccd8099-b4f2-4c2f-ac31-d7c505bfef59")
+		(property "Sheetname" "Sensors"
+			(at 316.23 58.3434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors.kicad_sch"
+			(at 316.23 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 168.275 156.21)
+		(size 113.665 69.85)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4928f2bc-e61e-4a86-948c-096d561dbbff")
+		(property "Sheetname" "RF module"
+			(at 168.275 155.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "comms.kicad_sch"
+			(at 168.275 226.6446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 34.29 57.15)
+		(size 92.71 78.105)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ce8112a9-566f-4f7f-8a1b-4e3bfc8faeef")
+		(property "Sheetname" "Reference"
+			(at 34.29 56.4384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "reference.kicad_sch"
+			(at 34.29 135.8396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
