@@ -856,6 +856,16 @@
 		)
 		(uuid "c74615d5-4852-4d87-aefa-8517b0c5d77a")
 	)
+	(text "connected usb to power plane as well\n"
+		(exclude_from_sim no)
+		(at 100.965 71.755 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d78de469-6153-48e9-8b75-c730754bb303")
+	)
 	(junction
 		(at 123.19 92.075)
 		(diameter 0)
@@ -897,10 +907,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f4745aef-a442-4d71-b525-b070bb41eeee")
-	)
-	(no_connect
-		(at 74.93 76.2)
-		(uuid "63e54102-b60d-42bd-913e-ca54d8c6e78c")
 	)
 	(wire
 		(pts
@@ -951,6 +957,16 @@
 			(type default)
 		)
 		(uuid "27040fb0-62f2-4ec1-8516-a70591d26f5f")
+	)
+	(wire
+		(pts
+			(xy 78.105 76.2) (xy 78.105 74.295)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d225ee1-7c56-4dfa-90e9-d6315629117b")
 	)
 	(wire
 		(pts
@@ -1061,6 +1077,16 @@
 			(type default)
 		)
 		(uuid "9d176437-31b0-46ea-9096-75f7c5a6bee4")
+	)
+	(wire
+		(pts
+			(xy 74.93 76.2) (xy 78.105 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e41f98-fb36-467a-8bd5-f65141e844b8")
 	)
 	(wire
 		(pts
@@ -1687,6 +1713,71 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/f2f75698-7215-4a2b-8285-3e4b3531a3e0"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 78.105 74.295 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26616cda-441c-49ae-998e-c9535b94a986")
+		(property "Reference" "#PWR04"
+			(at 78.105 78.105 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 78.105 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.105 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.105 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 78.105 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b4d70e7-95b8-4f32-8364-e4be7fc99523")
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/f2f75698-7215-4a2b-8285-3e4b3531a3e0"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
