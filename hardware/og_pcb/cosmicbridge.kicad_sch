@@ -816,6 +816,18 @@
 		)
 		(uuid "5ef9ca0c-8c77-48f6-bdd2-a3881740dc3d")
 	)
+	(text "check link in discord"
+		(exclude_from_sim no)
+		(at 86.36 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "922db0cc-17e0-4157-97cf-24a4f8390e4a")
+	)
 	(text "Cosmic Watch I2C Input"
 		(exclude_from_sim no)
 		(at 129.54 76.835 0)
@@ -855,6 +867,18 @@
 			)
 		)
 		(uuid "c74615d5-4852-4d87-aefa-8517b0c5d77a")
+	)
+	(text "Implement RF SMA Coaxial Connector for \nAnalog Connection to Cosmic Watch"
+		(exclude_from_sim no)
+		(at 86.36 144.78 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c7a1ec89-b57a-47a9-8519-1097ab382fe9")
 	)
 	(text "connected usb to power plane as well\n"
 		(exclude_from_sim no)
@@ -1286,9 +1310,9 @@
 			)
 		)
 	)
-	(global_label "SDA General"
-		(shape input)
-		(at 92.075 119.38 180)
+	(global_label "SDA1"
+		(shape bidirectional)
+		(at 106.045 89.535 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1296,9 +1320,9 @@
 			)
 			(justify right)
 		)
-		(uuid "372dda15-e1d3-43d4-84ef-7d408f64b1c6")
+		(uuid "4c96a946-c2e8-4275-a8c9-61cf8143c04f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.3575 119.38 0)
+			(at 97.1709 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,28 +1355,6 @@
 			)
 		)
 	)
-	(global_label "Cosmic1 SDA"
-		(shape bidirectional)
-		(at 106.045 89.535 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "971ef158-1079-4ee3-8280-562be7f22c36")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.3695 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "USB_DM"
 		(shape bidirectional)
 		(at 74.93 83.82 0)
@@ -1372,6 +1374,72 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL1"
+		(shape bidirectional)
+		(at 106.045 92.075 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b05bcbff-0568-4b15-bdd5-cbf0a3bf25b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.2314 92.075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA1"
+		(shape bidirectional)
+		(at 92.075 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc9c2553-1640-4bb2-a81e-a0f9fc58498f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.2009 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL1"
+		(shape bidirectional)
+		(at 92.075 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bcea2fd3-f0b3-428c-8f5f-b60c90e1a134")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 83.2614 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -1442,28 +1510,6 @@
 			)
 		)
 	)
-	(global_label "SCL General"
-		(shape input)
-		(at 92.075 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d656d190-b166-45a6-bd9d-be28914807db")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.418 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Cosmic Power"
 		(shape input)
 		(at 186.055 92.075 180)
@@ -1477,28 +1523,6 @@
 		(uuid "e64850fd-aea2-46a2-958a-6ad5db0cbc09")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 169.6441 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Cosmic2 SCL"
-		(shape bidirectional)
-		(at 106.045 92.075 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fb0aece1-4fad-46e7-9a9d-a42e14a5aa4e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.43 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
