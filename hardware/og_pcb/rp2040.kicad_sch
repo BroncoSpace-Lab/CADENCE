@@ -3210,6 +3210,16 @@
 		)
 		(uuid "57a9cfa7-75fe-4cc0-ae08-153bb4eb7b08")
 	)
+	(text "to my knowledge, alert pins can be connected to any of the GPIO pins"
+		(exclude_from_sim no)
+		(at 163.83 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "61295d1a-2f6d-4f2d-ab98-04310672b72a")
+	)
 	(text "Flash"
 		(exclude_from_sim no)
 		(at 236.855 45.72 0)
@@ -3290,9 +3300,9 @@
 		)
 		(uuid "ae15d402-1277-47c8-9894-3054b3d60151")
 	)
-	(text "connecting pwr alert here for now"
+	(text "connecting pwr alert and gps reset here for now"
 		(exclude_from_sim no)
-		(at 168.91 126.365 0)
+		(at 167.005 127.635 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3473,12 +3483,28 @@
 		(uuid "f2c9d973-831c-4482-9de0-7cb14feddcad")
 	)
 	(no_connect
+		(at 125.095 154.305)
+		(uuid "02a6eccd-d3c9-4555-969f-9ad7c35df83a")
+	)
+	(no_connect
 		(at 227.33 146.05)
 		(uuid "155c8e88-f3a4-4d02-aad3-6370701f842c")
 	)
 	(no_connect
+		(at 125.095 149.225)
+		(uuid "2917ecf7-7b05-4fb5-8980-f342468d5a80")
+	)
+	(no_connect
+		(at 125.095 159.385)
+		(uuid "34767fd0-0689-4ba1-8995-6fb339a49d11")
+	)
+	(no_connect
 		(at 125.095 116.205)
 		(uuid "5173ab87-d6ab-41a0-b2d0-f9162874aee3")
+	)
+	(no_connect
+		(at 125.095 146.685)
+		(uuid "54c0239c-2785-4940-b4e5-2ba703b7df64")
 	)
 	(no_connect
 		(at 125.095 113.665)
@@ -3489,12 +3515,48 @@
 		(uuid "70ce74fc-52c7-4d55-9e3b-a799c4ffa58f")
 	)
 	(no_connect
+		(at 125.095 136.525)
+		(uuid "8823d5e0-fb24-4d30-9fa9-ade5f4c6cdad")
+	)
+	(no_connect
+		(at 125.095 139.065)
+		(uuid "944ec316-f533-4bd3-866b-c67576950ae3")
+	)
+	(no_connect
+		(at 125.095 123.825)
+		(uuid "9adc50ec-f175-4233-bbd2-9cd2b6dd671e")
+	)
+	(no_connect
 		(at 227.33 140.97)
 		(uuid "9b8a84b7-8053-453f-978f-da43ae4c62dd")
 	)
 	(no_connect
+		(at 125.095 118.745)
+		(uuid "a0ba216a-8edc-4704-a950-8362ee996115")
+	)
+	(no_connect
+		(at 125.095 144.145)
+		(uuid "b060ab3e-3464-4741-b119-2be16931acd2")
+	)
+	(no_connect
+		(at 125.095 121.285)
+		(uuid "b6a95b0c-ad7d-4e6f-8c58-0b25b3755e3e")
+	)
+	(no_connect
+		(at 125.095 151.765)
+		(uuid "b8c9b641-1dc6-4278-a265-9c5c99152e1e")
+	)
+	(no_connect
 		(at 227.33 123.19)
 		(uuid "c33c2230-3673-41e8-98ef-7121e11f0289")
+	)
+	(no_connect
+		(at 125.095 156.845)
+		(uuid "df3db9af-1200-4dd3-90cc-5b94d04b5985")
+	)
+	(no_connect
+		(at 125.095 141.605)
+		(uuid "f0a3e677-952d-4fcc-b66f-9da86e1a3680")
 	)
 	(wire
 		(pts
@@ -4989,28 +5051,6 @@
 			)
 		)
 	)
-	(global_label "MicroSD CS"
-		(shape output)
-		(at 125.095 118.745 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "050220c0-1c4a-440f-a2f6-b1583449ae2f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.0868 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MicroSD MOSI"
 		(shape input)
 		(at 219.71 128.27 180)
@@ -5029,28 +5069,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MicroSD CLK"
-		(shape output)
-		(at 125.095 121.285 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15916e23-a17a-4a10-8691-f37dfc6c2ee3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1754 121.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5232,6 +5250,50 @@
 			)
 		)
 	)
+	(global_label "GPS Reset"
+		(shape output)
+		(at 125.095 126.365 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6aa6dc13-bd2f-4e4e-b389-70a31e18aabd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.9983 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MicroSD CLK"
+		(shape output)
+		(at 124.46 100.965 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c0deefd-b6e2-477a-acda-4a91d27bd0cb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.5404 100.965 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Cosmic Analog"
 		(shape bidirectional)
 		(at 117.475 164.465 0)
@@ -5272,28 +5334,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MicroSD MISO"
-		(shape input)
-		(at 125.095 126.365 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7cd2da25-240e-4533-80b8-c05e260420b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.2035 126.365 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5387,28 +5427,6 @@
 			)
 		)
 	)
-	(global_label "MicroSD MOSI"
-		(shape output)
-		(at 125.095 123.825 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a8283730-a05e-403c-889d-1f92283d9395")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.2035 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SDA0"
 		(shape bidirectional)
 		(at 125.095 106.045 0)
@@ -5422,28 +5440,6 @@
 		(uuid "aa251fdb-6df5-4198-a11a-87fdee4f3678")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.9691 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MicroSD Clock"
-		(shape output)
-		(at 124.46 100.965 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "adb46a2d-eae1-4b5f-ae16-1027ef80d72d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.1732 100.965 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +7911,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "1my_footprints:microSD-503398-1892-1"
 			(at 302.26 115.57 0)
 			(effects
 				(font
