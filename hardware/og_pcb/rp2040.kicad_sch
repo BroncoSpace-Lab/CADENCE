@@ -370,6 +370,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_02x02_Top_Bottom"
 			(pin_names
 				(offset 1.016)
@@ -3270,15 +3377,17 @@
 		)
 		(uuid "8277b44c-db84-4bc6-bf20-8e92aec5d7bd")
 	)
-	(text "not bidirectional (change later)"
+	(text "Add More Test Points throughout the \nschematic!"
 		(exclude_from_sim no)
-		(at 159.385 167.005 0)
+		(at 201.93 88.265 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 2.5 2.5)
+				(thickness 0.338)
+				(bold yes)
 			)
 		)
-		(uuid "a58bc850-d556-438e-bd7e-903f67b8e039")
+		(uuid "a4935884-7d10-4f1c-a86f-387e5b95747e")
 	)
 	(text "I2C0: Temperature Sensor utilizing 5k pullup resistors\nI2C1: Everything else using 10k pullup resistors"
 		(exclude_from_sim no)
@@ -3313,7 +3422,7 @@
 	)
 	(text "microsd data lines can be directly connected to mcu.\ndata lines must be right next to each other in gpio pins\n(ex: 22-25)"
 		(exclude_from_sim no)
-		(at 187.96 185.42 0)
+		(at 199.39 159.385 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3381,10 +3490,22 @@
 		(uuid "0a1cf943-28be-4356-a599-f39c463b53a7")
 	)
 	(junction
+		(at 42.545 149.225)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11669772-36cc-4264-ba80-9fd29d698889")
+	)
+	(junction
 		(at 89.535 65.405)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18d45fc3-3f29-48c6-b837-606a338d83a4")
+	)
+	(junction
+		(at 179.07 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "243140ff-8ac7-4a66-8f02-d81a6a9b1956")
 	)
 	(junction
 		(at 34.29 149.225)
@@ -3499,12 +3620,20 @@
 		(uuid "34767fd0-0689-4ba1-8995-6fb339a49d11")
 	)
 	(no_connect
+		(at 117.475 169.545)
+		(uuid "4d015cdb-b1f4-4b10-ae41-9502deabbce7")
+	)
+	(no_connect
 		(at 125.095 116.205)
 		(uuid "5173ab87-d6ab-41a0-b2d0-f9162874aee3")
 	)
 	(no_connect
 		(at 125.095 146.685)
 		(uuid "54c0239c-2785-4940-b4e5-2ba703b7df64")
+	)
+	(no_connect
+		(at 117.475 172.085)
+		(uuid "5c3d39c2-513a-4cb0-8668-5cd86666343c")
 	)
 	(no_connect
 		(at 125.095 113.665)
@@ -3980,6 +4109,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.545 149.225) (xy 53.975 149.225)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52fa0bd5-d8bb-4b54-ab9b-5bfe1a0be9d7")
+	)
+	(wire
+		(pts
 			(xy 117.475 98.425) (xy 124.46 98.425)
 		)
 		(stroke
@@ -4130,7 +4269,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 149.225) (xy 53.975 149.225)
+			(xy 34.29 149.225) (xy 42.545 149.225)
 		)
 		(stroke
 			(width 0)
@@ -4280,7 +4419,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 48.895) (xy 185.42 48.895)
+			(xy 182.88 50.8) (xy 185.42 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4320,6 +4459,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 44.45) (xy 179.07 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ba0e40b-7e80-4d5e-91a8-ea460efb584b")
+	)
+	(wire
+		(pts
 			(xy 73.025 179.705) (xy 73.025 184.15)
 		)
 		(stroke
@@ -4350,7 +4499,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 48.895) (xy 185.42 50.8)
+			(xy 185.42 50.8) (xy 185.42 52.705)
 		)
 		(stroke
 			(width 0)
@@ -4430,7 +4579,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 43.815) (xy 179.07 41.91)
+			(xy 179.07 45.72) (xy 179.07 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4850,7 +4999,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 53.975) (xy 179.07 55.245)
+			(xy 179.07 55.88) (xy 179.07 57.15)
 		)
 		(stroke
 			(width 0)
@@ -5073,6 +5222,28 @@
 			)
 		)
 	)
+	(global_label "RP2040 Reset"
+		(shape input)
+		(at 39.37 149.225 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "13bfc80a-20c9-49f3-aa91-f09bc132a6d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 39.37 165.7568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA1"
 		(shape bidirectional)
 		(at 125.095 131.445 0)
@@ -5108,28 +5279,6 @@
 		(uuid "2a8496c7-ae87-43d9-830e-2f1307761329")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.9086 133.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART Rx"
-		(shape bidirectional)
-		(at 117.475 172.085 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "333badf2-1eb3-4cce-9305-c6e3d5e68f31")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.4939 172.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5295,7 +5444,7 @@
 		)
 	)
 	(global_label "Cosmic Analog"
-		(shape bidirectional)
+		(shape input)
 		(at 117.475 164.465 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5306,7 +5455,7 @@
 		)
 		(uuid "70a82f36-97cc-492b-94e1-768df4b0a580")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.7227 164.465 0)
+			(at 134.6114 164.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,28 +5532,6 @@
 			)
 		)
 	)
-	(global_label "UART Tx"
-		(shape bidirectional)
-		(at 117.475 169.545 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8c5b1614-75b2-4234-af7b-14bc86226a7e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.1915 169.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SCL0"
 		(shape bidirectional)
 		(at 125.095 108.585 0)
@@ -5445,28 +5572,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "WDO"
-		(shape input)
-		(at 29.845 149.225 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bae174fe-86fb-465f-9461-6d8ffd0f4064")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.845 156.2621 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -6255,6 +6360,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 179.07 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39dd4484-4ea5-4866-b31a-62c0a6408091")
+		(property "Reference" "TP6"
+			(at 184.15 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 184.15 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1my_footprints:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 179.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 179.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "845753fe-365d-4aa4-b33a-095c0da9be54")
+		)
+		(instances
+			(project ""
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/06e07132-39d3-4769-b65c-2c1064b388d8"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 102.235 58.42 0)
 		(unit 1)
@@ -6740,7 +6912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 55.245 0)
+		(at 179.07 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6748,7 +6920,7 @@
 		(dnp no)
 		(uuid "527f5a44-347a-4c1f-ab91-6a189624e8b7")
 		(property "Reference" "#PWR012"
-			(at 179.07 61.595 0)
+			(at 179.07 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6757,7 +6929,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 56.515 0)
+			(at 175.26 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6765,7 +6937,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 55.245 0)
+			(at 179.07 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6774,7 +6946,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 55.245 0)
+			(at 179.07 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6783,7 +6955,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 179.07 55.245 0)
+			(at 179.07 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6804,7 +6976,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Push_Shielded")
-		(at 179.07 48.895 90)
+		(at 179.07 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6813,7 +6985,7 @@
 		(fields_autoplaced yes)
 		(uuid "5291c9a2-0bf9-4cfb-a9ce-fdf9f56e0491")
 		(property "Reference" "SW5"
-			(at 174.625 47.6249 90)
+			(at 174.625 49.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6822,7 +6994,7 @@
 			)
 		)
 		(property "Value" "SW_Push_Shielded"
-			(at 174.625 50.1649 90)
+			(at 174.625 52.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6831,7 +7003,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_SMD:SW_Push_1P1T-SH_NO_CK_KMR2xxG"
-			(at 173.99 48.895 0)
+			(at 173.99 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,7 +7012,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 48.895 0)
+			(at 173.99 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6849,7 +7021,7 @@
 			)
 		)
 		(property "Description" "Generic push-button switch, two contact pins and shield pin(s)"
-			(at 179.07 48.895 0)
+			(at 179.07 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8179,7 +8351,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 185.42 50.8 0)
+		(at 185.42 52.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8187,7 +8359,7 @@
 		(dnp no)
 		(uuid "84ee5b25-7655-48bf-a45b-1e606a96c933")
 		(property "Reference" "#PWR016"
-			(at 185.42 57.15 0)
+			(at 185.42 59.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8196,7 +8368,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 189.23 52.07 0)
+			(at 189.23 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8204,7 +8376,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 50.8 0)
+			(at 185.42 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8213,7 +8385,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 50.8 0)
+			(at 185.42 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8222,7 +8394,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 50.8 0)
+			(at 185.42 52.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8764,6 +8936,73 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/06e07132-39d3-4769-b65c-2c1064b388d8"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 42.545 149.225 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b164d34a-428d-4cd7-8a64-b8c1c66c80b6")
+		(property "Reference" "TP7"
+			(at 45.085 144.6529 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 45.085 147.1929 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1my_footprints:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
+			(at 47.625 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 47.625 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 42.545 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83e4c4a9-cf0f-444b-9709-f78ea4da4cba")
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/06e07132-39d3-4769-b65c-2c1064b388d8"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
