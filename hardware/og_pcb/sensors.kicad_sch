@@ -2130,7 +2130,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "temp alert pin uses smbus protocol (dont know how to connect\nor implement, so will look into it more)"
+	(text "temp alert pin uses smbus protocol\n"
 		(exclude_from_sim no)
 		(at 262.89 57.15 0)
 		(effects
@@ -2139,16 +2139,6 @@
 			)
 		)
 		(uuid "0aa1e875-b710-44ea-9c95-5ffd39f57cd7")
-	)
-	(text "maybe connect vbackup to voltage supply 3.3v in case\nregular voltage supply pin is broken. add another capacitor nearby (1uf)"
-		(exclude_from_sim no)
-		(at 198.12 149.225 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "16415abf-900c-4c51-852a-0641a6f05779")
 	)
 	(text "tells if temp is too cold or too hot (outside of sensor's range in danger zone).\nThis range will likely not be reached during demo except in the event we subject the pcb\nto extreme conditions."
 		(exclude_from_sim no)
@@ -2200,15 +2190,15 @@
 		)
 		(uuid "4726f1ba-25c6-4128-a292-cef6a56cf694")
 	)
-	(text "3d-fix pin is led output"
+	(text "see which speed is applicable for us and adjust resistor value"
 		(exclude_from_sim no)
-		(at 157.48 142.24 0)
+		(at 155.575 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "53b30526-f611-4105-b3e4-cd9bb3a147c6")
+		(uuid "52504f19-813a-4c93-828a-3c262a72c7b3")
 	)
 	(text "Datasheet v0.5(one provided by adafruit):"
 		(exclude_from_sim no)
@@ -2219,6 +2209,16 @@
 			)
 		)
 		(uuid "585dbe60-8cfa-48be-8bbc-1349a129889a")
+	)
+	(text "(williams note)"
+		(exclude_from_sim no)
+		(at 243.205 78.105 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "75439f58-06f7-4c15-b671-bf6dd2330c7c")
 	)
 	(text "Temperature Sensor"
 		(exclude_from_sim no)
@@ -2250,16 +2250,6 @@
 		)
 		(uuid "91ffa099-d88a-45e6-b1cd-85ce3b4398b8")
 	)
-	(text "assign proper shunt resistor footprint\n(done)"
-		(exclude_from_sim no)
-		(at 42.545 62.865 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "92340867-72b4-4a21-afda-98bdaf8869cf")
-	)
 	(text "1pps pin provides one electrical pulse per second.\nUsed to synchronize with other devices."
 		(exclude_from_sim no)
 		(at 260.985 113.03 0)
@@ -2280,6 +2270,16 @@
 		)
 		(uuid "9c3a8fb7-5292-4878-ac9d-94f0ea383e63")
 	)
+	(text "just put one decoupling capacitor (for the input positive shunt voltage)"
+		(exclude_from_sim no)
+		(at 114.3 24.765 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9da359af-44fd-44c2-a41f-c7d35bd77303")
+	)
 	(text "(find or create a footprint for the ferrite bead)"
 		(exclude_from_sim no)
 		(at 129.54 93.345 0)
@@ -2289,6 +2289,16 @@
 			)
 		)
 		(uuid "afbf21d5-5d2f-43ed-8739-dfd5492f8c92")
+	)
+	(text "software support is mainly for UART, so change to UART\nimplementation\n"
+		(exclude_from_sim no)
+		(at 259.08 139.065 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b165da00-8e7d-4e70-ad28-09ccb2809c76")
 	)
 	(text "Bypass capacitors for GPS receiver module\nVCC\n"
 		(exclude_from_sim no)
@@ -2300,25 +2310,35 @@
 		)
 		(uuid "b1d9f1ab-2bb4-4202-9d71-87d451865eaf")
 	)
-	(text "(add led)"
+	(text "connect the uart connections to RP2040"
 		(exclude_from_sim no)
-		(at 157.48 145.415 0)
+		(at 258.445 132.715 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "b5681f09-bf31-49c7-8649-9758f8b55a95")
+		(uuid "b1f54c39-ab42-483d-bb71-bd88d1722c28")
 	)
-	(text "probably use the same shunt resistor used in the proves kit"
+	(text "remove the one for the power supply"
 		(exclude_from_sim no)
-		(at 40.005 69.215 0)
+		(at 103.505 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "c00e6a40-3387-4055-9ab4-e321aaf9322e")
+		(uuid "b7d6207c-4189-4551-9c94-c3cc7f7d5ccb")
+	)
+	(text "tie the address pins to gnd or leave floating"
+		(exclude_from_sim no)
+		(at 95.885 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "daf0b239-423c-4204-b5df-1ed05df5bda0")
 	)
 	(text "Adafruit GPS/GNSS Receiver\n"
 		(exclude_from_sim no)
@@ -2329,6 +2349,16 @@
 			)
 		)
 		(uuid "e03c1bd8-b90c-4f2a-89cf-8e8ae146ccdf")
+	)
+	(text "tie address pins to gnd and change resistors to 10k"
+		(exclude_from_sim no)
+		(at 161.29 59.055 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ef04cb76-6e69-4a80-841e-e215c06a9a7d")
 	)
 	(text "https://cdn-shop.adafruit.com/product-files/1059/CD+PA1616D+Datasheet+v.05.pdf"
 		(exclude_from_sim no)

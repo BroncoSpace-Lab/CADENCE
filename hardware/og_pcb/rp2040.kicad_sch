@@ -3217,18 +3217,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "to do:\n-implement microSD\n- implement GPS/GNSS receiver\n(maybe just gps not gnss)"
-		(exclude_from_sim no)
-		(at 229.235 99.695 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "09173e69-03a1-4742-8783-2b3facbd224d")
-	)
 	(text "Make sure C10 is close to pin 44 of RP2040"
 		(exclude_from_sim no)
 		(at 110.49 62.23 0)
@@ -3240,6 +3228,36 @@
 		)
 		(uuid "20147e66-0172-476d-8911-a01b415fb0f0")
 	)
+	(text "look into buffer for sd card\n(SD card on proves kit pcb doesn't work)"
+		(exclude_from_sim no)
+		(at 254.635 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "212e8e1a-6b8f-49c4-936d-fd3255efdb00")
+	)
+	(text "look at what adafruit module uses:\nhc4050 buffer"
+		(exclude_from_sim no)
+		(at 260.35 161.925 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "38037c11-e75d-487b-9745-1733c89e7542")
+	)
+	(text "(william's note)"
+		(exclude_from_sim no)
+		(at 165.1 136.525 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "405c986f-74ca-4477-aaf0-438515cca575")
+	)
 	(text "Rx receives from other\nTx transmits to other"
 		(exclude_from_sim no)
 		(at 188.595 101.6 0)
@@ -3250,16 +3268,6 @@
 		)
 		(uuid "45108944-b4ea-4bdd-893f-5be413296a99")
 	)
-	(text "maybe these pins could be used \nfor cosmic watch & RF module"
-		(exclude_from_sim no)
-		(at 130.81 179.705 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4917838c-a0a0-4636-92f2-91ce86c0ab58")
-	)
 	(text "Tx = transmit\nRx = receive"
 		(exclude_from_sim no)
 		(at 168.91 101.6 0)
@@ -3269,26 +3277,6 @@
 			)
 		)
 		(uuid "55aaea62-90b3-483c-842c-b8668b4ec0cc")
-	)
-	(text "edit: changed power monitor to one with internal shunt"
-		(exclude_from_sim no)
-		(at 166.37 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "57a9cfa7-75fe-4cc0-ae08-153bb4eb7b08")
-	)
-	(text "what is power alert again?"
-		(exclude_from_sim no)
-		(at 155.575 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5ac0b9e7-1d68-4f4b-a3c3-b7fc18d591d3")
 	)
 	(text "to my knowledge, alert pins can be connected to any of the GPIO pins"
 		(exclude_from_sim no)
@@ -3350,27 +3338,15 @@
 		)
 		(uuid "7d7ec2a3-a845-4328-8ddb-3af19ae703e1")
 	)
-	(text "reason ADC on MCU wasnt used was because it took much\nmore processing power and was slower at delivering outputs\nthan dedicated ADC. results can be displayed faster due to\nbeing processed faster at less processing power cost"
+	(text "make sure flash as close to RP2040 as possible"
 		(exclude_from_sim no)
-		(at 127.635 190.5 0)
+		(at 260.35 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "8277b44c-db84-4bc6-bf20-8e92aec5d7bd")
-	)
-	(text "Add More Test Points throughout the \nschematic!"
-		(exclude_from_sim no)
-		(at 201.93 88.265 0)
-		(effects
-			(font
-				(size 2.5 2.5)
-				(thickness 0.338)
-				(bold yes)
-			)
-		)
-		(uuid "a4935884-7d10-4f1c-a86f-387e5b95747e")
+		(uuid "99f7d793-52ca-4086-b28b-22704b90cf69")
 	)
 	(text "I2C0: Temperature Sensor utilizing 5k pullup resistors\nI2C1: Everything else using 10k pullup resistors"
 		(exclude_from_sim no)
@@ -3392,17 +3368,6 @@
 		)
 		(uuid "ae15d402-1277-47c8-9894-3054b3d60151")
 	)
-	(text "connecting pwr alert and gps reset here for now"
-		(exclude_from_sim no)
-		(at 167.005 127.635 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-		)
-		(uuid "b4a752d9-2db0-490f-8fc5-020fed785710")
-	)
 	(text "microsd data lines can be directly connected to mcu.\ndata lines must be right next to each other in gpio pins\n(ex: 22-25)"
 		(exclude_from_sim no)
 		(at 199.39 159.385 0)
@@ -3412,6 +3377,16 @@
 			)
 		)
 		(uuid "b7a5dfc2-2ce0-44e2-b741-2ab4a9f7a922")
+	)
+	(text "look into if 12MHz will impact data processing of\nthe cosmic watch data which is usually at 16HMz"
+		(exclude_from_sim no)
+		(at 249.555 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bcd3dd6e-05fb-4c8d-b3e0-1e18c4f1f94f")
 	)
 	(text "Datasheet::\nCS = Chip Select\nSCK = Clock\nTX = MOSI\nRX = MISO"
 		(exclude_from_sim no)
@@ -3423,15 +3398,15 @@
 		)
 		(uuid "d73a8442-711a-44a8-ab5f-8477621cb50f")
 	)
-	(text "might want to remove (dont need to send usb signals"
+	(text "make sure diode used is\nexactly same one as used in proves kit"
 		(exclude_from_sim no)
-		(at 54.61 195.58 0)
+		(at 156.21 38.735 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e15e5311-2d90-4068-a821-c549e90e5dda")
+		(uuid "e8b2ff5e-6a4b-4a9a-a08c-1cbb0552637b")
 	)
 	(text "Flash Reset"
 		(exclude_from_sim no)
@@ -3443,15 +3418,15 @@
 		)
 		(uuid "f45e9a83-c163-4bac-a8cf-f17af7c27d8c")
 	)
-	(text "change to male header pins"
+	(text "(old note from william)"
 		(exclude_from_sim no)
-		(at 47.625 189.23 0)
+		(at 199.39 154.305 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "f63952e4-b2c9-4d77-9a0c-8351591d32a3")
+		(uuid "f879fe4f-007c-435e-91e7-4f33c17d4041")
 	)
 	(text "hi\n"
 		(exclude_from_sim no)
