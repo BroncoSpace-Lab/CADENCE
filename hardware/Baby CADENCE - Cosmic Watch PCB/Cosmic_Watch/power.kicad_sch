@@ -2,9 +2,179 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "cdb5406d-912c-49da-b8be-678f9916a9ec")
+	(uuid "fb2c602d-b7c7-4dc1-b13e-3ca8149eab76")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1546,6 +1716,16 @@
 		)
 		(uuid "0828858f-3de9-45e5-a44d-80b9f47746ed")
 	)
+	(text "From the Payload Computer\n"
+		(exclude_from_sim no)
+		(at 48.006 136.652 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "37f52b26-f6e0-4253-8e49-79d4b3a6bf1b")
+	)
 	(text "Gives approx 29.6V"
 		(exclude_from_sim no)
 		(at 191.262 94.742 0)
@@ -1702,12 +1882,6 @@
 		(color 0 0 0 0)
 		(uuid "d992a677-463a-4354-91c3-8c41112066ec")
 	)
-	(junction
-		(at 209.55 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f1272ae1-1e57-4a63-9607-984f8eda75c6")
-	)
 	(no_connect
 		(at 46.99 100.33)
 		(uuid "3cc8441d-9362-4535-a735-90e976aa485f")
@@ -1819,6 +1993,16 @@
 			(type default)
 		)
 		(uuid "273a7c45-36c2-4325-8a0c-0a48009d430c")
+	)
+	(wire
+		(pts
+			(xy 40.64 152.4) (xy 40.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b6ab0f3-f607-44ac-9d93-f1fa98819dcc")
 	)
 	(wire
 		(pts
@@ -1942,16 +2126,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 97.79) (xy 209.55 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83968b0a-6142-4051-a08a-60e72757378c")
-	)
-	(wire
-		(pts
 			(xy 53.34 95.25) (xy 53.34 99.06)
 		)
 		(stroke
@@ -1969,6 +2143,16 @@
 			(type default)
 		)
 		(uuid "84067d6d-264c-441c-aa1e-5da71d86a319")
+	)
+	(wire
+		(pts
+			(xy 29.21 144.78) (xy 35.56 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87b801c9-b2ec-4727-9bbd-0fb7ba895a6c")
 	)
 	(wire
 		(pts
@@ -2152,16 +2336,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 91.44) (xy 209.55 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1c6e675-f93c-410e-8b9e-a5c1751291fe")
-	)
-	(wire
-		(pts
 			(xy 177.8 100.33) (xy 177.8 96.52)
 		)
 		(stroke
@@ -2172,7 +2346,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 97.79) (xy 212.09 97.79)
+			(xy 194.31 97.79) (xy 212.09 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2516,7 +2690,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07c411b2-255d-4098-9e4a-bc7cc57c0892")
-		(property "Reference" "TP10"
+		(property "Reference" "TP8"
 			(at 139.7 135.1279 0)
 			(effects
 				(font
@@ -2567,7 +2741,7 @@
 		(instances
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "TP10")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -3186,6 +3360,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 40.64 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4696c931-2a40-4491-96a9-e422e8c240ef")
+		(property "Reference" "#PWR033"
+			(at 40.64 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 40.64 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 40.64 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27237c56-5492-4175-9d68-f3e357a285a3")
+		)
+		(instances
+			(project "Cosmic_Watch"
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 116.84 158.75 0)
 		(unit 1)
@@ -3256,17 +3496,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 209.55 91.44 0)
+		(lib_id "Connector:Conn_Coaxial")
+		(at 40.64 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7395a8cd-fff6-4038-bd2e-d332fd4dd38e")
-		(property "Reference" "TP6"
-			(at 212.09 86.8679 0)
+		(uuid "5ed8e0f8-a702-4916-822b-a03db773ad25")
+		(property "Reference" "J4"
+			(at 44.45 143.8031 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3274,8 +3514,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Bias Voltage Test Point"
-			(at 212.09 89.4079 0)
+		(property "Value" "Conn_Coaxial"
+			(at 44.45 146.3431 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 91.44 0)
+			(at 40.64 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3293,7 +3533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 214.63 91.44 0)
+			(at 40.64 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3301,8 +3541,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 209.55 91.44 0)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 40.64 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3311,12 +3551,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "55b4c26d-80a1-49f4-a0df-bf3a02de8365")
+			(uuid "f97761f0-0cda-44b3-bb9f-2c2b6bd659b1")
+		)
+		(pin "2"
+			(uuid "5b0b3ae9-3515-4fac-a2fe-e2dfa4c94ce3")
 		)
 		(instances
-			(project ""
+			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "TP6")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3385,6 +3628,72 @@
 			(project ""
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 29.21 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bf4694c-3030-462e-87ee-8e338c9f3481")
+		(property "Reference" "#PWR02"
+			(at 29.21 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 29.21 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 29.21 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2984df51-197a-4283-b215-fe69bee41889")
+		)
+		(instances
+			(project ""
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4083,7 +4392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c78a62a8-5c67-4ecc-b47b-6d0546c44fc1")
-		(property "Reference" "TP8"
+		(property "Reference" "TP7"
 			(at 82.55 135.1279 0)
 			(effects
 				(font
@@ -4134,7 +4443,7 @@
 		(instances
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "TP8")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -4300,7 +4609,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7b8bddb-0760-4de6-83d3-585c5b7bbfdd")
-		(property "Reference" "TP7"
+		(property "Reference" "TP6"
 			(at 71.12 81.7879 0)
 			(effects
 				(font
@@ -4351,7 +4660,7 @@
 		(instances
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "TP7")
+					(reference "TP6")
 					(unit 1)
 				)
 			)

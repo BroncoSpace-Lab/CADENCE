@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "9227e600-fde0-4b9e-813c-7650a66487f0")
+	(uuid "748397d8-e8c4-4fb0-b86c-96c79f1a7f63")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
@@ -1292,7 +1292,7 @@
 	)
 	(text "Op Amp Voltage Rails"
 		(exclude_from_sim no)
-		(at 79.248 26.924 0)
+		(at 42.418 84.074 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1332,25 +1332,25 @@
 		)
 		(uuid "9d685ae3-b171-4f90-9268-d6d1876acd6f")
 	)
-	(text "Short"
+	(text "Short [0 ohm resistor]"
 		(exclude_from_sim no)
-		(at 212.09 93.472 0)
+		(at 221.996 101.092 0)
 		(effects
 			(font
-				(size 1 1)
+				(size 0.7 0.7)
+			)
+		)
+		(uuid "a588856d-17e6-4c83-8b2b-8830b2cf2d59")
+	)
+	(text "Short [0 ohm resistor]"
+		(exclude_from_sim no)
+		(at 211.582 91.44 0)
+		(effects
+			(font
+				(size 0.7 0.7)
 			)
 		)
 		(uuid "b7dd520d-2e3d-4cd4-a304-f150b8bcd2bb")
-	)
-	(text "Short"
-		(exclude_from_sim no)
-		(at 223.012 101.346 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-		)
-		(uuid "bd74c65c-a3a1-4fcd-a65c-664483e6aa31")
 	)
 	(text "Peak Detection Stage\n"
 		(exclude_from_sim no)
@@ -1518,7 +1518,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 49.53) (xy 213.36 53.34)
+			(xy 262.89 107.95) (xy 262.89 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1538,7 +1538,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 26.67) (xy 60.96 30.48)
+			(xy 24.13 83.82) (xy 24.13 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1888,7 +1888,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 45.72) (xy 60.96 48.26)
+			(xy 24.13 102.87) (xy 24.13 105.41)
 		)
 		(stroke
 			(width 0)
@@ -2788,7 +2788,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 213.36 53.34 0)
+		(at 262.89 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2797,7 +2797,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b22ba73-6084-491b-9a34-8e6346f7358f")
 		(property "Reference" "#PWR024"
-			(at 213.36 59.69 0)
+			(at 262.89 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2806,7 +2806,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 58.42 0)
+			(at 262.89 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2814,7 +2814,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 53.34 0)
+			(at 262.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2823,7 +2823,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 53.34 0)
+			(at 262.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,7 +2832,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 53.34 0)
+			(at 262.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3309,7 +3309,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 60.96 26.67 0)
+		(at 24.13 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3318,7 +3318,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa08ecb3-df12-49ed-ba8e-8c5d991057a7")
 		(property "Reference" "#PWR05"
-			(at 60.96 30.48 0)
+			(at 24.13 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3327,7 +3327,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 60.96 21.59 0)
+			(at 24.13 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3335,7 +3335,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 26.67 0)
+			(at 24.13 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3344,7 +3344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 26.67 0)
+			(at 24.13 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3353,7 +3353,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 60.96 26.67 0)
+			(at 24.13 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3441,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 48.26 0)
+		(at 24.13 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3450,7 +3450,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4c4363e-7516-4af0-9629-70b6173ff992")
 		(property "Reference" "#PWR04"
-			(at 60.96 54.61 0)
+			(at 24.13 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3459,7 +3459,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 53.34 0)
+			(at 24.13 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3467,7 +3467,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 48.26 0)
+			(at 24.13 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3476,7 +3476,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 48.26 0)
+			(at 24.13 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3485,7 +3485,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 48.26 0)
+			(at 24.13 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3643,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 213.36 49.53 0)
+		(at 262.89 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3651,7 +3651,7 @@
 		(dnp no)
 		(uuid "cc0e3875-2b08-419f-91e9-2e19e213db90")
 		(property "Reference" "TP3"
-			(at 201.422 47.498 0)
+			(at 250.952 105.918 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +3660,7 @@
 			)
 		)
 		(property "Value" "GND Test Point"
-			(at 196.088 49.784 0)
+			(at 245.618 108.204 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +3669,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 49.53 0)
+			(at 267.97 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3678,7 +3678,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 218.44 49.53 0)
+			(at 267.97 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3687,7 +3687,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 213.36 49.53 0)
+			(at 262.89 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3910,7 +3910,7 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Dual")
-		(at 63.5 38.1 0)
+		(at 26.67 95.25 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3919,7 +3919,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2f213b5-b89c-4305-87fd-e25fe16c45bd")
 		(property "Reference" "U4"
-			(at 62.23 36.8299 0)
+			(at 25.4 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,7 +3928,7 @@
 			)
 		)
 		(property "Value" "LT1807"
-			(at 62.23 39.3699 0)
+			(at 25.4 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +3937,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3946,7 +3946,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3955,7 +3955,7 @@
 			)
 		)
 		(property "Description" "Dual operational amplifier"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3964,7 +3964,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +3973,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3982,7 +3982,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3991,7 +3991,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 63.5 38.1 0)
+			(at 26.67 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
