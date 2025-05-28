@@ -3566,36 +3566,16 @@
 		(uuid "f2c9d973-831c-4482-9de0-7cb14feddcad")
 	)
 	(no_connect
-		(at 125.095 154.305)
-		(uuid "02a6eccd-d3c9-4555-969f-9ad7c35df83a")
-	)
-	(no_connect
 		(at 227.33 146.05)
 		(uuid "155c8e88-f3a4-4d02-aad3-6370701f842c")
 	)
 	(no_connect
-		(at 125.095 149.225)
-		(uuid "2917ecf7-7b05-4fb5-8980-f342468d5a80")
-	)
-	(no_connect
-		(at 125.095 159.385)
-		(uuid "34767fd0-0689-4ba1-8995-6fb339a49d11")
-	)
-	(no_connect
 		(at 117.475 169.545)
-		(uuid "4d015cdb-b1f4-4b10-ae41-9502deabbce7")
+		(uuid "20ce543f-6eb5-4484-ac12-49e7535836b7")
 	)
 	(no_connect
 		(at 125.095 116.205)
 		(uuid "5173ab87-d6ab-41a0-b2d0-f9162874aee3")
-	)
-	(no_connect
-		(at 125.095 146.685)
-		(uuid "54c0239c-2785-4940-b4e5-2ba703b7df64")
-	)
-	(no_connect
-		(at 117.475 172.085)
-		(uuid "5c3d39c2-513a-4cb0-8668-5cd86666343c")
 	)
 	(no_connect
 		(at 125.095 113.665)
@@ -3604,10 +3584,6 @@
 	(no_connect
 		(at 125.095 111.125)
 		(uuid "68bf6052-f55e-44f8-ae28-010d992bd8b9")
-	)
-	(no_connect
-		(at 117.475 167.005)
-		(uuid "70ce74fc-52c7-4d55-9e3b-a799c4ffa58f")
 	)
 	(no_connect
 		(at 125.095 136.525)
@@ -3644,10 +3620,6 @@
 	(no_connect
 		(at 227.33 123.19)
 		(uuid "c33c2230-3673-41e8-98ef-7121e11f0289")
-	)
-	(no_connect
-		(at 125.095 156.845)
-		(uuid "df3db9af-1200-4dd3-90cc-5b94d04b5985")
 	)
 	(no_connect
 		(at 125.095 128.905)
@@ -5107,6 +5079,28 @@
 		)
 		(uuid "f63f7ce3-911c-40e9-a7fb-80cd13d437f5")
 	)
+	(global_label "GPS UART Tx"
+		(shape bidirectional)
+		(at 125.095 149.225 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c95744d-efee-4dd3-8848-9b49921fdd02")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 141.5286 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "MicroSD MOSI"
 		(shape input)
 		(at 219.71 128.27 180)
@@ -5147,6 +5141,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF SCK"
+		(shape input)
+		(at 117.475 164.465 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ccd27d6-2c5d-4d89-989b-bd2896aae391")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127.5359 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5350,28 +5366,6 @@
 			)
 		)
 	)
-	(global_label "Cosmic Analog"
-		(shape input)
-		(at 117.475 164.465 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "70a82f36-97cc-492b-94e1-768df4b0a580")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.6114 164.465 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MicroSD CS"
 		(shape input)
 		(at 219.71 125.73 180)
@@ -5390,6 +5384,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF Reset"
+		(shape bidirectional)
+		(at 125.095 154.305 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "81d913ba-cc11-44b2-8abf-fd326c08aa86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.7187 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5438,6 +5454,28 @@
 			)
 		)
 	)
+	(global_label "RF MISO"
+		(shape output)
+		(at 125.095 156.845 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a35d510d-b06c-47c6-909f-f79c21b7a956")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.0026 156.845 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDA0"
 		(shape bidirectional)
 		(at 125.095 106.045 0)
@@ -5451,6 +5489,28 @@
 		(uuid "aa251fdb-6df5-4198-a11a-87fdee4f3678")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 133.9691 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF MOSI"
+		(shape input)
+		(at 117.475 167.005 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb6b3d45-33a1-4c77-aee3-02d07edf6e7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.3826 167.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5478,6 +5538,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS UART Rx"
+		(shape bidirectional)
+		(at 125.095 146.685 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d3781c59-27c6-4ea1-91b0-282156095480")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 141.831 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5562,6 +5644,50 @@
 		(uuid "f9122a27-0cbb-4187-ba70-ff659d3e3bdf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 147.9391 85.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF NSS"
+		(shape input)
+		(at 125.095 159.385 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fe1a200c-9828-48b1-8f4e-eaa5fa14c2e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.1559 159.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Cosmic Analog"
+		(shape input)
+		(at 117.475 172.085 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff62ab4e-3ebc-4b90-91e3-4870db646059")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.6114 172.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)

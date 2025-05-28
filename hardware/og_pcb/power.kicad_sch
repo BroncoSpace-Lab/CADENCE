@@ -5,186 +5,6 @@
 	(uuid "74ae80f3-31c6-4c01-811a-60609f78e310")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Barrel_Jack"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.334 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Barrel_Jack"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 1.27 -1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Barrel Jack"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "DC power barrel jack connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "BarrelJack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Barrel_Jack_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Barrel_Jack_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1608,35 +1428,15 @@
 		)
 		(uuid "70322a9f-11ee-4804-924f-57566cb4fb3c")
 	)
-	(text "not sure if want to keep micro USB connected to VBUS\n"
-		(exclude_from_sim no)
-		(at 73.66 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "973a2ca0-939b-4692-8ccc-1b35ca4186d7")
-	)
 	(text "Power Supply"
 		(exclude_from_sim no)
-		(at 113.665 62.23 0)
+		(at 50.8 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "b303c6df-e6da-4d26-b985-01e0ad2c52d5")
-	)
-	(text "think about where pcb is getting power from inside\nof the cubesat (1.5v,3v,9v battery?) how will it convert the power?"
-		(exclude_from_sim no)
-		(at 111.125 94.615 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "be8e4f45-d691-4a35-ade7-38cf9f02df91")
 	)
 	(text "Voltage Regulator"
 		(exclude_from_sim no)
@@ -1647,16 +1447,6 @@
 			)
 		)
 		(uuid "c5ec9d52-41bc-4779-be2d-377950b99018")
-	)
-	(text "remove barrel jack\n"
-		(exclude_from_sim no)
-		(at 126.365 55.245 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "eb62412e-e35f-43b6-9441-4aa1f1d4af10")
 	)
 	(junction
 		(at 55.88 85.09)
@@ -1730,16 +1520,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 73.66) (xy 122.555 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2300c414-84ce-4d2b-8e52-4ef8b2c16655")
-	)
-	(wire
-		(pts
 			(xy 140.97 73.025) (xy 140.97 75.565)
 		)
 		(stroke
@@ -1777,16 +1557,6 @@
 			(type default)
 		)
 		(uuid "44804dbf-7269-4b8c-8580-8541225bfaf9")
-	)
-	(wire
-		(pts
-			(xy 122.555 73.66) (xy 122.555 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44dd8d13-5487-43c2-9c80-c1f2f9c81ae4")
 	)
 	(wire
 		(pts
@@ -1880,16 +1650,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 78.74) (xy 122.555 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa798d19-c22b-42bc-bd2c-e49c7546bc5f")
-	)
-	(wire
-		(pts
 			(xy 95.885 63.5) (xy 95.885 66.04)
 		)
 		(stroke
@@ -1897,16 +1657,6 @@
 			(type default)
 		)
 		(uuid "c2e27336-5a25-4a9f-a79b-5fec1fa11770")
-	)
-	(wire
-		(pts
-			(xy 122.555 78.74) (xy 122.555 80.645)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c334c432-c3ea-4c79-b59a-b97744e05424")
 	)
 	(wire
 		(pts
@@ -2301,74 +2051,6 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Barrel_Jack")
-		(at 112.395 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27886db8-a2ce-4dd1-8e15-7921931111e8")
-		(property "Reference" "J3"
-			(at 112.395 67.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Barrel_Jack"
-			(at 112.395 70.485 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "1my_footprints:wurthbarreljack694106301002"
-			(at 113.665 77.216 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.665 77.216 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Barrel Jack"
-			(at 112.395 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9b6e2e2a-85df-4653-874c-bdda2182ffc7")
-		)
-		(pin "1"
-			(uuid "7335bc67-a2a9-4c1f-ba72-bdd68c06cc5e")
-		)
-		(instances
-			(project ""
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2985,71 +2667,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 122.555 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b12439fe-6da5-458d-b7bf-7f244ced6331")
-		(property "Reference" "#PWR03"
-			(at 122.555 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 122.555 66.675 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 122.555 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 122.555 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 122.555 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76c29710-d31b-4e1a-8141-cd0850c40969")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.885 84.455 0)
 		(unit 1)
@@ -3110,70 +2727,6 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
 					(reference "#PWR089")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 122.555 80.645 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e71d60e4-c97c-4fbc-85b0-d28e0d2a0c48")
-		(property "Reference" "#PWR0118"
-			(at 122.555 86.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 122.682 85.0392 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 122.555 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 122.555 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 122.555 80.645 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dfe293a8-248c-44de-b690-5f960330ad31")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
