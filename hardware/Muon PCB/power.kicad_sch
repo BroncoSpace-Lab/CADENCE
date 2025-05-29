@@ -912,28 +912,38 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:BD33FC0FP"
+		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 7.62 0)
+				(at -3.81 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "BD33FC0FP"
+			(property "Value" "NCP1117-3.3_SOT223"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-				(at 0 2.54 0)
+			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
+				(at 2.54 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -941,16 +951,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxfc0wefj-e.pdf"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1A, 3.3V LDO regulator with OVP & TSP, without enable, TO-252"
+			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -959,7 +960,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator fixed positive over voltage protection thermal shutdown"
+			(property "ki_keywords" "REGULATOR LDO 3.3V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -968,7 +969,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?252*"
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -977,10 +978,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "BD33FC0FP_1_1"
+			(symbol "NCP1117-3.3_SOT223_0_1"
 				(rectangle
 					(start -5.08 -5.08)
-					(end 5.08 1.27)
+					(end 5.08 1.905)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -989,17 +990,19 @@
 						(type background)
 					)
 				)
+			)
+			(symbol "NCP1117-3.3_SOT223_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "VCC"
+					(name "VI"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1017,7 +1020,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1035,7 +1038,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1478,6 +1481,12 @@
 		(color 0 0 0 0)
 		(uuid "b7ded3ed-8240-4a7f-b317-75fdc0bb92bf")
 	)
+	(junction
+		(at 70.485 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdb21c4c-8dac-4842-960a-6d6ede7123ce")
+	)
 	(wire
 		(pts
 			(xy 51.435 85.09) (xy 55.88 85.09)
@@ -1517,6 +1526,16 @@
 			(type default)
 		)
 		(uuid "229131f5-d09c-476c-809c-c3ab66455274")
+	)
+	(wire
+		(pts
+			(xy 70.485 62.23) (xy 70.485 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27b48444-50d2-427e-bfc7-341846610e7a")
 	)
 	(wire
 		(pts
@@ -1637,6 +1656,16 @@
 			(type default)
 		)
 		(uuid "8d0633b3-4fe4-49b3-bb28-a220f3a77a35")
+	)
+	(wire
+		(pts
+			(xy 55.88 62.23) (xy 70.485 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99792426-23c7-406b-8a01-f931a2c8417e")
 	)
 	(wire
 		(pts
@@ -1798,7 +1827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0641913d-11b2-46a5-883c-e4963b0e9bc1")
-		(property "Reference" "C40"
+		(property "Reference" "C23"
 			(at 143.891 78.2066 0)
 			(effects
 				(font
@@ -1816,7 +1845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 141.9352 83.185 0)
 			(effects
 				(font
@@ -1851,7 +1880,7 @@
 		(instances
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "C40")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -2057,6 +2086,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 70.485 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42fcc595-5805-47ed-9527-98113a82872f")
+		(property "Reference" "#PWR097"
+			(at 70.485 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 70.485 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70.485 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 70.485 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 70.485 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6e0108e-508d-4d7d-bb17-304d50c3b387")
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
+					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 95.885 63.5 0)
 		(unit 1)
@@ -2149,7 +2243,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 95.885 78.74 0)
 			(effects
 				(font
@@ -2266,6 +2360,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 70.485 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6483ad14-ad2a-4012-9ce6-8a284fadca60")
+		(property "Reference" "C22"
+			(at 73.406 64.8716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 73.406 67.183 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 71.4502 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 70.485 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 70.485 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f52e59e-3139-4619-ac27-9903c584c524")
+		)
+		(pin "2"
+			(uuid "76b6c874-3840-455e-8466-f7f60b5c848c")
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 70.485 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "656ae571-ccea-41ad-9337-5002c43c7ed3")
+		(property "Reference" "#PWR09"
+			(at 70.485 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 70.485 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 70.485 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 70.485 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 70.485 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f33cff3-c2c7-46e8-a726-4943fc0b415c")
+		)
+		(instances
+			(project "og_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 95.885 69.85 0)
 		(unit 1)
@@ -2274,7 +2501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "665e0cd3-4713-42a3-9b4f-5e7d3265f28b")
-		(property "Reference" "R19"
+		(property "Reference" "R18"
 			(at 92.075 69.85 0)
 			(effects
 				(font
@@ -2325,7 +2552,7 @@
 		(instances
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "R19")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -2397,42 +2624,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:BD33FC0FP")
+		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
 		(at 153.67 75.565 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70be47d3-612e-4f1a-b2bc-2ff6a9b11f60")
-		(property "Reference" "U4"
-			(at 153.67 69.85 0)
+		(uuid "72bfe913-9934-4742-a9d7-871d99feab1b")
+		(property "Reference" "U2"
+			(at 153.67 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BD33FC0FP"
-			(at 153.67 72.39 0)
+		(property "Value" "NCP1117-3.3_SOT223"
+			(at 153.67 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
-			(at 153.67 73.025 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxfc0wefj-e.pdf"
-			(at 153.67 65.405 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 153.67 70.485 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2440,28 +2657,36 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A, 3.3V LDO regulator with OVP & TSP, without enable, TO-252"
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
+			(at 156.21 81.915 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
 			(at 153.67 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "4e898541-cc8d-48aa-94e8-fb544844f4f5")
-		)
-		(pin "3"
-			(uuid "fb56f25a-d622-4031-9eb1-480e459593a9")
+			(uuid "8a7a1867-4e08-4da9-9b00-80a8cbbe0399")
 		)
 		(pin "2"
-			(uuid "9bad78c3-a589-4380-ada3-88b0082772f3")
+			(uuid "c0f2a65b-5654-4e28-920d-af9fa4938ee6")
+		)
+		(pin "3"
+			(uuid "2786fe0b-acd2-4a59-8582-a2e8f19e3f9f")
 		)
 		(instances
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "U4")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2607,7 +2832,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "893f7337-e72c-4bfa-8e40-976e27ee83b0")
-		(property "Reference" "C43"
+		(property "Reference" "C24"
 			(at 166.116 78.2066 0)
 			(effects
 				(font
@@ -2625,7 +2850,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 164.1602 83.185 0)
 			(effects
 				(font
@@ -2660,7 +2885,7 @@
 		(instances
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "C43")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -2973,7 +3198,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
 			(at 193.675 83.82 0)
 			(effects
 				(font
@@ -3033,7 +3258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fc22adba-8de9-4d09-a927-3d1ac48f9391")
-		(property "Reference" "R20"
+		(property "Reference" "R19"
 			(at 189.865 74.93 0)
 			(effects
 				(font
@@ -3084,7 +3309,7 @@
 		(instances
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "R20")
+					(reference "R19")
 					(unit 1)
 				)
 			)
