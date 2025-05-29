@@ -5,31 +5,45 @@
 	(uuid "fb2c602d-b7c7-4dc1-b13e-3ca8149eab76")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_Coaxial"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "BLM18BD252SN1D:BLM18BD252SN1D"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
+			(property "Reference" "L"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_Coaxial"
-				(at 2.921 0 90)
+			(property "Value" "BLM18BD252SN1D"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "easyeda2kicad:L0603"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Ferrite-Beads-And-Chips_muRata_BLM18BD252SN1D_2-5KR-25-at100MHz_C77668.html"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -38,8 +52,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
+			(property "LCSC Part" "C77668"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,38 +61,11 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_Coaxial_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
+			(symbol "BLM18BD252SN1D_0_1"
+				(arc
+					(start -2.27 -0.02)
+					(mid -3.28 -0.937)
+					(end -4.29 -0.02)
 					(stroke
 						(width 0)
 						(type default)
@@ -88,44 +75,9 @@
 					)
 				)
 				(arc
-					(start 1.778 0)
-					(mid 0.222 -1.8079)
-					(end -1.778 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid 0.2221 1.8084)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
+					(start -0.11 -0.02)
+					(mid -1.12 -0.937)
+					(end -2.13 -0.02)
 					(stroke
 						(width 0)
 						(type default)
@@ -134,12 +86,34 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Conn_Coaxial_1_1"
-				(pin passive line
+				(arc
+					(start 2.04 -0.02)
+					(mid 1.03 -0.937)
+					(end 0.02 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 4.23 -0.02)
+					(mid 3.22 -0.9448)
+					(end 2.21 -0.02)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
 					(at -5.08 0 0)
-					(length 2.54)
-					(name "In"
+					(length 0.762)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -154,10 +128,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext"
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 0.762)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -638,6 +612,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -760,155 +876,6 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:FerriteBead"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "FB"
-				(at -3.81 0.635 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "FerriteBead"
-				(at 3.81 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Ferrite bead"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "FerriteBead_0_1"
-				(polyline
-					(pts
-						(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -1.2192)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.54)
 					(name "~"
 						(effects
 							(font
@@ -1716,16 +1683,6 @@
 		)
 		(uuid "0828858f-3de9-45e5-a44d-80b9f47746ed")
 	)
-	(text "From the Payload Computer\n"
-		(exclude_from_sim no)
-		(at 78.486 108.712 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "37f52b26-f6e0-4253-8e49-79d4b3a6bf1b")
-	)
 	(text "Gives approx 29.6V"
 		(exclude_from_sim no)
 		(at 221.742 66.802 0)
@@ -1756,15 +1713,15 @@
 		)
 		(uuid "98d2c801-d824-4572-95ff-890e07752226")
 	)
-	(text "LT3461\n\n"
+	(text "Power from Payload Computer"
 		(exclude_from_sim no)
-		(at 70.104 56.134 0)
+		(at 54.864 134.874 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "b5988bd0-32fc-47cf-a59e-c0bd33f1fcb6")
+		(uuid "aaf6d5fa-3e24-4a26-9870-cf1c3a684f7f")
 	)
 	(text "Calculated from datasheet equation.\nExact value is 45.5 uF but\n nearest value is 47 uH"
 		(exclude_from_sim no)
@@ -1829,6 +1786,12 @@
 		(uuid "68862f82-720d-4815-a6a5-83e9ae7a0fed")
 	)
 	(junction
+		(at 127 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76a0a2d0-e461-498e-85af-2ed03807cb2d")
+	)
+	(junction
 		(at 205.74 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1853,22 +1816,16 @@
 		(uuid "a1ef9da9-b63c-49fd-a009-f4ab6b18635d")
 	)
 	(junction
-		(at 147.32 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae690523-f35b-4611-9cce-121b53d27205")
-	)
-	(junction
-		(at 127 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af22b794-c55a-4820-8553-19aa942fc38a")
-	)
-	(junction
 		(at 214.63 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6732de3-f508-4258-b1ec-339385c8b01a")
+	)
+	(junction
+		(at 147.32 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d470ec55-0b68-471e-99e9-6b8abda60c75")
 	)
 	(junction
 		(at 69.85 83.82)
@@ -1996,16 +1953,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 124.46) (xy 71.12 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b6ab0f3-f607-44ac-9d93-f1fa98819dcc")
-	)
-	(wire
-		(pts
 			(xy 167.64 111.76) (xy 167.64 125.73)
 		)
 		(stroke
@@ -2116,16 +2063,6 @@
 	)
 	(wire
 		(pts
-			(xy 127 125.73) (xy 134.62 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d6240d1-553d-4381-bfb0-4027e161269a")
-	)
-	(wire
-		(pts
 			(xy 83.82 67.31) (xy 83.82 71.12)
 		)
 		(stroke
@@ -2143,16 +2080,6 @@
 			(type default)
 		)
 		(uuid "84067d6d-264c-441c-aa1e-5da71d86a319")
-	)
-	(wire
-		(pts
-			(xy 59.69 116.84) (xy 66.04 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87b801c9-b2ec-4727-9bbd-0fb7ba895a6c")
 	)
 	(wire
 		(pts
@@ -2193,6 +2120,16 @@
 			(type default)
 		)
 		(uuid "9857e251-2ff8-4a98-bced-cc3e538d3e10")
+	)
+	(wire
+		(pts
+			(xy 127 125.73) (xy 133.35 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e4e12a-85de-47e4-8d61-ffc24c45252b")
 	)
 	(wire
 		(pts
@@ -2283,16 +2220,6 @@
 			(type default)
 		)
 		(uuid "c3a1b960-12a2-42e1-9858-0d4a16cb954c")
-	)
-	(wire
-		(pts
-			(xy 142.24 125.73) (xy 147.32 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6295131-fc76-49ca-bc10-7309b8b4aab6")
 	)
 	(wire
 		(pts
@@ -2403,6 +2330,16 @@
 			(type default)
 		)
 		(uuid "de1f0002-ed24-4eaa-80df-6a2ad6b41cb3")
+	)
+	(wire
+		(pts
+			(xy 143.51 125.73) (xy 147.32 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ded0dde3-7b44-4d13-9ccd-9c3f5d8dee71")
 	)
 	(wire
 		(pts
@@ -2812,6 +2749,74 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 54.61 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e1cc10e-0dc0-4193-aa29-d8a9afecdfa0")
+		(property "Reference" "J2"
+			(at 54.61 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 54.61 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 54.61 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18712850-66cb-44f3-ad52-994ae07d2c9f")
+		)
+		(pin "2"
+			(uuid "04f3a723-a55a-42cb-982f-a0335d8d3a54")
+		)
+		(instances
+			(project ""
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3292,140 +3297,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead")
-		(at 138.43 125.73 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "432f9c00-0f77-48a3-9575-f1cf6c974127")
-		(property "Reference" "FB1"
-			(at 138.3792 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.5kohm"
-			(at 138.3792 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 138.43 127.508 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Ferrite bead"
-			(at 138.43 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cdf5703b-7394-42bd-aabe-cdfec72f7af5")
-		)
-		(pin "2"
-			(uuid "e3e9772f-b5c2-48dd-9918-6fc708d3bc36")
-		)
-		(instances
-			(project ""
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "FB1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 71.12 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4696c931-2a40-4491-96a9-e422e8c240ef")
-		(property "Reference" "#PWR033"
-			(at 71.12 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 71.12 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "27237c56-5492-4175-9d68-f3e357a285a3")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 147.32 130.81 0)
 		(unit 1)
@@ -3496,76 +3367,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial")
-		(at 71.12 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ed8e0f8-a702-4916-822b-a03db773ad25")
-		(property "Reference" "J4"
-			(at 74.93 115.8631 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_Coaxial"
-			(at 74.93 118.4031 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 71.12 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f97761f0-0cda-44b3-bb9f-2c2b6bd659b1")
-		)
-		(pin "2"
-			(uuid "5b0b3ae9-3515-4fac-a2fe-e2dfa4c94ce3")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Small")
 		(at 167.64 58.42 90)
 		(unit 1)
@@ -3628,72 +3429,6 @@
 			(project ""
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 59.69 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7bf4694c-3030-462e-87ee-8e338c9f3481")
-		(property "Reference" "#PWR02"
-			(at 59.69 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 59.69 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 59.69 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2984df51-197a-4283-b215-fe69bee41889")
-		)
-		(instances
-			(project ""
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3975,7 +3710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "958a91d9-05a3-4acb-95c3-9a2882dfc0b5")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 167.894 80.264 0)
 			(effects
 				(font
@@ -3991,7 +3726,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LT3461:TSOT-23_S6_LIT"
 			(at 152.4 67.31 0)
 			(effects
 				(font
@@ -4041,7 +3776,7 @@
 		(instances
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4475,7 +4210,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MOLEX MicroUSB:MICRO-USB-SMD_5P-P0.65-H-F_105164-0001"
 			(at 73.66 73.66 0)
 			(effects
 				(font
@@ -4727,6 +4462,82 @@
 			(project ""
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BLM18BD252SN1D:BLM18BD252SN1D")
+		(at 138.43 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9593388-4919-4648-be35-99073652a2d7")
+		(property "Reference" "L2"
+			(at 138.43 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLM18BD252SN1D"
+			(at 138.43 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BLM18BD252SN1D:L0603"
+			(at 138.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Ferrite-Beads-And-Chips_muRata_BLM18BD252SN1D_2-5KR-25-at100MHz_C77668.html"
+			(at 138.43 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C77668"
+			(at 138.43 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7815ea45-2fc9-4785-afb3-f5a0e46be383")
+		)
+		(pin "2"
+			(uuid "bbcd5c1e-e5e4-4307-b458-89bf9c2272ad")
+		)
+		(instances
+			(project ""
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
+					(reference "L2")
 					(unit 1)
 				)
 			)
