@@ -3217,16 +3217,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Place I2C pullup resistors close to master device"
-		(exclude_from_sim no)
-		(at 167.005 128.905 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "09d80273-898c-4761-817f-ae5a55895799")
-	)
 	(text "Make sure C10 is close to pin 44 of RP2040"
 		(exclude_from_sim no)
 		(at 110.49 62.23 0)
@@ -3367,6 +3357,16 @@
 			)
 		)
 		(uuid "d73a8442-711a-44a8-ab5f-8477621cb50f")
+	)
+	(text "I2C Pullup Resistors"
+		(exclude_from_sim no)
+		(at 164.465 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dc55a34c-0def-408c-8ad6-fb768184811d")
 	)
 	(text "make sure diode used is\nexactly same one as used in proves kit"
 		(exclude_from_sim no)
@@ -3541,7 +3541,7 @@
 	)
 	(no_connect
 		(at 125.095 151.765)
-		(uuid "24a67d99-ad34-4bcc-b4f6-c36da80370ad")
+		(uuid "2bc29b4b-795d-4680-bef4-a84ab548846d")
 	)
 	(no_connect
 		(at 125.095 116.205)
@@ -3554,14 +3554,6 @@
 	(no_connect
 		(at 125.095 111.125)
 		(uuid "68bf6052-f55e-44f8-ae28-010d992bd8b9")
-	)
-	(no_connect
-		(at 125.095 136.525)
-		(uuid "8823d5e0-fb24-4d30-9fa9-ade5f4c6cdad")
-	)
-	(no_connect
-		(at 125.095 139.065)
-		(uuid "944ec316-f533-4bd3-866b-c67576950ae3")
 	)
 	(no_connect
 		(at 125.095 123.825)
@@ -3578,6 +3570,10 @@
 	(no_connect
 		(at 125.095 121.285)
 		(uuid "b6a95b0c-ad7d-4e6f-8c58-0b25b3755e3e")
+	)
+	(no_connect
+		(at 125.095 144.145)
+		(uuid "bab3d4df-7642-45ff-8d8c-6d458f91c5c1")
 	)
 	(no_connect
 		(at 227.33 123.19)
@@ -5151,6 +5147,28 @@
 			)
 		)
 	)
+	(global_label "RF DIO4"
+		(shape bidirectional)
+		(at 125.095 139.065 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "149878b0-e681-49ea-ab90-6d14c1b39d35")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 136.9325 139.065 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RF SCK"
 		(shape input)
 		(at 125.73 164.465 0)
@@ -5239,6 +5257,28 @@
 			)
 		)
 	)
+	(global_label "GPS Reset"
+		(shape output)
+		(at 125.095 136.525 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "393bcbfe-7bbe-426c-bdcc-4934cfd765dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.9983 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB_DM"
 		(shape bidirectional)
 		(at 136.525 88.265 0)
@@ -5253,28 +5293,6 @@
 		(uuid "47d6bd5e-d391-4c51-8b6d-de28bb124652")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 148.1205 88.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPS Reset"
-		(shape output)
-		(at 125.095 144.145 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4e385ad5-ee6b-4bd7-a8a5-db2dbb24a16a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.9983 144.145 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5302,6 +5320,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS UART Tx"
+		(shape bidirectional)
+		(at 147.32 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5974d423-e658-43e4-948e-4a06817a5dd5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.7536 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5429,6 +5469,28 @@
 		(uuid "81d913ba-cc11-44b2-8abf-fd326c08aa86")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 137.7187 154.305 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS UART Rx"
+		(shape bidirectional)
+		(at 147.32 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b0dd6a7-57f9-4d8f-98eb-89335dbdaa3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.056 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6754,7 +6816,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.6702 74.295 0)
 			(effects
 				(font
@@ -9276,7 +9338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 117.8052 73.025 0)
 			(effects
 				(font
