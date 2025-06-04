@@ -5,113 +5,6 @@
 	(uuid "7fb65e71-87f1-4d5d-9311-e8fe6f264bfd")
 	(paper "A5")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -717,12 +610,6 @@
 		(uuid "0c30b9ad-544a-4b15-b5bd-08a094e4c272")
 	)
 	(junction
-		(at 125.73 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2a0731a8-dcbc-4348-897d-d0959278c9ce")
-	)
-	(junction
 		(at 110.49 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -826,16 +713,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 68.58) (xy 125.73 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c5c893f-6a13-42b7-a0f7-3b5e6e2c2fb6")
-	)
-	(wire
-		(pts
 			(xy 121.92 44.45) (xy 121.92 41.91)
 		)
 		(stroke
@@ -856,7 +733,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 76.2) (xy 125.73 76.2)
+			(xy 115.57 76.2) (xy 139.7 76.2)
 		)
 		(stroke
 			(width 0)
@@ -923,16 +800,6 @@
 			(type default)
 		)
 		(uuid "c08e785e-7fb1-44be-8c51-5a42b965ab41")
-	)
-	(wire
-		(pts
-			(xy 125.73 76.2) (xy 139.7 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1afcfdf-3cd1-4e23-9116-8b79cc52171c")
 	)
 	(wire
 		(pts
@@ -1921,72 +1788,6 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/09770208-9a6f-42aa-9b04-6e9dd61abdb1"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 125.73 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f7744742-e615-4e50-9b11-67ec0ad72b57")
-		(property "Reference" "TP5"
-			(at 128.27 66.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Raw Signal Test Point"
-			(at 128.27 69.088 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 125.73 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ca73b8a-71c8-48d6-84cb-d5600a1ba14c")
-		)
-		(instances
-			(project ""
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/09770208-9a6f-42aa-9b04-6e9dd61abdb1"
-					(reference "TP5")
 					(unit 1)
 				)
 			)
