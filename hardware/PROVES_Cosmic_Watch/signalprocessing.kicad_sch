@@ -1282,7 +1282,7 @@
 	)
 	(text "Op Amp Voltage Rails"
 		(exclude_from_sim no)
-		(at 51.308 76.454 0)
+		(at 52.07 47.752 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1405,6 +1405,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f1e561b-6665-4640-8a25-af6df05d5d31")
+	)
+	(junction
+		(at 33.02 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94df509e-cbe0-42bd-901b-756d783f6eb9")
 	)
 	(junction
 		(at 106.68 96.52)
@@ -1538,7 +1544,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 76.2) (xy 33.02 80.01)
+			(xy 33.02 76.2) (xy 33.02 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1688,6 +1694,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 77.47) (xy 41.91 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "610ff0e4-e406-417c-b838-a79252105f4b")
+	)
+	(wire
+		(pts
 			(xy 152.4 91.44) (xy 152.4 100.33)
 		)
 		(stroke
@@ -1715,6 +1731,16 @@
 			(type default)
 		)
 		(uuid "7c78a8bd-038c-49ef-8697-e4e1fb006062")
+	)
+	(wire
+		(pts
+			(xy 33.02 77.47) (xy 33.02 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e339924-87d2-43a6-9fd8-672b8566c818")
 	)
 	(wire
 		(pts
@@ -1875,6 +1901,16 @@
 			(type default)
 		)
 		(uuid "d5cad586-f718-41f8-bac6-67d42303ca91")
+	)
+	(wire
+		(pts
+			(xy 41.91 85.09) (xy 41.91 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7bafb61-b467-46e7-899c-e62e613ea671")
 	)
 	(wire
 		(pts
@@ -2247,6 +2283,72 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27e364c6-61e0-45bd-9d57-c3d75b8d9d84")
+		(property "Reference" "#PWR011"
+			(at 41.91 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "282c7499-f92b-4a76-ab9b-31c51b70dded")
+		)
+		(instances
+			(project "PROVES_Cosmic_Watch"
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -3430,6 +3532,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 41.91 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad628251-f8da-4892-a7e4-e772cfb21d7b")
+		(property "Reference" "C4"
+			(at 44.45 78.7462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 44.45 81.2862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 41.91 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 41.91 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f89e59e4-f154-448e-9513-58e116f86e08")
+		)
+		(pin "1"
+			(uuid "50cbe331-2989-4b50-8d92-0ab731d2618d")
+		)
+		(instances
+			(project ""
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 33.02 97.79 0)
 		(unit 1)
@@ -3906,10 +4078,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f2f213b5-b89c-4305-87fd-e25fe16c45bd")
 		(property "Reference" "U3"
-			(at 34.29 86.3599 0)
+			(at 22.098 85.852 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3918,7 +4089,7 @@
 			)
 		)
 		(property "Value" "LT1807"
-			(at 34.29 88.8999 0)
+			(at 22.098 88.392 0)
 			(effects
 				(font
 					(size 1.27 1.27)
