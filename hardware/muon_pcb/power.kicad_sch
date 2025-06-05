@@ -1401,16 +1401,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "3.3V LED"
-		(exclude_from_sim no)
-		(at 207.01 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "170b80e2-ff24-40a9-a90d-8e12b11e1eb6")
-	)
 	(text "5V LED"
 		(exclude_from_sim no)
 		(at 92.71 54.61 0)
@@ -1607,16 +1597,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.675 69.85) (xy 193.675 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67ea2361-96fd-4129-866e-d82a88bcd924")
-	)
-	(wire
-		(pts
 			(xy 45.72 77.47) (xy 45.72 85.09)
 		)
 		(stroke
@@ -1624,16 +1604,6 @@
 			(type default)
 		)
 		(uuid "69113938-df50-4cd3-a37e-cb31a2b33e81")
-	)
-	(wire
-		(pts
-			(xy 193.675 87.63) (xy 193.675 89.535)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70fa1ec4-1d39-4d78-b14a-227a8310d30f")
 	)
 	(wire
 		(pts
@@ -1654,16 +1624,6 @@
 			(type default)
 		)
 		(uuid "84030fa1-0ed3-4d44-a1cf-6fff1c50b51a")
-	)
-	(wire
-		(pts
-			(xy 193.675 78.74) (xy 193.675 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d0633b3-4fe4-49b3-bb28-a220f3a77a35")
 	)
 	(wire
 		(pts
@@ -2037,73 +1997,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 193.675 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a8b32a5-6e5c-40f7-b3f9-88df634fcdfe")
-		(property "Reference" "#PWR094"
-			(at 193.675 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 196.215 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.675 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.675 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 193.675 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f197d2de-cb70-4218-b61b-7ec6f38edab4")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 95.885 63.5 0)
 		(unit 1)
@@ -2196,7 +2089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 95.885 78.74 0)
 			(effects
 				(font
@@ -2402,7 +2295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 94.107 69.85 90)
 			(effects
 				(font
@@ -2988,72 +2881,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 193.675 89.535 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9edf015-aff6-4871-a8a7-f946569c1917")
-		(property "Reference" "#PWR093"
-			(at 193.675 95.885 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 193.675 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.675 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.675 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 193.675 89.535 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b061008-cdf5-479b-aca1-1ee2e41e5ef3")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "#PWR093")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 176.53 73.025 0)
 		(unit 1)
@@ -3115,151 +2942,6 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
 					(reference "#PWR088")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 193.675 83.82 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f1e9167d-047d-4758-a7cc-db1d0adf32de")
-		(property "Reference" "D5"
-			(at 196.85 84.1374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 196.85 86.6774 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
-			(at 193.675 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.675 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 193.675 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 193.675 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d444b112-ce2e-46c0-a59e-1b9947feaf43")
-		)
-		(pin "2"
-			(uuid "0c506057-5945-48a4-8e40-b4e7e6272251")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 193.675 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fc22adba-8de9-4d09-a927-3d1ac48f9391")
-		(property "Reference" "R19"
-			(at 189.865 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 189.865 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 191.897 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.675 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.675 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5e66e2aa-2be1-46c3-85c9-cd18b3712980")
-		)
-		(pin "2"
-			(uuid "035d4117-9b76-47db-b357-57049a08ba41")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "R19")
 					(unit 1)
 				)
 			)
