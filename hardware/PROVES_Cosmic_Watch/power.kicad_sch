@@ -1874,12 +1874,6 @@
 		(uuid "a1ef9da9-b63c-49fd-a009-f4ab6b18635d")
 	)
 	(junction
-		(at 133.35 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b68f73f2-b855-4e9a-be28-09282e6b84f0")
-	)
-	(junction
 		(at 163.83 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2220,16 +2214,6 @@
 			(type default)
 		)
 		(uuid "8d41184b-b5c5-4d96-8fb8-f588e4af8498")
-	)
-	(wire
-		(pts
-			(xy 133.35 87.63) (xy 133.35 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "955271cc-2932-44fb-a08c-2f2d13315f2c")
 	)
 	(wire
 		(pts
@@ -2776,7 +2760,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Output Voltage Test Point"
+		(property "Value" "V+ Out"
 			(at 138.43 147.8279 0)
 			(effects
 				(font
@@ -2889,73 +2873,6 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 133.35 105.41 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cd3190f-4208-4c7b-b17a-bdaef5076cc1")
-		(property "Reference" "TP9"
-			(at 135.89 107.4419 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SHDN Test Point"
-			(at 135.89 109.9819 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5000-5004_Miniature"
-			(at 128.27 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 133.35 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "68e54dc3-b571-48c6-96b7-a240f97015bb")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -4348,7 +4265,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FB Test Point"
+		(property "Value" "Post FB"
 			(at 81.28 147.8279 0)
 			(effects
 				(font

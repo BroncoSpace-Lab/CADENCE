@@ -1425,6 +1425,12 @@
 		(uuid "ce19d3e0-3cf7-4a62-bab9-02aa48ddd648")
 	)
 	(junction
+		(at 41.91 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d689e54f-d58c-4f00-b212-35cad915e58f")
+	)
+	(junction
 		(at 124.46 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1551,6 +1557,16 @@
 			(type default)
 		)
 		(uuid "398be68e-4196-447c-9050-a6cf60447083")
+	)
+	(wire
+		(pts
+			(xy 52.07 82.55) (xy 52.07 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c948de2-3baf-41a3-b0ac-71f34b4b5b74")
 	)
 	(wire
 		(pts
@@ -2022,6 +2038,16 @@
 		)
 		(uuid "fb9dd236-b479-4b85-b8fa-288ab7f2e766")
 	)
+	(wire
+		(pts
+			(xy 41.91 77.47) (xy 52.07 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "febf3ec8-7c5f-4313-806f-ec55d5d7bc59")
+	)
 	(global_label "SiPM Signal"
 		(shape input)
 		(at 81.28 83.82 180)
@@ -2173,8 +2199,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Post Processed Signal Test Point"
-			(at 224.79 65.786 0)
+		(property "Value" "PPS"
+			(at 238.506 65.532 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2216,6 +2242,76 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 52.07 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e725974-e36a-4b1d-a828-5713cc06c934")
+		(property "Reference" "C7"
+			(at 54.61 78.7462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 54.61 81.2862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 52.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 52.07 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "063342e3-7c4f-48ba-b5a1-0033170502b1")
+		)
+		(pin "1"
+			(uuid "18359626-7506-48c1-8e7d-410661ee9382")
+		)
+		(instances
+			(project "PROVES_Cosmic_Watch"
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -3400,6 +3496,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 52.07 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b43072c-a715-4ed4-9820-b06544d88ca9")
+		(property "Reference" "#PWR01"
+			(at 52.07 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be441778-0a5e-4284-8108-d12e49a5099d")
+		)
+		(instances
+			(project "PROVES_Cosmic_Watch"
+				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/7e234915-02ab-46f1-97e9-144c63994663"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 33.02 76.2 0)
 		(unit 1)
@@ -3559,7 +3721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 41.91 80.01 0)
 			(effects
 				(font
@@ -3821,8 +3983,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GND Test Point"
-			(at 254.508 100.584 0)
+		(property "Value" "GND"
+			(at 259.842 100.838 0)
 			(effects
 				(font
 					(size 1.27 1.27)
