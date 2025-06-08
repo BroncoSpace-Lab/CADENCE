@@ -1791,16 +1791,6 @@
 		)
 		(uuid "bd51529c-f5eb-494a-88be-aff22ad0824f")
 	)
-	(text "Standard Decoupling\nCapacitors\n"
-		(exclude_from_sim no)
-		(at 51.816 59.436 0)
-		(effects
-			(font
-				(size 0.75 0.75)
-			)
-		)
-		(uuid "f5f9c5b3-27d1-4621-9747-2a8847c3ece9")
-	)
 	(junction
 		(at 173.99 85.09)
 		(diameter 0)
@@ -1826,22 +1816,10 @@
 		(uuid "199b24e4-1688-4f2c-b482-5be19044b694")
 	)
 	(junction
-		(at 57.15 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35a1e9aa-c840-462c-b1a1-dd3ea9b71171")
-	)
-	(junction
 		(at 134.62 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3dcd9921-9545-4a81-b94a-875240c2af2d")
-	)
-	(junction
-		(at 46.99 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ca9b407-ad3a-43b7-aafb-d9b8e38c82cc")
 	)
 	(junction
 		(at 78.74 163.83)
@@ -2167,26 +2145,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 46.99) (xy 46.99 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61d574ff-ecf3-4e5f-bd13-1c0cfe14492d")
-	)
-	(wire
-		(pts
-			(xy 46.99 38.1) (xy 46.99 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83ef6e9a-2508-4d68-bafb-6a861cfec45b")
-	)
-	(wire
-		(pts
 			(xy 90.17 85.09) (xy 90.17 90.17)
 		)
 		(stroke
@@ -2257,16 +2215,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 46.99) (xy 57.15 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3168eb4-8504-46c5-bf6a-6e495a5f2361")
-	)
-	(wire
-		(pts
 			(xy 134.62 69.85) (xy 134.62 73.66)
 		)
 		(stroke
@@ -2274,16 +2222,6 @@
 			(type default)
 		)
 		(uuid "b32317e7-bbd1-4442-aeb1-dcaa8177049c")
-	)
-	(wire
-		(pts
-			(xy 57.15 38.1) (xy 62.23 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4d21681-7103-4738-8c30-927de47865f3")
 	)
 	(wire
 		(pts
@@ -2487,16 +2425,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 38.1) (xy 57.15 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e44ce55e-771a-4fd0-a469-4e14bc0491a8")
-	)
-	(wire
-		(pts
 			(xy 135.89 163.83) (xy 139.7 163.83)
 		)
 		(stroke
@@ -2504,16 +2432,6 @@
 			(type default)
 		)
 		(uuid "e59b99ff-ad0d-48a7-a8cf-eba58fe322af")
-	)
-	(wire
-		(pts
-			(xy 40.64 38.1) (xy 46.99 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e62b0ef3-44a8-47c2-ae6e-4a66ff873e8e")
 	)
 	(wire
 		(pts
@@ -2527,7 +2445,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 38.1) (xy 57.15 38.1)
+			(xy 40.64 38.1) (xy 62.23 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2938,76 +2856,6 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 46.99 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "213ab5cd-8454-43c4-b8ba-07c91e2bdd5f")
-		(property "Reference" "C14"
-			(at 49.53 43.1862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 49.53 45.7262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 46.99 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0c7ef7a7-9687-4b15-ba31-e93887f1dda1")
-		)
-		(pin "1"
-			(uuid "312ccd44-3bad-4070-8cf2-1e243e5836d2")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3905,72 +3753,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 46.99 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4f2c428-e58d-4bea-8964-29b564ae4cb5")
-		(property "Reference" "#PWR030"
-			(at 46.99 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 46.99 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24a84242-9213-475b-b357-32f07490fbeb")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 163.83 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4171,76 +3953,6 @@
 			(project ""
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 57.15 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2c38cc6-5261-4631-a607-e224c45d0147")
-		(property "Reference" "C15"
-			(at 59.69 43.1862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 59.69 45.7262 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 57.15 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 57.15 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "56059fba-8de3-491c-97a5-d231e738f96a")
-		)
-		(pin "1"
-			(uuid "4d974852-0d43-4565-ac5b-96ae8f477dcd")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -4801,72 +4513,6 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 57.15 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd551cf6-2339-4269-a8ce-1a4780c43dc5")
-		(property "Reference" "#PWR031"
-			(at 57.15 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 57.15 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3089c853-bb0d-4477-abc4-16fc4aabdf7a")
-		)
-		(instances
-			(project "Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/94b942db-2822-486c-90f4-c726bdd9ff86"
-					(reference "#PWR031")
 					(unit 1)
 				)
 			)
