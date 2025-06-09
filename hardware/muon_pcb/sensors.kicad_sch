@@ -3159,7 +3159,7 @@
 	)
 	(text "this specific ferrite bead is not in stock anymore\n(also not recommended by manufacturer for new designs)"
 		(exclude_from_sim no)
-		(at 144.145 72.39 0)
+		(at 135.255 75.565 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3219,7 +3219,7 @@
 	)
 	(text "GMLB-100505-0600A-N8"
 		(exclude_from_sim no)
-		(at 163.195 76.835 0)
+		(at 141.605 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3269,7 +3269,7 @@
 	)
 	(text "600 Ohms @ 100 MHz 1 Signal Line Ferrite Bead 0402 (1005 Metric) 200mA 650mOhm"
 		(exclude_from_sim no)
-		(at 160.655 80.01 0)
+		(at 140.97 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3289,7 +3289,7 @@
 	)
 	(text "1pps pin provides one electrical \npulse per second. Used to synchronize \nother devices (not needed)"
 		(exclude_from_sim no)
-		(at 264.16 115.57 0)
+		(at 264.795 117.475 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3297,9 +3297,9 @@
 		)
 		(uuid "986a8710-3556-480a-8f26-0303007655be")
 	)
-	(text "used to clean noise from power supply\n"
+	(text "ferrite bead used to clean noise from power supply\n"
 		(exclude_from_sim no)
-		(at 176.53 82.55 0)
+		(at 170.815 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3317,16 +3317,6 @@
 		)
 		(uuid "9da359af-44fd-44c2-a41f-c7d35bd77303")
 	)
-	(text "(find or create a footprint for the ferrite bead)"
-		(exclude_from_sim no)
-		(at 171.45 84.455 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "afbf21d5-5d2f-43ed-8739-dfd5492f8c92")
-	)
 	(text "Bypass capacitors for GPS receiver module\nVCC\n"
 		(exclude_from_sim no)
 		(at 147.955 115.57 0)
@@ -3336,16 +3326,6 @@
 			)
 		)
 		(uuid "b1d9f1ab-2bb4-4202-9d71-87d451865eaf")
-	)
-	(text "edit: zach found a ferrite bead that works"
-		(exclude_from_sim no)
-		(at 177.165 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "da23e84d-fe15-4b51-8b65-0471715ac384")
 	)
 	(text "tie the address pins to gnd or leave floating"
 		(exclude_from_sim no)
@@ -3504,20 +3484,12 @@
 		(uuid "2b6240e2-c7c8-466c-9439-ef43e57bd712")
 	)
 	(no_connect
-		(at 45.72 118.745)
-		(uuid "37949b18-c5c9-4d86-993d-425abccd2b90")
-	)
-	(no_connect
 		(at 45.72 121.285)
 		(uuid "747cd9b6-02e7-4655-a3b3-ffbb45e53b4f")
 	)
 	(no_connect
 		(at 45.72 123.825)
 		(uuid "8a1f026b-e331-4e2d-ba61-257a7d826c06")
-	)
-	(no_connect
-		(at 242.57 111.125)
-		(uuid "b86c678a-dff8-462f-95eb-2814bcb8ceae")
 	)
 	(no_connect
 		(at 242.57 114.935)
@@ -4029,7 +4001,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 108.585) (xy 50.165 108.585)
+			(xy 29.21 108.585) (xy 50.165 108.585)
 		)
 		(stroke
 			(width 0)
@@ -4487,6 +4459,28 @@
 		)
 		(uuid "b6355609-06d3-431d-bae2-762178d7e94d")
 	)
+	(global_label "GPS 1PPS"
+		(shape output)
+		(at 242.57 111.125 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "015ad97b-a619-45ad-8f17-11ebbcd4ea43")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 255.2313 111.125 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "RF MISO"
 		(shape output)
 		(at 88.9 108.585 0)
@@ -4681,6 +4675,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RF DIO0"
+		(shape bidirectional)
+		(at 45.72 118.745 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cdd77658-1800-4dec-88c4-2ccd8e1b9287")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.8825 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5340,7 +5356,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 108.585 270)
+		(at 29.21 108.585 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5349,7 +5365,7 @@
 		(fields_autoplaced yes)
 		(uuid "37755a23-7d88-4ff2-8e20-8ad1c721f707")
 		(property "Reference" "#PWR0121"
-			(at 38.1 108.585 0)
+			(at 29.21 114.935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,7 +5374,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 105.41 90)
+			(at 29.21 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5366,7 +5382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 108.585 0)
+			(at 29.21 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5375,7 +5391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 108.585 0)
+			(at 29.21 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5384,7 +5400,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 108.585 0)
+			(at 29.21 108.585 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5480,7 +5496,7 @@
 		(dnp no)
 		(uuid "4d7149d7-16e3-4525-b341-38601fda3dc7")
 		(property "Reference" "R17"
-			(at 196.85 139.065 0)
+			(at 194.945 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5489,7 +5505,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 199.39 139.065 0)
+			(at 194.945 142.875 90)
 			(effects
 				(font
 					(size 1.27 1.27)
