@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Kainoah Vann",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": -145.4, "left": -261.6, "attrs": {} },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -147.15,
+      "left": -34.8,
+      "attrs": { "env": "circuitpython-8.0.2" }
+    },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -255.38, "left": -36.08, "attrs": {} },
+    { "type": "wokwi-gas-sensor", "id": "gas2", "top": 2.7, "left": -357.8, "attrs": {} },
+    { "type": "wokwi-microsd-card", "id": "sd1", "top": -95.77, "left": 105.67, "attrs": {} }
+  ],
+  "connections": [
+    [ "imu1:SCL", "pico:GP1", "cyan", [ "v-19.2", "h-95.92", "v144" ] ],
+    [ "imu1:SDA", "pico:GP0", "yellow", [ "v-28.8", "h-67.12", "v144" ] ],
+    [ "bb1:1t.a", "pico:3V3", "red", [ "v-172.8", "h307.2", "v211.2" ] ],
+    [ "imu1:VCC", "bb1:1t.b", "red", [ "v-38.4", "h-268.72", "v163.2" ] ],
+    [ "pico:GND.8", "bb1:17b.j", "black", [ "h-104.4", "v86.4" ] ],
+    [ "imu1:GND", "bb1:17b.i", "black", [ "h-124.72", "v211.2" ] ],
+    [ "gas2:AOUT", "pico:GP26", "cyan", [ "h0" ] ],
+    [ "gas2:DOUT", "pico:GP16", "yellow", [ "h0" ] ],
+    [ "gas2:GND", "bb1:17b.h", "black", [ "h0" ] ],
+    [ "gas2:VCC", "bb1:1t.c", "red", [ "v47.1", "h-144", "v-134.4" ] ],
+    [ "sd1:VCC", "bb1:1t.d", "red", [ "h-105.6", "v-57.46", "h-326.4" ] ],
+    [ "sd1:GND", "bb1:17b.i", "black", [ "h-240", "v9.71" ] ],
+    [ "sd1:CS", "pico:GP5", "green", [ "h0" ] ],
+    [ "sd1:DI", "pico:GP3", "green", [ "h0" ] ],
+    [ "sd1:SCK", "pico:GP2", "green", [ "h0" ] ],
+    [ "sd1:DO", "pico:GP4", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
