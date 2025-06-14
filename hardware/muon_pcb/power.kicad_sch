@@ -1724,6 +1724,16 @@
 		)
 		(uuid "70322a9f-11ee-4804-924f-57566cb4fb3c")
 	)
+	(text "male header pins to be manually connected in order to activate\nsupply"
+		(exclude_from_sim no)
+		(at 141.605 100.965 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "889acf2b-7daa-478c-a8d2-6d1dd0c42d01")
+	)
 	(text "Power Supply"
 		(exclude_from_sim no)
 		(at 140.97 57.785 0)
@@ -1911,6 +1921,16 @@
 			(type default)
 		)
 		(uuid "3017bba1-9371-46c6-839a-47eb6c19a6a5")
+	)
+	(wire
+		(pts
+			(xy 148.59 123.825) (xy 143.51 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "370e2f3f-b800-4a54-b2c6-f1b88063eea4")
 	)
 	(wire
 		(pts
@@ -2162,6 +2182,26 @@
 		)
 		(uuid "f550b211-a577-41d4-9805-cd29e7060fb3")
 	)
+	(wire
+		(pts
+			(xy 137.16 123.825) (xy 140.97 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd5634a0-eb54-4fdd-823a-11e8287c8799")
+	)
+	(wire
+		(pts
+			(xy 137.16 122.555) (xy 137.16 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffdeec59-e37f-45a9-8c6d-57f574179597")
+	)
 	(global_label "PAYLOAD_BATT"
 		(shape input)
 		(at 111.76 83.185 180)
@@ -2221,6 +2261,28 @@
 		(uuid "a9799486-fd48-4ff6-a978-a186ec9137b1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 198.2855 88.265 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PAYLOAD_PWR"
+		(shape input)
+		(at 137.16 122.555 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bca96e10-3bc6-4d57-9685-09daeb0cd031")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.16 106.4464 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2720,7 +2782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 138.1252 90.805 0)
 			(effects
 				(font
@@ -3579,6 +3641,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 143.51 128.905 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e6a58ae-ca7c-47f5-a73c-0651a87f741b")
+		(property "Reference" "J10"
+			(at 139.065 132.715 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 139.065 135.255 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "1my_footprints:HDR-TH_2P-P2.54-V-M"
+			(at 143.51 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 143.51 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f53992f3-5b72-4c74-8339-d16ac2d5eaae")
+		)
+		(pin "2"
+			(uuid "654e2df9-eb33-44cb-b6d0-128254c243b1")
+		)
+		(instances
+			(project "muon_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 142.875 83.185 270)
 		(unit 1)
@@ -3596,7 +3727,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "500"
+		(property "Value" "127"
 			(at 140.97 80.645 90)
 			(effects
 				(font
@@ -3605,7 +3736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 142.875 81.407 90)
 			(effects
 				(font
@@ -3642,6 +3773,73 @@
 			(project "muon_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 148.59 123.825 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8a250df-5df0-4743-919d-ba185f61d76c")
+		(property "Reference" "#PWR090"
+			(at 148.59 127.635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 151.13 122.5549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 148.59 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12fbea67-080c-44df-9449-c37c379be5a8")
+		)
+		(instances
+			(project "muon_pcb"
+				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
