@@ -175,113 +175,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic:Conn_02x02_Top_Bottom"
 			(pin_names
 				(offset 1.016)
@@ -1248,12 +1141,6 @@
 		(uuid "ffbeba1b-58a7-4c70-a478-ea65316b7539")
 	)
 	(junction
-		(at 117.475 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "28dcaa4a-0abb-47aa-ba65-94e5cef0cf6c")
-	)
-	(junction
 		(at 117.475 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1282,6 +1169,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eab96fd6-49fd-49c1-94d3-6398a4dbde5f")
+	)
+	(wire
+		(pts
+			(xy 66.675 78.74) (xy 65.405 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af76c1f-690d-4d31-920b-10a208556545")
 	)
 	(wire
 		(pts
@@ -1639,7 +1536,7 @@
 	)
 	(global_label "PAYLOAD_PWR"
 		(shape output)
-		(at 65.405 78.74 0)
+		(at 66.675 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1649,7 +1546,7 @@
 		)
 		(uuid "f8b67a2e-2d7f-4c2a-a4e4-eda173096ff0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.5136 78.74 0)
+			(at 82.7836 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1699,7 +1596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
+		(property "Value" "+5V"
 			(at 117.475 65.405 0)
 			(effects
 				(font
@@ -1880,73 +1777,6 @@
 			(project "og_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/f2f75698-7215-4a2b-8285-3e4b3531a3e0"
 					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 117.475 73.66 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90158a8d-9411-4c0d-b960-ea28e98dd689")
-		(property "Reference" "TP6"
-			(at 120.015 75.6919 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 120.015 78.2319 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "1my_footprints:TH_BD3.2-D2.0"
-			(at 112.395 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 112.395 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 117.475 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7303197-7b63-4fd3-a376-b5e7e4175590")
-		)
-		(instances
-			(project "og_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/f2f75698-7215-4a2b-8285-3e4b3531a3e0"
-					(reference "TP6")
 					(unit 1)
 				)
 			)
