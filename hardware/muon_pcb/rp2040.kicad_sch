@@ -4082,8 +4082,8 @@
 		(uuid "155c8e88-f3a4-4d02-aad3-6370701f842c")
 	)
 	(no_connect
-		(at 170.815 195.58)
-		(uuid "163fb259-2d8a-4810-8dd4-75be91dd4fd2")
+		(at 170.18 180.34)
+		(uuid "29d9847a-476d-47a4-a153-3a7b52c635c7")
 	)
 	(no_connect
 		(at 170.18 182.88)
@@ -4094,16 +4094,16 @@
 		(uuid "4584e66c-a6fb-4c58-94aa-e430a61366b0")
 	)
 	(no_connect
-		(at 170.18 147.32)
-		(uuid "5173ab87-d6ab-41a0-b2d0-f9162874aee3")
-	)
-	(no_connect
 		(at 170.18 144.78)
 		(uuid "610f42c1-6208-4954-993f-cdf17d83ff3f")
 	)
 	(no_connect
 		(at 170.18 142.24)
 		(uuid "68bf6052-f55e-44f8-ae28-010d992bd8b9")
+	)
+	(no_connect
+		(at 170.18 177.8)
+		(uuid "8bd1888a-e8ce-492f-ac16-0bc3e41dd312")
 	)
 	(no_connect
 		(at 170.18 154.94)
@@ -4118,16 +4118,16 @@
 		(uuid "9b8ef86a-e1a4-4cc1-b039-f744fc0777a0")
 	)
 	(no_connect
-		(at 170.18 149.86)
-		(uuid "a0ba216a-8edc-4704-a950-8362ee996115")
-	)
-	(no_connect
 		(at 170.815 198.12)
 		(uuid "a0e0652f-ab68-48f6-8bfb-0b2e4ad9723b")
 	)
 	(no_connect
 		(at 170.18 152.4)
 		(uuid "b6a95b0c-ad7d-4e6f-8c58-0b25b3755e3e")
+	)
+	(no_connect
+		(at 170.815 200.66)
+		(uuid "b8685008-b1ec-400f-aec6-208d1824ef29")
 	)
 	(no_connect
 		(at 170.18 175.26)
@@ -6055,28 +6055,6 @@
 		)
 		(uuid "f63f7ce3-911c-40e9-a7fb-80cd13d437f5")
 	)
-	(global_label "UART1 Rx"
-		(shape bidirectional)
-		(at 170.18 180.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0c95744d-efee-4dd3-8848-9b49921fdd02")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.4084 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "MicroSD MOSI"
 		(shape input)
 		(at 313.055 210.82 180)
@@ -6143,6 +6121,28 @@
 			)
 		)
 	)
+	(global_label "UART1 Tx"
+		(shape bidirectional)
+		(at 170.18 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17ec6ca7-22c9-44b6-b83e-480717800069")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.106 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL0"
 		(shape bidirectional)
 		(at 247.015 128.905 180)
@@ -6161,6 +6161,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "UART1 Rx"
+		(shape bidirectional)
+		(at 170.18 149.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "275fb864-aee8-4fc7-848c-8f0867c7ef3a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.4084 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6452,28 +6474,6 @@
 			)
 		)
 	)
-	(global_label "GPS 1PPS"
-		(shape input)
-		(at 170.815 200.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9038f00c-c8bd-4b27-bf0e-33ae23f536de")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.4763 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SCL0"
 		(shape bidirectional)
 		(at 203.2 139.7 0)
@@ -6531,28 +6531,6 @@
 		(uuid "af8cf523-3b93-4a1a-a2d6-3e8d725e3153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 183.4084 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "UART1 Tx"
-		(shape bidirectional)
-		(at 170.18 177.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d3781c59-27c6-4ea1-91b0-282156095480")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.106 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6624,6 +6602,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS 1PPS"
+		(shape input)
+		(at 170.815 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e64ffbbd-e224-498c-b510-749a0aeb5f21")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.4763 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
