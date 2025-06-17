@@ -1902,10 +1902,10 @@
 		(uuid "230d97d2-2e95-4fbe-bc05-ddc567cbb9c3")
 	)
 	(junction
-		(at 149.225 83.185)
+		(at 142.24 83.185)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4fdb8e55-0f9b-4fe1-bdfb-ee82696e0204")
+		(uuid "35da0e18-0e6d-4fca-b05c-cd57d68869d6")
 	)
 	(junction
 		(at 182.245 103.505)
@@ -2009,16 +2009,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.225 83.185) (xy 158.115 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "230cc098-016f-4268-89e8-194b695a657b")
-	)
-	(wire
-		(pts
 			(xy 182.245 103.505) (xy 182.245 106.045)
 		)
 		(stroke
@@ -2079,6 +2069,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 83.185) (xy 151.13 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cf5aae-e1e4-46cb-8fbd-b2b969c98937")
+	)
+	(wire
+		(pts
 			(xy 179.07 103.505) (xy 182.245 103.505)
 		)
 		(stroke
@@ -2109,7 +2109,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.115 83.185) (xy 158.115 81.28)
+			(xy 151.13 83.185) (xy 151.13 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2169,7 +2169,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 83.185) (xy 139.065 83.185)
+			(xy 137.16 83.185) (xy 142.24 83.185)
 		)
 		(stroke
 			(width 0)
@@ -2307,16 +2307,6 @@
 		)
 		(uuid "edd75922-4b3d-4390-a8bf-d5fb9d5743a7")
 	)
-	(wire
-		(pts
-			(xy 146.685 83.185) (xy 149.225 83.185)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f550b211-a577-41d4-9805-cd29e7060fb3")
-	)
 	(global_label "PAYLOAD_BATT"
 		(shape input)
 		(at 111.76 83.185 180)
@@ -2339,7 +2329,7 @@
 			)
 		)
 	)
-	(global_label "USB_DP"
+	(global_label "USB_D+"
 		(shape bidirectional)
 		(at 186.69 85.725 0)
 		(fields_autoplaced yes)
@@ -2352,7 +2342,7 @@
 		)
 		(uuid "29856c29-83ce-4f1c-ac0f-2dfc280cac75")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.1041 85.725 0)
+			(at 198.4065 85.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2362,7 +2352,7 @@
 			)
 		)
 	)
-	(global_label "USB_DM"
+	(global_label "USB_D-"
 		(shape bidirectional)
 		(at 186.69 88.265 0)
 		(fields_autoplaced yes)
@@ -2375,7 +2365,7 @@
 		)
 		(uuid "a9799486-fd48-4ff6-a978-a186ec9137b1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.2855 88.265 0)
+			(at 198.4065 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2853,7 +2843,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 158.115 81.28 0)
+		(at 151.13 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2862,7 +2852,7 @@
 		(fields_autoplaced yes)
 		(uuid "5b1a097e-94dc-4d72-bd94-0fcf334903a7")
 		(property "Reference" "#PWR05"
-			(at 158.115 85.09 0)
+			(at 151.13 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2871,7 +2861,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 158.115 76.835 0)
+			(at 151.13 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2879,7 +2869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.115 81.28 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +2878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.115 81.28 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2897,7 +2887,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 158.115 81.28 0)
+			(at 151.13 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3751,7 @@
 				)
 			)
 		)
-		(property "Value" "15"
+		(property "Value" "100k"
 			(at 56.515 90.805 0)
 			(effects
 				(font
@@ -3805,75 +3795,6 @@
 			(project "muon_pcb"
 				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
 					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 142.875 83.185 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b94d8568-611c-4d10-b9b3-e53557737385")
-		(property "Reference" "R19"
-			(at 140.97 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "127"
-			(at 140.97 80.645 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 142.875 81.407 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.875 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 142.875 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4187cc39-cbd3-4fc9-9744-5a1a93e81740")
-		)
-		(pin "2"
-			(uuid "30b922b2-9a18-407c-888d-9d2eafa3366c")
-		)
-		(instances
-			(project "muon_pcb"
-				(path "/e4ef350a-b140-44e0-8bc3-973fc24bf90a/10597755-0134-48c2-addf-e26d4e398c8f"
-					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -3946,7 +3867,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 149.225 83.185 0)
+		(at 142.24 83.185 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3954,7 +3875,7 @@
 		(dnp no)
 		(uuid "d57f8e43-a8f7-4569-86ae-946ecb2e0fbb")
 		(property "Reference" "TP7"
-			(at 146.05 74.93 0)
+			(at 139.065 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +3884,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 146.05 77.47 0)
+			(at 139.065 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3972,7 +3893,7 @@
 			)
 		)
 		(property "Footprint" "1my_footprints:TH_BD3.2-D2.0"
-			(at 154.305 83.185 0)
+			(at 147.32 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3902,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 154.305 83.185 0)
+			(at 147.32 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +3911,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 149.225 83.185 0)
+			(at 142.24 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
