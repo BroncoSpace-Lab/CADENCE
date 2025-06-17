@@ -1,27 +1,162 @@
-(module easyeda2kicad:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR (layer F.Cu) (tedit 5DC5F6A4)
+(footprint "AZ1117I-5.0"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -6.3 0)
+		(layer "F.SilkS")
+		(uuid "00168202-dff6-41a7-88b1-5767f108521b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
+		(at 0 6.3 0)
+		(layer "F.Fab")
+		(uuid "a5ad0428-92be-4ba8-8d66-d1460d85fc5f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b12d9e11-37e4-4d82-a41e-ff75ec5f6a93")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1871bd73-d2e4-4486-837a-1867444acc04")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
 	(attr smd)
-	(fp_text reference REF** (at 0 -6.3) (layer F.SilkS)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.57 -3.33)
+		(end 1.37 -3.33)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40453472-0791-4900-987a-5f1eee0cbcf6")
 	)
-	(fp_text value SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR (at 0 6.3) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start -1.57 3.33)
+		(end -1.57 -3.33)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3839f83f-50a8-43b1-a859-2583d4b6dbcb")
 	)
-	(fp_text user %R (at 0 0) (layer F.Fab)
-		(effects (font (size 1 1) (thickness 0.15)))
+	(fp_line
+		(start 1.37 -3.33)
+		(end 1.37 3.33)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "abd97d60-78fc-49ed-8ef1-4a8459d6a265")
 	)
-	(fp_line (start -1.57 3.33) (end -1.57 -3.33) (layer F.SilkS) (width 0.15))
-	(fp_line (start -1.57 -3.33) (end 1.37 -3.33) (layer F.SilkS) (width 0.15))
-	(fp_line (start 1.37 -3.33) (end 1.37 3.33) (layer F.SilkS) (width 0.15))
-	(fp_line (start 1.37 3.33) (end -1.57 3.33) (layer F.SilkS) (width 0.15))
-	(pad 1 smd rect (at 2.97 2.30 0.00) (size 2.50 1.10) (layers F.Cu F.Paste F.Mask))
-	(pad 2 smd rect (at 2.97 0.00 0.00) (size 2.50 1.10) (layers F.Cu F.Paste F.Mask))
-	(pad 3 smd rect (at 2.97 -2.30 0.00) (size 2.50 1.10) (layers F.Cu F.Paste F.Mask))
-	(pad 4 smd rect (at -2.97 0.00 0.00) (size 2.34 3.60) (layers F.Cu F.Paste F.Mask))
-	(fp_circle (center 3.40 3.25) (end 3.43 3.25) (layer F.Fab) (width 0.06))
-	(fp_circle (center 4.55 2.19) (end 4.80 2.19) (layer Cmts.User) (width 0.50))
+	(fp_line
+		(start 1.37 3.33)
+		(end -1.57 3.33)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9bfdc029-0b49-486e-9c52-229f8eba6ed0")
+	)
+	(fp_circle
+		(center 4.55 2.19)
+		(end 4.8 2.19)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "ff3b6221-edc2-4123-a013-db788caabb54")
+	)
+	(fp_circle
+		(center 3.4 3.25)
+		(end 3.43 3.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8dc13618-9c4b-4b86-a907-16bb3547f821")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a651e030-e186-4805-a7f7-ecde5d3a3178")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 2.97 2.3)
+		(size 2.5 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7f02780b-4fda-4828-869a-55b0062b6f7c")
+	)
+	(pad "2" smd rect
+		(at 2.97 0)
+		(size 2.5 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "292e9083-be70-4951-87d6-dc5f8762a725")
+	)
+	(pad "3" smd rect
+		(at 2.97 -2.3)
+		(size 2.5 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "399d27ad-55d9-4090-89ad-73c1e05f8896")
+	)
+	(pad "4" smd rect
+		(at -2.97 0)
+		(size 2.34 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c276d226-3b86-4805-80d3-c4877b055d4a")
+	)
+	(embedded_fonts no)
 	(model "C:/Users/William/OneDrive/Documents/kicad footprints/New folder.3dshapes/SOT-223-4P_L6.5-W3.5-H1.6-LS7.0-P2.30.wrl"
-		(offset (xyz -3.990 2.920 -0.000))
-		(scale (xyz 1 1 1))
-		(rotate (xyz 0 0 180))
+		(offset
+			(xyz -3.99 2.92 -0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
 	)
 )
