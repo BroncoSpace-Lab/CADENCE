@@ -854,6 +854,10 @@
 		(uuid "d1e37e84-7d45-40fd-8d61-dd67b53fa2ef")
 	)
 	(no_connect
+		(at 69.85 39.37)
+		(uuid "b8731661-c12f-4043-836d-683b8de88b2c")
+	)
+	(no_connect
 		(at 69.85 44.45)
 		(uuid "d5272e07-f573-481f-a182-27543e92bafd")
 	)
@@ -886,16 +890,6 @@
 			(type default)
 		)
 		(uuid "02f47033-4814-4af9-b595-ac666157e6ba")
-	)
-	(wire
-		(pts
-			(xy 73.66 39.37) (xy 73.66 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e53dda5-19e3-485e-b74d-39e4f7c7df4a")
 	)
 	(wire
 		(pts
@@ -946,16 +940,6 @@
 			(type default)
 		)
 		(uuid "4f6974bb-c198-4d23-b3a9-c3ec07c47d2e")
-	)
-	(wire
-		(pts
-			(xy 69.85 39.37) (xy 73.66 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56d03ec0-c545-4693-a62a-5b84a5ed8e95")
 	)
 	(wire
 		(pts
@@ -2616,71 +2600,6 @@
 			(project "Cosmic_Watch"
 				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/09770208-9a6f-42aa-9b04-6e9dd61abdb1"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f80e0d7f-fefd-4d23-a7e2-d71b1a8c04a7")
-		(property "Reference" "#PWR030"
-			(at 73.66 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "SiPM GND"
-			(at 80.01 44.958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a644945d-036e-438d-87c5-86f54704456a")
-		)
-		(instances
-			(project "PROVES_Cosmic_Watch"
-				(path "/901a4a81-3d4a-4d59-b0fc-ea1dade1210f/09770208-9a6f-42aa-9b04-6e9dd61abdb1"
-					(reference "#PWR030")
 					(unit 1)
 				)
 			)
