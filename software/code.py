@@ -9,7 +9,7 @@ import adafruit_gps
 import os
 
 # === TMP1075 - Temperature Sensor (I2C) ===
-i2c = busio.I2C(board.GP_, board.GP_)  # SCL, SDA
+i2c = busio.I2C(board.I2C1_SCL, board.I2C1_SDA)  # SCL, SDA
 tmp = adafruit_tmp1075.TMP1075(i2c)
 
 # === GPS (UART) ===
@@ -19,8 +19,8 @@ gps.send_command(b'PMTK314,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0')  # NMEA GGA &
 gps.send_command(b'PMTK220,1000')  # 1 Hz update rate
 
 # === SD Card (SPI) ===
-spi = busio.SPI(board.GP_, board.GP_, board.GP_)  # SCK, MOSI, MISO
-cs = digitalio.DigitalInOut(board.GP_)
+spi = busio.SPI(board.GP2, board.GP3, board.GP0)  # SCK, MOSI, MISO
+cs = digitalio.DigitalInOut(board.GP1)
 sdcard = adafruit_sdcard.SDCard(spi, cs)
 vfs = storage.VfsFat(sdcard)
 storage.mount(vfs, "/sd")
