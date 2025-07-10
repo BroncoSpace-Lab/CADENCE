@@ -4,7 +4,6 @@ import busio
 import digitalio
 import storage
 import adafruit_sdcard
-import adafruit_tmp1075
 import adafruit_gps
 import os
 
