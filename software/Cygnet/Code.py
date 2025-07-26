@@ -164,6 +164,10 @@ def cleanup():
 
 # Main loop runs forever, waiting until a particle is found, then printing particle data, and GPS data
 print("Cosmic Watch Initialization...")
+
+Initialize_SDCard()
+Initialize_GPS()
+
 gps_available = Initialize_GPS()
 sd_available = Initialize_SDCard()
 
@@ -177,8 +181,6 @@ print("Starting particle detection...")
 last_gps_update = 0
 GPS_UPDATE_INTERVAL = 1.0
 
-Initialize_SDCard()
-Initialize_GPS()
 
 try:
     while True:
