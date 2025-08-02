@@ -56,7 +56,7 @@ def Initialize_GPS():
         print(f"GPS initialization failed: {e}")
         return None, None
 
-def log_to_sd(raw, volts, latitude=0.0, longitude=0.0):
+def log_to_sd(raw, volts, latitude=0.0, longitude=0.0, altitude = 0.0, satellites = 0 ):
     global filename
     if not sdcard_mounted:
         print("SD card not available")
@@ -77,7 +77,7 @@ def log_to_sd(raw, volts, latitude=0.0, longitude=0.0):
         # Write data
         if write_to_file:
             with open(filename, 'a') as f:
-                f.write(f"{timestamp} , {raw} , {volts:.2f} , {latitude} , {longitude}, None , None\n")
+                f.write(f"{timestamp} , {raw} , {volts:.2f} , {latitude} , {longitude}, {altitude} , {satellites}\n")
         return True
         
     except Exception as e:
@@ -177,6 +177,8 @@ try:
                 if gps_fix_status:
                     latitude = gps.latitude
                     longitude = gps.longitude
+                    altitude = gps.altitude
+                    satellites = gps.satellites
                     gps_status = f"GPS fixed: ({gps.satellites} sats)"
                 else:
                     latitude = 0.0
@@ -203,13 +205,13 @@ try:
             if uart0:
                     try:
                         # Combine all data into one message
-                        complete_message = f"({counter}) - particle detected!\nData | raw value:{raw:5d} volts ={volts:5.2f}\nGPS Data | Latitude: {latitude}, Longitude: {longitude}\n --- \n"
+                        complete_message = f"({counter}) - particle detected!\nData | raw value:{raw:5d} volts ={volts:5.2f}\nGPS Data | Latitude: {latitude}, Longitude: {longitude}, Altitude: {altitude}, Satellites: {satellites}\n --- \n"
                         uart0.write(complete_message.encode())
                     except Exception as e:
                         print(f"UART communication error: {e}")
             
             # Log to SD card
-            log_to_sd(raw, volts, latitude, longitude)
+            log_to_sd(raw, volts, latitude, longitude, altitude, satellites)
         
         
 except KeyboardInterrupt:
