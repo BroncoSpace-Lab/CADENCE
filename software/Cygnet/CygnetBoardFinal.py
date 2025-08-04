@@ -6,6 +6,7 @@ import adafruit_gps
 import digitalio
 import storage
 import adafruit_sdcard
+import math
 
 # UART 1 -> GPS
 # UART 0 -> proves 
@@ -17,7 +18,9 @@ sdcard_mounted = False
 counter = 0
 SIGNAL_THRESHOLD = 1000
 
-
+cal = [-9.085681659276021e-27, 4.6790804314609205e-23, -1.0317125207013292e-19,
+  1.2741066484319192e-16, -9.684460759517656e-14, 4.6937937442284284e-11, -1.4553498837275352e-08,
+   2.8216624998078298e-06, -0.000323032620672037, 0.019538631135788468, -0.3774384056850066, 12.324891083404246]
 
 # Hardware initialization
 cosmic_watch_output = analogio.AnalogIn(board.COSMIC_ANALOG)
@@ -26,8 +29,15 @@ uart1 = busio.UART(board.TX1, board.RX1, baudrate=9600, timeout=0)
 uart0 = busio.UART(board.TX0, board.RX0, baudrate=9600, timeout=10)
 
 
-def get_voltage(raw):
-    return (raw * 3.3) / 65536
+def get_sipm_voltage(raw):
+    voltage = 0.0
+    cal_length = len(cal)
+
+    for i in range (cal_length):
+        voltage += cal[i] * math.pow(raw, (cal_length - i - 1))
+
+    return voltage
+
 
 def Initialize_SDCard():
     global sdcard_mounted
@@ -72,7 +82,7 @@ def log_to_sd(raw, volts, latitude=0.0, longitude=0.0, altitude = 0.0, satellite
                 pass
         except OSError:
             with open(filename, 'w') as f:
-                f.write("timestamp | raw | volts | latitude | longitude | altitude | satellites\n")
+                f.write("time since boot (s) | ADC | volts | latitude | longitude | altitude | satellites\n")
         
         # Write data
         if write_to_file:
@@ -93,7 +103,7 @@ def cleanup():
 
     if clearSD == 'y':
         with open(filename, 'w') as f:
-            f.write("time since boot(s),raw,volts,latitude,longitude,altitude,satellites\n")
+            f.write("time since boot (s) | ADC | volts | latitude | longitude | altitude | satellites\n")
         print("SD file cleared")
     elif clearSD == 'n':
         print("SD file not cleared")
@@ -130,14 +140,17 @@ gps = Initialize_GPS()
 if not gps:
     print("WARNING: GPS not available - continuing without GPS data")
 
-gps_working = input("use simulated gps data? (y/n): ").strip().lower()
-use_simulated_gps = gps_working in ['y', 'yes']
 
-if use_simulated_gps:
-    simulated_latitude = 40.77
-    simulated_longitude = -111.9
-else:
-    print("continuing with normal GPS")
+# uncomment to bypass GPS and auto fill with fake information
+
+#gps_working = input("use simulated gps data? (y/n): ").strip().lower()
+#use_simulated_gps = gps_working in ['y', 'yes']
+
+#if use_simulated_gps:
+#    simulated_latitude = 40.77
+#    simulated_longitude = -111.9
+#else:
+#    print("continuing with normal GPS")
 
 
 print("Starting particle detection...")
@@ -155,52 +168,51 @@ try:
         satellites = 0.0
         gps_status = ""
         
+# uncomment to bypass GPS and auto fill with fake information
 
-        if use_simulated_gps:
-            latitude = simulated_latitude
-            longitude = simulated_longitude
-            gps_status = "Simulated GPS"
-        else:
+ #       if use_simulated_gps:
+ #           latitude = simulated_latitude
+ #           longitude = simulated_longitude
+ #           gps_status = "Simulated GPS"
+ #       else:
         # Update GPS if available
-            if gps:
-                gps.update()
-                gps_fix_status = gps.has_fix
+        if gps:
+            gps.update()
+            gps_fix_status = gps.has_fix
 
-                if gps_fix_status != last_fix_status:
-                    if gps_fix_status:
-                        print("GPS fix acquired")
-                        print(f"Satellites: {gps.satellites}")
-                        print(f"Location: {gps.latitude}, {gps.longitude}")
-                        print("=" * 40)
-                    else:
-                        print("GPS fix lost")
-                        print("=" * 40)
-                    last_fix_status = gps_fix_status
+            if gps_fix_status != last_fix_status:
                 if gps_fix_status:
-                    latitude = gps.latitude
-                    longitude = gps.longitude
-                    altitude = gps.altitude_m
-                    satellites = gps.satellites
-                    gps_status = f"GPS fixed: ({gps.satellites} sats)"
+                    print("GPS fix acquired")
+                    print(f"Satellites: {gps.satellites}")
+                    print(f"Location: {gps.latitude}, {gps.longitude}")
+                    print("=" * 40)
                 else:
-                    latitude = 0.0
-                    longitude = 0.0
-                    gps_status = "Searching for GPS..."
-            else: gps_status = "GPS not available"
+                    print("GPS fix lost")
+                    print("=" * 40)
+                last_fix_status = gps_fix_status
+            if gps_fix_status:
+                latitude = gps.latitude
+                longitude = gps.longitude
+                altitude = gps.altitude_m
+                satellites = gps.satellites
+                gps_status = f"GPS fixed: ({gps.satellites} sats)"
+            else:
+                latitude = 0.0
+                longitude = 0.0
+                gps_status = "Searching for GPS..."
+        else: gps_status = "GPS not available"
 
 
         
         # Read cosmic watch sensor
         raw = cosmic_watch_output.value
-        volts = get_voltage(raw)
+        volts = get_sipm_voltage(raw)
         
         # Check for particle detection
         if raw > SIGNAL_THRESHOLD:
             counter += 1
-            print("Particle has been detected!")
-            print("raw = {:5d} volts = {:5.2f}".format(raw, volts))
-            print(f"({counter}) -  particle detected!")
-            print("Data     | raw value:{:5d} volts ={:5.2f}".format(raw,volts))                
+            print(f"({counter}) -  Particle detected!")
+            print("Data     | ADC value:{:5d} volts ={:5.2f}".format(raw,volts))                
             print(f"GPS Data | Latitude: {latitude}, Longitude: {longitude}\n")
             
             # Send UART message if available
