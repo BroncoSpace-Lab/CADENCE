@@ -219,7 +219,7 @@ try:
             if uart0:
                     try:
                         # Combine all data into one message
-                        complete_message = f"({counter}) - particle detected!\nData | raw:{raw:5d} vlt ={volts:5.2f}\nGPS| lat: {latitude}, lon: {longitude}, alt: {altitude}, sat: {satellites}\n --- \n"
+                        complete_message = f"({counter}) - particle detected!\nData | ADC:{raw:5d} V:{volts:5.2f}\nGPS| LAT: {latitude}, LONG: {longitude}, ALT: {altitude}, SAT: {satellites}\n --- \n"
                         uart0.write(complete_message.encode())
                     except Exception as e:
                         print(f"UART communication error: {e}")
