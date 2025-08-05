@@ -29,14 +29,13 @@ uart1 = busio.UART(board.TX1, board.RX1, baudrate=9600, timeout=0)
 uart0 = busio.UART(board.TX0, board.RX0, baudrate=9600, timeout=10)
 
 
-def get_sipm_voltage(raw):
-    voltage = 0.0
-    cal_length = len(cal)
-
-    for i in range (cal_length):
-        voltage += cal[i] * math.pow(raw, (cal_length - i - 1))
-
-    return voltage
+def get_sipm_voltage(adc_raw):
+    v = 0.0
+    voltage_in = (adc_raw / 65535) * 3.3  # scale to volts
+    
+    for i in cal:
+        v = v * voltage_in + i
+    return v
 
 
 def Initialize_SDCard():
@@ -64,7 +63,7 @@ def Initialize_GPS():
         return gps
     except Exception as e:
         print(f"GPS initialization failed: {e}")
-        return None, None
+        return None
 
 def log_to_sd(raw, volts, latitude=0.0, longitude=0.0, altitude = 0.0, satellites = 0 ):
     global filename
