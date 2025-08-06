@@ -20,12 +20,12 @@ SEND_PING = "ping"
 SEND_NOTIFICATION_SINGLE = "send_notification"
 SEND_NOTIFICATION_CONTINUOUS = "send_notification_continuous"
 SEND_NOTIFICATION_BATCH = "send_notification_batch"
-SEND_NOTIFICATION_BATCH_CONTINUOUS = "send notification_batch_continuous"
+SEND_NOTIFICATION_BATCH_CONTINUOUS = "send_notification_batch_continuous"
 
-RECEIVE_NOTIFICATION_SINGLE = "send_notification"
-RECEIVE_NOTIFICATION_CONTINUOUS = "send_notification_continuous"
-RECEIVE_NOTIFICATION_BATCH = "send_notification_batch"
-RECEIVE_NOTIFICATION_BATCH_CONTINUOUS = "send notification_batch_continuous"
+RECEIVE_NOTIFICATION_SINGLE = "receive_notification"
+RECEIVE_NOTIFICATION_CONTINUOUS = "receive_notification_continuous"
+RECEIVE_NOTIFICATION_BATCH = "receive_notification_batch"
+RECEIVE_NOTIFICATION_BATCH_CONTINUOUS = "receive_notification_batch_continuous"
 
 from lib.adafruit_drv2605 import DRV2605  # This is Hacky V5a Devel Stuff###
 from lib.adafruit_mcp230xx.mcp23017 import (
@@ -597,8 +597,5 @@ try:
 
 except KeyboardInterrupt:
     print("Stopping...")
-except Exception as e:
-    print(f"Error: {e}")
-
 except Exception as e:
     print(f"Error: {e}")
