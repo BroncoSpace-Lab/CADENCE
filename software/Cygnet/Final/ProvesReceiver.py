@@ -16,6 +16,7 @@ except Exception:
 import os
 import json
 
+
 SEND_PING = "ping"
 SEND_NOTIFICATION_SINGLE = "send_notification"
 SEND_NOTIFICATION_CONTINUOUS = "send_notification_continuous"
@@ -62,7 +63,8 @@ rtc = MicrocontrollerManager()
 
 logger: Logger = Logger(
     error_counter=Counter(0),
-    colorized=False,
+    log_level = 2,
+    colorized=False
 )
 
 logger.info(
@@ -186,7 +188,9 @@ def receive_notification_UART_single(timeout):
         return None
     
 
+
 def receive_notification_UART_continuous():
+
     """Continuously receive and print UART messages until interrupted"""
     buffer = bytearray()
     END_MARKER = b"\n --- \n"
@@ -208,7 +212,7 @@ def receive_notification_UART_continuous():
                         decoded_msg = full_msg.decode().strip()
                         print(decoded_msg)  # Print the complete message
                         uhf_packet_manager.send(full_msg)
-                        return decoded_msg
+                        yield decoded_msg
                     except UnicodeError:
                         print("Bad data:", full_msg)
             
@@ -356,7 +360,7 @@ def receive_notification_UART_batch_continuous(collection_time):
                     # Send the raw batch data
                     uhf_packet_manager.send(batch_data.encode('utf-8'))
                     print(f"Batch {batch_number} sent successfully!")
-                    return batch_data
+                    yield batch_data
                     
                 else:
                     print(f"No messages collected in batch {batch_number}")
@@ -372,7 +376,7 @@ def receive_notification_UART_batch_continuous(collection_time):
                     batch_data = "\n".join(collected_messages)
                     print(f"Sending partial batch {batch_number} due to error")
                     uhf_packet_manager.send(batch_data.encode('utf-8'))
-                    return batch_data
+                    yield batch_data
                 batch_number += 1
                 time.sleep(2)  # Wait before trying next batch
                 
@@ -422,12 +426,14 @@ def send_notification_continuous(
         target_callsigns = config.radio.license
     timeout = 5.0
     wait_for_data = True
-    notification = receive_notification_UART_continuous()
-    response_message = {
-        "current_time": time.monotonic(),
-        "callsign": my_callsign,
-        "command": RECEIVE_NOTIFICATION_CONTINUOUS,
-        "notification": notification
+    #notification = receive_notification_UART_continuous()
+
+    for notification in receive_notification_UART_continuous():
+        response_message = {
+            "current_time": time.monotonic(),
+            "callsign": my_callsign,
+            "command": RECEIVE_NOTIFICATION_CONTINUOUS,
+            "notification": notification
     }
 
     encoded_response = json.dumps(response_message, separators=(",","utf-8"))
@@ -474,14 +480,15 @@ def send_notification_batch_continuous(
     if my_callsign is None:
         target_callsigns = config.radio.license
     timeout = 5.0
-    wait_for_data = True
-    notification = receive_notification_UART_batch_continuous()
-    response_message = {
-        "current_time": time.monotonic(),
-        "callsign": my_callsign,
-        "command": RECEIVE_NOTIFICATION_BATCH_CONTINUOUS,
-        "notification": notification
-    }
+
+    for batch_notification in receive_notification_UART_batch_continuous(collection_time):
+        if batch_notification:
+            response_message = {
+                "current_time": time.monotonic(),
+                "callsign": my_callsign,
+                "command": RECEIVE_NOTIFICATION_BATCH_CONTINUOUS,
+                "notification": batch_notification
+            }
 
     encoded_response = json.dumps(response_message, separators=(",","utf-8"))
 
@@ -538,12 +545,9 @@ def listener_nominal_power_loop(
             logger.error("Failed to decode message")
 
 
-
-
-
 try:
     print("radio test -- sending message")
-    uhf_radio.send("Hello World")
+    uhf_packet_manager.send("Hello World")
     print("Radio message sent successfully! - continuing....")
 except Exception as e:
     print(f"Radio failed in main code: {e}")
@@ -556,7 +560,7 @@ uart = busio.UART(board.TX, board.RX, baudrate = 9600, timeout = 10)
 
 
 import time
-collection_time = 60
+collection_time = 10
 buffer = bytearray()
 END_MARKER = b"\n --- \n"  # Message ends with this
 
@@ -582,14 +586,41 @@ try:
     
     elif method == '3':
         print("Initiating constant data beacon")
-        receive_notification_UART_continuous()
+
+        for msg in receive_notification_UART_continuous():
+            response_message = {
+                "current_time": time.monotonic(),
+                "callsign": config.radio.license,
+                "command": RECEIVE_NOTIFICATION_CONTINUOUS,
+                "notification": msg
+            }
+
+            encoded_response = json.dumps(response_message, separators=(",", ":"))
+            print(f"sending notification: {encoded_response}")
+            sleep_helper.safe_sleep(1)
+            uhf_packet_manager.send(encoded_response.encode("utf-8"))
 
     elif method =='4':
         print("Initiating singular batch collection")
         receive_notification_UART_batch_single(collection_time)
     elif method == '5':
         print("Initiating continuous batch collection")
-        receive_notification_UART_batch_continuous(collection_time)
+
+        for batch_notification in receive_notification_UART_batch_continuous(collection_time):
+            if batch_notification:
+                response_message = {
+                    "current_time": time.monotonic(),
+                    "callsign": config.radio.license,
+                    "command": RECEIVE_NOTIFICATION_BATCH_CONTINUOUS,
+                    "notification": batch_notification
+                }
+
+                encoded_response = json.dumps(response_message, separators=(",", ":"))
+                print(f"sending batch notification: {encoded_response}")
+                sleep_helper.safe_sleep(1)
+                uhf_packet_manager.send(encoded_response.encode("utf-8"))
+            else:
+                print("No batch data to send this round.")
 
     
     else:
