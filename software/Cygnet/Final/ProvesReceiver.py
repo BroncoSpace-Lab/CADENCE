@@ -14,6 +14,18 @@ except Exception:
     pass
 
 import os
+import json
+
+SEND_PING = "ping"
+SEND_NOTIFICATION_SINGLE = "send_notification"
+SEND_NOTIFICATION_CONTINUOUS = "send_notification_continuous"
+SEND_NOTIFICATION_BATCH = "send_notification_batch"
+SEND_NOTIFICATION_BATCH_CONTINUOUS = "send notification_batch_continuous"
+
+RECEIVE_NOTIFICATION_SINGLE = "send_notification"
+RECEIVE_NOTIFICATION_CONTINUOUS = "send_notification_continuous"
+RECEIVE_NOTIFICATION_BATCH = "send_notification_batch"
+RECEIVE_NOTIFICATION_BATCH_CONTINUOUS = "send notification_batch_continuous"
 
 from lib.adafruit_drv2605 import DRV2605  # This is Hacky V5a Devel Stuff###
 from lib.adafruit_mcp230xx.mcp23017 import (
@@ -59,8 +71,8 @@ logger.info(
     software_version=__version__,
 )
 
-#watchdog = Watchdog(logger, board.WDT_WDI)
-#watchdog.pet()
+watchdog = Watchdog(logger, board.WDT_WDI)
+watchdog.pet()
 
 
 
@@ -103,7 +115,7 @@ i2c1 = initialize_i2c_bus(
     100000,
 )
 
-#sleep_helper = SleepHelper(logger, config, watchdog)
+sleep_helper = SleepHelper(logger, config, watchdog)
 
 uhf_radio = RFM9xManager(
     logger,
@@ -138,52 +150,455 @@ beacon = Beacon(
     sband_radio,
 )
 
+def receive_notification_UART_single(timeout):
+    buffer = bytearray()
+    END_MARKER = b"\n --- \n"  # Message ends with this
+    start = time.time()
+    
+    try:
+        while time.time() - start < timeout:
+            data = uart.read(64)  # Read in chunks
+            if data:
+                buffer.extend(data)
+                # Check if a complete message is received
+                if END_MARKER in buffer:
+                    # Split at the end marker
+                    msg_end = buffer.find(END_MARKER) + len(END_MARKER)
+                    full_msg = buffer[:msg_end]  # Extract full message
+                    buffer = buffer[msg_end:]    # Remove processed part
+                    
+                    try:
+                        decoded_msg = full_msg.decode().strip()
+                        print(decoded_msg)
+                        return decoded_msg
+                    except UnicodeError:
+                        print("Bad data:", full_msg)
+                        return None
+            
+            time.sleep(0.001)
+        
+        # Timeout reached without complete message
+        print("Timeout: No complete message received")
+        return None
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        return None
+    
+
+def receive_notification_UART_continuous():
+    """Continuously receive and print UART messages until interrupted"""
+    buffer = bytearray()
+    END_MARKER = b"\n --- \n"
+    
+    try:
+        while True:
+            data = uart.read(64)  # Read in chunks
+            if data:
+                buffer.extend(data)
+                
+                # Process all complete messages in buffer
+                while END_MARKER in buffer:
+                    # Split at the end marker
+                    msg_end = buffer.find(END_MARKER) + len(END_MARKER)
+                    full_msg = buffer[:msg_end]  # Extract full message
+                    buffer = buffer[msg_end:]    # Remove processed part
+                    
+                    try:
+                        decoded_msg = full_msg.decode().strip()
+                        print(decoded_msg)  # Print the complete message
+                        uhf_packet_manager.send(full_msg)
+                        return decoded_msg
+                    except UnicodeError:
+                        print("Bad data:", full_msg)
+            
+            time.sleep(0.001)  # Small delay to prevent CPU overload
+            
+    except KeyboardInterrupt:
+        print("Stopping...")
+    except Exception as e:
+        print(f"Error: {e}")
+
+def receive_notification_UART_batch_single(collection_time):
+    """Collect UART messages for specified time, then send all at once"""
+    buffer = bytearray()
+    END_MARKER = b"\n --- \n"
+    collected_messages = []
+    start_time = time.time()
+    
+    print(f"Collecting data for {collection_time} seconds...")
+    
+    try:
+        while time.time() - start_time < collection_time:
+            data = uart.read(64)  # Read in chunks
+            if data:
+                buffer.extend(data)
+                
+                # Process all complete messages in buffer
+                while END_MARKER in buffer:
+                    # Split at the end marker
+                    msg_end = buffer.find(END_MARKER) + len(END_MARKER)
+                    full_msg = buffer[:msg_end]  # Extract full message
+                    buffer = buffer[msg_end:]    # Remove processed part
+                    
+                    try:
+                        decoded_msg = full_msg.decode().strip()
+                        print(f"Collected: {decoded_msg}")  # Show what we're collecting
+                        collected_messages.append(decoded_msg)
+                    except UnicodeError:
+                        print("Bad data:", full_msg)
+            
+            time.sleep(0.001)  # Small delay to prevent CPU overload
+        
+        # Collection time is up - now send all messages
+        print(f"\nCollection complete! Collected {len(collected_messages)} messages")
+        
+        if collected_messages:
+            # Combine all messages into one batch
+            batch_data = "\n".join(collected_messages)
+            
+            # Print the batch to terminal before sending
+            print("\n" + "="*50)
+            print("BATCH DATA TO BE SENT:")
+            print("="*50)
+            print(batch_data)
+            print("="*50)
+            
+            print(f"Sending batch: {len(batch_data)} bytes")
+            
+            # Send the raw batch data
+            uhf_packet_manager.send(batch_data.encode('utf-8'))
+            print("Batch sent successfully!")
+            
+        else:
+            print("No messages collected during the time period")
+
+            return batch_data
+            
+    except KeyboardInterrupt:
+        print(f"\nCollection interrupted! Collected {len(collected_messages)} messages so far")
+        if collected_messages:
+            # Send what we have collected so far
+            batch_data = "\n".join(collected_messages)
+            
+            # Print the partial batch to terminal before sending
+            print("\n" + "="*50)
+            print("PARTIAL BATCH DATA TO BE SENT:")
+            print("="*50)
+            print(batch_data)
+            print("="*50)
+            
+            uhf_packet_manager.send(batch_data.encode('utf-8'))
+            print("Partial batch sent!")
+            return batch_data
+    except Exception as e:
+        print(f"Error during batch collection: {e}")
+
+
+def receive_notification_UART_batch_continuous(collection_time):
+    """Continuously collect and send batches at specified intervals"""
+    batch_number = 1
+    
+    print(f"Starting continuous batch mode - collecting {collection_time} seconds per batch")
+    print("Press Ctrl+C to stop")
+    
+    try:
+        while True:  # Main continuous loop
+            print(f"\n{'='*60}")
+            print(f"BATCH {batch_number} - Starting collection...")
+            print(f"{'='*60}")
+            
+            # Initialize for this batch
+            buffer = bytearray()
+            END_MARKER = b"\n --- \n"
+            collected_messages = []
+            start_time = time.time()
+            
+            # Collection phase for this batch
+            try:
+                while time.time() - start_time < collection_time:
+                    data = uart.read(64)  # Read in chunks
+                    if data:
+                        buffer.extend(data)
+                        
+                        # Process all complete messages in buffer
+                        while END_MARKER in buffer:
+                            # Split at the end marker
+                            msg_end = buffer.find(END_MARKER) + len(END_MARKER)
+                            full_msg = buffer[:msg_end]  # Extract full message
+                            buffer = buffer[msg_end:]    # Remove processed part
+                            
+                            try:
+                                decoded_msg = full_msg.decode().strip()
+                                print(f"Collected: {decoded_msg}")  # Show what we're collecting
+                                collected_messages.append(decoded_msg)
+                            except UnicodeError:
+                                print("Bad data:", full_msg)
+                    
+                    time.sleep(0.001)  # Small delay to prevent CPU overload
+                
+                # Send phase for this batch
+                print(f"\nBatch {batch_number} collection complete! Collected {len(collected_messages)} messages")
+                
+                if collected_messages:
+                    # Combine all messages into one batch
+                    batch_data = "\n".join(collected_messages)
+                    
+                    # Print the batch to terminal before sending
+                    print("\n" + "="*50)
+                    print(f"BATCH {batch_number} DATA TO BE SENT:")
+                    print("="*50)
+                    print(batch_data)
+                    print("="*50)
+                    
+                    print(f"Sending batch {batch_number}: {len(batch_data)} bytes")
+                    
+                    # Send the raw batch data
+                    uhf_packet_manager.send(batch_data.encode('utf-8'))
+                    print(f"Batch {batch_number} sent successfully!")
+                    return batch_data
+                    
+                else:
+                    print(f"No messages collected in batch {batch_number}")
+                
+                batch_number += 1
+                print(f"\n Starting batch {batch_number}...")
+                time.sleep(0.01)
+                
+            except Exception as batch_error:
+                print(f"Error in batch {batch_number}: {batch_error}")
+                # Send partial data if any was collected
+                if collected_messages:
+                    batch_data = "\n".join(collected_messages)
+                    print(f"Sending partial batch {batch_number} due to error")
+                    uhf_packet_manager.send(batch_data.encode('utf-8'))
+                    return batch_data
+                batch_number += 1
+                time.sleep(2)  # Wait before trying next batch
+                
+    except KeyboardInterrupt:
+        print(f"\n\nContinuous batch mode stopped after {batch_number-1} completed batches")
+        print("Final batch may be incomplete")
+    except Exception as e:
+        print(f"Fatal error in continuous batch mode: {e}")
+
+
+def send_notification_single(
+        logger,
+        uhf_packet_manager,
+        sleep_helper,
+        config,
+        my_callsign = None,
+        target_callsigns = None
+):
+    if my_callsign is None:
+        target_callsigns = config.radio.license
+    timeout = 5.0
+    wait_for_data = True
+    notification = receive_notification_UART_single()
+    response_message = {
+        "current_time": time.monotonic(),
+        "callsign": my_callsign,
+        "command": RECEIVE_NOTIFICATION_SINGLE,
+        "notification": notification
+    }
+
+    encoded_response = json.dumps(response_message, separators=(",","utf-8"))
+
+    print(f"sending notification: {encoded_response}")
+    sleep_helper.safe_sleep(1)
+    uhf_packet_manager.send(encoded_response)
+   
+
+def send_notification_continuous(
+        logger,
+        uhf_packet_manager,
+        sleep_helper,
+        config,
+        my_callsign = None,
+        target_callsigns = None
+):
+    if my_callsign is None:
+        target_callsigns = config.radio.license
+    timeout = 5.0
+    wait_for_data = True
+    notification = receive_notification_UART_continuous()
+    response_message = {
+        "current_time": time.monotonic(),
+        "callsign": my_callsign,
+        "command": RECEIVE_NOTIFICATION_CONTINUOUS,
+        "notification": notification
+    }
+
+    encoded_response = json.dumps(response_message, separators=(",","utf-8"))
+
+    print(f"sending notification: {encoded_response}")
+    sleep_helper.safe_sleep(1)
+    uhf_packet_manager.send(encoded_response)
+
+
+def send_notification_batch_single(
+        logger,
+        uhf_packet_manager,
+        sleep_helper,
+        config,
+        my_callsign = None,
+        target_callsigns = None
+):
+    if my_callsign is None:
+        target_callsigns = config.radio.license
+    timeout = 5.0
+    wait_for_data = True
+    notification = receive_notification_UART_batch_single()
+    response_message = {
+        "current_time": time.monotonic(),
+        "callsign": my_callsign,
+        "command": RECEIVE_NOTIFICATION_BATCH,
+        "notification": notification
+    }
+
+    encoded_response = json.dumps(response_message, separators=(",","utf-8"))
+
+    print(f"sending notification: {encoded_response}")
+    sleep_helper.safe_sleep(1)
+    uhf_packet_manager.send(encoded_response)
+
+def send_notification_batch_continuous(
+        logger,
+        uhf_packet_manager,
+        sleep_helper,
+        config,
+        my_callsign = None,
+        target_callsigns = None
+):
+    if my_callsign is None:
+        target_callsigns = config.radio.license
+    timeout = 5.0
+    wait_for_data = True
+    notification = receive_notification_UART_batch_continuous()
+    response_message = {
+        "current_time": time.monotonic(),
+        "callsign": my_callsign,
+        "command": RECEIVE_NOTIFICATION_BATCH_CONTINUOUS,
+        "notification": notification
+    }
+
+    encoded_response = json.dumps(response_message, separators=(",","utf-8"))
+
+    print(f"sending notification: {encoded_response}")
+    sleep_helper.safe_sleep(1)
+    uhf_packet_manager.send(encoded_response)
+
+
+def listener_nominal_power_loop(
+    logger, uhf_packet_manager, sleep_helper, config, my_callsign=None
+):
+    if my_callsign is None:
+        my_callsign = config.radio.license
+
+    received_message = uhf_packet_manager.listen(5)
+    if received_message:
+        try:
+            decoded_message = json.loads(received_message.decode("utf-8"))
+            logger.info(f"Received message: {decoded_message}")
+            sender_callsign = decoded_message.get("callsign")
+            if sender_callsign == my_callsign or sender_callsign == "any":
+                logger.info(f"Received message: its for me! {my_callsign}")
+                command = decoded_message.get("command")
+                if command == SEND_PING:
+                    logger.info(f"Received ping from {sender_callsign}")
+                    response_message = {
+                        "current_time": time.monotonic(),
+                        "callsign": my_callsign,
+                        "command": "pong",
+                    }
+                    encoded_response = json.dumps(
+                        response_message, separators=(",", ":")
+                    ).encode("utf-8")
+                    sleep_helper.safe_sleep(1)
+                    uhf_packet_manager.send(encoded_response)
+                elif command == SEND_NOTIFICATION_SINGLE:
+                    send_notification_single(
+                        sleep_helper, uhf_packet_manager, config, my_callsign
+                    )
+                elif command == SEND_NOTIFICATION_CONTINUOUS:
+                    send_notification_continuous(
+                        sleep_helper, uhf_packet_manager, config, my_callsign
+                    )
+                elif command == SEND_NOTIFICATION_BATCH:
+                    send_notification_batch_single(
+                        sleep_helper, uhf_packet_manager, config, my_callsign
+                    )
+                elif command == SEND_NOTIFICATION_BATCH_CONTINUOUS:
+                    send_notification_batch_continuous(
+                        sleep_helper, uhf_packet_manager, config, my_callsign
+                    )
+
+        except ValueError:
+            logger.error("Failed to decode message")
 
 
 
-print("Receiving Cosmic Watch Data...")
 
 
 try:
-    print("About to send radio message...")
-    uhf_radio.send("hello")
-    print("Radio message sent successfully!")
+    print("radio test -- sending message")
+    uhf_radio.send("Hello World")
+    print("Radio message sent successfully! - continuing....")
 except Exception as e:
     print(f"Radio failed in main code: {e}")
 
+
+print("Receiving Cosmic Watch Data...\n")
 
 
 uart = busio.UART(board.TX, board.RX, baudrate = 9600, timeout = 10)
 
 
 import time
-
+collection_time = 60
 buffer = bytearray()
 END_MARKER = b"\n --- \n"  # Message ends with this
 
+method = 0
+method = input("Sending options:\n"+
+                "(1) Call/Response mode\n"+
+                "(2) send singular Particle\n"+
+                "(3) send continuous data\n"+
+                f"(4) send one batch after {collection_time} seconds \n"+
+                f"(5) continuously send batches every {collection_time} seconds ")
+
 try:
-    while True:
-        data = uart.read(64)  # Read in chunks
-        if data:
-            buffer.extend(data)
+    if method == '1':
+        print("Initiating Ground Station Call/Response")
+        while True:
+            listener_nominal_power_loop(
+                logger, uhf_packet_manager, sleep_helper, config, my_callsign=None)
             
-            # Check if a complete message is received
-            if END_MARKER in buffer:
-                # Split at the end marker
-                msg_end = buffer.find(END_MARKER) + len(END_MARKER)
-                full_msg = buffer[:msg_end]  # Extract full message
-                buffer = buffer[msg_end:]    # Remove processed part
-                
-                try:
-                    print(full_msg.decode().strip())  # Print whole message
-                    uhf_radio.send(full_msg)       # Uncomment to send
-                except UnicodeError:
-                    print("Bad data:", full_msg)
+    if method == '2':
+        print("Initiating singular particle collection")
+        receive_notification_UART_single(timeout = 20)
         
-        time.sleep(0.001)  # Small delay to prevent CPU overload
+    
+    elif method == '3':
+        print("Initiating constant data beacon")
+        receive_notification_UART_continuous()
+
+    elif method =='4':
+        print("Initiating singular batch collection")
+        receive_notification_UART_batch_single(collection_time)
+    elif method == '5':
+        print("Initiating continuous batch collection")
+        receive_notification_UART_batch_continuous(collection_time)
+
+    
+    else:
+        print("Invalid option. Please choose (1-5)")
 
 except KeyboardInterrupt:
     print("Stopping...")
+except Exception as e:
+    print(f"Error: {e}")
 
 except Exception as e:
     print(f"Error: {e}")
