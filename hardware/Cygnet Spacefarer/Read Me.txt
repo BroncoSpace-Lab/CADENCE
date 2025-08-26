@@ -1,0 +1,8 @@
+What is different with Cygnet Spacefarer compared to the Cygnet Demo Version?
+- RP2350 MCU instead of RP2040 MCU (latest Pico Microcontroller; used on PROVES FC version 5 boards)
+- INA260 Power Monitor instead of INA219 (for internal shunt)
+- TMP117 temperature sensor instead of TMP1075 (more relevant code libraries, adafruit support)
+- IMU (important for practicing integrating an IMU on CADENCE SWANS for software)
+- Skytraq Orion B16 Space Grade GNSS receiver instead of CD-PA1616D GNSS module (many commercial systems including the Adafruit GNSS module must abide by COCOM GPS limits, so using GNSS module that is rated for LEO altitudes and velocities; needs external antenna)
+- Varadis VT01 RADFETs with associated readout circuitry (main radiation detection payload for PROVES 2U & to simulate CADENCE SWANS)
+- potentially MAX2769C GNSS receiver (technology test, not expected to work)
