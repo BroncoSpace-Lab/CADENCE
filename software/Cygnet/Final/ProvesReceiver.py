@@ -436,7 +436,7 @@ def send_notification_continuous(
             "notification": notification
     }
 
-    encoded_response = json.dumps(response_message, separators=(",","utf-8"))
+    encoded_response = json.dumps(response_message, separators=(",",":"))
 
     print(f"sending notification: {encoded_response}")
     sleep_helper.safe_sleep(1)
