@@ -399,7 +399,7 @@ def send_notification_single(
         target_callsigns = config.radio.license
     timeout = 5.0
     wait_for_data = True
-    notification = receive_notification_UART_single()
+    notification = receive_notification_UART_single(timeout)
     response_message = {
         "current_time": time.monotonic(),
         "callsign": my_callsign,
