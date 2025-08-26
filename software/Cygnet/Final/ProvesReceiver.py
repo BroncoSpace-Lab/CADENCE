@@ -455,7 +455,8 @@ def send_notification_batch_single(
         target_callsigns = config.radio.license
     timeout = 5.0
     wait_for_data = True
-    notification = receive_notification_UART_batch_single()
+    collection_time = 5.0  # Set collection_time to a default value (e.g., 5 seconds)
+    notification = receive_notification_UART_batch_single(collection_time)
     response_message = {
         "current_time": time.monotonic(),
         "callsign": my_callsign,
