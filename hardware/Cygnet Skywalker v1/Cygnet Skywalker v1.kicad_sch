@@ -1,0 +1,150 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f674abc6-f811-4b69-a04b-9059ca6b6a44")
+	(paper "A4")
+	(lib_symbols)
+	(text "To do:\n- Confirm sensor addresses (i think one or two arent configured)\n- Look into readout circuitry configuration more (switching between grounding & readout)\n- skytraq gps footprint\n-read datasheet for UART, I2C,etc \n- look into decoupling capacitor needs for the different sensors\n- add LEDs and test points\n- add boost converter (5v to 12v) for module\n- add dedicated current source for radfets (in uA range)\n- look into DAQ for the diode on radfet (needed for calibrating measurement)"
+		(exclude_from_sim no)
+		(at 196.596 60.452 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "edaf5d7f-75eb-42c2-9a18-a303084f45e1")
+	)
+	(sheet
+		(at 77.47 78.74)
+		(size 22.86 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0d682e4c-dd90-4e8f-a4ef-2b9bfd19db70")
+		(property "Sheetname" "Cygnet Sensors"
+			(at 77.47 78.0284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 77.47 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 53.34 31.75)
+		(size 38.1 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1c32e749-3fab-4b6f-bd12-5ab8a8f6979b")
+		(property "Sheetname" "RP2350"
+			(at 53.34 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RP2350.kicad_sch"
+			(at 53.34 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 62.23 107.95)
+		(size 41.91 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "33e54b08-8438-48ba-af26-405155868428")
+		(property "Sheetname" "RADFETs"
+			(at 62.23 107.2384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RADFETs.kicad_sch"
+			(at 62.23 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
