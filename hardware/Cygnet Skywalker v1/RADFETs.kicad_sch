@@ -193,6 +193,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2221,7 +2360,7 @@
 	)
 	(text "this part based on readout module"
 		(exclude_from_sim no)
-		(at 76.2 148.844 0)
+		(at 115.062 164.084 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2324,10 +2463,28 @@
 		(uuid "42cff002-8fd8-4511-9ae0-3faef755b03b")
 	)
 	(junction
+		(at 248.92 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "468860dd-0806-4142-90f1-03c89ba69131")
+	)
+	(junction
+		(at 201.93 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5632cbab-0c6c-4cfb-b9c3-f1e2ddd7eacf")
+	)
+	(junction
 		(at 82.55 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "59dff600-46aa-4a46-af84-cafdf28879d1")
+	)
+	(junction
+		(at 184.15 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "723fe90c-d803-46e4-9b3f-5a6be355c389")
 	)
 	(junction
 		(at 113.03 39.37)
@@ -2376,6 +2533,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db2cccfe-1dfe-4747-b71e-4292d4ce23a4")
+	)
+	(junction
+		(at 195.58 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed24f356-3880-4f86-b38d-8f004ff94b03")
 	)
 	(junction
 		(at 52.07 34.29)
@@ -2557,6 +2720,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 106.68) (xy 184.15 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34756c94-f7ab-44b1-ae94-adbad268b372")
+	)
+	(wire
+		(pts
 			(xy 233.68 119.38) (xy 236.22 119.38)
 		)
 		(stroke
@@ -2647,6 +2820,26 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 62.23) (xy 201.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54519287-98a3-45d9-ac09-cd171a02e500")
+	)
+	(wire
+		(pts
+			(xy 195.58 74.93) (xy 204.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "572374e2-6ff4-4c67-8258-d30d83584ef7")
+	)
+	(wire
+		(pts
 			(xy 46.99 100.33) (xy 46.99 110.49)
 		)
 		(stroke
@@ -2734,6 +2927,16 @@
 			(type default)
 		)
 		(uuid "77bc5d7f-d190-4cb7-abaf-552c09938412")
+	)
+	(wire
+		(pts
+			(xy 248.92 105.41) (xy 248.92 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7884357b-76e9-443f-939d-3483598ec2c8")
 	)
 	(wire
 		(pts
@@ -2907,6 +3110,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 67.31) (xy 201.93 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63115a4-981e-4bbb-8590-bb2ab9f5fbcc")
+	)
+	(wire
+		(pts
 			(xy 109.22 156.21) (xy 109.22 146.05)
 		)
 		(stroke
@@ -2937,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 114.3) (xy 184.15 115.57)
+			(xy 184.15 104.14) (xy 184.15 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2967,6 +3180,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 67.31) (xy 201.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8aab193-9784-47d5-9ee7-bf976b7b0a4e")
+	)
+	(wire
+		(pts
 			(xy 171.45 120.65) (xy 171.45 123.19)
 		)
 		(stroke
@@ -2987,13 +3210,23 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 113.03) (xy 248.92 114.3)
+			(xy 248.92 104.14) (xy 248.92 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d357cc13-fac2-4b50-91a5-c9e828e64ba9")
+	)
+	(wire
+		(pts
+			(xy 184.15 106.68) (xy 199.39 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3aabdec-7e76-4da9-952e-f8235b6a61dd")
 	)
 	(wire
 		(pts
@@ -3004,16 +3237,6 @@
 			(type default)
 		)
 		(uuid "d77535a5-e708-4a1d-992f-f2f6f2f93725")
-	)
-	(wire
-		(pts
-			(xy 201.93 71.12) (xy 201.93 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbf451b3-ebe0-4b2f-b368-7c889acaa529")
 	)
 	(wire
 		(pts
@@ -3057,7 +3280,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 74.93) (xy 204.47 74.93)
+			(xy 177.8 74.93) (xy 195.58 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3084,6 +3307,16 @@
 			(type default)
 		)
 		(uuid "ec738921-8f08-4f0d-b49f-69ca2e2a6182")
+	)
+	(wire
+		(pts
+			(xy 248.92 105.41) (xy 262.89 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed6b5101-6d13-4a02-85bf-cbca49e41fc8")
 	)
 	(wire
 		(pts
@@ -3819,6 +4052,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 262.89 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ac83aa3-23f3-49e1-bdda-2daf75e4e3b7")
+		(property "Reference" "#PWR066"
+			(at 262.89 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 262.89 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87117bdc-3c48-43b7-9c5d-d7534b7c423f")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 184.15 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3949,6 +4247,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 262.89 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22c3d008-1cff-4d37-8784-813ef3230449")
+		(property "Reference" "C21"
+			(at 266.7 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 266.7 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 263.8552 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 262.89 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efa25cef-60fe-4c67-8543-c45f3e767452")
+		)
+		(pin "2"
+			(uuid "22fa85ef-ad6c-462e-a50f-8919c112c6c0")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NJFET")
 		(at 38.1 107.95 0)
 		(unit 1)
@@ -4042,6 +4409,71 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2730ff02-07e2-4da2-a835-c9d90a833474")
+		(property "Reference" "#PWR065"
+			(at 199.39 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 118.364 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3062a3f9-7860-4318-be2f-3b8e150a197d")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -4378,8 +4810,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 195.58 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38cecd47-61d4-4c6e-b291-803b8e396fed")
+		(property "Reference" "C26"
+			(at 187.706 69.342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 187.706 71.882 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.5452 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b26a5152-7038-442a-b21a-a0b5346a5a9c")
+		)
+		(pin "2"
+			(uuid "d52a61fa-1ea7-471f-906e-d1b3614e4e2b")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 248.92 113.03 0)
+		(at 248.92 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4388,7 +4888,7 @@
 		(fields_autoplaced yes)
 		(uuid "41055eef-9a81-4462-bd35-ea32a43f591b")
 		(property "Reference" "#PWR046"
-			(at 248.92 116.84 0)
+			(at 248.92 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,7 +4897,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 248.92 107.95 0)
+			(at 248.92 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4405,7 +4905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 113.03 0)
+			(at 248.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4414,7 +4914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 113.03 0)
+			(at 248.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4423,7 +4923,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 248.92 113.03 0)
+			(at 248.92 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +5292,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 184.15 114.3 0)
+		(at 184.15 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4801,7 +5301,7 @@
 		(fields_autoplaced yes)
 		(uuid "54ec2669-4d5e-4a92-be51-0522f06301c5")
 		(property "Reference" "#PWR029"
-			(at 184.15 118.11 0)
+			(at 184.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4810,7 +5310,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 184.15 109.22 0)
+			(at 184.15 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4818,7 +5318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 114.3 0)
+			(at 184.15 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4827,7 +5327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 114.3 0)
+			(at 184.15 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4836,7 +5336,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 184.15 114.3 0)
+			(at 184.15 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4851,6 +5351,75 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 199.39 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58ee865e-fadc-4e36-af9c-abc8306a4cda")
+		(property "Reference" "C20"
+			(at 203.2 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 203.2 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.3552 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4ae136f6-4130-499b-b87a-ab25fe3a00ba")
+		)
+		(pin "2"
+			(uuid "abd0e924-cdd7-4e5a-88ae-5c773d1fe245")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -5831,7 +6400,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 201.93 71.12 0)
+		(at 201.93 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5840,7 +6409,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3083a97-9a7e-4131-9ba1-3a17bee82942")
 		(property "Reference" "#PWR048"
-			(at 201.93 74.93 0)
+			(at 201.93 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5849,7 +6418,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 201.93 66.04 0)
+			(at 201.93 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5857,7 +6426,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 71.12 0)
+			(at 201.93 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5866,7 +6435,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 71.12 0)
+			(at 201.93 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5875,7 +6444,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 201.93 71.12 0)
+			(at 201.93 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
