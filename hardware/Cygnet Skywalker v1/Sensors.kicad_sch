@@ -2462,6 +2462,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 59.69) (xy 41.91 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10d2e66c-8de0-418b-951b-357b2a4619b7")
+	)
+	(wire
+		(pts
 			(xy 181.61 58.42) (xy 184.15 58.42)
 		)
 		(stroke
@@ -2519,6 +2529,16 @@
 			(type default)
 		)
 		(uuid "1f39c3c0-bb5d-46c8-825e-ace538752c99")
+	)
+	(wire
+		(pts
+			(xy 41.91 60.96) (xy 54.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fc81b9f-2234-4c39-93c6-e6debf689d60")
 	)
 	(wire
 		(pts
@@ -3102,16 +3122,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 60.96) (xy 54.61 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db5e5640-ceda-4559-af0f-536be5d3131c")
-	)
-	(wire
-		(pts
 			(xy 49.53 53.34) (xy 49.53 50.8)
 		)
 		(stroke
@@ -3149,28 +3159,6 @@
 			(type default)
 		)
 		(uuid "f7a902b8-8e4f-4f7c-92d5-ffcd738a826f")
-	)
-	(global_label "PAYLOAD_PWR"
-		(shape input)
-		(at 49.53 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0662ac50-6a2d-4ad9-a40f-10525902d605")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4214 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 	)
 	(global_label "GPS Reset"
 		(shape input)
@@ -5998,6 +5986,72 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/0d682e4c-dd90-4e8f-a4ef-2b9bfd19db70"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 41.91 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4cee450-182f-42e2-868c-3b59912db768")
+		(property "Reference" "#PWR093"
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 41.91 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 41.91 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72582316-f46b-4193-9eca-e12773dcab65")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/0d682e4c-dd90-4e8f-a4ef-2b9bfd19db70"
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
