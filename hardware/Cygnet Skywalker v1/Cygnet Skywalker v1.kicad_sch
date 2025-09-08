@@ -5,7 +5,7 @@
 	(uuid "f674abc6-f811-4b69-a04b-9059ca6b6a44")
 	(paper "A4")
 	(lib_symbols)
-	(text "To do:\n- Confirm sensor addresses (i think one or two arent configured)\n- Look into readout circuitry configuration more (switching between grounding & readout)\n- skytraq gps footprint\n- add LEDs and test points\n- add boost converter (5v to 12v) for module\n- add dedicated current source for radfets (in uA range)\n- look into DAQ for the diode on radfet (needed for calibrating measurement)"
+	(text "To do:\n- double check readout circuitry configuration more (switching between grounding & readout)\n- skytraq gps footprint\n- add LEDs and test points\n- calculate/simulate resistor values for 3.3v to 12v boost converter\n- look into DAQ for the diode on radfet (needed for calibrating measurement)\n-finish implementing watchdog\n-why doesnt readout module mention diode connection? only says optional but we need for temp calibration\n"
 		(exclude_from_sim no)
 		(at 196.596 60.452 0)
 		(effects
@@ -137,6 +137,48 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 93.345)
+		(size 33.02 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f7e117b6-3b5d-4889-8e69-758ffca95a0e")
+		(property "Sheetname" "CubeSat's Best Friend"
+			(at 128.27 92.6334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "watchdog.kicad_sch"
+			(at 128.27 118.0596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
+					(page "5")
 				)
 			)
 		)
