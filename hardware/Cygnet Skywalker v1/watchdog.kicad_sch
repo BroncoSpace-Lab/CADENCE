@@ -3565,6 +3565,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -3686,6 +3811,17 @@
 		)
 		(uuid "03e4f0c4-87a5-420c-8ea3-6f39f10209c2")
 	)
+	(text "Watchdog based upon PROVES FC V5c's & Oresat's C3 Board"
+		(exclude_from_sim no)
+		(at 70.358 166.878 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+			)
+		)
+		(uuid "0578d990-2b45-49be-b1a2-442b1a465ff4")
+	)
 	(text "Do Not Consolidate the BOM on this Circuit"
 		(exclude_from_sim no)
 		(at 56.388 35.052 0)
@@ -3727,16 +3863,6 @@
 			(justify left bottom)
 		)
 		(uuid "543723d2-abb8-42f0-9044-fce1fbe80500")
-	)
-	(text "I think this is to block DC current while \nstill generating voltage?"
-		(exclude_from_sim no)
-		(at 83.566 109.474 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7488f910-be6f-48d6-b6cf-83a2273b1a14")
 	)
 	(text "Pull-up on battery pack to Vbus"
 		(exclude_from_sim no)
@@ -9088,6 +9214,72 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/f7e117b6-3b5d-4889-8e69-758ffca95a0e"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 30.48 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7ae8183-d30c-41ad-8c08-c120c8d0948f")
+		(property "Reference" "#PWR045"
+			(at 30.48 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 30.48 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 30.48 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c0113c6-92a6-45f4-a35b-02f5438cf228")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/f7e117b6-3b5d-4889-8e69-758ffca95a0e"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
