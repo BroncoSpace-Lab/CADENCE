@@ -897,216 +897,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:NJFET"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "NJFET"
-				(at 5.08 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_JFETs"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "N-JFET transistor, for simulation only"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "NJFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Type" "SHICHMANHODGES"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=D 2=G 3=S"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "transistor NJFET N-JFET"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NJFET_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy -1.016 0.381) (xy -1.016 -0.381) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.397) (xy 0.254 1.397)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 -1.27) (xy 0.254 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NJFET_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.334)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Simulation_SPICE:NMOS"
 			(pin_numbers
 				(hide yes)
@@ -2412,9 +2202,19 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Must be LM234"
+		(exclude_from_sim no)
+		(at 40.64 51.054 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2ba445eb-9a92-41f1-941f-9b4a0bd7284c")
+	)
 	(text "replaced REF200 with LM234 (available on JLCPCB and acceptable\noperating temperature range for space: -25C to 100C)\nWould prefer LM134 but not available on JLCPCB\nLM334 operating temperature range too high and not wide enough"
 		(exclude_from_sim no)
-		(at 108.458 42.926 0)
+		(at 109.22 33.274 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2434,7 +2234,7 @@
 	)
 	(text "when off, readout mode\nwhen on, irradiation mode"
 		(exclude_from_sim no)
-		(at 130.556 59.182 0)
+		(at 131.318 50.038 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2444,7 +2244,7 @@
 	)
 	(text "10uA source to RADFETs "
 		(exclude_from_sim no)
-		(at 52.324 65.532 0)
+		(at 55.626 58.674 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2474,7 +2274,7 @@
 	)
 	(text "Need this specific diode: 1N457\n(about 100 available on JLCPCB)\nR44:R45 ratio 10 to 1 using diode temperature coefficient provided\nby datasheet"
 		(exclude_from_sim no)
-		(at 51.816 32.766 0)
+		(at 49.784 20.574 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2500,7 +2300,7 @@
 		(uuid "038a8e5d-091d-4d6f-8630-1b093d00702a")
 	)
 	(junction
-		(at 82.55 54.61)
+		(at 82.55 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0505d5db-f0eb-40bc-bcbc-48b5cd531ed5")
@@ -2518,19 +2318,25 @@
 		(uuid "5632cbab-0c6c-4cfb-b9c3-f1e2ddd7eacf")
 	)
 	(junction
+		(at 68.58 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69970fcf-973a-4443-9ccc-f1f204621c09")
+	)
+	(junction
 		(at 83.82 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "884e5fb5-3746-4298-9932-0d2c32a47c83")
 	)
 	(junction
-		(at 68.58 62.23)
+		(at 68.58 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d570c9e-f265-45ea-a9b1-90d660fa395b")
 	)
 	(junction
-		(at 68.58 41.91)
+		(at 68.58 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ababdb13-1c72-45f5-9ec8-475dfbb9f8bc")
@@ -2564,12 +2370,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c25fb85e-dc4e-40fd-a08f-67870ff70703")
-	)
-	(junction
-		(at 68.58 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4a0975e-0435-4f2e-92da-231ef80564d6")
 	)
 	(junction
 		(at 58.42 80.01)
@@ -2681,7 +2481,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 62.23) (xy 95.25 71.12)
+			(xy 95.25 57.15) (xy 95.25 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2691,7 +2491,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 71.12) (xy 68.58 71.12)
+			(xy 95.25 66.04) (xy 68.58 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2701,7 +2501,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 41.91) (xy 68.58 49.53)
+			(xy 68.58 36.83) (xy 68.58 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2748,6 +2548,16 @@
 			(type default)
 		)
 		(uuid "440326e3-8794-49fb-b7e3-051b9b6c2fad")
+	)
+	(wire
+		(pts
+			(xy 92.71 105.41) (xy 92.71 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "450d349a-5ee1-4c23-b869-b5edc4af0ec8")
 	)
 	(wire
 		(pts
@@ -2801,7 +2611,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 40.64) (xy 68.58 41.91)
+			(xy 68.58 35.56) (xy 68.58 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2821,7 +2631,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 62.23) (xy 82.55 62.23)
+			(xy 68.58 57.15) (xy 82.55 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2841,7 +2651,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 63.5) (xy 68.58 62.23)
+			(xy 68.58 58.42) (xy 68.58 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2931,13 +2741,23 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 54.61) (xy 95.25 54.61)
+			(xy 82.55 49.53) (xy 95.25 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a0c242fe-0b17-492b-912e-11e757418291")
+	)
+	(wire
+		(pts
+			(xy 76.2 100.33) (xy 76.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d3553b-9779-44c1-9b38-cb03043556aa")
 	)
 	(wire
 		(pts
@@ -3021,6 +2841,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 66.04) (xy 68.58 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcbf1b2a-a65b-4b42-9aec-014a45490566")
+	)
+	(wire
+		(pts
 			(xy 147.32 127) (xy 147.32 116.84)
 		)
 		(stroke
@@ -3061,7 +2891,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 54.61) (xy 82.55 54.61)
+			(xy 73.66 49.53) (xy 82.55 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3078,16 +2908,6 @@
 			(type default)
 		)
 		(uuid "ddb42b76-0c25-4e31-a683-fd287a5461c1")
-	)
-	(wire
-		(pts
-			(xy 68.58 71.12) (xy 68.58 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddec2602-27d6-4b3f-ae01-eebd5f7829fc")
 	)
 	(wire
 		(pts
@@ -3111,6 +2931,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 109.22) (xy 76.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5d04ab3-ba0a-41c3-9f81-5f6241c1380d")
+	)
+	(wire
+		(pts
 			(xy 100.33 78.74) (xy 101.6 78.74)
 		)
 		(stroke
@@ -3121,7 +2951,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 71.12) (xy 68.58 68.58)
+			(xy 68.58 66.04) (xy 68.58 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3161,7 +2991,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 41.91) (xy 68.58 41.91)
+			(xy 57.15 36.83) (xy 68.58 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3171,7 +3001,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 62.23) (xy 68.58 59.69)
+			(xy 68.58 57.15) (xy 68.58 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3396,6 +3226,106 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 90.17 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07c80c6e-3554-49fe-863c-13ae04303eb3")
+		(property "Reference" "Q2"
+			(at 96.52 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 96.52 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 90.17 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 90.17 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 90.17 116.205 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 90.17 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 90.17 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c01e819e-777d-4a9b-bef4-7db6610d73dc")
+		)
+		(pin "3"
+			(uuid "13faf18a-63a9-44e1-a43b-c32c683be161")
+		)
+		(pin "2"
+			(uuid "3e3f5a05-79f6-4636-beb9-f6bf009d92b4")
+		)
+		(instances
+			(project "Cygnet Skywalker v1"
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "Q2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3818,7 +3748,7 @@
 	)
 	(symbol
 		(lib_id "Reference_Current:LM234Z-6")
-		(at 68.58 54.61 0)
+		(at 68.58 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3827,7 +3757,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d176f84-d465-4289-a1b0-16b24a0e5ea3")
 		(property "Reference" "U17"
-			(at 64.77 53.3399 0)
+			(at 64.77 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,7 +3766,7 @@
 			)
 		)
 		(property "Value" "LM234Z-6"
-			(at 64.77 55.8799 0)
+			(at 64.77 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,7 +3775,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 69.215 59.055 0)
+			(at 69.215 53.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3856,7 +3786,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm134.pdf"
-			(at 68.58 54.61 0)
+			(at 68.58 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3866,7 +3796,7 @@
 			)
 		)
 		(property "Description" "1μA to 10mA 3-Terminal Adjustable Current Source, TO-92"
-			(at 68.58 54.61 0)
+			(at 68.58 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4031,7 +3961,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 68.58 40.64 0)
+		(at 68.58 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4039,7 +3969,7 @@
 		(dnp no)
 		(uuid "622577b8-ef73-4906-a687-84a88d90bce0")
 		(property "Reference" "#PWR0105"
-			(at 68.58 44.45 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4048,7 +3978,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 65.532 37.084 0)
+			(at 65.532 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4057,7 +3987,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 40.64 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +3996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 40.64 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4075,7 +4005,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 68.58 40.64 0)
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,107 +4026,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NJFET")
-		(at 66.04 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b9e5f19-966b-480d-8452-41566f2c06c4")
-		(property "Reference" "Q3"
-			(at 70.866 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NJFET"
-			(at 70.866 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_JFETs"
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-JFET transistor, for simulation only"
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NJFET"
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "SHICHMANHODGES"
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 66.04 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "a3482db2-67b9-4855-bc1b-c5f8e5620caf")
-		)
-		(pin "2"
-			(uuid "c2255f15-f5c8-42e0-8b9d-4fee8283624b")
-		)
-		(pin "1"
-			(uuid "f633cb68-abb1-4a69-a120-ccf0aa98563e")
-		)
-		(instances
-			(project "Cygnet Skywalker v1"
-				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 95.25 58.42 0)
+		(at 95.25 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4205,7 +4036,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c4acf1e-058f-4ffe-84c8-fd5fd5388690")
 		(property "Reference" "R22"
-			(at 97.79 57.1499 0)
+			(at 97.79 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,7 +4045,7 @@
 			)
 		)
 		(property "Value" "1.33M"
-			(at 97.79 59.6899 0)
+			(at 97.79 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4223,7 +4054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.472 58.42 90)
+			(at 93.472 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,7 +4063,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 58.42 0)
+			(at 95.25 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4241,7 +4072,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 95.25 58.42 0)
+			(at 95.25 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,7 +4228,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 76.2 106.68 0)
+		(at 76.2 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4405,7 +4236,7 @@
 		(dnp no)
 		(uuid "95766da5-248a-441e-98eb-b36bae22caa4")
 		(property "Reference" "#PWR058"
-			(at 76.2 113.03 0)
+			(at 76.2 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4414,7 +4245,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.39 108.712 0)
+			(at 72.39 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4253,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 106.68 0)
+			(at 76.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4431,7 +4262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 106.68 0)
+			(at 76.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4271,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 106.68 0)
+			(at 76.2 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4293,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 68.58 66.04 90)
+		(at 68.58 60.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4471,7 +4302,7 @@
 		(fields_autoplaced yes)
 		(uuid "a41569be-d975-4c15-a531-e00c6387402e")
 		(property "Reference" "D11"
-			(at 71.12 64.7699 90)
+			(at 71.12 59.6899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4311,7 @@
 			)
 		)
 		(property "Value" "1N457"
-			(at 71.12 67.3099 90)
+			(at 71.12 62.2299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 66.04 90)
+			(at 68.58 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4329,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 66.04 90)
+			(at 68.58 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4507,7 +4338,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 68.58 66.04 0)
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4516,7 +4347,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 68.58 66.04 0)
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4525,7 +4356,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 66.04 0)
+			(at 68.58 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,106 +4374,6 @@
 			(project ""
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
 					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NJFET")
-		(at 90.17 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ac66e061-c6ac-437c-b1d7-31a4ae6cb7e3")
-		(property "Reference" "Q2"
-			(at 95.25 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NJFET"
-			(at 95.25 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_JFETs"
-			(at 90.17 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-JFET transistor, for simulation only"
-			(at 90.17 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NJFET"
-			(at 90.17 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "SHICHMANHODGES"
-			(at 90.17 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 90.17 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "b1fa5b06-1105-42c8-9fa1-5c04a073faa9")
-		)
-		(pin "2"
-			(uuid "7e7eb1e1-04b1-4dae-b37b-82dd4937c2f7")
-		)
-		(pin "1"
-			(uuid "304c4c69-ccbb-4d2d-8896-caabdedb8918")
-		)
-		(instances
-			(project "Cygnet Skywalker v1"
-				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -4904,7 +4635,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 76.2 102.87 0)
+		(at 76.2 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4913,7 +4644,7 @@
 		(fields_autoplaced yes)
 		(uuid "bcb0c2de-1891-43d2-a0c4-ef1ede6855a4")
 		(property "Reference" "R25"
-			(at 78.74 101.5999 0)
+			(at 78.74 102.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4922,7 +4653,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 78.74 104.1399 0)
+			(at 78.74 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4931,7 +4662,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.422 102.87 90)
+			(at 74.422 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4940,7 +4671,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 102.87 0)
+			(at 76.2 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4949,7 +4680,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 76.2 102.87 0)
+			(at 76.2 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4974,7 +4705,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 82.55 58.42 0)
+		(at 82.55 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4983,7 +4714,7 @@
 		(fields_autoplaced yes)
 		(uuid "bfe67eb5-8ad1-4d30-a0f2-e5070b675ade")
 		(property "Reference" "R21"
-			(at 85.09 57.1499 0)
+			(at 85.09 52.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4992,7 +4723,7 @@
 			)
 		)
 		(property "Value" "133k"
-			(at 85.09 59.6899 0)
+			(at 85.09 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5001,7 +4732,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.772 58.42 90)
+			(at 80.772 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5010,7 +4741,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 58.42 0)
+			(at 82.55 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5019,7 +4750,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 82.55 58.42 0)
+			(at 82.55 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,7 +4775,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 104.14 0)
+		(at 92.71 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5052,7 +4783,7 @@
 		(dnp no)
 		(uuid "d3bba545-2bc1-4299-9a39-f9b1de921cb5")
 		(property "Reference" "#PWR050"
-			(at 92.71 110.49 0)
+			(at 92.71 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5061,7 +4792,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 96.266 106.426 0)
+			(at 96.266 107.696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5069,7 +4800,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 104.14 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5078,7 +4809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 104.14 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5087,7 +4818,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 92.71 104.14 0)
+			(at 92.71 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5339,7 +5070,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 49.53 0)
+		(at 57.15 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5347,7 +5078,7 @@
 		(dnp no)
 		(uuid "f49958fc-df14-4dca-aaa5-4ee03122ac54")
 		(property "Reference" "#PWR012"
-			(at 57.15 55.88 0)
+			(at 57.15 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5356,7 +5087,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 51.562 0)
+			(at 53.34 46.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,7 +5095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 49.53 0)
+			(at 57.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5373,7 +5104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 49.53 0)
+			(at 57.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5382,7 +5113,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 49.53 0)
+			(at 57.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5404,7 +5135,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 57.15 45.72 0)
+		(at 57.15 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5412,7 +5143,7 @@
 		(dnp no)
 		(uuid "f5b5cf8f-3754-4646-9a82-5d3bc63ce24b")
 		(property "Reference" "C32"
-			(at 49.276 43.942 0)
+			(at 49.276 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5421,7 +5152,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 49.276 46.482 0)
+			(at 49.276 41.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5430,7 +5161,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 58.1152 49.53 0)
+			(at 58.1152 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5439,7 +5170,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 45.72 0)
+			(at 57.15 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5448,7 +5179,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 45.72 0)
+			(at 57.15 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5465,6 +5196,105 @@
 			(project "Cygnet Skywalker v1"
 				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
 					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 66.04 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff4a924c-8827-485d-8648-87cd8a4ee319")
+		(property "Reference" "Q1"
+			(at 71.12 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NMOS"
+			(at 71.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 66.04 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "NMOS"
+			(at 66.04 97.155 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "VDMOS"
+			(at 66.04 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=D 2=G 3=S"
+			(at 66.04 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebc6e8cf-e65d-4bd5-a046-736c65543484")
+		)
+		(pin "3"
+			(uuid "aa5a49aa-26da-4a58-af1c-c3ce32f70ccd")
+		)
+		(pin "2"
+			(uuid "b6a32f07-0160-4c69-807a-dacab90a0ab7")
+		)
+		(instances
+			(project ""
+				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44/33e54b08-8438-48ba-af26-405155868428"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
