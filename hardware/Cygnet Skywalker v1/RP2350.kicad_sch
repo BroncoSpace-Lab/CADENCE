@@ -5181,18 +5181,6 @@
 		)
 		(uuid f407a577-8ae2-4f3a-b51a-6ca4af2d51e6)
 	)
-	(text "Change these resistor values!!!\nCalculate & Run Sim to ensure voltage is between 1.5V to 2.6V"
-		(exclude_from_sim no)
-		(at 164.592 19.05 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "05147529-d834-4d00-8c85-7983ecaf0139")
-	)
 	(text "PROVES Flight Computer Power & Communication Connection"
 		(exclude_from_sim no)
 		(at 319.278 17.018 0)
@@ -5303,7 +5291,7 @@
 		)
 		(uuid "8d002a0b-5820-44e7-8e57-bf96cc4d7b8f")
 	)
-	(text "check datasheet for inductor recs"
+	(text "check datasheet for inductor & part recs"
 		(exclude_from_sim no)
 		(at 233.68 32.766 0)
 		(effects
@@ -5334,16 +5322,6 @@
 			)
 		)
 		(uuid "a9f9bb06-0903-461a-84b0-c00c2c4f10d2")
-	)
-	(text "VERFIY DESIGN"
-		(exclude_from_sim no)
-		(at 156.464 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "af36abd1-676a-4320-b4c2-035e491172be")
 	)
 	(text "Micro USB connector (5V)"
 		(exclude_from_sim no)
@@ -5872,16 +5850,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 156.21) (xy 204.47 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05dc3ed7-6cd3-47fb-b590-d9393cf83568")
-	)
-	(wire
-		(pts
 			(xy 120.65 121.92) (xy 128.27 121.92)
 		)
 		(stroke
@@ -6099,16 +6067,6 @@
 			(type default)
 		)
 		(uuid "177c64a9-07cf-430e-97bc-758cc70f16df")
-	)
-	(wire
-		(pts
-			(xy 209.55 161.29) (xy 204.47 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19274572-6600-4a0d-9109-91d4e7418948")
 	)
 	(wire
 		(pts
@@ -6659,16 +6617,6 @@
 			(type default)
 		)
 		(uuid "482466b6-4266-4367-bfc2-d0473cb9c60e")
-	)
-	(wire
-		(pts
-			(xy 209.55 163.83) (xy 204.47 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a520457-5ead-4b56-89c3-15213eaa47ba")
 	)
 	(wire
 		(pts
@@ -8229,16 +8177,6 @@
 			(type default)
 		)
 		(uuid "e03aef5b-651c-4035-ad4c-f427c7bd767a")
-	)
-	(wire
-		(pts
-			(xy 209.55 158.75) (xy 204.47 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e05f7b7b-f497-4fe9-a93d-2736e153ec7a")
 	)
 	(wire
 		(pts
@@ -84898,28 +84836,6 @@
 			)
 		)
 	)
-	(global_label "RADFET Read CTRL"
-		(shape output)
-		(at 209.55 163.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "087a1970-89aa-40a3-8ff6-5f8c1540173d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 230.4965 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PAYLOAD_PWR Test"
 		(shape output)
 		(at 313.69 26.67 180)
@@ -85384,28 +85300,6 @@
 			)
 		)
 	)
-	(global_label "RADFET Sense CTRL"
-		(shape output)
-		(at 209.55 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "843395e1-a21e-4d17-99f3-0b0563e8b98f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.4037 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "UART1 Rx"
 		(shape input)
 		(at 209.55 207.01 0)
@@ -85650,28 +85544,6 @@
 			)
 		)
 	)
-	(global_label "RADFET R2 CTRL"
-		(shape output)
-		(at 209.55 156.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b4c30e82-1e60-4821-a010-709bfb4c8375")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.3194 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RP2350 SWCLK"
 		(shape input)
 		(at 308.61 67.31 180)
@@ -85840,28 +85712,6 @@
 		(uuid "ed06c9d0-8f75-452d-b68d-5d7b8874c9e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 231.4265 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RADFET R1 CTRL"
-		(shape output)
-		(at 209.55 158.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f18c86f0-fdc3-4ddf-8fdf-798a128e2857")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.3194 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -86839,7 +86689,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 125.4252 58.42 0)
 			(effects
 				(font
@@ -88098,7 +87948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 168.6052 58.42 0)
 			(effects
 				(font
@@ -88232,7 +88082,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 116.84 123.698 90)
 			(effects
 				(font
@@ -88386,7 +88236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 83.5152 143.51 0)
 			(effects
 				(font
@@ -88924,7 +88774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 202.8952 55.88 0)
 			(effects
 				(font
@@ -88993,7 +88843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 94.9452 143.51 0)
 			(effects
 				(font
@@ -90001,7 +89851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 113.792 160.02 90)
 			(effects
 				(font
@@ -92785,7 +92635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 125.222 191.77 90)
 			(effects
 				(font
@@ -92854,7 +92704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 262.5852 55.88 0)
 			(effects
 				(font
