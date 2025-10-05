@@ -5,29 +5,69 @@
 	(uuid "f674abc6-f811-4b69-a04b-9059ca6b6a44")
 	(paper "A4")
 	(lib_symbols)
-	(text "started on gps footprint: kicad trackpad gaming not fun. will do when i have access to mouse"
+	(text "Cygnet Skywalker v1\n\"The Chosen One\""
 		(exclude_from_sim no)
-		(at 213.36 105.156 0)
+		(at 145.034 59.944 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 6.35 6.35)
+				(thickness 1.016)
+				(bold yes)
 			)
 		)
-		(uuid "acfeb03d-dc6f-42f2-b2a4-23c68f0f734f")
+		(uuid "1c80f718-05b4-400f-88c3-cfa5efe642ec")
 	)
-	(text "To do:\n- double check readout circuitry configuration more (switching between grounding & readout)\n- calculate/simulate resistor values for 3.3v to 12v boost converter\n-why doesnt readout module mention diode connection? only says optional but we need for temp calibration\n-reach out to varadis"
+	(text "Cygnet Sensors"
 		(exclude_from_sim no)
-		(at 179.578 60.706 0)
+		(at 147.066 104.394 0)
 		(effects
 			(font
 				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "76242143-0458-47e2-be8c-7d4619350a9c")
+	)
+	(text "Watchdoggo Timer"
+		(exclude_from_sim no)
+		(at 196.596 104.14 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "8c8e9cee-a2c4-4358-a084-eed334f2044e")
+	)
+	(text "To do:\n- layout\n- no more schematic changes pls pls pls :("
+		(exclude_from_sim no)
+		(at 143.51 147.32 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
 			)
 		)
 		(uuid "edaf5d7f-75eb-42c2-9a18-a303084f45e1")
 	)
+	(text "RP2350 & Debug"
+		(exclude_from_sim no)
+		(at 93.726 104.902 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f8d6309b-acab-4dc7-ae8e-e631a1198e93")
+	)
 	(sheet
-		(at 77.47 78.74)
-		(size 22.86 16.51)
+		(at 122.555 87.63)
+		(size 47.625 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -42,7 +82,7 @@
 		)
 		(uuid "0d682e4c-dd90-4e8f-a4ef-2b9bfd19db70")
 		(property "Sheetname" "Cygnet Sensors"
-			(at 77.47 78.0284 0)
+			(at 122.555 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,7 +91,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 77.47 95.8346 0)
+			(at 122.555 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -68,8 +108,8 @@
 		)
 	)
 	(sheet
-		(at 53.34 31.75)
-		(size 38.1 26.67)
+		(at 71.12 87.63)
+		(size 46.99 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -84,7 +124,7 @@
 		)
 		(uuid "1c32e749-3fab-4b6f-bd12-5ab8a8f6979b")
 		(property "Sheetname" "RP2350"
-			(at 53.34 31.0384 0)
+			(at 71.12 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -93,7 +133,7 @@
 			)
 		)
 		(property "Sheetfile" "RP2350.kicad_sch"
-			(at 53.34 59.0046 0)
+			(at 71.12 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -110,50 +150,8 @@
 		)
 	)
 	(sheet
-		(at 62.23 107.95)
-		(size 41.91 22.86)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "33e54b08-8438-48ba-af26-405155868428")
-		(property "Sheetname" "RADFETs"
-			(at 62.23 107.2384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "RADFETs.kicad_sch"
-			(at 62.23 131.3946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Cygnet Skywalker v1"
-				(path "/f674abc6-f811-4b69-a04b-9059ca6b6a44"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 128.27 93.345)
-		(size 33.02 24.13)
+		(at 173.99 87.63)
+		(size 45.085 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -168,7 +166,7 @@
 		)
 		(uuid "f7e117b6-3b5d-4889-8e69-758ffca95a0e")
 		(property "Sheetname" "CubeSat's Best Friend"
-			(at 128.27 92.6334 0)
+			(at 173.99 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -177,7 +175,7 @@
 			)
 		)
 		(property "Sheetfile" "watchdog.kicad_sch"
-			(at 128.27 118.0596 0)
+			(at 173.99 121.2346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
