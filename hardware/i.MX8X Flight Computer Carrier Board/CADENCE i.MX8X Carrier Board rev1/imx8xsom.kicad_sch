@@ -8899,6 +8899,255 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Memory_NVRAM:MR20H40"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MR20H40"
+				(at 1.27 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.everspin.com/file/217/download"
+				(at -7.62 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "4Mb MRAM memory with SPI interface, DFN-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "MRAM SPI EEPROM 3.3V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DFN*6x5mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MR20H40_0_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MR20H40_1_1"
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "~{WP}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "~{HOLD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "SI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -12060,212 +12309,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "cadence carrier custom symbols:EM064LXQADG13IS1T"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "EM064LXQADG13IS1T_1_1"
-				(rectangle
-					(start -7.62 0.254)
-					(end 7.62 -21.336)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "CS#"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -6.35 0)
-					(length 2.54)
-					(name "IO0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -8.89 0)
-					(length 2.54)
-					(name "IO1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 -11.43 0)
-					(length 2.54)
-					(name "WP#/IO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -13.97 0)
-					(length 2.54)
-					(name "IO3/Reset"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -19.05 0)
-					(length 2.54)
-					(name "CK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -3.81 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 10.16 -17.78 180)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -19881,8 +19924,8 @@
 		(uuid 417b2060-896d-4bb7-850c-d6233d945c4b)
 	)
 	(rectangle
-		(start 455.549 204.851)
-		(end 557.784 264.541)
+		(start 385.699 300.736)
+		(end 487.934 360.426)
 		(stroke
 			(width 0)
 			(type dash)
@@ -20022,7 +20065,7 @@
 	)
 	(text "NAND Flash (Images/Non critical info)"
 		(exclude_from_sim no)
-		(at 481.965 208.915 0)
+		(at 412.115 304.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20184,7 +20227,7 @@
 	)
 	(text "https://www.digikey.com/en/products/detail/everspin-technologies-inc/EM064LXQADG13IS1T/16909653"
 		(exclude_from_sim no)
-		(at 192.278 328.93 0)
+		(at 192.278 323.088 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20501,6 +20544,18 @@
 		)
 		(uuid "6efe2c00-3c16-4659-af49-299e0ad5fc68")
 	)
+	(text "Magnetometer"
+		(exclude_from_sim no)
+		(at 741.68 124.714 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "72043da8-1bb6-420d-8234-103f741c79eb")
+	)
 	(text "TLV1704AMPWPSEP is the radiation tolerant version.\nUse TLV1704AQPWRQ1 for non-flight C3 boards."
 		(exclude_from_sim no)
 		(at 188.976 535.686 0)
@@ -20645,7 +20700,7 @@
 	)
 	(text "64Mbit (8MB), $60"
 		(exclude_from_sim no)
-		(at 191.516 324.866 0)
+		(at 192.024 320.802 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -21054,6 +21109,16 @@
 			)
 		)
 		(uuid "f22c375e-4959-48cd-9f9b-91f5df6e6df8")
+	)
+	(text "MR25H40MDF"
+		(exclude_from_sim no)
+		(at 179.07 378.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f93f8eff-fecc-412a-94ca-d0af2c312a7d")
 	)
 	(text "External Watch-Dog Timer"
 		(exclude_from_sim no)
@@ -21475,6 +21540,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "797d82d3-f0c2-4d67-85bc-cc2880311b5d")
+	)
+	(junction
+		(at 210.82 359.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a92e52d-861f-4236-9b90-4b1b195197d6")
+	)
+	(junction
+		(at 170.18 359.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b2f5cac-4010-4b0f-a1b0-3c5bf2d56065")
 	)
 	(junction
 		(at 190.5 236.22)
@@ -22680,6 +22757,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 358.14) (xy 167.64 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fbff22c-8265-4b55-9a19-682ab9b7cb5b")
+	)
+	(wire
+		(pts
 			(xy 127 233.68) (xy 124.46 233.68)
 		)
 		(stroke
@@ -23057,6 +23144,16 @@
 			(type default)
 		)
 		(uuid "304c33a8-47a1-4359-babe-aa4c896b3880")
+	)
+	(wire
+		(pts
+			(xy 210.82 332.74) (xy 210.82 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3086609d-d22c-40a1-8ea7-e871a1729a2d")
 	)
 	(wire
 		(pts
@@ -23470,6 +23567,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 359.41) (xy 170.18 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3de92d75-aca8-492a-9537-cb5bb4f39edf")
+	)
+	(wire
+		(pts
 			(xy 109.22 193.04) (xy 127 193.04)
 		)
 		(stroke
@@ -23527,6 +23634,16 @@
 			(type default)
 		)
 		(uuid "3ff3d586-7a18-40f3-a941-fac4c362857b")
+	)
+	(wire
+		(pts
+			(xy 170.18 358.14) (xy 170.18 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4056ebc8-9415-4028-a2ee-a089b20b3406")
 	)
 	(wire
 		(pts
@@ -24380,6 +24497,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 358.14) (xy 208.28 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eb8ed64-8346-41b5-be20-4ba8372efb8a")
+	)
+	(wire
+		(pts
 			(xy 314.96 255.27) (xy 314.96 260.35)
 		)
 		(stroke
@@ -24517,6 +24644,16 @@
 			(type default)
 		)
 		(uuid "6226fe45-0742-49b9-9fe8-8deede3ec493")
+	)
+	(wire
+		(pts
+			(xy 208.28 359.41) (xy 210.82 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "623f4956-11bf-40f4-9b2a-774e974edc56")
 	)
 	(wire
 		(pts
@@ -24960,6 +25097,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 358.14) (xy 210.82 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7245161c-8ccb-4efe-b241-14bbf747b4e4")
+	)
+	(wire
+		(pts
 			(xy 106.68 111.76) (xy 127 111.76)
 		)
 		(stroke
@@ -25057,6 +25204,16 @@
 			(type default)
 		)
 		(uuid "79de8bcf-feb0-41cd-9c38-593aba6e5ee9")
+	)
+	(wire
+		(pts
+			(xy 210.82 359.41) (xy 210.82 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ea9650-dcb5-48bd-8194-cd04d3f51f72")
 	)
 	(wire
 		(pts
@@ -26007,6 +26164,16 @@
 			(type default)
 		)
 		(uuid "a3ba7b03-0c30-4a8a-81d8-5b057ca5e523")
+	)
+	(wire
+		(pts
+			(xy 167.64 359.41) (xy 170.18 359.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3fb362b-02ee-46ed-87ef-3e6059bc5a6f")
 	)
 	(wire
 		(pts
@@ -26967,6 +27134,16 @@
 			(type default)
 		)
 		(uuid "cb162d88-23a3-49ff-997f-c3b2c6e26a4e")
+	)
+	(wire
+		(pts
+			(xy 170.18 332.74) (xy 170.18 337.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb322a27-ba59-4eda-babc-465f2722ec13")
 	)
 	(wire
 		(pts
@@ -28508,6 +28685,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI0_CS1"
+		(shape bidirectional)
+		(at 160.02 381 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06749a7a-0588-4a24-a142-0c1b435ba1ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_QSPI0B_SS1_B"
 		(shape output)
 		(at 308.61 64.77 180)
@@ -29828,6 +30025,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI0_CS0"
+		(shape bidirectional)
+		(at 160.02 375.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ae91550-91fd-4ed9-b8d1-c0b16d8e7f8c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 375.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_MIPI_CSI0_DATA3_N"
 		(shape input)
 		(at 381 151.13 0)
@@ -30370,6 +30587,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI3_SDO"
+		(shape output)
+		(at 123.19 384.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "70d340e8-7ef3-4f7b-90e0-67ffc37fa75b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 384.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_SPI2_SDO"
 		(shape output)
 		(at 106.68 101.6 180)
@@ -30402,6 +30639,26 @@
 		(uuid "71144c49-4bb0-4024-94d9-6e018d18412b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI0_SCK"
+		(shape bidirectional)
+		(at 160.02 378.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71a5efd7-8941-483b-ba45-b939e49857cf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30502,6 +30759,26 @@
 		(uuid "76d89295-1672-479f-aab2-836f40bfbc80")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 106.68 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI0_SDO"
+		(shape output)
+		(at 160.02 383.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "77e92565-b6f3-4c23-bfbb-c6f053420d94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 383.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30810,6 +31087,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI3_SDI"
+		(shape input)
+		(at 123.19 382.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "85b2b7ed-8dd4-478f-a5c1-19085e1b8d6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 382.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_CSI_DO1"
 		(shape input)
 		(at 391.16 80.01 0)
@@ -30822,6 +31119,26 @@
 		(uuid "8731ca5e-cbd3-4088-bf11-f888fafad55b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 391.16 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI3_SCK"
+		(shape bidirectional)
+		(at 123.19 379.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "87aabcb7-62e8-49f4-9540-6615fa28c8cd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31242,6 +31559,26 @@
 		(uuid "991e4ffa-e860-4760-adad-e1258492512a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 194.31 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI0_SDI"
+		(shape input)
+		(at 160.02 386.08 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99e2af87-6984-4247-bfb0-2855b6cdafb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 386.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31770,6 +32107,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI3_CS1"
+		(shape bidirectional)
+		(at 123.19 377.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9008725-cd7c-4c41-8250-f278fc9d8725")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 377.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_USB_OTG2_DN"
 		(shape bidirectional)
 		(at 563.88 63.5 0)
@@ -32122,6 +32479,26 @@
 		(uuid "ccf7c229-7e32-4be0-9873-eca7b91e908c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 303.53 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI3_CS0"
+		(shape bidirectional)
+		(at 123.19 374.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cd203fa1-db6c-4ef3-8d1c-0532bd11c144")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.19 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33880,6 +34257,97 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Memory_NVRAM:MR20H40")
+		(at 170.18 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1427ed19-8fe4-4f50-86c7-17c4b9b7c89e")
+		(property "Reference" "U14"
+			(at 172.3233 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MR20H40"
+			(at 172.3233 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.everspin.com/file/217/download"
+			(at 162.56 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4Mb MRAM memory with SPI interface, DFN-8"
+			(at 170.18 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "b72fcc61-b8d6-4b9e-af4e-ab013998d4c7")
+		)
+		(pin "1"
+			(uuid "fc213570-1610-4300-ae56-27986354ad1b")
+		)
+		(pin "7"
+			(uuid "12e2552a-4a7b-463a-8221-1c4b6f7aab68")
+		)
+		(pin "3"
+			(uuid "99c1697f-4ca2-4604-9451-86bd919d7413")
+		)
+		(pin "2"
+			(uuid "544f9881-b94a-4e43-b62a-57426fe2f87b")
+		)
+		(pin "8"
+			(uuid "31d6ccd2-eeb6-4e79-9bf6-6f34d337fcd9")
+		)
+		(pin "4"
+			(uuid "e30a074d-2010-4895-95d5-5216ba42076a")
+		)
+		(pin "5"
+			(uuid "82528b8d-aac8-48d4-8958-2f02d1df3489")
+		)
+		(pin "6"
+			(uuid "52680910-b5a2-465b-acbe-5a3a5211940b")
+		)
+		(instances
+			(project ""
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -37149,6 +37617,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Memory_NVRAM:MR20H40")
+		(at 210.82 347.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59987e11-0246-4cb9-bc57-4c7983cab66b")
+		(property "Reference" "U10"
+			(at 212.9633 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MR20H40"
+			(at 212.9633 337.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/everspin-technologies-inc/MR20H40CDF/4047456"
+			(at 203.2 340.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4Mb MRAM memory with SPI interface, DFN-8"
+			(at 210.82 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "6836b3e0-03ea-44f2-b833-4b8a1e6c54c2")
+		)
+		(pin "1"
+			(uuid "02e3b05c-d207-4152-80a3-9fe3bacd758a")
+		)
+		(pin "7"
+			(uuid "143da965-b852-4e56-b42b-5adad33e65d3")
+		)
+		(pin "3"
+			(uuid "60788ffb-a8c4-48dd-b2c1-f56bba05824f")
+		)
+		(pin "2"
+			(uuid "da278a60-dd10-4abe-ba59-9cd948667be9")
+		)
+		(pin "8"
+			(uuid "7b8b9038-f67e-4630-af74-769ffc222d2b")
+		)
+		(pin "4"
+			(uuid "bcb9e94e-9b5d-47a5-8ea0-0cf1d1a90cbc")
+		)
+		(pin "5"
+			(uuid "ccdaa6ef-484f-4ab1-b504-6c8285d77be4")
+		)
+		(pin "6"
+			(uuid "ddf9d0ae-1457-4ba4-bbd9-4540c7fdcae4")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 125.73 439.42 0)
 		(unit 1)
@@ -37416,6 +37975,71 @@
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "U15")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 210.82 332.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cb41a65-5e55-434f-a879-361e78baa8c1")
+		(property "Reference" "#PWR043"
+			(at 210.82 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 210.82 328.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 210.82 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a60da8c5-da43-4360-ac9e-ab18d22c35bb")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR043")
+					(unit 1)
 				)
 			)
 		)
@@ -38453,6 +39077,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 360.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d0f13e5-31ad-48f3-83b1-7bf35cea836f")
+		(property "Reference" "#PWR044"
+			(at 170.18 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9151a68b-a58d-4e50-9b6d-8a07aed6b227")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -41551,6 +42241,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 210.82 360.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98bbb5d1-54dc-4364-b19f-eb10626cd2c6")
+		(property "Reference" "#PWR045"
+			(at 210.82 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 210.82 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 210.82 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9780684-3b03-4bfd-8a8a-7056e2c0001f")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 495.3 45.72 0)
 		(unit 1)
@@ -43881,6 +44637,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 170.18 332.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0a70543-312d-4a34-8a2b-e25c0e2ccaf8")
+		(property "Reference" "#PWR042"
+			(at 170.18 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 170.18 328.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 170.18 332.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dcc86180-d447-46b1-a5e9-7cb5ceec7b0c")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 143.51 499.11 90)
 		(unit 1)
@@ -44256,92 +45077,6 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "R33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "cadence carrier custom symbols:EM064LXQADG13IS1T")
-		(at 191.77 339.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e84015e5-3f3a-4103-a6ab-c43090bb97e1")
-		(property "Reference" "U10"
-			(at 191.77 334.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EM064LXQADG13IS1T"
-			(at 191.77 336.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 339.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "8249fb0e-caa4-468d-a475-aea39aaeae5d")
-		)
-		(pin "3"
-			(uuid "57dbc42a-eaa0-4fb9-9b73-fc09070cc3e2")
-		)
-		(pin "1"
-			(uuid "762c8064-8c79-4dfe-acb2-deda48afd6fd")
-		)
-		(pin "2"
-			(uuid "a9c3eea4-2f2f-4edf-8d32-fd4f27ad2e6b")
-		)
-		(pin "7"
-			(uuid "a4600b28-ec3d-4a52-ac94-d991442d477c")
-		)
-		(pin "8"
-			(uuid "ded93d73-ae8c-4133-9128-ad7b8d7e26c1")
-		)
-		(pin "6"
-			(uuid "72c00383-5c6a-48bc-afcb-f8b78e84734b")
-		)
-		(pin "4"
-			(uuid "80a6ee74-a52d-45dc-8f9b-01c89b891948")
-		)
-		(instances
-			(project ""
-				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "U10")
 					(unit 1)
 				)
 			)
