@@ -23427,7 +23427,7 @@
 		)
 		(uuid "082e3c5d-67d5-433f-8bfc-590179da6b55")
 	)
-	(text "I2C2 (Connection to Payload Board)"
+	(text "I2C2 (Connection to EPS Board)"
 		(exclude_from_sim no)
 		(at 259.08 109.22 0)
 		(effects
@@ -23511,6 +23511,18 @@
 		)
 		(uuid "11810b2f-0266-431e-9bf4-93379e57c9d9")
 	)
+	(text "Payload Board Connection"
+		(exclude_from_sim no)
+		(at 552.196 539.496 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "150e8786-9ab3-4166-ace7-5918b496181d")
+	)
 	(text "connect to gpio on imx (1pps) maybe also add bootsel?"
 		(exclude_from_sim no)
 		(at 585.47 299.466 0)
@@ -23553,7 +23565,7 @@
 		)
 		(uuid "21202b14-3fb3-46d5-95bb-8b8132bf45a9")
 	)
-	(text "I2C List:\nI2C0: RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\n"
+	(text "I2C List:\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3 & I2C4: payload board\ni2c4: adcs connection likely (must further research cubespace adcs interface control document and connections. also adcs is still uncertain)\n"
 		(exclude_from_sim no)
 		(at 413.258 384.048 0)
 		(effects
@@ -23690,6 +23702,16 @@
 			)
 		)
 		(uuid "3f7b3a21-f8dc-424e-b680-89aebc119376")
+	)
+	(text "Not Sure if this is how rs422 is implemented or if it works\nthis way. Must look into deeply first"
+		(exclude_from_sim no)
+		(at 537.21 528.066 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4246552c-8bdd-40a9-8e8d-93cc2c72d95f")
 	)
 	(text "i2c and rs422"
 		(exclude_from_sim no)
@@ -24002,10 +24024,10 @@
 	)
 	(text "Board Power Monitor"
 		(exclude_from_sim no)
-		(at 633.984 275.59 0)
+		(at 648.462 272.288 0)
 		(effects
 			(font
-				(size 1.778 1.778)
+				(size 2.032 2.032)
 				(thickness 0.3556)
 				(bold yes)
 			)
@@ -24162,9 +24184,9 @@
 		)
 		(uuid "947b517b-7e30-41ef-85d7-c0c8d022e657")
 	)
-	(text "assign pin for output"
+	(text "assign pin for output (likely to load switch\n to onboard power regulators/power \nload switch that allows for power cycling)"
 		(exclude_from_sim no)
-		(at 307.594 520.7 0)
+		(at 316.23 525.272 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -24206,7 +24228,7 @@
 		)
 		(uuid "9caeb6b8-ebb2-4aae-b8ec-22baf5155398")
 	)
-	(text "gonna nuke eeprom (nominally more likely to be affected by radiation)\nkeeping for now in case mind changes"
+	(text "prob gonna nuke eeprom (nominally more likely to be affected by radiation)\nkeeping for now in case mind changes"
 		(exclude_from_sim no)
 		(at 413.766 520.7 0)
 		(effects
@@ -24292,7 +24314,7 @@
 	)
 	(text "put boxes randomly around for now,\nwill move to separate sheets later.\n-William"
 		(exclude_from_sim no)
-		(at 395.478 496.062 0)
+		(at 659.638 559.562 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -24385,6 +24407,16 @@
 			)
 		)
 		(uuid "bcb12e85-3f9d-4ddd-ba66-94bafc139346")
+	)
+	(text "rs422 prob doesnt work this way. look into implementation and\nif we can use uart to rs422 or if we need dedicated ftdi chip or something"
+		(exclude_from_sim no)
+		(at 572.262 471.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "be050936-17f9-42c1-b258-5b446a08dc87")
 	)
 	(text "I2C Address: 1000000"
 		(exclude_from_sim no)
@@ -24542,6 +24574,18 @@
 		)
 		(uuid "de61afc0-494c-44c4-ac60-d9252c08fcc5")
 	)
+	(text "VBATT-->Regulator_Output-->3.3V"
+		(exclude_from_sim no)
+		(at 706.628 228.346 0)
+		(effects
+			(font
+				(size 1.7018 1.7018)
+				(thickness 0.3404)
+				(bold yes)
+			)
+		)
+		(uuid "e0410844-d87f-4c00-b9ff-20cfdc82c87d")
+	)
 	(text "WDT enabled\nwhen soldered"
 		(exclude_from_sim no)
 		(at 303.149 504.698 0)
@@ -24564,9 +24608,9 @@
 		)
 		(uuid "e78a5d15-90dd-4d7a-80a3-c504f2503475")
 	)
-	(text "TO DO:\n- assign i2c addresses to power monitors\n- reorganize board to board connections\n- double check memory implementations (ospi left now)\n- add heater and antenna trigger\n- add more watchdogs (for power, processor, satnogs)\n-assign watchdog input/output pins\n-add rs422 transceiver to payload connection\n"
+	(text "TO DO:\n- reorganize & fully implement board to board connections (SATNOGS should only need i2c now but double check; payload needs few i2c bus and rs422 if possible;adcs connection needs to be implemented)\n- double check octal spi nor flash memory implementation (very briefly skimmed datasheet)\n- add heater and antenna trigger connection/connector (need to talk with thermals & power about interface)\n- add more watchdog (for onboard power, satnogs)\n-assign watchdog input/output pins (pet pins, destination of outputs)\n-implement watchdog bite power cycling \n(load switch powering off processor briefly to force reset in case of radiation event)\n-add rs422 transceiver to payload connection/if possible\n-look into coin batteries for skytraq gnss and imx8x som (while also making sure safe in space)\n-connect RTC"
 		(exclude_from_sim no)
-		(at 473.456 431.292 0)
+		(at 464.566 440.436 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -36738,7 +36782,7 @@
 	)
 	(global_label "X_UART1_CTS_B"
 		(shape input)
-		(at 622.3 482.6 180)
+		(at 530.86 516.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -36747,7 +36791,7 @@
 		)
 		(uuid "58313d63-be69-49a0-a14c-82cb0c3da709")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 622.3 482.6 0)
+			(at 530.86 516.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37418,7 +37462,7 @@
 	)
 	(global_label "X_UART1_RTS_B"
 		(shape output)
-		(at 622.3 485.14 180)
+		(at 530.86 519.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37427,7 +37471,7 @@
 		)
 		(uuid "8709974a-891d-49a9-9545-7201f7044dad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 622.3 485.14 0)
+			(at 530.86 519.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
