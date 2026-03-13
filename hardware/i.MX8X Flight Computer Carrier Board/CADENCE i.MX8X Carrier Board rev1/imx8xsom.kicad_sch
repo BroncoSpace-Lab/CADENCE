@@ -24524,6 +24524,16 @@
 		)
 		(uuid "c81e2a44-6a56-4df6-9ac2-dab1d63af897")
 	)
+	(text "Ebyte RF Transceiver Connection"
+		(exclude_from_sim no)
+		(at 719.582 208.788 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c89f64ba-d3b4-4467-a90b-c894d2bf1c0f")
+	)
 	(text "Skytraq Orion B16 UART GPS Module & Power Monitor"
 		(exclude_from_sim no)
 		(at 553.466 212.344 0)
@@ -24588,7 +24598,7 @@
 	)
 	(text "VBATT-->Regulator_Output-->3.3V"
 		(exclude_from_sim no)
-		(at 706.628 228.346 0)
+		(at 637.286 234.696 0)
 		(effects
 			(font
 				(size 1.7018 1.7018)
@@ -36450,7 +36460,7 @@
 			)
 		)
 	)
-	(global_label "M40_UART0_TX (Watchdog Pet)"
+	(global_label "X_M40_UART0_TX"
 		(shape bidirectional)
 		(at 308.61 194.31 180)
 		(effects
@@ -37552,7 +37562,7 @@
 			)
 		)
 	)
-	(global_label "M40_UART0_RX"
+	(global_label "X_M40_UART0_RX"
 		(shape bidirectional)
 		(at 308.61 191.77 180)
 		(effects
@@ -53836,6 +53846,125 @@
 			(project ""
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "CN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cadence imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
+		(at 718.82 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6dfa84c-15ac-4e17-bd44-a3e9da52040b")
+		(property "Reference" "CN3"
+			(at 718.82 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DF11-16DP-2DSA(08)"
+			(at 718.82 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "imx8_carrier_board_footprints:CONN-TH_DF11-16DP-2DSA-08"
+			(at 718.82 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_HRS-Hirose-HRS-DF11-16DP-2DSA-08_C530981.html"
+			(at 718.82 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "DF11 Connector"
+			(at 718.82 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C530981"
+			(at 718.82 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "14"
+			(uuid "9ceab454-5856-4da0-aaaa-d3ffa52e4290")
+		)
+		(pin "1"
+			(uuid "69168acf-bf02-4cd5-86ef-54b0ce604b97")
+		)
+		(pin "12"
+			(uuid "3507396a-9764-4fe4-af5b-e42f16a38083")
+		)
+		(pin "6"
+			(uuid "9dba50b3-465b-463e-bffc-5dc23ea97487")
+		)
+		(pin "8"
+			(uuid "6c878925-e196-4681-a0a1-7d69c820ca63")
+		)
+		(pin "4"
+			(uuid "da4da786-9c9d-4fc4-8af0-9df0c2e0d313")
+		)
+		(pin "11"
+			(uuid "59f2769c-3c4b-4f10-a7d7-93c0dc3c9a0d")
+		)
+		(pin "13"
+			(uuid "efcd638a-e5c0-46c6-8b12-43630a293a56")
+		)
+		(pin "10"
+			(uuid "ea9547df-071a-484c-9557-384024664d87")
+		)
+		(pin "7"
+			(uuid "f2a6112e-c468-4f5a-b47a-1318453afec9")
+		)
+		(pin "3"
+			(uuid "00b3bd38-3448-4a92-9b80-f1efc3dcaac1")
+		)
+		(pin "16"
+			(uuid "62c5e9b0-f548-4245-8e3e-4f69178233a3")
+		)
+		(pin "2"
+			(uuid "fbc6871c-5f8d-41fc-9de2-cb4dfc4e5007")
+		)
+		(pin "5"
+			(uuid "f3db0276-4c52-4e07-a348-81ddeb0a51b3")
+		)
+		(pin "15"
+			(uuid "5ae797d7-71f8-4a43-b8b5-96921f8f13dc")
+		)
+		(pin "9"
+			(uuid "9913d4ab-973a-441a-bccd-3f47928da551")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "CN3")
 					(unit 1)
 				)
 			)
