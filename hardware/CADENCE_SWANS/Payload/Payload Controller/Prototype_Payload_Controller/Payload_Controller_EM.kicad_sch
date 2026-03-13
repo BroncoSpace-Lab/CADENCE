@@ -5,13 +5,100 @@
 	(uuid "866a965d-c307-40b7-9977-69e77fc0dc82")
 	(paper "A4")
 	(lib_symbols)
+	(bus
+		(pts
+			(xy 142.24 11.43) (xy 142.24 198.12)
+		)
+		(stroke
+			(width 0.5)
+			(type dash)
+		)
+		(uuid "048b2ebf-7c5f-4843-afb6-695a45dc80d0")
+	)
+	(bus
+		(pts
+			(xy 142.24 198.12) (xy 143.51 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e25ddb5-0404-4c9b-ba4f-fd87567c6009")
+	)
 	(sheet
-<<<<<<< Updated upstream
-		(at 154.94 76.2)
-=======
-		(at 132.08 86.36)
->>>>>>> Stashed changes
+		(at 204.47 71.12)
 		(size 33.02 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "075ba521-2c69-4313-b545-104e72dad131")
+		(property "Sheetname" "Microcontroller"
+			(at 204.47 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 204.47 69.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CTRL_EN" input
+			(at 212.09 96.52 270)
+			(uuid "f7f09c83-7db5-4100-a6de-a7f43864cd98")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CTRL_R1" input
+			(at 218.44 96.52 270)
+			(uuid "d898dd40-3d12-4c80-ac27-ad55d7ebc051")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CTRL_R2" input
+			(at 226.06 96.52 270)
+			(uuid "db897727-08a8-48e1-b08b-f8b5ad2a8c03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 71.12)
+		(size 27.94 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -24,13 +111,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "075ba521-2c69-4313-b545-104e72dad131")
-		(property "Sheetname" "Microcontroller"
-<<<<<<< Updated upstream
-			(at 154.94 75.4884 0)
-=======
-			(at 132.08 85.6484 0)
->>>>>>> Stashed changes
+		(uuid "3853f2b5-b86c-4f53-9549-ed8b814cc447")
+		(property "Sheetname" "Peripherals"
+			(at 254 70.4084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38,12 +121,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "microcontroller.kicad_sch"
-<<<<<<< Updated upstream
-			(at 154.94 102.1846 0)
-=======
-			(at 132.08 112.3446 0)
->>>>>>> Stashed changes
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 254 95.8346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,53 +130,69 @@
 				(justify left top)
 			)
 		)
-<<<<<<< Updated upstream
-=======
-		(pin "CTRL_EN" input
-			(at 139.7 111.76 270)
-			(uuid "f7f09c83-7db5-4100-a6de-a7f43864cd98")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CTRL_R1" input
-			(at 146.05 111.76 270)
-			(uuid "d898dd40-3d12-4c80-ac27-ad55d7ebc051")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CTRL_R2" input
-			(at 153.67 111.76 270)
-			(uuid "db897727-08a8-48e1-b08b-f8b5ad2a8c03")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
->>>>>>> Stashed changes
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "3")
+					(page "6")
 				)
 			)
 		)
 	)
 	(sheet
-<<<<<<< Updated upstream
-		(at 78.74 77.47)
-=======
-		(at 132.08 45.72)
-		(size 33.02 25.4)
+		(at 35.56 74.93)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4cf906e6-065c-4b10-a5a2-987a95214f7a")
+		(property "Sheetname" "Power Input"
+			(at 35.56 74.2184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pwr_in.kicad_sch"
+			(at 35.56 100.9146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "V_BATT" input
+			(at 60.96 86.36 0)
+			(uuid "e480e700-2fc0-43a5-bafd-0efa25d225ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 71.12)
+		(size 31.75 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -112,7 +207,7 @@
 		)
 		(uuid "7acf6d3b-d272-4af5-ad05-5ed10a438eac")
 		(property "Sheetname" "Flight Computer Interface"
-			(at 132.08 45.0084 0)
+			(at 158.75 70.4084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -121,12 +216,22 @@
 			)
 		)
 		(property "Sheetfile" "flight_computer_interface.kicad_sch"
-			(at 132.08 71.7046 0)
+			(at 158.75 97.1046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "UART" input
+			(at 190.5 83.82 0)
+			(uuid "c822132d-357e-4380-a3f8-6a9a461f7d14")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -138,8 +243,7 @@
 		)
 	)
 	(sheet
-		(at 74.93 86.36)
->>>>>>> Stashed changes
+		(at 77.47 74.93)
 		(size 30.48 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -154,13 +258,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "9a14df13-82ed-42c1-856b-06d9379026ee")
-<<<<<<< Updated upstream
-		(property "Sheetname" "Power Management"
-			(at 78.74 76.7584 0)
-=======
 		(property "Sheetname" "Power Tree"
-			(at 74.93 85.6484 0)
->>>>>>> Stashed changes
+			(at 77.47 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -169,11 +268,7 @@
 			)
 		)
 		(property "Sheetfile" "power_management.kicad_sch"
-<<<<<<< Updated upstream
-			(at 78.74 103.4546 0)
-=======
-			(at 74.93 112.3446 0)
->>>>>>> Stashed changes
+			(at 77.47 100.9146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -181,10 +276,8 @@
 				(justify left top)
 			)
 		)
-<<<<<<< Updated upstream
-=======
 		(pin "+3.3V" input
-			(at 105.41 93.98 0)
+			(at 107.95 82.55 0)
 			(uuid "ba39c550-b7cd-4100-8246-a3156ef852d9")
 			(effects
 				(font
@@ -194,7 +287,7 @@
 			)
 		)
 		(pin "+12V" input
-			(at 105.41 101.6 0)
+			(at 107.95 90.17 0)
 			(uuid "9d2cdb47-31ad-43d0-a9a8-eaed0d218c3e")
 			(effects
 				(font
@@ -204,7 +297,7 @@
 			)
 		)
 		(pin "V_BATT" input
-			(at 74.93 97.79 180)
+			(at 77.47 86.36 180)
 			(uuid "f558a5b3-a14a-40a8-b104-2714cef8dbe8")
 			(effects
 				(font
@@ -213,7 +306,6 @@
 				(justify left)
 			)
 		)
->>>>>>> Stashed changes
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
@@ -222,10 +314,8 @@
 			)
 		)
 	)
-<<<<<<< Updated upstream
-=======
 	(sheet
-		(at 132.08 133.35)
+		(at 204.47 114.3)
 		(size 33.02 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -241,7 +331,7 @@
 		)
 		(uuid "e5213e67-1b0d-459a-aee8-ca49d7a32651")
 		(property "Sheetname" "Instrument"
-			(at 132.08 132.6384 0)
+			(at 204.47 113.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -250,7 +340,7 @@
 			)
 		)
 		(property "Sheetfile" "instrument.kicad_sch"
-			(at 132.08 159.3346 0)
+			(at 204.47 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -259,7 +349,7 @@
 			)
 		)
 		(pin "CTRL_EN" input
-			(at 139.7 133.35 90)
+			(at 212.09 114.3 90)
 			(uuid "3f4e7b34-d8d3-440d-8ba4-a72d0b2ebb5b")
 			(effects
 				(font
@@ -269,7 +359,7 @@
 			)
 		)
 		(pin "CTRL_R1" input
-			(at 146.05 133.35 90)
+			(at 218.44 114.3 90)
 			(uuid "839e6591-7e0b-4ad1-904b-6fed6dc5ca9f")
 			(effects
 				(font
@@ -279,7 +369,7 @@
 			)
 		)
 		(pin "CTRL_R2" input
-			(at 153.67 133.35 90)
+			(at 226.06 114.3 90)
 			(uuid "0faccadf-76f1-4e98-bc1c-c76991169e8f")
 			(effects
 				(font
@@ -296,7 +386,6 @@
 			)
 		)
 	)
->>>>>>> Stashed changes
 	(sheet_instances
 		(path "/"
 			(page "1")
