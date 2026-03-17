@@ -2013,7 +2013,7 @@
 		)
 		(uuid "a0aab4fb-5b71-4dc6-8bfa-1e2ece2d37bc")
 	)
-	(text "RTC (real time clock) module (i2c or spi)"
+	(text "RTC (real time clock) module\n"
 		(exclude_from_sim no)
 		(at 102.87 31.75 0)
 		(effects
@@ -2076,6 +2076,12 @@
 		(uuid "28e7af55-2231-4c96-93d7-2e585aa0d6dd")
 	)
 	(junction
+		(at 33.02 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3504a570-164c-42e6-8263-f3729e8573bb")
+	)
+	(junction
 		(at 144.78 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2110,12 +2116,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6f0502e-8561-4249-97a7-f69873fe816a")
-	)
-	(junction
-		(at 38.1 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b06e1e28-88cf-4cb8-8000-7bd1a579e949")
 	)
 	(junction
 		(at 203.2 72.39)
@@ -2259,16 +2259,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 134.62) (xy 63.5 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e4dd92f-07b4-4a26-a386-478f999bf1a0")
-	)
-	(wire
-		(pts
 			(xy 203.2 50.8) (xy 240.03 50.8)
 		)
 		(stroke
@@ -2349,7 +2339,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 157.48) (xy 38.1 157.48)
+			(xy 64.77 157.48) (xy 33.02 157.48)
 		)
 		(stroke
 			(width 0)
@@ -2379,7 +2369,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 157.48) (xy 38.1 151.13)
+			(xy 33.02 157.48) (xy 33.02 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2619,7 +2609,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 143.51) (xy 38.1 134.62)
+			(xy 33.02 143.51) (xy 33.02 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2829,7 +2819,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 132.08) (xy 38.1 134.62)
+			(xy 33.02 132.08) (xy 33.02 134.62)
 		)
 		(stroke
 			(width 0)
@@ -2866,6 +2856,16 @@
 			(type default)
 		)
 		(uuid "bc34c7b9-c8f9-4d2c-af59-f77124b73e62")
+	)
+	(wire
+		(pts
+			(xy 33.02 134.62) (xy 63.5 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf3ff23c-f18f-4bb2-8ca6-d674d588e7d8")
 	)
 	(wire
 		(pts
@@ -2997,26 +2997,6 @@
 		)
 		(uuid "fb734d46-f7c9-4369-8bee-ad5bae54edcc")
 	)
-	(global_label "X_MIPI_CSI0_I2C0_SDA"
-		(shape bidirectional)
-		(at 132.08 149.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "13a20739-f5e1-4b55-8db7-ed9ba7f322b2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 132.08 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_MIPI_CSI0_I2C0_SCL"
 		(shape bidirectional)
 		(at 227.33 132.08 180)
@@ -3079,18 +3059,18 @@
 			)
 		)
 	)
-	(global_label "X_MIPI_CSI0_I2C0_SCL"
+	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
 		(shape bidirectional)
-		(at 66.04 146.05 180)
+		(at 132.08 149.86 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "43618d62-2d94-4f84-8572-f7f521a1c2d9")
+		(uuid "18d50687-5316-473b-bcfd-e213c9125e5f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 146.05 0)
+			(at 132.08 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3099,7 +3079,7 @@
 			)
 		)
 	)
-	(global_label "X_MIPI_CSI0_I2C0_SCL"
+	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
 		(shape bidirectional)
 		(at 132.08 147.32 180)
 		(effects
@@ -3108,29 +3088,9 @@
 			)
 			(justify right)
 		)
-		(uuid "50bffbe0-9d3b-4681-ae1c-21139486f75a")
+		(uuid "5c228b89-9aea-4e92-b071-7634ff679e38")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 132.08 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_MIPI_CSI0_I2C0_SDA"
-		(shape bidirectional)
-		(at 95.25 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7b3067cc-75af-41d1-8dfd-56313a1f397b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.25 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3159,27 +3119,7 @@
 			)
 		)
 	)
-	(global_label "X_MIPI_CSI0_I2C0_SDA"
-		(shape bidirectional)
-		(at 66.04 148.59 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "946e39a5-a396-4b9f-8a34-4ea947051017")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_MIPI_CSI0_I2C0_SCL"
+	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
 		(shape bidirectional)
 		(at 95.25 54.61 180)
 		(effects
@@ -3188,9 +3128,69 @@
 			)
 			(justify right)
 		)
-		(uuid "cbcfa555-5966-46e7-bbd0-420fe0183d8e")
+		(uuid "9852b871-ca7c-4bff-81ca-4019442c5275")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
+		(shape bidirectional)
+		(at 95.25 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a2df1c73-b6be-401b-bfa1-1228518a1cfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.25 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
+		(shape bidirectional)
+		(at 66.04 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a7c79f21-43bd-487a-a073-b9ce19439fbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
+		(shape bidirectional)
+		(at 66.04 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c296c687-d5c4-4de4-ba11-a5219d1a67a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3672,7 +3672,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 38.1 147.32 0)
+		(at 33.02 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3680,7 +3680,7 @@
 		(dnp no)
 		(uuid "5c41e25c-2fb5-4695-b38f-7ff129712e42")
 		(property "Reference" "C57"
-			(at 30.988 146.05 0)
+			(at 25.908 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3689,7 +3689,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 30.988 148.082 0)
+			(at 25.908 148.082 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3698,7 +3698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.0652 151.13 0)
+			(at 33.9852 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3707,7 +3707,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 38.1 147.32 0)
+			(at 33.02 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3716,7 +3716,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 38.1 147.32 0)
+			(at 33.02 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4620,7 +4620,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 38.1 132.08 0)
+		(at 33.02 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4629,7 +4629,7 @@
 		(fields_autoplaced yes)
 		(uuid "e6d82d64-a3d7-43b3-b0b8-68839f445678")
 		(property "Reference" "#PWR089"
-			(at 38.1 135.89 0)
+			(at 33.02 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,7 +4638,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 38.1 127 0)
+			(at 33.02 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4646,7 +4646,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 132.08 0)
+			(at 33.02 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4655,7 +4655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 132.08 0)
+			(at 33.02 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,7 +4664,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 38.1 132.08 0)
+			(at 33.02 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)

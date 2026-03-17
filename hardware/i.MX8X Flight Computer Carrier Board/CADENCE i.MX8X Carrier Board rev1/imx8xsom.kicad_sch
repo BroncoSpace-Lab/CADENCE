@@ -10983,7 +10983,7 @@
 		)
 		(uuid "21202b14-3fb3-46d5-95bb-8b8132bf45a9")
 	)
-	(text "I2C List:\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3 & I2C4: payload board\ni2c4: adcs connection likely (must further research cubespace adcs interface control document and connections. also adcs is still uncertain)\n"
+	(text "I2C List(5 at 3.3V, 3 at 1.8V):\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3: payload board\ni2c4: adcs connection likely (must further research cubespace adcs interface control document and connections. also adcs is still uncertain)\n"
 		(exclude_from_sim no)
 		(at 323.088 368.046 0)
 		(effects
@@ -11038,13 +11038,23 @@
 	)
 	(text "I2C1 (Onboard Power Monitors)"
 		(exclude_from_sim no)
-		(at 265.176 70.104 0)
+		(at 269.748 81.026 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "3f7b3a21-f8dc-424e-b680-89aebc119376")
+	)
+	(text "I2C3 (SATNOGS)"
+		(exclude_from_sim no)
+		(at 443.992 99.822 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "420c32d9-9417-4520-843a-5eb964801807")
 	)
 	(text "10/100/1000\nMbps Ethernet1\nRGMII Interface"
 		(exclude_from_sim no)
@@ -11089,7 +11099,7 @@
 	)
 	(text "}"
 		(exclude_from_sim no)
-		(at 233.172 71.628 0)
+		(at 231.902 71.882 0)
 		(effects
 			(font
 				(size 13.335 13.335)
@@ -11171,7 +11181,7 @@
 	)
 	(text "I2C0 (Onboard Sensor Bus)"
 		(exclude_from_sim no)
-		(at 437.896 112.776 0)
+		(at 251.968 62.484 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11221,7 +11231,7 @@
 	)
 	(text "{"
 		(exclude_from_sim no)
-		(at 277.368 90.678 0)
+		(at 287.274 89.916 0)
 		(effects
 			(font
 				(size 23.495 23.495)
@@ -11271,7 +11281,7 @@
 	)
 	(text "MIPI DSI0"
 		(exclude_from_sim no)
-		(at 268.224 92.202 0)
+		(at 278.638 91.948 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11321,7 +11331,7 @@
 	)
 	(text "USB 3.0"
 		(exclude_from_sim no)
-		(at 240.03 72.644 0)
+		(at 239.014 74.422 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11372,7 +11382,7 @@
 	)
 	(text "}"
 		(exclude_from_sim no)
-		(at 233.68 95.504 0)
+		(at 232.156 95.758 0)
 		(effects
 			(font
 				(size 15.24 15.24)
@@ -11389,6 +11399,18 @@
 			)
 		)
 		(uuid "aa3c5f08-de3f-4a91-8374-0d8edd84ffe3")
+	)
+	(text "SPI List (2 devices per bus):\nSPI0:2x MRAM\nSPI1:\nSPI2:NAND Flash\nSPI3: SATNOGS and EByte"
+		(exclude_from_sim no)
+		(at 262.89 363.474 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "ac24f1ca-71b6-414a-9d12-ef23838fd92f")
 	)
 	(text "QSPI0"
 		(exclude_from_sim no)
@@ -11490,6 +11512,18 @@
 		)
 		(uuid "de61afc0-494c-44c4-ac60-d9252c08fcc5")
 	)
+	(text "UART List(all at 3.3V except m40):\nUART0: GNSS\nUART1: Payload RS422\nUART2:\nM40 UART: FTDI debug"
+		(exclude_from_sim no)
+		(at 128.524 363.728 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "e33ab48b-553f-4805-b56c-be47ff4cea05")
+	)
 	(text "10uF Capacitor Spam for backup power"
 		(exclude_from_sim no)
 		(at 261.62 260.858 0)
@@ -11500,7 +11534,7 @@
 		)
 		(uuid "edaf3568-a9d9-47af-a840-aa224d370cf1")
 	)
-	(text "TO DO:\n- reorganize & fully implement board to board connections (SATNOGS should only need i2c now but double check; payload needs few i2c bus and rs422 if possible;adcs connection needs to be implemented)\n- double check octal spi nor flash memory implementation (very briefly skimmed datasheet)\n- add heater and antenna trigger connection/connector (need to talk with thermals & power about interface)\n- add more watchdog (for onboard power, satnogs)\n-assign watchdog input/output pins (pet pins, destination of outputs)\n-implement watchdog bite power cycling \n(load switch powering off processor briefly to force reset in case of radiation event)\n-add rs422 transceiver to payload connection/if possible\n-look into coin batteries for skytraq gnss and imx8x som (while also making sure safe in space)\n-connect RTC"
+	(text "TO DO:\n- double check octal spi nor flash memory implementation\n- add heater and antenna trigger connection/connector (need to talk with thermals & power about interface)\n-assign watchdog input/output pins (pet pins, destination of outputs)\n-implement watchdog bite power cycling \n(load switch powering off processor briefly to force reset in case of radiation event)\n-add rs422 transceiver to payload connection/if possible\n-connect RTC clkout? (32.768kHz default output, maybe to gpio?)\n-1PPS to GPIO?"
 		(exclude_from_sim no)
 		(at 324.358 427.736 0)
 		(effects
@@ -11532,6 +11566,16 @@
 			)
 		)
 		(uuid "ff8a4470-d5bf-4448-806b-0c2d5f23d119")
+	)
+	(text "I2C4 (1.8V)"
+		(exclude_from_sim no)
+		(at 444.246 117.856 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ffb99de8-49f0-4ac4-8abf-3334ea7840d9")
 	)
 	(junction
 		(at 386.08 212.09)
@@ -13651,6 +13695,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 66.04) (xy 237.49 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eac7409-adbd-4830-bfa3-5fceda58b71a")
+	)
+	(wire
+		(pts
 			(xy 391.16 179.07) (xy 378.46 179.07)
 		)
 		(stroke
@@ -14091,7 +14145,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 102.87) (xy 381 102.87)
+			(xy 378.46 102.87) (xy 426.72 102.87)
 		)
 		(stroke
 			(width 0)
@@ -14148,16 +14202,6 @@
 			(type default)
 		)
 		(uuid "abefbd70-9134-4546-a816-e8c6f5b1e76c")
-	)
-	(wire
-		(pts
-			(xy 208.28 66.04) (xy 187.96 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac373400-b448-4892-956e-81c452923426")
 	)
 	(wire
 		(pts
@@ -14631,7 +14675,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 105.41) (xy 381 105.41)
+			(xy 378.46 105.41) (xy 426.72 105.41)
 		)
 		(stroke
 			(width 0)
@@ -14641,7 +14685,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 74.93) (xy 317.5 74.93)
+			(xy 284.48 74.93) (xy 317.5 74.93)
 		)
 		(stroke
 			(width 0)
@@ -14941,7 +14985,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 71.12) (xy 187.96 71.12)
+			(xy 237.49 71.12) (xy 187.96 71.12)
 		)
 		(stroke
 			(width 0)
@@ -15101,7 +15145,7 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 77.47) (xy 317.5 77.47)
+			(xy 284.48 77.47) (xy 317.5 77.47)
 		)
 		(stroke
 			(width 0)
@@ -16172,6 +16216,26 @@
 			)
 		)
 	)
+	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
+		(shape bidirectional)
+		(at 261.62 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1960ad58-fddf-448c-9915-ce420d2088e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.62 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_FLEXCAN1_TX"
 		(shape output)
 		(at 109.22 152.4 180)
@@ -16372,9 +16436,9 @@
 			)
 		)
 	)
-	(global_label "X_USB3_SS3_TC1"
+	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
 		(shape bidirectional)
-		(at 208.28 66.04 0)
+		(at 237.49 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16383,7 +16447,7 @@
 		)
 		(uuid "22efdee6-28c8-4ca3-b3f3-1c01243169a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.28 66.04 0)
+			(at 237.49 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16444,6 +16508,26 @@
 		(uuid "28bff162-255c-4871-972d-76c687b7b543")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 214.63 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
+		(shape bidirectional)
+		(at 261.62 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a0d166c-6052-4a3c-82af-620216f4dfd2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 261.62 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17692,9 +17776,9 @@
 			)
 		)
 	)
-	(global_label "X_CSI_EN"
+	(global_label "X_CSI_EN_I2C3_SCL"
 		(shape bidirectional)
-		(at 381 102.87 0)
+		(at 426.72 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17703,7 +17787,7 @@
 		)
 		(uuid "87d508c9-08db-461d-b785-29e84b03f807")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 381 102.87 0)
+			(at 426.72 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17892,9 +17976,9 @@
 			)
 		)
 	)
-	(global_label "X_USB3_SS3_TC3"
+	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
 		(shape bidirectional)
-		(at 208.28 71.12 0)
+		(at 237.49 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17903,7 +17987,7 @@
 		)
 		(uuid "95181d31-dd53-4dff-8a11-16c458f2cb73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.28 71.12 0)
+			(at 237.49 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18054,7 +18138,7 @@
 	)
 	(global_label "X_MIPI_DSI0_I2C0_SCL"
 		(shape bidirectional)
-		(at 276.86 77.47 180)
+		(at 284.48 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18063,7 +18147,7 @@
 		)
 		(uuid "9f26b990-babf-4cc3-a90f-fe5c8bb0328e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 276.86 77.47 0)
+			(at 284.48 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18534,7 +18618,7 @@
 	)
 	(global_label "X_MIPI_DSI0_I2C0_SDA"
 		(shape bidirectional)
-		(at 276.86 74.93 180)
+		(at 284.48 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18543,7 +18627,7 @@
 		)
 		(uuid "bdfba09f-8a20-4ba3-8342-680e36566cd7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 276.86 74.93 0)
+			(at 284.48 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18572,9 +18656,9 @@
 			)
 		)
 	)
-	(global_label "X_CSI_RESET"
+	(global_label "X_CSI_RESET_I2C3_SDA"
 		(shape bidirectional)
-		(at 381 105.41 0)
+		(at 426.72 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18583,7 +18667,7 @@
 		)
 		(uuid "c0d4b0c4-a52f-472d-9de0-fbc6bf43fa84")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 381 105.41 0)
+			(at 426.72 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
