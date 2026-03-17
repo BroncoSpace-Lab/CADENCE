@@ -175,6 +175,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1313,7 +1490,7 @@
 	)
 	(text "connect to gpio for reset signal"
 		(exclude_from_sim no)
-		(at 53.848 107.188 0)
+		(at 55.88 105.156 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1332,12 +1509,6 @@
 			)
 		)
 		(uuid "eacaeb36-860c-4e22-b438-eafc14320d6b")
-	)
-	(junction
-		(at 68.58 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0bb49407-b582-4943-849e-608baf24678d")
 	)
 	(junction
 		(at 102.87 90.17)
@@ -1386,6 +1557,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c5280f7-161d-416e-9cd8-845574a01b72")
+	)
+	(junction
+		(at 44.45 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b027c68a-43f6-46a7-80a1-6ddb38fb46b4")
 	)
 	(junction
 		(at 46.99 82.55)
@@ -1451,16 +1628,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 102.87) (xy 73.66 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01c819e4-2dae-4574-b115-e721ee37839f")
-	)
-	(wire
-		(pts
 			(xy 46.99 82.55) (xy 46.99 100.33)
 		)
 		(stroke
@@ -1511,13 +1678,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 100.33) (xy 68.58 100.33)
+			(xy 30.48 102.87) (xy 73.66 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1e826951-fd58-4c56-bcd7-176aefc0fb6f")
+		(uuid "1e9d8541-b3d3-4226-9eaa-cc4cf249a004")
 	)
 	(wire
 		(pts
@@ -1571,6 +1738,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 104.14) (xy 30.48 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a9317df-5ec5-41c3-bca2-ed5482a5ccd5")
+	)
+	(wire
+		(pts
 			(xy 69.85 123.19) (xy 73.66 123.19)
 		)
 		(stroke
@@ -1578,6 +1755,16 @@
 			(type default)
 		)
 		(uuid "63406ea1-8996-4cd7-b151-7f939266cc25")
+	)
+	(wire
+		(pts
+			(xy 30.48 120.65) (xy 44.45 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "717aadc7-d36b-416a-b339-85491d637ef3")
 	)
 	(wire
 		(pts
@@ -1711,16 +1898,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 100.33) (xy 68.58 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d0d9232-eac9-43c8-80af-c2c4e1e6727c")
-	)
-	(wire
-		(pts
 			(xy 110.49 67.31) (xy 102.87 67.31)
 		)
 		(stroke
@@ -1741,7 +1918,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 100.33) (xy 73.66 100.33)
+			(xy 49.53 100.33) (xy 73.66 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1778,6 +1955,16 @@
 			(type default)
 		)
 		(uuid "b7089a01-db5e-4fae-843e-78fa026a3a19")
+	)
+	(wire
+		(pts
+			(xy 30.48 111.76) (xy 30.48 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7b6d43f-3fd2-4c6e-a3bf-9c9ecace0ac3")
 	)
 	(wire
 		(pts
@@ -2798,6 +2985,76 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 30.48 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f13585c2-abe4-439d-b708-a04a6ffec782")
+		(property "Reference" "BT2"
+			(at 34.29 106.1084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 34.29 108.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 107.696 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 30.48 107.696 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 30.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e5dcf916-402b-443f-b673-086095c72f60")
+		)
+		(pin "1"
+			(uuid "2a8b6061-25e0-4ba6-9182-8a8b5c6e705d")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
+					(reference "BT2")
 					(unit 1)
 				)
 			)
