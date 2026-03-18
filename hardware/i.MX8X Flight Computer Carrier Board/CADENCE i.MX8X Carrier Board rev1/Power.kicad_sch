@@ -2387,6 +2387,18 @@
 		(uuid 316a90d2-264b-498a-8853-3c8af4220580)
 	)
 	(rectangle
+		(start 130.81 139.7)
+		(end 153.035 151.13)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7a9c0f1d-259d-454e-941f-7456f0fd5b6d)
+	)
+	(rectangle
 		(start 143.51 13.97)
 		(end 279.4 87.63)
 		(stroke
@@ -2434,18 +2446,6 @@
 		)
 		(uuid "1569982c-a60d-4641-8fb0-9ef795a84d74")
 	)
-	(text "From William:\nFor flight model, potentially use neutron tolerant IC from MPS"
-		(exclude_from_sim no)
-		(at 92.964 147.828 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "2782646d-497a-44ca-8da9-7d6ea9835209")
-	)
 	(text "battery stuff"
 		(exclude_from_sim no)
 		(at 152.4 35.306 0)
@@ -2482,6 +2482,18 @@
 		)
 		(uuid "6b85cd3b-bf72-4191-8ff0-14f7be3f083f")
 	)
+	(text "Watchdog Bite"
+		(exclude_from_sim no)
+		(at 142.24 134.874 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "8d08ef72-2c11-4870-a814-a1dc92e51d2b")
+	)
 	(text "Ethernet 2V5 LDO"
 		(exclude_from_sim no)
 		(at 27.94 92.71 0)
@@ -2493,6 +2505,18 @@
 			)
 		)
 		(uuid "8f33d4f9-6d1e-4e7e-9cbf-350f0b86c8ba")
+	)
+	(text "For flight model, replace LDOs and SMPS with rad tested components\nin radiation database"
+		(exclude_from_sim no)
+		(at 196.596 141.732 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "957e409c-5e7e-484e-96bb-c2534e7623d8")
 	)
 	(text "ETHERNET 1V0 LDO"
 		(exclude_from_sim no)
@@ -4431,6 +4455,28 @@
 		(uuid "b6344829-1c72-4245-bbba-b12f2d8b2962")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 278.3934 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{WD_EN_OBC}"
+		(shape output)
+		(at 134.62 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc8fe3d7-c793-4399-90fd-285a9c7ccd0c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.6118 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
