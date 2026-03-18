@@ -26,7 +26,7 @@
 		(uuid "5e25ddb5-0404-4c9b-ba4f-fd87567c6009")
 	)
 	(sheet
-		(at 156.972 84.836)
+		(at 156.972 96.266)
 		(size 31.75 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -42,7 +42,7 @@
 		)
 		(uuid "06285b9f-dba4-4d6c-b96c-ada43ac326e2")
 		(property "Sheetname" "Debug"
-			(at 156.972 84.1244 0)
+			(at 156.972 95.5544 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,7 +51,7 @@
 			)
 		)
 		(property "Sheetfile" "debug.kicad_sch"
-			(at 156.972 110.8206 0)
+			(at 156.972 122.2506 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -60,7 +60,7 @@
 			)
 		)
 		(pin "UART" input
-			(at 188.722 97.536 0)
+			(at 188.722 108.966 0)
 			(uuid "0906a003-ab8d-4be3-be25-236893a30fba")
 			(effects
 				(font
@@ -150,7 +150,7 @@
 	)
 	(sheet
 		(at 254 71.12)
-		(size 27.94 24.13)
+		(size 27.94 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -164,7 +164,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "3853f2b5-b86c-4f53-9549-ed8b814cc447")
-		(property "Sheetname" "Peripherals"
+		(property "Sheetname" "MRAM"
 			(at 254 70.4084 0)
 			(effects
 				(font
@@ -173,13 +173,43 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "peripherals.kicad_sch"
-			(at 254 95.8346 0)
+		(property "Sheetfile" "mram.kicad_sch"
+			(at 254 94.5646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "MRAM_ADDRESS" input
+			(at 254 82.55 180)
+			(uuid "ee671838-0ae7-42c8-84bb-a934974456b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MRAM_CTRL" input
+			(at 254 77.47 180)
+			(uuid "dc2caf82-faf0-4715-9276-881161804bf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MRAM_DATA" input
+			(at 254 87.63 180)
+			(uuid "23254729-7296-453d-b8c3-fd0837eeb9cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -243,8 +273,8 @@
 		)
 	)
 	(sheet
-		(at 158.496 48.26)
-		(size 31.75 25.4)
+		(at 160.02 44.45)
+		(size 18.796 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -259,7 +289,7 @@
 		)
 		(uuid "7acf6d3b-d272-4af5-ad05-5ed10a438eac")
 		(property "Sheetname" "Flight Computer Interface"
-			(at 158.496 47.5484 0)
+			(at 160.02 43.7384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -267,8 +297,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "flight_computer_interface.kicad_sch"
-			(at 158.496 74.2446 0)
+		(property "Sheetfile" "fc_interface.kicad_sch"
+			(at 160.02 57.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -277,7 +307,7 @@
 			)
 		)
 		(pin "UART" input
-			(at 190.246 60.96 0)
+			(at 178.816 50.8 0)
 			(uuid "c822132d-357e-4380-a3f8-6a9a461f7d14")
 			(effects
 				(font
@@ -362,6 +392,48 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 210.82 49.53)
+		(size 20.32 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ab6c6673-69ff-4cf4-9e80-7aaa96b942b5")
+		(property "Sheetname" "Peripherals"
+			(at 210.82 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "perph.kicad_sch"
+			(at 210.82 62.8146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
+					(page "9")
 				)
 			)
 		)

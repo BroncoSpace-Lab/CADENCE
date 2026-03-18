@@ -5,9 +5,45 @@
 	(uuid "6e326398-4ec1-4f18-8621-05da6e4f7566")
 	(paper "A5")
 	(lib_symbols)
+	(text "LDO - 3.3V to 1.8V"
+		(exclude_from_sim no)
+		(at 53.848 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "327915b8-c404-42ed-919e-08d1a711ca89")
+	)
+	(text "Switching Reg - Vbat to +12V"
+		(exclude_from_sim no)
+		(at 58.42 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c23d5fc2-63c2-4dbb-af76-a34d2b5dda6e")
+	)
+	(text "Switching Reg - Vbat to 3.3V"
+		(exclude_from_sim no)
+		(at 58.674 32.258 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "e9d89ea9-7af9-4dd3-94d4-a5309ead107b")
+	)
 	(hierarchical_label "+3.3V"
 		(shape input)
-		(at 54.61 44.45 0)
+		(at 147.32 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18,7 +54,7 @@
 	)
 	(hierarchical_label "+12V"
 		(shape input)
-		(at 54.61 54.61 0)
+		(at 147.32 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -29,12 +65,12 @@
 	)
 	(hierarchical_label "V_BATT"
 		(shape input)
-		(at 54.61 66.04 0)
+		(at 46.99 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "c258222a-448f-45b3-8fee-4f3432c09f41")
 	)
