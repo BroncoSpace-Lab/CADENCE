@@ -5,6 +5,145 @@
 	(uuid "76d56d83-4a41-4ceb-ab87-815c9c78ef43")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -2304,7 +2443,7 @@
 	)
 	(text "Payload Board Connection"
 		(exclude_from_sim no)
-		(at 87.63 40.64 0)
+		(at 50.8 16.51 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -2355,6 +2494,12 @@
 		(uuid "3cd6c8eb-1279-407c-8239-a786574df158")
 	)
 	(junction
+		(at 121.92 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3f5d40b6-7e17-4930-95cd-602d3043f3fb")
+	)
+	(junction
 		(at 173.99 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2391,10 +2536,22 @@
 		(uuid "64a0cc39-8e33-4fa2-a44a-cd8e5f9ae9e0")
 	)
 	(junction
+		(at 245.11 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "759790cc-f976-4df9-8934-e2305b0712e2")
+	)
+	(junction
 		(at 226.06 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ba89e7a-e593-4030-8df6-710787ab59c0")
+	)
+	(junction
+		(at 245.11 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adb753dd-502d-4563-bafc-5584ac71d477")
 	)
 	(junction
 		(at 173.99 80.01)
@@ -2420,6 +2577,12 @@
 		(color 0 0 0 0)
 		(uuid "ee6061d9-8071-41c1-ba2e-7896edbcfc44")
 	)
+	(junction
+		(at 121.92 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feb117e4-afa0-43f6-9283-100eb21d5acc")
+	)
 	(wire
 		(pts
 			(xy 173.99 72.39) (xy 173.99 74.93)
@@ -2439,6 +2602,16 @@
 			(type default)
 		)
 		(uuid "0363c3ce-9957-4fdf-9a2a-79bffa98032d")
+	)
+	(wire
+		(pts
+			(xy 118.11 52.07) (xy 121.92 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ccfcfe-6de9-469d-a4e5-33d8ddb52cc7")
 	)
 	(wire
 		(pts
@@ -2552,6 +2725,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 50.8) (xy 125.73 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161fa070-50b5-42c1-b8d8-cd5f28f4437f")
+	)
+	(wire
+		(pts
 			(xy 107.95 88.9) (xy 109.22 88.9)
 		)
 		(stroke
@@ -2559,6 +2742,16 @@
 			(type default)
 		)
 		(uuid "16769d15-8552-4dd1-8bc5-551f867833d2")
+	)
+	(wire
+		(pts
+			(xy 248.92 72.39) (xy 248.92 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "197bc63c-cb96-410b-9c00-8eb68cb85dea")
 	)
 	(wire
 		(pts
@@ -2579,6 +2772,26 @@
 			(type default)
 		)
 		(uuid "1b434432-2fca-4777-9346-9bbc8b5c66dd")
+	)
+	(wire
+		(pts
+			(xy 125.73 41.91) (xy 125.73 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dbf00f7-ec8c-47ce-9077-557e9daeb47d")
+	)
+	(wire
+		(pts
+			(xy 241.3 63.5) (xy 241.3 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1df412c5-bca4-48f3-be59-5f4e343dcad2")
 	)
 	(wire
 		(pts
@@ -2652,6 +2865,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 62.23) (xy 245.11 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37ddf214-b222-4a60-a0ec-c67f56632689")
+	)
+	(wire
+		(pts
 			(xy 153.67 68.58) (xy 153.67 69.85)
 		)
 		(stroke
@@ -2679,6 +2902,16 @@
 			(type default)
 		)
 		(uuid "417b5041-1df5-4ba9-a1a0-4987611e9ff1")
+	)
+	(wire
+		(pts
+			(xy 245.11 73.66) (xy 248.92 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41a8019c-28cb-4747-83cf-b6411f07d4ba")
 	)
 	(wire
 		(pts
@@ -2802,6 +3035,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 63.5) (xy 245.11 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e50457-494c-4d07-ae85-d64b7c529321")
+	)
+	(wire
+		(pts
 			(xy 199.39 63.5) (xy 199.39 72.39)
 		)
 		(stroke
@@ -2849,6 +3092,16 @@
 			(type default)
 		)
 		(uuid "5bbe2e28-dd8d-4156-87d1-88800acc347e")
+	)
+	(wire
+		(pts
+			(xy 241.3 72.39) (xy 241.3 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bcc4157-7d5b-4757-8db2-43762e2bb353")
 	)
 	(wire
 		(pts
@@ -2912,6 +3165,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 73.66) (xy 245.11 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6360f93f-433d-4187-83e7-b1e2b2a9888a")
+	)
+	(wire
+		(pts
 			(xy 77.47 88.9) (xy 78.74 88.9)
 		)
 		(stroke
@@ -2959,6 +3222,16 @@
 			(type default)
 		)
 		(uuid "6ed624eb-c164-4b9f-886b-e3d729a105a2")
+	)
+	(wire
+		(pts
+			(xy 121.92 41.91) (xy 125.73 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ef8d5cd-b210-421f-948f-1a7502704ac8")
 	)
 	(wire
 		(pts
@@ -3152,6 +3425,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 40.64) (xy 121.92 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "991e39ba-00d8-410a-82d4-2ec7b3286a76")
+	)
+	(wire
+		(pts
 			(xy 76.2 59.69) (xy 76.2 73.66)
 		)
 		(stroke
@@ -3222,6 +3505,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 52.07) (xy 121.92 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0247f59-a5f0-4d78-aa72-54990628ee05")
+	)
+	(wire
+		(pts
+			(xy 121.92 52.07) (xy 125.73 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ef33ba-d0ca-4ab2-9fdb-558b39dae018")
+	)
+	(wire
+		(pts
 			(xy 172.72 80.01) (xy 173.99 80.01)
 		)
 		(stroke
@@ -3229,6 +3532,16 @@
 			(type default)
 		)
 		(uuid "b2aec9c8-c53a-4152-ab6b-1c07ea6de0d1")
+	)
+	(wire
+		(pts
+			(xy 241.3 73.66) (xy 245.11 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3319c61-4782-47d1-87a8-1ae49dafd36c")
 	)
 	(wire
 		(pts
@@ -3302,6 +3615,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 63.5) (xy 248.92 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97c3136-7f10-4efd-9f91-4bbd28506e4c")
+	)
+	(wire
+		(pts
 			(xy 76.2 55.88) (xy 76.2 59.69)
 		)
 		(stroke
@@ -3309,6 +3632,36 @@
 			(type default)
 		)
 		(uuid "cee5d800-c714-43e4-9d11-a695c00b78d8")
+	)
+	(wire
+		(pts
+			(xy 118.11 41.91) (xy 121.92 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceeec16f-8633-4194-a0b9-2eb2e06dea54")
+	)
+	(wire
+		(pts
+			(xy 118.11 41.91) (xy 118.11 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0aafa02-4aeb-4f71-8f6c-a50dca520c6e")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 118.11 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d463f4fd-7c2a-4108-823e-f114184de9e1")
 	)
 	(wire
 		(pts
@@ -3369,6 +3722,16 @@
 			(type default)
 		)
 		(uuid "df40a45c-f8e6-4ba0-90a0-b761798b2c98")
+	)
+	(wire
+		(pts
+			(xy 248.92 63.5) (xy 248.92 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6365962-e96e-4bec-9daa-bb032db23406")
 	)
 	(wire
 		(pts
@@ -8422,6 +8785,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 248.92 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a808168-40d3-4d44-b9cc-52e9ed444a89")
+		(property "Reference" "C101"
+			(at 248.92 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 248.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 249.8852 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 248.92 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cce6bb54-0900-466f-b482-40bd46957b3f")
+		)
+		(pin "2"
+			(uuid "84ea42ab-e5dd-4f42-b3d2-1c384f671acf")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "C101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 90.17 0)
 		(unit 1)
@@ -8482,6 +8914,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
 					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 245.11 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c9d0640-4004-4b34-8cda-3073c0d33fad")
+		(property "Reference" "#PWR0168"
+			(at 245.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 245.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 245.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd2c2574-81c1-4b7d-b859-aba43e4c9366")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -8684,6 +9182,144 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 118.11 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "592c80ca-589e-493b-93f1-56eda672cfad")
+		(property "Reference" "C98"
+			(at 114.3 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 114.3 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.0752 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 118.11 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a65e9bc2-16d3-48fd-9864-7db56c5e6e68")
+		)
+		(pin "2"
+			(uuid "51ba65fa-fc5a-4934-b459-d9c3bd37ede4")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "C98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 125.73 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d9b4914-d396-4a79-9c31-91f1b81efb5f")
+		(property "Reference" "C99"
+			(at 125.73 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 125.73 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 126.6952 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 125.73 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b678a4ec-e906-4c70-945a-9ead95bf9bc6")
+		)
+		(pin "2"
+			(uuid "09ecf4ea-d926-49be-81d7-40507ee6da20")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "C99")
 					(unit 1)
 				)
 			)
@@ -8927,6 +9563,72 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
+		(at 121.92 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a989b73-652a-45e0-b5b1-792f7d28384a")
+		(property "Reference" "#PWR0165"
+			(at 121.92 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 121.92 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 121.92 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d00dc6e0-812b-4a4d-a676-a5ab6a9f5313")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
 		(at 198.12 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9163,6 +9865,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 245.11 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92179a07-1785-4b6f-8cac-24333871f74f")
+		(property "Reference" "#PWR0167"
+			(at 245.11 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 245.11 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 245.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 245.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cf99edf-419d-41f3-a211-43ecfaf94e4c")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "#PWR0167")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 85.09 0)
 		(unit 1)
@@ -9223,6 +9991,75 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
 					(reference "#PWR0163")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 241.3 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae8442d6-244e-4a38-9d76-04e418a36ab7")
+		(property "Reference" "C100"
+			(at 237.49 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 237.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.2652 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cc6a93f-f8de-4544-933c-890da5bb6e41")
+		)
+		(pin "2"
+			(uuid "36ae0fa2-c421-440c-acaa-cc3e022b7b1c")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "C100")
 					(unit 1)
 				)
 			)
@@ -9692,6 +10529,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
 					(reference "#PWR0117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7520532-fce1-49a1-a01b-aaed75edbe37")
+		(property "Reference" "#PWR0166"
+			(at 121.92 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52e013d5-58ec-4cc6-a755-61f5436777fa")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/c0bf5d3f-4cfb-4c0b-b448-903517df1d5a"
+					(reference "#PWR0166")
 					(unit 1)
 				)
 			)
