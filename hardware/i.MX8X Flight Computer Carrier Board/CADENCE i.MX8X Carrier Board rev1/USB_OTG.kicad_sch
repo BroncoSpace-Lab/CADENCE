@@ -1026,12 +1026,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "Device:C_Polarized_US"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1045,7 +1046,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C"
+			(property "Value" "C_Polarized_US"
 				(at 0.635 -2.54 0)
 				(effects
 					(font
@@ -1055,7 +1056,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1072,7 +1073,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Polarized capacitor, US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1090,7 +1091,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "CP_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1099,7 +1100,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "C_Polarized_US_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762) (xy 2.032 0.762)
@@ -1114,8 +1115,32 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -1.778 2.286) (xy -0.762 2.286)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.778) (xy -1.27 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.032 -1.27)
+					(mid 0 -0.5572)
+					(end 2.032 -1.27)
 					(stroke
 						(width 0.508)
 						(type default)
@@ -1125,7 +1150,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "C_Polarized_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1146,7 +1171,7 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 2.794)
+					(length 3.302)
 					(name "~"
 						(effects
 							(font
@@ -1736,7 +1761,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:AMS1117-3.3"
+		(symbol "Regulator_Linear:LM1085-3.3"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1748,7 +1776,7 @@
 					)
 				)
 			)
-			(property "Value" "AMS1117-3.3"
+			(property "Value" "LM1085-3.3"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1757,25 +1785,17 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+			(property "Footprint" ""
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-				(at 2.54 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1085.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1784,7 +1804,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "linear regulator ldo fixed positive"
+			(property "Description" "3A 27V Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1793,7 +1813,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_keywords" "Voltage Regulator Fixed 5A Positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1802,10 +1822,19 @@
 					(hide yes)
 				)
 			)
-			(symbol "AMS1117-3.3_0_1"
+			(property "ki_fp_filters" "TO?220* TO?263*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM1085-3.3_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1815,7 +1844,7 @@
 					)
 				)
 			)
-			(symbol "AMS1117-3.3_1_1"
+			(symbol "LM1085-3.3_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -1863,131 +1892,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+3.3V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2237,15 +2141,17 @@
 		)
 		(uuid 88942440-11bc-4d00-8699-b064731a13c9)
 	)
-	(text "5v to 3.3v regulators (1A output each IC)"
+	(text "3A fixed 3.3V from VBUS"
 		(exclude_from_sim no)
-		(at 202.946 71.882 0)
+		(at 217.678 106.426 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
-		(uuid "36ef9de2-bfee-4396-85f7-0980db84bee7")
+		(uuid "1784f932-200a-4fdf-b549-16f7d8b39d6b")
 	)
 	(text "USB Ports (for debug, coding, development)"
 		(exclude_from_sim no)
@@ -2269,6 +2175,18 @@
 		)
 		(uuid "6ce32f9c-18e1-4c7b-aaa7-0bd4ba86bb2d")
 	)
+	(text "Using fixed voltage version of tested regulator"
+		(exclude_from_sim no)
+		(at 214.376 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "835dbc0a-01ca-4873-b604-0c838d0be5d4")
+	)
 	(text "usb termination resistor values may be changed\nto adjust impedance"
 		(exclude_from_sim no)
 		(at 119.888 132.588 0)
@@ -2278,6 +2196,12 @@
 			)
 		)
 		(uuid "8e71b68d-c7bb-44a7-9cd0-789f6ef507d4")
+	)
+	(junction
+		(at 184.15 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05ef0570-b085-43a1-9d25-1e493b750a8a")
 	)
 	(junction
 		(at 142.24 106.68)
@@ -2292,18 +2216,6 @@
 		(uuid "0d657230-50f4-447b-8270-aeade9899bf9")
 	)
 	(junction
-		(at 204.47 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "10e8830c-7a77-460b-b8a5-02b6fad85069")
-	)
-	(junction
-		(at 217.17 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "293841c6-0ac4-4d78-acee-cb0b005992c5")
-	)
-	(junction
 		(at 87.63 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2314,12 +2226,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "462d55ac-bc9b-41b7-b2ad-ac9b00e48931")
-	)
-	(junction
-		(at 215.9 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48dcdefa-0ad5-4e97-938b-7ea0147bae72")
 	)
 	(junction
 		(at 139.7 106.68)
@@ -2334,34 +2240,28 @@
 		(uuid "7534e04a-6857-4e66-9104-540a3e1d1e52")
 	)
 	(junction
+		(at 208.28 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "791dc7e9-d893-4ec1-8d56-177425d1fff5")
+	)
+	(junction
 		(at 121.92 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8cadcacc-92ea-4a05-ab84-93e3ebc50ab3")
 	)
 	(junction
-		(at 190.5 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbb28185-e776-419a-97ce-6b6cedb23ea1")
-	)
-	(junction
-		(at 203.2 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd45911a-fc4e-4b9e-91b5-2240526b4b14")
-	)
-	(junction
-		(at 191.77 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ddcf7eea-c2af-448d-ac74-798320a555b4")
-	)
-	(junction
 		(at 87.63 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e85a6b01-564f-4a2d-b0eb-2c52907eddb9")
+	)
+	(junction
+		(at 196.85 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f05bf3d9-0f40-481e-9215-2ca0aa7ca6de")
 	)
 	(no_connect
 		(at 83.82 114.3)
@@ -2383,6 +2283,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 124.46) (xy 196.85 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00371d46-5f6e-4d3a-92e1-931979c5e1bf")
+	)
+	(wire
+		(pts
 			(xy 139.7 106.68) (xy 139.7 109.22)
 		)
 		(stroke
@@ -2400,6 +2310,16 @@
 			(type default)
 		)
 		(uuid "08d18aed-f833-4a87-a1f9-99a93d9ef9ea")
+	)
+	(wire
+		(pts
+			(xy 184.15 124.46) (xy 196.85 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0abc20dd-ac5a-4ba2-9611-8db8d81a3183")
 	)
 	(wire
 		(pts
@@ -2433,16 +2353,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 120.65) (xy 203.2 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e821c54-6dd0-487c-ad05-d8af5efc11c1")
-	)
-	(wire
-		(pts
 			(xy 68.58 128.27) (xy 68.58 127)
 		)
 		(stroke
@@ -2460,16 +2370,6 @@
 			(type default)
 		)
 		(uuid "27cc3b90-66e3-4a86-9ff3-42836daee94f")
-	)
-	(wire
-		(pts
-			(xy 215.9 111.76) (xy 215.9 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d9fe945-7921-4155-958a-527886c3b844")
 	)
 	(wire
 		(pts
@@ -2493,16 +2393,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 120.65) (xy 203.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c1ff1cc-43a3-4b26-a218-64e6aca6eded")
-	)
-	(wire
-		(pts
 			(xy 149.86 96.52) (xy 153.67 96.52)
 		)
 		(stroke
@@ -2513,16 +2403,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 86.36) (xy 217.17 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43672541-fcea-46ca-acf8-e7997b16e3a2")
-	)
-	(wire
-		(pts
 			(xy 87.63 104.14) (xy 87.63 101.6)
 		)
 		(stroke
@@ -2530,16 +2410,6 @@
 			(type default)
 		)
 		(uuid "487bd598-0708-4fc1-a8c6-7bc2498376f1")
-	)
-	(wire
-		(pts
-			(xy 204.47 95.25) (xy 217.17 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "497364f3-041a-4a2d-aff0-45546b230c28")
 	)
 	(wire
 		(pts
@@ -2573,13 +2443,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 109.22) (xy 190.5 111.76)
+			(xy 208.28 124.46) (xy 196.85 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "57fe5304-9662-4435-a0cb-a9f5bfacea4f")
+		(uuid "52f75ca4-029f-4a1c-be09-ef8c89f8a4cf")
+	)
+	(wire
+		(pts
+			(xy 208.28 114.3) (xy 208.28 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5658ca16-f7bd-49c9-8d2c-e24650a4997c")
 	)
 	(wire
 		(pts
@@ -2590,26 +2470,6 @@
 			(type default)
 		)
 		(uuid "5a4cd34c-b772-4149-8526-6a231a804209")
-	)
-	(wire
-		(pts
-			(xy 191.77 95.25) (xy 204.47 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5aef6c97-2bea-407c-bf21-f29fb6bf9b73")
-	)
-	(wire
-		(pts
-			(xy 204.47 93.98) (xy 204.47 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c12ac0b-5001-482b-aeb8-a13201641b34")
 	)
 	(wire
 		(pts
@@ -2633,33 +2493,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 95.25) (xy 204.47 96.52)
+			(xy 182.88 111.76) (xy 182.88 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6587a9b6-dceb-47f9-902c-0fc3b8ae9be5")
-	)
-	(wire
-		(pts
-			(xy 190.5 111.76) (xy 190.5 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65ad2973-0610-407b-b9fc-8b4ad8a6595e")
-	)
-	(wire
-		(pts
-			(xy 215.9 109.22) (xy 215.9 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b591d28-bf42-4064-af8e-0602a9525f47")
+		(uuid "7b4de7c8-d369-4841-a8cf-68626fec4828")
 	)
 	(wire
 		(pts
@@ -2673,23 +2513,23 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 86.36) (xy 217.17 86.36)
+			(xy 184.15 114.3) (xy 189.23 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84c3d764-0f28-4dcd-ab7f-5aae99c358e1")
+		(uuid "8533eb18-4d8c-4639-9e6c-e3011cb3a7b3")
 	)
 	(wire
 		(pts
-			(xy 191.77 83.82) (xy 191.77 86.36)
+			(xy 209.55 114.3) (xy 208.28 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "865d5903-eae8-4434-86cc-89f79fa112a1")
+		(uuid "85849d00-3c3e-4e7d-b29c-6bbc4420212e")
 	)
 	(wire
 		(pts
@@ -2700,16 +2540,6 @@
 			(type default)
 		)
 		(uuid "8b25c2bb-c8cb-45e9-9e9c-839fbdac6965")
-	)
-	(wire
-		(pts
-			(xy 210.82 111.76) (xy 215.9 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c61df4f-8787-4ba7-be4e-6cc8e95a6967")
 	)
 	(wire
 		(pts
@@ -2733,36 +2563,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 119.38) (xy 203.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6a04b2f-f87b-4eda-b017-d880c0ddefaf")
-	)
-	(wire
-		(pts
-			(xy 191.77 86.36) (xy 191.77 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a92d105e-b378-47da-9ca7-abb76518b200")
-	)
-	(wire
-		(pts
-			(xy 190.5 111.76) (xy 195.58 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4be4e2d-164b-4792-aeb3-c6e75d5d201a")
-	)
-	(wire
-		(pts
 			(xy 68.58 121.92) (xy 68.58 127)
 		)
 		(stroke
@@ -2780,16 +2580,6 @@
 			(type default)
 		)
 		(uuid "b8233306-735b-4347-afff-162db221a503")
-	)
-	(wire
-		(pts
-			(xy 203.2 120.65) (xy 215.9 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be5f20c7-30e2-4c46-9393-246c24e8581e")
 	)
 	(wire
 		(pts
@@ -2813,6 +2603,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 114.3) (xy 204.47 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c449c9fc-5730-4456-a334-b4361d456422")
+	)
+	(wire
+		(pts
 			(xy 92.71 127) (xy 68.58 127)
 		)
 		(stroke
@@ -2823,13 +2623,13 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 83.82) (xy 217.17 86.36)
+			(xy 182.88 114.3) (xy 184.15 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc0b6323-bf71-4a71-ad3f-1aea9968b199")
+		(uuid "d1218143-25f9-45c1-848a-8f78ae6ccf34")
 	)
 	(wire
 		(pts
@@ -2850,6 +2650,26 @@
 			(type default)
 		)
 		(uuid "d5032131-073e-4ad3-b765-8461020b80bc")
+	)
+	(wire
+		(pts
+			(xy 184.15 114.3) (xy 184.15 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0936587-e1e9-486e-bb06-d20a4c27d3f1")
+	)
+	(wire
+		(pts
+			(xy 184.15 123.19) (xy 184.15 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e13af587-9a7c-4af6-9b4c-03b905805c63")
 	)
 	(wire
 		(pts
@@ -2883,13 +2703,23 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 86.36) (xy 196.85 86.36)
+			(xy 208.28 123.19) (xy 208.28 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1d0e44c-e115-45ae-b24d-727584ed88fa")
+		(uuid "f9a8b766-f94f-4baa-bf7f-4c77aa11779a")
+	)
+	(wire
+		(pts
+			(xy 196.85 121.92) (xy 196.85 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd0036a5-ec39-472f-b90c-2ef9a2f82a74")
 	)
 	(wire
 		(pts
@@ -2917,6 +2747,28 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Regulator_Output"
+		(shape output)
+		(at 209.55 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6adbfd98-5bdc-440a-b456-81df6d0d314e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.8634 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -3051,35 +2903,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 190.5 116.84 0)
+		(lib_id "Regulator_Linear:LM1085-3.3")
+		(at 196.85 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "196d7439-141c-4abb-a9c2-9caf119ba1ab")
-		(property "Reference" "C6"
-			(at 194.31 115.5699 0)
+		(uuid "0b7328a8-16be-42e5-84a9-4152e10b3b76")
+		(property "Reference" "U7"
+			(at 196.85 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 194.31 118.1099 0)
+		(property "Value" "LM1085-3.3"
+			(at 196.85 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 191.4652 120.65 0)
+			(at 196.85 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm1085.pdf"
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3087,171 +2947,28 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 190.5 116.84 0)
+		(property "Description" "3A 27V Linear Regulator, Fixed Output 3.3V, TO-220/TO-263"
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 190.5 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b71dce1c-3153-435c-84ee-c15ce31a7ae6")
 		)
 		(pin "2"
-			(uuid "3442aa6c-2e6b-433c-88ea-771ef10dca18")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 203.2 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19c56755-618f-40f9-b5b1-03004ba02c80")
-		(property "Reference" "U8"
-			(at 203.2 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-3.3"
-			(at 203.2 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 203.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 205.74 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 203.2 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+			(uuid "ab9ce9c9-8b64-44fb-ae47-cc08b0db1871")
 		)
 		(pin "3"
-			(uuid "3dd67c9f-dec4-4461-bb84-0314a8757725")
+			(uuid "415b8203-9397-4460-80bf-d7e697e31d32")
 		)
 		(pin "1"
-			(uuid "e45596a4-9960-47a5-8313-0bc99d193b2a")
-		)
-		(pin "2"
-			(uuid "57e8dab0-58fe-4711-943b-464cacbf1180")
+			(uuid "76b1b4e4-c343-4561-bbf5-d095334b0e9c")
 		)
 		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
+			(project ""
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 217.17 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23464eb2-a851-4712-86f4-cf7c20599b34")
-		(property "Reference" "#PWR026"
-			(at 217.17 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 217.17 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 217.17 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "99306d44-c3c1-454d-92d3-ca2c7236340c")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR026")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -3327,76 +3044,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 215.9 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29a3a1ad-94b7-4bc0-9e56-c0783afe8667")
-		(property "Reference" "C7"
-			(at 219.71 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 219.71 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 216.8652 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 215.9 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89fc7917-ea6e-4f5a-809e-a6f0dca33771")
-		)
-		(pin "2"
-			(uuid "b7776577-69b7-44d0-99c3-94d193d91a90")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 68.58 128.27 0)
 		(unit 1)
@@ -3457,142 +3104,6 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 191.77 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "303c899e-e0ff-4862-9248-8198b7efb65d")
-		(property "Reference" "C3"
-			(at 195.58 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 195.58 92.7099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 192.7352 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 191.77 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "806e367b-cc55-4cb2-80da-fd4d17e377ae")
-		)
-		(pin "2"
-			(uuid "b776f1c0-ce3d-48d7-98b0-a3ab830f6af8")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 203.2 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e90d347-4325-458b-a47f-c8ed9870eb10")
-		(property "Reference" "#PWR033"
-			(at 203.2 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 203.2 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e7d406c0-3860-406e-9963-975f80d526e8")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3731,34 +3242,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 190.5 109.22 0)
+		(lib_id "Device:C_Polarized_US")
+		(at 208.28 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a04e0d3-bfde-4b48-8805-4ac9bbb6b132")
-		(property "Reference" "#PWR032"
-			(at 190.5 113.03 0)
+		(uuid "7bcb4cff-a447-4248-a6ae-3a42f74d119d")
+		(property "Reference" "C40"
+			(at 212.09 117.4749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 190.5 104.14 0)
+		(property "Value" "10uF"
+			(at 212.09 120.0149 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 109.22 0)
+			(at 208.28 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3766,8 +3278,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 190.5 109.22 0)
+		(property "Datasheet" "~"
+			(at 208.28 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3775,8 +3287,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 190.5 109.22 0)
+		(property "Description" "Polarized capacitor, US symbol"
+			(at 208.28 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3785,12 +3297,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d294c320-b3ee-4d15-a42b-7772401cc035")
+			(uuid "19131e65-0bba-423e-84b4-0406ccf4966d")
+		)
+		(pin "2"
+			(uuid "6cb7c15e-0ab5-4f08-95fe-2208d18a1324")
 		)
 		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
+			(project ""
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR032")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -3798,16 +3313,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 96.52 0)
+		(at 196.85 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8f9de8c1-2035-42dc-b8b0-b383e847f060")
-		(property "Reference" "#PWR025"
-			(at 204.47 102.87 0)
+		(uuid "88d4f365-8264-4cbd-ba46-1e130020819b")
+		(property "Reference" "#PWR0140"
+			(at 196.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +3331,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 101.6 0)
+			(at 196.85 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +3339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 96.52 0)
+			(at 196.85 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 96.52 0)
+			(at 196.85 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3842,7 +3357,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 96.52 0)
+			(at 196.85 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3851,78 +3366,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "865b12c4-81ff-4fb6-9de8-f535fa1268d3")
+			(uuid "d496907e-eca4-41bd-a723-9e9c54595a82")
 		)
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 215.9 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91537e01-5c5f-4a99-b626-0ba674f4ebc1")
-		(property "Reference" "#PWR034"
-			(at 215.9 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 215.9 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 215.9 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c5e0e03-d106-498b-88c5-a520c8e25495")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR034")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -3989,77 +3438,6 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:AMS1117-3.3")
-		(at 204.47 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9bfc13de-3468-43e2-817d-6145a0352fa2")
-		(property "Reference" "U7"
-			(at 204.47 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AMS1117-3.3"
-			(at 204.47 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 204.47 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
-			(at 207.01 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
-			(at 204.47 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "7a87171f-9f2b-4996-9cc0-17bbb60cf844")
-		)
-		(pin "1"
-			(uuid "8e40cb21-8cf4-4442-bb8c-83acfae7051d")
-		)
-		(pin "2"
-			(uuid "e86e3e6f-82a0-4b8b-8144-2198fc3d2fc5")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -4179,6 +3557,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 182.88 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac531f9c-2dbe-461d-9f3f-dc25eb789c58")
+		(property "Reference" "#PWR0116"
+			(at 182.88 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 182.88 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da784c60-d0a2-42c0-a8b6-f3f0488d4635")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
+					(reference "#PWR0116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_A")
 		(at 142.24 93.98 0)
 		(unit 1)
@@ -4256,17 +3700,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 217.17 91.44 0)
+		(lib_id "Device:C_Polarized_US")
+		(at 184.15 119.38 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc511d3d-1c87-48fe-8c87-b049642ce81f")
-		(property "Reference" "C4"
-			(at 220.98 90.1699 0)
+		(uuid "b8ee7674-50c6-45a5-ba29-e439f73834ce")
+		(property "Reference" "C107"
+			(at 186.69 118.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,8 +3717,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 220.98 92.7099 0)
+		(property "Value" "10uF"
+			(at 186.69 120.904 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4284,7 +3727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.1352 95.25 0)
+			(at 184.15 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +3736,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 217.17 91.44 0)
+			(at 184.15 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,8 +3744,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 217.17 91.44 0)
+		(property "Description" "Polarized capacitor, US symbol"
+			(at 184.15 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4311,81 +3754,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3b682b5-ddea-4ff0-8a94-71aad6c5c637")
+			(uuid "5ff1cc4e-1216-4609-b210-c7f6e3f0ba93")
 		)
 		(pin "2"
-			(uuid "3521b9f2-9d28-46bd-9dff-792572571555")
+			(uuid "e79b3b74-dfcf-4968-a556-8079bbda5bb3")
 		)
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 191.77 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd50b7b5-1596-4f03-ac51-a35219422d98")
-		(property "Reference" "#PWR024"
-			(at 191.77 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 191.77 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 191.77 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0a7e497-d2d1-461d-ba67-1ebae9f22601")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
-					(reference "#PWR024")
+					(reference "C107")
 					(unit 1)
 				)
 			)

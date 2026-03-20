@@ -1935,7 +1935,7 @@
 		)
 		(uuid "1f9da806-17b7-4271-bfa9-0389c56cbda6")
 	)
-	(text "List of Power Monitors:\n- x1 Overall Power Monitor\n- x1 GNSS Power Monitor\n- x1"
+	(text "List of Power Monitors:\n- x1 Overall Power Monitor\n- x1 GNSS Power Monitor\n- x1 SATNOGS Power Monitor"
 		(exclude_from_sim no)
 		(at 197.358 30.48 0)
 		(effects
@@ -1956,6 +1956,16 @@
 			)
 		)
 		(uuid "4bde4825-b0b6-495b-810f-61fefc09071a")
+	)
+	(text "Use high watt shunt!"
+		(exclude_from_sim no)
+		(at 172.974 69.85 0)
+		(effects
+			(font
+				(size 1.7018 1.7018)
+			)
+		)
+		(uuid "4c746d98-e967-4011-a857-391ab2645d6f")
 	)
 	(text "I2C Address: 1010010b"
 		(exclude_from_sim no)
@@ -3001,28 +3011,6 @@
 		)
 		(uuid "fb734d46-f7c9-4369-8bee-ad5bae54edcc")
 	)
-	(global_label "Regulator_Output"
-		(shape input)
-		(at 182.88 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1627b558-23e4-4754-9a4c-bd2c06a7d897")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.5666 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
 		(shape bidirectional)
 		(at 132.08 149.86 180)
@@ -3059,6 +3047,28 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Power_Switch_Output"
+		(shape input)
+		(at 182.88 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7683770e-c9b9-4b5b-b235-724c2825d8a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.9983 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
