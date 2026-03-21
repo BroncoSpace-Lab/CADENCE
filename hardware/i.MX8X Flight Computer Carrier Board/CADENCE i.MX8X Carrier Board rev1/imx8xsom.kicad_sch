@@ -11021,6 +11021,16 @@
 		)
 		(uuid "3761e47f-db4f-43d3-b7e3-ace8c133b423")
 	)
+	(text "D55 is dedicated watchdog pet pin"
+		(exclude_from_sim no)
+		(at 484.886 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3929bd04-6b1c-40a6-bd16-62f1e6d2f3b3")
+	)
 	(text "I2C1 (Onboard Power Monitors)"
 		(exclude_from_sim no)
 		(at 315.468 82.296 0)
@@ -11266,7 +11276,7 @@
 	)
 	(text "ADC"
 		(exclude_from_sim no)
-		(at 461.518 181.102 0)
+		(at 462.534 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11354,6 +11364,16 @@
 		)
 		(uuid "94d72370-0dca-45f8-9270-da92d5ee7b18")
 	)
+	(text "SCALES sets one ADC to M40 UART TX (ADC3) and\nuses one SCU GPIO as pet"
+		(exclude_from_sim no)
+		(at 485.648 185.928 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "972bca3f-b438-4e80-85ce-c4033dc4f32c")
+	)
 	(text "10/100/1000\nMbps Ethernet0\nDifferential Interface"
 		(exclude_from_sim no)
 		(at 85.344 205.486 0)
@@ -11377,7 +11397,7 @@
 	)
 	(text "JTAG"
 		(exclude_from_sim no)
-		(at 459.994 162.814 0)
+		(at 469.138 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11509,7 +11529,7 @@
 	)
 	(text "}"
 		(exclude_from_sim no)
-		(at 456.946 180.086 0)
+		(at 457.962 180.34 0)
 		(effects
 			(font
 				(size 13.335 13.335)
@@ -11519,7 +11539,7 @@
 	)
 	(text "}"
 		(exclude_from_sim no)
-		(at 453.898 162.052 0)
+		(at 465.836 162.814 0)
 		(effects
 			(font
 				(size 8.255 8.255)
@@ -12063,16 +12083,6 @@
 			(type default)
 		)
 		(uuid "00fbd5cb-5867-44e2-a09e-11d115ccefcf")
-	)
-	(wire
-		(pts
-			(xy 360.68 195.58) (xy 363.22 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "012481c7-f8f1-4dc2-9e8b-5c6a417d2df3")
 	)
 	(wire
 		(pts
@@ -13663,6 +13673,16 @@
 			(type default)
 		)
 		(uuid "6d185d40-7d09-45c9-9b8e-1c3f7d379813")
+	)
+	(wire
+		(pts
+			(xy 354.33 195.58) (xy 363.22 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d4862f5-0957-405c-b1e7-7579d6eeaf4e")
 	)
 	(wire
 		(pts
@@ -16427,6 +16447,26 @@
 			)
 		)
 	)
+	(global_label "X_M40_UART0_TX"
+		(shape bidirectional)
+		(at 354.33 195.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18d10976-a1f5-41b6-bf7a-9cef347c43a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 354.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_MIPI_DSI1_DATA1_P"
 		(shape output)
 		(at 360.68 137.16 180)
@@ -16987,26 +17027,6 @@
 			)
 		)
 	)
-	(global_label "X_M40_UART0_TX"
-		(shape bidirectional)
-		(at 436.88 182.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "37da3799-52cf-41ba-bfb4-8d7fc1b5dfb4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 436.88 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_ESAI0_TX0/ENET1_RGMII_RXC"
 		(shape input)
 		(at 195.58 134.62 0)
@@ -17239,26 +17259,6 @@
 		(uuid "49247301-1d4a-449b-ba7f-a84fd4d2cafa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 214.63 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_JTAG_TRST"
-		(shape input)
-		(at 435.61 167.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4a351f17-a0fd-4116-9963-a43857fe1d3d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 435.61 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18087,28 +18087,6 @@
 			)
 		)
 	)
-	(global_label "X_SCU_WDOG0_WDOG_OUT"
-		(shape input)
-		(at 360.68 195.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8933a595-73e5-4316-b41a-3b770c97959d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 333.323 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_USDHC1_DATA0/NAND_CE1_B"
 		(shape bidirectional)
 		(at 124.46 81.28 180)
@@ -18909,6 +18887,26 @@
 			)
 		)
 	)
+	(global_label "X_ADC_IN3"
+		(shape input)
+		(at 436.88 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc1d3188-ddd0-4f9b-8e69-b1f790e4528f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 436.88 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_UART1_RTS_B"
 		(shape output)
 		(at 109.22 187.96 180)
@@ -19365,6 +19363,28 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SCU_WDOG0_WDOG_OUT"
+		(shape input)
+		(at 435.61 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d371bde3-d9a0-42bc-9d74-242198a30f94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 462.967 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)

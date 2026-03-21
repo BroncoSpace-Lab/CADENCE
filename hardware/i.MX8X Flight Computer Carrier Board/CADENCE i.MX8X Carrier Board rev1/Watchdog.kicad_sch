@@ -2264,16 +2264,6 @@
 		)
 		(uuid "a9218c11-be5a-4cbc-9c46-825faf779a1e")
 	)
-	(text "goes to load switch/regulator"
-		(exclude_from_sim no)
-		(at 259.334 140.716 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bd76e179-670d-440f-a22f-e0296c33c387")
-	)
 	(text "assign pin for output (likely to load switch\n to onboard power regulators/power \nload switch that allows for power cycling)"
 		(exclude_from_sim no)
 		(at 343.154 198.882 0)
@@ -3474,24 +3464,22 @@
 			)
 		)
 	)
-	(global_label "~{WD_EN_OBC}"
+	(global_label "X_PMIC_WDI"
 		(shape output)
 		(at 260.35 124.46 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "bebe5991-098a-452c-8139-311e4d66d156")
+		(uuid "a15f2e1b-3f11-4ad7-a9ef-0df1d6515db4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 260.35 138.4518 90)
+			(at 260.35 124.46 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 				(hide yes)
 			)
 		)
