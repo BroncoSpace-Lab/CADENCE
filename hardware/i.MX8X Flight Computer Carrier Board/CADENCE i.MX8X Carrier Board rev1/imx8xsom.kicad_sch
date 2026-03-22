@@ -10233,6 +10233,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -10487,6 +10626,212 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "cadence carrier custom symbols:TPS22975"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS22975_1_1"
+				(rectangle
+					(start -10.16 0)
+					(end 10.16 -17.78)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "VIN_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "VIN_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "ON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -15.24 0)
+					(length 2.54)
+					(name "VBIAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "VOUT_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "VOUT_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -10.16 180)
+					(length 2.54)
+					(name "CT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -15.24 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10835,9 +11180,9 @@
 		)
 		(uuid "011d92ac-a8d4-4865-ad96-8caf4912d62f")
 	)
-	(text "will this board be ok thermally? powering imx8x, satnogs, adcs, image sensor\nlots of power going through single board\npreliminary analysis is 25W at max/worst case consumption \n(running imx, satnogs transmit & receive same time, adcs max rpm, image sensor at full load)\nabout 3.63W+3.1W with just IMX8X + CMOS Image sensor alone, about 2A. Peripherals will probably take 1A max, likely less.\nabout maybe 22W worst case if power for adcs not running through this board\n\nprobably should be a 6 layer board at least\n\nadcs could likely be supplied by a separate connection to battery board\nbut pc104 \"cubedoor\" connector makes it more difficult to interface with"
+	(text "will this board be ok thermally? powering imx8x, satnogs, image sensor\npreliminary analysis is 25W at max/worst case consumption if supplying adcs as well\n(running imx, satnogs transmit & receive same time, adcs max rpm, image sensor at full load)\nabout 3.63W+3.1W with just IMX8X + CMOS Image sensor alone, about 2A supply min for imx, prob around 0.3A for imager at 12V,. Peripherals will probably take 1-1.5A max, likely less. have 6A 3.3V on board\nabout maybe 22W worst case if power for adcs not running through this board, several voltage rails\n\nprobably should be a 6 layer board at least\n\nadcs could likely be supplied by a separate connection to battery board\nbut pc104 \"cubedoor\" connector makes it more difficult to interface with"
 		(exclude_from_sim no)
-		(at 577.596 346.964 0)
+		(at 632.714 347.726 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11256,7 +11601,7 @@
 	)
 	(text "Difference between \nP_3V3 and P_3V3_OUT:\n\nP3V3_OUT is downstream\nof load switch enabled\nby a stable P_1V8\ngenerated by the PMIC"
 		(exclude_from_sim no)
-		(at 339.09 258.445 0)
+		(at 339.344 273.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11435,7 +11780,7 @@
 		)
 		(uuid "aa3c5f08-de3f-4a91-8374-0d8edd84ffe3")
 	)
-	(text "SPI List (2 devices per bus):\nSPI0:2x MRAM\nSPI1: SATNOGS and Ebyte\nSPI2: NAND Flash\nSPI3: Breakout Connector"
+	(text "SPI List (2 devices per bus):\nSPI0:2x MRAM\nSPI1: SATNOGS and Ebyte\nSPI2: NAND FLash\nSPI3: 3.3V ADC (GPS 1PPS)"
 		(exclude_from_sim no)
 		(at 227.076 451.612 0)
 		(effects
@@ -11547,6 +11892,18 @@
 		)
 		(uuid "d251a308-85b8-4ff4-84db-385f2f04cc71")
 	)
+	(text "SATURDAY Meeting changes/UPDATES:\n- implemented boost converter for power to image sensor (connector still not implemented)\n- power sequencing for SOM partially implemented (SOM should not be driven by GPIOs until powered)\n(power monitors & external ebyte/SATNOGS/external boards complicate power sequencing). power nets for sequencing need to be organized\n- checked and modified lt8612 regulator implementations (minor edits)\n- still want to add LEDs for things like power switch, reset button, voltages\n- No POE needed\n- power sequencing on memory (will prob not be affected as supplied by 1.8V)\n- complete ebyte connection\n-watchdog reset implementation good\n- minor fixes for i2c buffers, unconnected pins, etc.\n"
+		(exclude_from_sim no)
+		(at 701.548 79.502 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 0.762)
+				(bold yes)
+			)
+		)
+		(uuid "dbaeb28b-c2a5-45f8-a558-eb9afc238fe6")
+	)
 	(text "Boot Mode"
 		(exclude_from_sim no)
 		(at 238.76 115.824 0)
@@ -11568,16 +11925,6 @@
 			)
 		)
 		(uuid "e33ab48b-553f-4805-b56c-be47ff4cea05")
-	)
-	(text "10uF Capacitor Spam for backup power"
-		(exclude_from_sim no)
-		(at 307.34 262.128 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "edaf3568-a9d9-47af-a840-aa224d370cf1")
 	)
 	(text "TO DO:\n- double check octal spi nor flash memory implementation (max checked, but it seems part of qspi A is connected onboard flash, not fully sure on enabling ospi)\n- add heater and antenna trigger connection/connector(done, but need to talk with thermals & power about interface; current connector is preliminary)\n- implement watchdog bite power cycling \n  (load switch powering off processor briefly to force reset in case of radiation event)\n- (DONE) add rs422 transceiver to payload connection/if possible\n- (DONE) connect RTC clkout? (32.768kHz default output, maybe to gpio?)\n-1PPS to GPIO?"
 		(exclude_from_sim no)
@@ -11631,6 +11978,12 @@
 		(uuid "0a45bfca-7625-42e3-8d2b-479700aedcd5")
 	)
 	(junction
+		(at 332.74 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13c307b8-9d9f-4366-85e5-967fbaa1bd32")
+	)
+	(junction
 		(at 190.5 226.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11641,6 +11994,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1757c59b-9e58-44ac-8b50-a4da3383e510")
+	)
+	(junction
+		(at 350.52 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20d05721-1c23-4cb0-bca4-563df0fd58fe")
 	)
 	(junction
 		(at 320.04 220.98)
@@ -11715,6 +12074,12 @@
 		(uuid "467a3266-7ef4-4ffe-a69b-6a3c667c2dc3")
 	)
 	(junction
+		(at 279.4 256.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "470fdfe3-33d5-4e40-986e-b1c4758da4e4")
+	)
+	(junction
 		(at 190.5 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11781,7 +12146,7 @@
 		(uuid "6f16a024-cfb6-4ab3-bb96-a852d87bf926")
 	)
 	(junction
-		(at 295.91 220.98)
+		(at 313.69 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f3811b5-4dc4-46af-9943-11f4119b45b3")
@@ -11865,6 +12230,12 @@
 		(uuid "92870a38-559b-4686-abce-0084f9a15f5c")
 	)
 	(junction
+		(at 299.72 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c37ade2-8e83-4378-a70a-bd8624c84b12")
+	)
+	(junction
 		(at 124.46 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11943,6 +12314,18 @@
 		(uuid "b70128f7-dc84-4428-bbe2-94fa6a5466dc")
 	)
 	(junction
+		(at 341.63 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8393b6f-023a-42ec-b5eb-34e3a9469fad")
+	)
+	(junction
+		(at 341.63 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbf691cc-4143-4836-8740-55e4b92ea768")
+	)
+	(junction
 		(at 360.68 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11967,13 +12350,19 @@
 		(uuid "c57a23e2-6077-4345-9b61-41461196b9ed")
 	)
 	(junction
+		(at 300.99 256.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c906564e-ffa6-4aab-b9c0-c828bc56b8d5")
+	)
+	(junction
 		(at 360.68 254)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9dca07a-a2d9-49e1-bd3d-3322da02df1f")
 	)
 	(junction
-		(at 295.91 213.36)
+		(at 313.69 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd4f0b30-40a5-4173-a163-ec1ab577c3f0")
@@ -12003,10 +12392,22 @@
 		(uuid "e4f48a39-5820-4e0f-aa7e-72d6e47a4841")
 	)
 	(junction
+		(at 279.4 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5b3614c-0f77-4935-a073-1f6d72595a27")
+	)
+	(junction
 		(at 426.72 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7475845-7096-495a-9eaf-49aa03d84fa3")
+	)
+	(junction
+		(at 350.52 243.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7c55b24-a78b-48c5-b009-a2f95d91db9f")
 	)
 	(junction
 		(at 124.46 220.98)
@@ -12086,7 +12487,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 218.44) (xy 285.75 220.98)
+			(xy 303.53 218.44) (xy 303.53 220.98)
 		)
 		(stroke
 			(width 0)
@@ -12103,6 +12504,16 @@
 			(type default)
 		)
 		(uuid "02c8d3ca-26b4-47e8-a512-8e6f90020409")
+	)
+	(wire
+		(pts
+			(xy 350.52 236.22) (xy 350.52 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03433cfa-5cdc-4195-b86a-d54af25f5438")
 	)
 	(wire
 		(pts
@@ -12163,6 +12574,16 @@
 			(type default)
 		)
 		(uuid "041dbbbe-69c6-4882-a8b1-2ae1d4870208")
+	)
+	(wire
+		(pts
+			(xy 299.72 236.22) (xy 303.53 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04209c6d-4505-46a6-a960-8f26dbb0e9e2")
 	)
 	(wire
 		(pts
@@ -12246,6 +12667,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 243.84) (xy 341.63 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "091aef57-5c95-4301-87a9-63142948fdf5")
+	)
+	(wire
+		(pts
 			(xy 204.47 96.52) (xy 187.96 96.52)
 		)
 		(stroke
@@ -12316,6 +12747,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 251.46) (xy 270.51 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e00b498-6f89-4606-b7e3-cc2be546e01c")
+	)
+	(wire
+		(pts
 			(xy 187.96 243.84) (xy 190.5 243.84)
 		)
 		(stroke
@@ -12333,6 +12774,16 @@
 			(type default)
 		)
 		(uuid "0f2f1928-2494-46b4-89a9-98d98be8e3e3")
+	)
+	(wire
+		(pts
+			(xy 328.93 248.92) (xy 360.68 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fdb9565-4774-483f-826b-40f7c4e284c2")
 	)
 	(wire
 		(pts
@@ -12456,16 +12907,6 @@
 	)
 	(wire
 		(pts
-			(xy 485.14 224.79) (xy 494.03 224.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1aabecea-4619-464c-85e0-8751e60e14ba")
-	)
-	(wire
-		(pts
 			(xy 436.88 175.26) (xy 424.18 175.26)
 		)
 		(stroke
@@ -12546,6 +12987,16 @@
 	)
 	(wire
 		(pts
+			(xy 279.4 243.84) (xy 279.4 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21a5a17f-932f-4bee-b8e2-4d7a8e09667f")
+	)
+	(wire
+		(pts
 			(xy 194.31 137.16) (xy 187.96 137.16)
 		)
 		(stroke
@@ -12586,7 +13037,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 218.44) (xy 295.91 220.98)
+			(xy 313.69 218.44) (xy 313.69 220.98)
 		)
 		(stroke
 			(width 0)
@@ -12673,6 +13124,16 @@
 			(type default)
 		)
 		(uuid "2a24f124-8018-4110-8723-a4dbda5e9e44")
+	)
+	(wire
+		(pts
+			(xy 328.93 238.76) (xy 332.74 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ae46be6-774a-47fd-82f4-110146f292d4")
 	)
 	(wire
 		(pts
@@ -12896,6 +13357,16 @@
 	)
 	(wire
 		(pts
+			(xy 303.53 238.76) (xy 299.72 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c8a41f5-b27e-485b-9b44-7daae496de0c")
+	)
+	(wire
+		(pts
 			(xy 124.46 251.46) (xy 124.46 254)
 		)
 		(stroke
@@ -12913,6 +13384,16 @@
 			(type default)
 		)
 		(uuid "3d07a7c7-1904-4f12-ad72-a1452f176c48")
+	)
+	(wire
+		(pts
+			(xy 328.93 243.84) (xy 331.47 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3daaa15f-1754-4fe5-86c6-7e0454ac61ac")
 	)
 	(wire
 		(pts
@@ -13156,16 +13637,6 @@
 	)
 	(wire
 		(pts
-			(xy 485.14 227.33) (xy 494.03 227.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4be1dfac-1b48-49ad-be2c-b35a63c36810")
-	)
-	(wire
-		(pts
 			(xy 109.22 205.74) (xy 127 205.74)
 		)
 		(stroke
@@ -13276,6 +13747,16 @@
 	)
 	(wire
 		(pts
+			(xy 350.52 236.22) (xy 341.63 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52afeea4-9507-4b15-8cc5-900128b83096")
+	)
+	(wire
+		(pts
 			(xy 426.72 137.16) (xy 424.18 137.16)
 		)
 		(stroke
@@ -13313,6 +13794,16 @@
 			(type default)
 		)
 		(uuid "545bc599-ccd2-46e1-9a3e-aa659cbec616")
+	)
+	(wire
+		(pts
+			(xy 328.93 236.22) (xy 332.74 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5562820a-287b-4db9-bbd8-da0b0c5f99b3")
 	)
 	(wire
 		(pts
@@ -13396,6 +13887,16 @@
 	)
 	(wire
 		(pts
+			(xy 279.4 256.54) (xy 300.99 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cb46f5c-2ac0-4d34-bf4f-28927b26c267")
+	)
+	(wire
+		(pts
 			(xy 424.18 66.04) (xy 431.8 66.04)
 		)
 		(stroke
@@ -13456,7 +13957,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 124.46) (xy 127 124.46)
+			(xy 118.11 124.46) (xy 127 124.46)
 		)
 		(stroke
 			(width 0)
@@ -13516,7 +14017,7 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 220.98) (xy 295.91 220.98)
+			(xy 303.53 220.98) (xy 313.69 220.98)
 		)
 		(stroke
 			(width 0)
@@ -13553,6 +14054,16 @@
 			(type default)
 		)
 		(uuid "63f5358d-036e-4293-b6e7-c44bbff62964")
+	)
+	(wire
+		(pts
+			(xy 299.72 238.76) (xy 299.72 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63f636e7-8d44-4f0e-ae19-193e98dc3fbb")
 	)
 	(wire
 		(pts
@@ -13746,6 +14257,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 236.22) (xy 341.63 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73375a58-7a5e-48ad-8ff1-93667395ecc9")
+	)
+	(wire
+		(pts
 			(xy 106.68 111.76) (xy 127 111.76)
 		)
 		(stroke
@@ -13763,6 +14284,26 @@
 			(type default)
 		)
 		(uuid "746fd6d1-9c56-4c4f-b446-1a5592d28798")
+	)
+	(wire
+		(pts
+			(xy 270.51 236.22) (xy 279.4 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74978c9e-6940-4df7-90c7-c8e3311e3999")
+	)
+	(wire
+		(pts
+			(xy 350.52 243.84) (xy 360.68 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75382eba-c58c-4ee2-b691-37867ad41029")
 	)
 	(wire
 		(pts
@@ -13793,6 +14334,16 @@
 			(type default)
 		)
 		(uuid "77b37734-7d7d-4588-bf1f-f0f011ac1331")
+	)
+	(wire
+		(pts
+			(xy 360.68 246.38) (xy 360.68 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f969e1-b2ce-4673-b6b1-05ba9e3f5ce4")
 	)
 	(wire
 		(pts
@@ -13913,6 +14464,16 @@
 			(type default)
 		)
 		(uuid "8216fa1a-d5d7-44e2-a739-596d6285345f")
+	)
+	(wire
+		(pts
+			(xy 300.99 256.54) (xy 360.68 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83f56c0e-29a0-4774-95f3-0b206e578af8")
 	)
 	(wire
 		(pts
@@ -14216,6 +14777,16 @@
 	)
 	(wire
 		(pts
+			(xy 332.74 238.76) (xy 332.74 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e118ca-f61b-4aad-89ff-c997783c30a6")
+	)
+	(wire
+		(pts
 			(xy 106.68 106.68) (xy 127 106.68)
 		)
 		(stroke
@@ -14256,7 +14827,17 @@
 	)
 	(wire
 		(pts
-			(xy 285.75 213.36) (xy 295.91 213.36)
+			(xy 270.51 243.84) (xy 270.51 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be8f487-ac65-46a1-9005-9df301623de3")
+	)
+	(wire
+		(pts
+			(xy 303.53 213.36) (xy 313.69 213.36)
 		)
 		(stroke
 			(width 0)
@@ -14266,7 +14847,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 213.36) (xy 323.85 213.36)
+			(xy 313.69 213.36) (xy 323.85 213.36)
 		)
 		(stroke
 			(width 0)
@@ -14326,6 +14907,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 256.54) (xy 279.4 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37f7f65-b78d-4a74-828f-e72c9867763b")
+	)
+	(wire
+		(pts
 			(xy 424.18 73.66) (xy 431.8 73.66)
 		)
 		(stroke
@@ -14356,7 +14947,7 @@
 	)
 	(wire
 		(pts
-			(xy 295.91 220.98) (xy 320.04 220.98)
+			(xy 313.69 220.98) (xy 320.04 220.98)
 		)
 		(stroke
 			(width 0)
@@ -14383,6 +14974,16 @@
 			(type default)
 		)
 		(uuid "a76a477c-2a7d-4f82-8701-a133dd4bdda0")
+	)
+	(wire
+		(pts
+			(xy 341.63 243.84) (xy 350.52 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7b48d09-da8e-468b-a403-1d305e2d1e0f")
 	)
 	(wire
 		(pts
@@ -14516,6 +15117,16 @@
 	)
 	(wire
 		(pts
+			(xy 279.4 236.22) (xy 299.72 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2f258eb-7191-4824-a65c-cd510bc47a5a")
+	)
+	(wire
+		(pts
 			(xy 124.46 71.12) (xy 127 71.12)
 		)
 		(stroke
@@ -14576,16 +15187,6 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 241.3) (xy 360.68 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b933c298-ede9-401c-ab00-f972b7f5ff88")
-	)
-	(wire
-		(pts
 			(xy 214.63 165.1) (xy 187.96 165.1)
 		)
 		(stroke
@@ -14596,6 +15197,16 @@
 	)
 	(wire
 		(pts
+			(xy 360.68 241.3) (xy 360.68 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9fbd66e-beea-4ebe-9c72-baa957f9e982")
+	)
+	(wire
+		(pts
 			(xy 363.22 236.22) (xy 360.68 236.22)
 		)
 		(stroke
@@ -14603,16 +15214,6 @@
 			(type default)
 		)
 		(uuid "ba484f48-745c-4649-8a49-79f5f23f6bab")
-	)
-	(wire
-		(pts
-			(xy 360.68 246.38) (xy 360.68 248.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb188288-121c-4f58-a504-7f61f4325849")
 	)
 	(wire
 		(pts
@@ -14643,6 +15244,16 @@
 			(type default)
 		)
 		(uuid "be407db9-4e41-43c5-bd19-092f9473b0f2")
+	)
+	(wire
+		(pts
+			(xy 279.4 251.46) (xy 279.4 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be982baf-d76f-4dd1-bc22-3a34f87b33c7")
 	)
 	(wire
 		(pts
@@ -14856,7 +15467,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 121.92) (xy 127 121.92)
+			(xy 118.11 121.92) (xy 127 121.92)
 		)
 		(stroke
 			(width 0)
@@ -14943,6 +15554,16 @@
 			(type default)
 		)
 		(uuid "cf594f26-216d-4886-8f9e-251c0e5b8b50")
+	)
+	(wire
+		(pts
+			(xy 300.99 248.92) (xy 303.53 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cff68b94-82b0-4f0d-b948-ebfeea25201e")
 	)
 	(wire
 		(pts
@@ -15123,6 +15744,16 @@
 			(type default)
 		)
 		(uuid "db1a5dd4-f96e-4bc2-abbd-9c27cf01c8e7")
+	)
+	(wire
+		(pts
+			(xy 298.45 243.84) (xy 303.53 243.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dba8a3ff-e7e6-4d22-b838-59dd0b24241c")
 	)
 	(wire
 		(pts
@@ -15665,7 +16296,7 @@
 		(uuid "ffa582b0-79d6-4cc8-8948-4c33f7e0efaa")
 	)
 	(image
-		(at 339.09 272.415)
+		(at 337.312 286.639)
 		(scale 0.150355)
 		(uuid "408c3f72-d91f-49ce-8ede-cdf858b0b49b")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAtsAAADSCAIAAAAUgpseAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -17207,6 +17838,26 @@
 			)
 		)
 	)
+	(global_label "X_PGOOD"
+		(shape input)
+		(at 298.45 243.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45fb2dac-c444-46ae-a515-db8c69c2f5f0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 298.45 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_ETH_GPIO0"
 		(shape bidirectional)
 		(at 109.22 203.2 180)
@@ -17309,7 +17960,7 @@
 	)
 	(global_label "X_GPIO0_IO25{slash}X_SPI1_SDI"
 		(shape bidirectional)
-		(at 114.3 124.46 180)
+		(at 118.11 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17318,7 +17969,7 @@
 		)
 		(uuid "50bd1896-f483-4d9a-bac2-0a2c5307c1a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3 124.46 0)
+			(at 118.11 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17547,6 +18198,26 @@
 			)
 		)
 	)
+	(global_label "X_USB3_SS3_TC0"
+		(shape bidirectional)
+		(at 318.77 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64da42c8-85d0-4335-981c-2f3643cc408d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 318.77 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_USDHC1_RESET_B/NAND_RE_N"
 		(shape output)
 		(at 124.46 71.12 180)
@@ -17559,6 +18230,46 @@
 		(uuid "65bbb7ec-c1d6-4107-b6f4-90e38ff99b66")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 124.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_USB3_SS3_TC2"
+		(shape bidirectional)
+		(at 318.77 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "672ded64-b39d-4b4c-8710-4217e660f0c5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 318.77 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_MIPI_DSI1_GPIO0_01"
+		(shape bidirectional)
+		(at 318.77 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c104e95-5e98-412f-af3c-2c09f6e38d25")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 318.77 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17629,7 +18340,7 @@
 	)
 	(global_label "X_SAI0_RXD{slash}X_SPI1_SDO"
 		(shape bidirectional)
-		(at 113.03 121.92 180)
+		(at 118.11 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17638,7 +18349,7 @@
 		)
 		(uuid "71144c49-4bb0-4024-94d9-6e018d18412b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 121.92 0)
+			(at 118.11 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17719,26 +18430,6 @@
 		(uuid "7518a4ae-9544-47c2-a7b9-20899d207362")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 204.47 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_M40_UART0_TX"
-		(shape bidirectional)
-		(at 485.14 227.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "75cf6d32-053d-4f17-8efd-c6dea60b7aea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 485.14 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18379,26 +19070,6 @@
 		(uuid "991e4ffa-e860-4760-adad-e1258492512a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 194.31 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_M40_UART0_RX"
-		(shape bidirectional)
-		(at 485.14 224.79 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9c745e4d-64da-4662-aa8e-380382210311")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 485.14 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19299,6 +19970,26 @@
 		(uuid "cf959490-cb14-4a5b-9615-41e7202738b7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 210.82 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_MIPI_DSI1_GPIO0_00"
+		(shape bidirectional)
+		(at 318.77 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cfe74847-ad07-4e50-ab9e-ad7f27d8b541")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 318.77 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20438,7 +21129,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 285.75 215.9 0)
+		(at 303.53 215.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20446,7 +21137,7 @@
 		(dnp no)
 		(uuid "0c49cb19-4d7d-441a-b91e-e5e8a5d355ba")
 		(property "Reference" "C41"
-			(at 288.29 214.6363 0)
+			(at 306.07 214.6363 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20455,7 +21146,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 288.29 217.1763 0)
+			(at 306.07 217.1763 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20464,7 +21155,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 285.75 215.9 0)
+			(at 303.53 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20473,7 +21164,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 285.75 215.9 0)
+			(at 303.53 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20482,7 +21173,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 285.75 215.9 0)
+			(at 303.53 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20491,7 +21182,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 285.75 215.9 0)
+			(at 303.53 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20499,7 +21190,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 288.29 219.71 0)
+			(at 306.07 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20667,6 +21358,75 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 335.28 243.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ab00f22-40e0-4f7f-8eeb-c431f41ad8db")
+		(property "Reference" "C20"
+			(at 340.36 245.618 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 341.122 247.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 242.8748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 335.28 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 335.28 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0902c84c-4507-4bdc-98e1-4b37b0b494d9")
+		)
+		(pin "2"
+			(uuid "24ca13e1-9b37-4c14-97fb-28aa4b2da5c2")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -20890,8 +21650,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 350.52 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f303eb0-b6c4-48dc-b011-6f4506554589")
+		(property "Reference" "#PWR0178"
+			(at 350.52 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 350.52 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 350.52 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 350.52 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e605954-6a20-4000-aedc-d141ca8bd1d6")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR0178")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 295.91 215.9 0)
+		(at 313.69 215.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20899,7 +21724,7 @@
 		(dnp no)
 		(uuid "399193d5-5a3f-4fc4-90f9-4d0fd3b07962")
 		(property "Reference" "C42"
-			(at 316.23 214.63 0)
+			(at 316.738 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20908,7 +21733,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 316.23 217.1763 0)
+			(at 316.738 217.1763 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20917,7 +21742,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 295.91 215.9 0)
+			(at 313.69 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20926,7 +21751,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 295.91 215.9 0)
+			(at 313.69 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20935,7 +21760,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 295.91 215.9 0)
+			(at 313.69 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20944,7 +21769,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 295.91 215.9 0)
+			(at 313.69 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20952,7 +21777,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 316.23 219.71 0)
+			(at 318.008 219.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21324,6 +22149,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 270.51 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8415bdd1-9d99-416e-a457-a7a83f8419d5")
+		(property "Reference" "C18"
+			(at 264.16 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 264.414 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.4752 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 270.51 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 270.51 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb541dcc-d54b-4312-8bdb-cc2c9fd24929")
+		)
+		(pin "2"
+			(uuid "0c805a81-ce67-4fbe-8d82-eeb8ac46d325")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 360.68 261.62 0)
 		(unit 1)
@@ -21384,6 +22278,75 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 341.63 240.03 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a3042b7-abee-4055-9904-2ef858d5792c")
+		(property "Reference" "C21"
+			(at 347.726 236.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 348.742 238.506 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.6648 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 341.63 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 341.63 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a25ddbeb-5803-48ee-a047-a70b5ace4509")
+		)
+		(pin "2"
+			(uuid "311e1c01-5d43-488c-aa75-7e6e08c6d68f")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -22491,6 +23454,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 279.4 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc63d388-eb4f-4dd7-bb7b-e0a5ee4d66c0")
+		(property "Reference" "C19"
+			(at 273.05 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 273.304 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 280.3652 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 279.4 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 279.4 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1c2ab8e-81c4-4f14-a923-03f1fe08af8c")
+		)
+		(pin "2"
+			(uuid "89b8dd14-c500-4688-b7d8-54387506c237")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 195.58 58.42 90)
 		(unit 1)
@@ -22689,6 +23721,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 300.99 252.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e53c6119-f116-4347-8f99-1615cde2ada4")
+		(property "Reference" "C17"
+			(at 294.64 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 294.894 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 301.9552 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 300.99 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b3f999e-fbce-4717-ad6e-859fabaa3b63")
+		)
+		(pin "2"
+			(uuid "787fe633-79f8-45d4-ae66-22fe3c82d4e3")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 323.85 222.25 0)
 		(unit 1)
@@ -22748,6 +23849,92 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "#PWR137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cadence carrier custom symbols:TPS22975")
+		(at 316.23 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed489b39-2871-4320-9483-84535fd6e281")
+		(property "Reference" "U13"
+			(at 316.23 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS22975"
+			(at 316.23 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 316.23 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 316.23 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 316.23 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4732366-ed9f-4078-a7f5-ff6f1c937471")
+		)
+		(pin "4"
+			(uuid "8834f4d2-644d-45db-99c7-a55bccaa02cd")
+		)
+		(pin "1"
+			(uuid "ad64c2b8-fa81-45fe-bf5b-7bbe7d5461ee")
+		)
+		(pin "3"
+			(uuid "7c43388c-6909-41fc-aecf-e845bd6490e6")
+		)
+		(pin "7"
+			(uuid "bdd87c37-a532-42a0-8264-d8fc46e59989")
+		)
+		(pin "5"
+			(uuid "e57118fc-26dc-429f-a9de-11e32959dfd6")
+		)
+		(pin "8"
+			(uuid "806318ad-878a-4e71-ae5b-c391631aa121")
+		)
+		(pin "6"
+			(uuid "17d55254-ab5c-4d60-a1dc-44ad2a2574b1")
+		)
+		(instances
+			(project ""
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "U13")
 					(unit 1)
 				)
 			)
@@ -23651,6 +24838,75 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 350.52 240.03 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0e00fb8-8491-4eca-ad01-17f075a7bb2a")
+		(property "Reference" "C22"
+			(at 356.616 236.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 357.886 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 349.5548 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 350.52 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 350.52 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3da4d49-eb3b-4436-bb0c-bc0ea124e1d9")
+		)
+		(pin "2"
+			(uuid "caa4104d-abe1-4856-929a-88d9e769f55e")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "C22")
 					(unit 1)
 				)
 			)
