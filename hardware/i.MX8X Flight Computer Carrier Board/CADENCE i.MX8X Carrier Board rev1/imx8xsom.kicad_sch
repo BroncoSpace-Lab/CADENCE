@@ -11180,9 +11180,9 @@
 		)
 		(uuid "011d92ac-a8d4-4865-ad96-8caf4912d62f")
 	)
-	(text "will this board be ok thermally? powering imx8x, satnogs, image sensor\npreliminary analysis is 25W at max/worst case consumption if supplying adcs as well\n(running imx, satnogs transmit & receive same time, adcs max rpm, image sensor at full load)\nabout 3.63W+3.1W with just IMX8X + CMOS Image sensor alone, about 2A supply min for imx, prob around 0.3A for imager at 12V,. Peripherals will probably take 1-1.5A max, likely less. have 6A 3.3V on board\nabout maybe 22W worst case if power for adcs not running through this board, several voltage rails\n\nprobably should be a 6 layer board at least\n\nadcs could likely be supplied by a separate connection to battery board\nbut pc104 \"cubedoor\" connector makes it more difficult to interface with"
+	(text "will this board be ok thermally? powering imx8x, satnogs, image sensor\npreliminary analysis is 25W at max/worst case consumption if supplying adcs as well\n(running imx, satnogs transmit & receive same time, adcs max rpm, image sensor at full load)\nabout 3.63W+3.1W with just IMX8X + CMOS Image sensor alone,\nabout 2A supply min for imx, prob around 0.3A for imager at 12V,. Peripherals will probably take 1-1.5A max, likely less. have 6A 3.3V on board\nabout maybe 22W worst case if power for adcs not running through this board, several voltage rails\n\nprobably should be a 6 layer board at least\n\nadcs could likely be supplied by a separate connection to battery board\nbut pc104 \"cubedoor\" connector makes it more difficult to interface with"
 		(exclude_from_sim no)
-		(at 469.646 430.022 0)
+		(at 413.258 425.704 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11303,7 +11303,7 @@
 		)
 		(uuid "21202b14-3fb3-46d5-95bb-8b8132bf45a9")
 	)
-	(text "I2C List(5 at 3.3V, 3 at 1.8V; listed below are all 3.3V):\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3: adcs connection likely (must further research cubespace adcs interface control document and connections. also adcs is still uncertain)\ni2c4: payload board\n"
+	(text "I2C List(5 at 3.3V, 3 at 1.8V; listed below are all 3.3V):\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3: adcs connection (must further research cubeadcs interface control document and connections. also adcs is still uncertain)\ni2c4: payload board\n"
 		(exclude_from_sim no)
 		(at 297.688 520.954 0)
 		(effects
@@ -11852,6 +11852,16 @@
 		)
 		(uuid "c50ce757-3d94-49d0-a77f-7140b6e7363c")
 	)
+	(text "Load Switch for Peripheral Power Sequencing"
+		(exclude_from_sim no)
+		(at 281.94 228.092 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c539fd25-1da8-41b5-9cf9-e7dc354bf435")
+	)
 	(text "}"
 		(exclude_from_sim no)
 		(at 234.95 138.684 0)
@@ -11892,9 +11902,9 @@
 		)
 		(uuid "d251a308-85b8-4ff4-84db-385f2f04cc71")
 	)
-	(text "SATURDAY Meeting changes/UPDATES:\n- implemented boost converter for power to image sensor (connector still not implemented)\n- power sequencing for SOM partially implemented (SOM should not be driven by GPIOs until powered)\n(power monitors & external ebyte/SATNOGS/external boards complicate power sequencing). power nets for sequencing need to be organized\n- checked and modified lt8612 regulator implementations (minor edits)\n- still want to add LEDs for things like power switch, reset button, voltages\n- No POE needed\n- power sequencing on memory (will prob not be affected as supplied by 1.8V)\n- complete ebyte connection\n-watchdog reset implementation good\n- minor fixes for i2c buffers, unconnected pins, etc.\n"
+	(text "SATURDAY Meeting changes/UPDATES:\n- implemented boost converter for power to image sensor (connector still not implemented)\n- power sequencing for SOM partially implemented (SOM should not be driven by GPIOs until powered)\n(power monitors & external ebyte/SATNOGS/external boards \ncomplicate power sequencing). power nets for sequencing need to be organized\n- checked and modified lt8612 regulator implementations (minor edits)\n- still want to add LEDs for things like power switch, reset button, voltages\n- No POE needed\n- power sequencing on memory (will prob not be affected as supplied by 1.8V)\n- complete ebyte connection\n-watchdog reset implementation good\n- minor fixes for i2c buffers, unconnected pins, etc.\n"
 		(exclude_from_sim no)
-		(at 545.846 333.502 0)
+		(at 628.142 311.658 0)
 		(effects
 			(font
 				(size 5.08 5.08)
