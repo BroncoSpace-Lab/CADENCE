@@ -11182,7 +11182,7 @@
 	)
 	(text "will this board be ok thermally? powering imx8x, satnogs, image sensor\npreliminary analysis is 25W at max/worst case consumption if supplying adcs as well\n(running imx, satnogs transmit & receive same time, adcs max rpm, image sensor at full load)\nabout 3.63W+3.1W with just IMX8X + CMOS Image sensor alone, about 2A supply min for imx, prob around 0.3A for imager at 12V,. Peripherals will probably take 1-1.5A max, likely less. have 6A 3.3V on board\nabout maybe 22W worst case if power for adcs not running through this board, several voltage rails\n\nprobably should be a 6 layer board at least\n\nadcs could likely be supplied by a separate connection to battery board\nbut pc104 \"cubedoor\" connector makes it more difficult to interface with"
 		(exclude_from_sim no)
-		(at 632.714 347.726 0)
+		(at 469.646 430.022 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11305,7 +11305,7 @@
 	)
 	(text "I2C List(5 at 3.3V, 3 at 1.8V; listed below are all 3.3V):\nI2C0: onboard RTC, IMU sensors, Temperature Sensors\nI2C1: Power Monitors\nI2C2: electrical power system management board\nI2c3: adcs connection likely (must further research cubespace adcs interface control document and connections. also adcs is still uncertain)\ni2c4: payload board\n"
 		(exclude_from_sim no)
-		(at 300.736 434.34 0)
+		(at 297.688 520.954 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11398,7 +11398,7 @@
 	)
 	(text "each spi bus has 2x chip select"
 		(exclude_from_sim no)
-		(at 217.424 497.078 0)
+		(at 217.17 560.578 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -11529,7 +11529,7 @@
 	)
 	(text "FPrime Libraries available for Temperature Sensor, IMU sensor suite, power monitors, NAND Flash, microSD, Load Switches"
 		(exclude_from_sim no)
-		(at 234.95 311.658 0)
+		(at 187.96 344.17 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -11651,7 +11651,7 @@
 	)
 	(text "SPI0 and SPI2 share a Chip select line at pin A35,\nSPI2 set to only 1 SPI CS line (CS0)\nSPI3 set to only 1 SPI CS line for 3.3V I2C bus (CS0)"
 		(exclude_from_sim no)
-		(at 220.726 485.14 0)
+		(at 220.472 548.64 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -11782,7 +11782,7 @@
 	)
 	(text "SPI List (2 devices per bus):\nSPI0:2x MRAM\nSPI1: SATNOGS and Ebyte\nSPI2: NAND FLash\nSPI3: 3.3V ADC (GPS 1PPS)"
 		(exclude_from_sim no)
-		(at 227.076 451.612 0)
+		(at 226.822 515.112 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11894,7 +11894,7 @@
 	)
 	(text "SATURDAY Meeting changes/UPDATES:\n- implemented boost converter for power to image sensor (connector still not implemented)\n- power sequencing for SOM partially implemented (SOM should not be driven by GPIOs until powered)\n(power monitors & external ebyte/SATNOGS/external boards complicate power sequencing). power nets for sequencing need to be organized\n- checked and modified lt8612 regulator implementations (minor edits)\n- still want to add LEDs for things like power switch, reset button, voltages\n- No POE needed\n- power sequencing on memory (will prob not be affected as supplied by 1.8V)\n- complete ebyte connection\n-watchdog reset implementation good\n- minor fixes for i2c buffers, unconnected pins, etc.\n"
 		(exclude_from_sim no)
-		(at 701.548 79.502 0)
+		(at 545.846 333.502 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11914,9 +11914,9 @@
 		)
 		(uuid "de61afc0-494c-44c4-ac60-d9252c08fcc5")
 	)
-	(text "UART List(all at 3.3V except m40):\nUART0: GNSS\nUART1: Payload RS422\nUART2:\nM40 UART: FTDI debug"
+	(text "UART List(all at 3.3V except m40):\nUART0: GNSS\nUART1: Payload RS422\nUART2: breakout\nM40 UART: FTDI debug"
 		(exclude_from_sim no)
-		(at 90.424 450.85 0)
+		(at 90.17 514.35 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -11925,19 +11925,6 @@
 			)
 		)
 		(uuid "e33ab48b-553f-4805-b56c-be47ff4cea05")
-	)
-	(text "TO DO:\n- double check octal spi nor flash memory implementation (max checked, but it seems part of qspi A is connected onboard flash, not fully sure on enabling ospi)\n- add heater and antenna trigger connection/connector(done, but need to talk with thermals & power about interface; current connector is preliminary)\n- implement watchdog bite power cycling \n  (load switch powering off processor briefly to force reset in case of radiation event)\n- (DONE) add rs422 transceiver to payload connection/if possible\n- (DONE) connect RTC clkout? (32.768kHz default output, maybe to gpio?)\n-1PPS to GPIO?"
-		(exclude_from_sim no)
-		(at 289.814 511.81 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "ee777dd3-44b4-482f-ab0c-b9c362ea287b")
 	)
 	(text "}"
 		(exclude_from_sim no)
@@ -16978,26 +16965,6 @@
 			)
 		)
 	)
-	(global_label "X_SAI0_TXC{slash}X_SPI1_SCK"
-		(shape output)
-		(at 46.99 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0f4bb223-54be-4307-96e0-a40ee73d4ca2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "VCC_LDO_SD1"
 		(shape output)
 		(at 109.22 83.82 180)
@@ -17110,26 +17077,6 @@
 		(uuid "19219569-0e64-4448-ab2b-5121f2f700dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 360.68 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_USB3_SS3_TC1_I2C0_SCL"
-		(shape bidirectional)
-		(at 261.62 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1960ad58-fddf-448c-9915-ce420d2088e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.62 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17410,26 +17357,6 @@
 		(uuid "28bff162-255c-4871-972d-76c687b7b543")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 240.03 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_USB3_SS3_TC3_I2C0_SDA"
-		(shape bidirectional)
-		(at 261.62 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2a0d166c-6052-4a3c-82af-620216f4dfd2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.62 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18698,26 +18625,6 @@
 			)
 		)
 	)
-	(global_label "X_SAI0_RXD{slash}X_SPI1_SDO"
-		(shape bidirectional)
-		(at 46.99 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "87c1ce57-2520-4c7c-b801-1fcff0151e9f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_CSI_EN_I2C3_SCL"
 		(shape bidirectional)
 		(at 472.44 104.14 0)
@@ -18850,26 +18757,6 @@
 		(uuid "8cb5ab50-9ae3-4208-8183-a1caa2afd987")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 431.8 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_SAI1_RXD{slash}X_SPI1_CS1"
-		(shape input)
-		(at 46.99 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8f5c1070-5a24-46b2-b1a5-ca94ea2c464c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20120,26 +20007,6 @@
 			)
 		)
 	)
-	(global_label "X_SAI0_TXFS{slash}X_SPI1_CS0"
-		(shape output)
-		(at 46.99 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d540dbd1-f94a-45ec-9e11-fa16a32181b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_MIPI_CSI0_DATA2_P"
 		(shape input)
 		(at 426.72 144.78 0)
@@ -21000,26 +20867,6 @@
 			)
 		)
 	)
-	(global_label "X_GPIO0_IO25{slash}X_SPI1_SDI"
-		(shape bidirectional)
-		(at 46.99 132.08 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fedb4e87-180b-4324-9067-eb47ed6aa185")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.99 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_ENET0_MDIO"
 		(shape bidirectional)
 		(at 109.22 208.28 180)
@@ -21866,17 +21713,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 217.17 275.59 0)
+		(lib_id "power:+3.3V")
+		(at 279.4 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58032139-3db2-4878-a9d1-cbe9257442c7")
-		(property "Reference" "#PWR?"
-			(at 217.17 281.94 0)
+		(uuid "62aba12f-9b31-4e1a-a304-2e6a56ea2190")
+		(property "Reference" "#PWR0179"
+			(at 279.4 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21884,16 +21730,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 217.17 280.67 0)
+		(property "Value" "P_3V3"
+			(at 276.86 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 275.59 0)
+			(at 279.4 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21902,7 +21749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 275.59 0)
+			(at 279.4 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21910,8 +21757,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 275.59 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 279.4 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21920,12 +21767,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "415118d1-811b-430b-85ef-215b306fff4b")
+			(uuid "53717eb5-d967-41ba-a81e-95e218e08c1b")
 		)
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "#PWR?")
+					(reference "#PWR0179")
 					(unit 1)
 				)
 			)
@@ -25040,72 +24887,6 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 210.82 276.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe410aa1-b1b9-4aec-b299-6dafd66a14a7")
-		(property "Reference" "#PWR?"
-			(at 210.82 280.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 210.82 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 210.82 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "74f6feb6-1913-49a0-b68f-eeb495a8fe25")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "#PWR?")
 					(unit 1)
 				)
 			)

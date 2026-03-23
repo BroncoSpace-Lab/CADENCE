@@ -5,6 +5,189 @@
 	(uuid "23887c54-46fa-402e-9519-6809856da5f0")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1139,8 +1322,8 @@
 		(uuid 1e48343f-0d31-48d8-afd4-b12d1760e134)
 	)
 	(rectangle
-		(start 184.15 111.76)
-		(end 247.65 162.56)
+		(start 73.152 102.87)
+		(end 146.05 171.45)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1173,16 +1356,6 @@
 		)
 		(uuid "81e939c9-f541-406b-a37e-3571d634143d")
 	)
-	(text "make sure can conduct high current"
-		(exclude_from_sim no)
-		(at 121.666 79.502 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "9632abe2-5c43-4e8e-8173-2aa19847efd6")
-	)
 	(text "Boot Mode Control"
 		(exclude_from_sim no)
 		(at 213.614 44.704 0)
@@ -1197,7 +1370,7 @@
 	)
 	(text "I.MX8X SOM Reset Button"
 		(exclude_from_sim no)
-		(at 213.36 120.142 0)
+		(at 111.76 111.252 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1250,6 +1423,12 @@
 		(uuid "7340a33b-5147-4526-bc1c-73af4dd33cac")
 	)
 	(junction
+		(at 104.14 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9411de6b-6209-479d-88d6-9b3867844902")
+	)
+	(junction
 		(at 189.23 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1262,19 +1441,25 @@
 		(uuid "a741ef1f-b8eb-4cad-8785-06f4327eae2a")
 	)
 	(junction
+		(at 93.98 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcbf2bfa-7a33-47b9-bcb3-15fb6c6eba13")
+	)
+	(junction
 		(at 227.33 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fba535f1-18c0-4bd2-b9c0-b31fe1e1c95c")
 	)
 	(junction
-		(at 237.49 151.13)
+		(at 135.89 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcbad205-522c-4624-9eec-595655973921")
 	)
 	(no_connect
-		(at 213.36 143.51)
+		(at 111.76 134.62)
 		(uuid "6d292729-5069-414d-9a8e-8565efd764dc")
 	)
 	(wire
@@ -1326,6 +1511,16 @@
 			(type default)
 		)
 		(uuid "2d099984-383e-4bbc-b3c3-006187df3349")
+	)
+	(wire
+		(pts
+			(xy 90.17 134.62) (xy 93.98 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd6238b-b43f-4650-96f7-e47e43e824e0")
 	)
 	(wire
 		(pts
@@ -1419,7 +1614,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 151.13) (xy 217.17 151.13)
+			(xy 104.14 142.24) (xy 115.57 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1459,7 +1654,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 151.13) (xy 237.49 154.94)
+			(xy 135.89 142.24) (xy 135.89 146.05)
 		)
 		(stroke
 			(width 0)
@@ -1499,7 +1694,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 151.13) (xy 237.49 151.13)
+			(xy 125.73 142.24) (xy 135.89 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1519,7 +1714,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 135.89) (xy 227.33 135.89)
+			(xy 135.89 127) (xy 125.73 127)
 		)
 		(stroke
 			(width 0)
@@ -1529,7 +1724,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 135.89) (xy 205.74 151.13)
+			(xy 93.98 142.24) (xy 93.98 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79742e3-2df6-4426-9bae-d8dc9f6c9cea")
+	)
+	(wire
+		(pts
+			(xy 104.14 127) (xy 104.14 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1559,7 +1764,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 135.89) (xy 217.17 135.89)
+			(xy 93.98 134.62) (xy 104.14 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b91c9a17-d498-462b-8ef7-1d6ae934bbdf")
+	)
+	(wire
+		(pts
+			(xy 104.14 127) (xy 115.57 127)
 		)
 		(stroke
 			(width 0)
@@ -1599,7 +1814,17 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 151.13) (xy 237.49 135.89)
+			(xy 104.14 134.62) (xy 104.14 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df390a4e-cdb6-4055-82fe-3feb1a99a413")
+	)
+	(wire
+		(pts
+			(xy 135.89 142.24) (xy 135.89 127)
 		)
 		(stroke
 			(width 0)
@@ -1721,7 +1946,7 @@
 	)
 	(global_label "X_nRESET_IN"
 		(shape input)
-		(at 205.74 143.51 180)
+		(at 90.17 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1730,7 +1955,7 @@
 		)
 		(uuid "50424279-eebf-4507-8191-1e26425a7260")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 205.74 143.51 0)
+			(at 90.17 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,8 +2093,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 93.98 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "094a4e7f-c8f4-4ca0-bd6b-d50d9c829ef8")
+		(property "Reference" "D1"
+			(at 97.79 138.7474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 97.79 141.2874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 93.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 93.98 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0bee9776-656e-400e-b6a3-2caf15434d0a")
+		)
+		(pin "1"
+			(uuid "8c12a149-3a4b-4d9f-aa56-dedf984c8391")
+		)
+		(instances
+			(project ""
+				(path "/de284495-d382-47cb-b528-76e440980d40/089c604b-0863-4822-93dd-cc06ae04e525"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 237.49 154.94 0)
+		(at 135.89 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1878,7 +2182,7 @@
 		(fields_autoplaced yes)
 		(uuid "38029f00-dfb4-47a5-add1-c4632bfe5a1c")
 		(property "Reference" "#PWR0111"
-			(at 237.49 161.29 0)
+			(at 135.89 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1887,7 +2191,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 160.02 0)
+			(at 135.89 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,7 +2199,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 154.94 0)
+			(at 135.89 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1904,7 +2208,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 154.94 0)
+			(at 135.89 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1913,7 +2217,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 154.94 0)
+			(at 135.89 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2279,7 +2583,7 @@
 	)
 	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:KMR221GLFS")
-		(at 220.98 143.51 90)
+		(at 119.38 134.62 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2287,7 +2591,7 @@
 		(dnp no)
 		(uuid "8e3b5226-af60-483e-9d49-bd7ff5d94452")
 		(property "Reference" "SW2"
-			(at 214.884 132.588 90)
+			(at 113.284 123.698 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2296,7 +2600,7 @@
 			)
 		)
 		(property "Value" "KMR221GLFS"
-			(at 213.614 153.416 90)
+			(at 112.014 144.526 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2305,7 +2609,7 @@
 			)
 		)
 		(property "Footprint" "imx8_carrier_board_footprints:KEY-SMD_KMR2XXGXXX"
-			(at 234.95 143.51 0)
+			(at 133.35 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2314,7 +2618,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Others_C-K-KMR221GLFS_C72443.html"
-			(at 237.49 143.51 0)
+			(at 135.89 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2323,7 +2627,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 143.51 0)
+			(at 119.38 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +2636,7 @@
 			)
 		)
 		(property "LCSC Part" "C72443"
-			(at 240.03 143.51 0)
+			(at 138.43 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2359,6 +2663,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/089c604b-0863-4822-93dd-cc06ae04e525"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.98 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6ac41cf-9a29-4087-81fd-e9d4febf97b6")
+		(property "Reference" "#PWR0180"
+			(at 93.98 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d973170c-2774-4640-bcd9-d9cc86fc1449")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/089c604b-0863-4822-93dd-cc06ae04e525"
+					(reference "#PWR0180")
 					(unit 1)
 				)
 			)
@@ -2494,6 +2864,76 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/089c604b-0863-4822-93dd-cc06ae04e525"
 					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6f2b8d2-410c-4c5b-98fe-16a193600868")
+		(property "Reference" "R116"
+			(at 96.52 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "43"
+			(at 96.52 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.202 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f5a78f3-5941-4e81-9cbe-153294116326")
+		)
+		(pin "1"
+			(uuid "6fddb51d-98c2-4544-b9d3-8a482b8deab8")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/089c604b-0863-4822-93dd-cc06ae04e525"
+					(reference "R116")
 					(unit 1)
 				)
 			)

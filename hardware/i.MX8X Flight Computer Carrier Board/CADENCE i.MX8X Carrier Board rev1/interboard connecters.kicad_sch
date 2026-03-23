@@ -3759,7 +3759,7 @@
 	)
 	(rectangle
 		(start 26.416 300.228)
-		(end 163.322 349.758)
+		(end 253.746 349.758)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3846,6 +3846,18 @@
 		)
 		(uuid "395be397-72ea-4516-bbf3-c3cda2f06691")
 	)
+	(text "1.8V I2C"
+		(exclude_from_sim no)
+		(at 199.39 316.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "43ae80d7-8198-423f-955b-8e2020c62500")
+	)
 	(text "SATNOGS Power Monitor"
 		(exclude_from_sim no)
 		(at 493.522 169.672 0)
@@ -3856,16 +3868,6 @@
 			)
 		)
 		(uuid "4720398b-68ac-4d61-9b98-d0996c051f08")
-	)
-	(text "ChatGPT says ESA tested this component, \nbut we don’t have access to ESA database because \nwe are in USA (not really any other i2c buffers with \navailable test data)"
-		(exclude_from_sim no)
-		(at -31.496 259.588 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "48a7d351-6a85-4e3b-8ebc-8c0d1e31adfa")
 	)
 	(text "ADCS? Connection"
 		(exclude_from_sim no)
@@ -3932,6 +3934,18 @@
 			)
 		)
 		(uuid "b35efe3a-4c0c-4a4c-af85-026152bdf596")
+	)
+	(text "3.3V SPI3"
+		(exclude_from_sim no)
+		(at 229.108 317.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c31919f8-d49a-4c5b-aa4c-561dd1a10e31")
 	)
 	(text "I2C Address: 1000101"
 		(exclude_from_sim no)
@@ -5857,6 +5871,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 322.58) (xy 194.31 322.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9316cfcb-f79e-4b38-b174-aecc2116c5d7")
+	)
+	(wire
+		(pts
 			(xy 444.5 215.9) (xy 438.15 215.9)
 		)
 		(stroke
@@ -6397,6 +6421,16 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 330.2) (xy 194.31 330.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e024ca2d-18be-49a1-b839-097d870dfa6e")
+	)
+	(wire
+		(pts
 			(xy 205.74 248.92) (xy 208.28 248.92)
 		)
 		(stroke
@@ -6787,6 +6821,46 @@
 			)
 		)
 	)
+	(global_label "X_MIPI_CSI0_I2C0_SCL"
+		(shape bidirectional)
+		(at 194.31 327.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1852899c-188e-4199-9f66-acab574f4426")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_MIPI_CSI0_I2C0_SDA"
+		(shape bidirectional)
+		(at 194.31 325.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19372ff1-d7ae-4b4a-be3f-3c81e1353656")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.31 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_MIPI_DSI1_I2C0_SDA"
 		(shape bidirectional)
 		(at 69.85 222.25 180)
@@ -7029,6 +7103,26 @@
 			)
 		)
 	)
+	(global_label "X_SPI3_SCK"
+		(shape bidirectional)
+		(at 233.68 327.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8169f001-696d-4608-ac31-e2e1bcd0196c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 327.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_MIPI_DSI0_GPIO0_00"
 		(shape bidirectional)
 		(at 72.39 278.13 180)
@@ -7061,6 +7155,46 @@
 		(uuid "9531914e-3249-4f45-91ea-6f7f34650dac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 163.83 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI3_SDO"
+		(shape input)
+		(at 233.68 322.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99a80249-d5fb-412b-a26a-3d24df077dcb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI3_SDI"
+		(shape output)
+		(at 233.68 325.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e0a7d6a-1e48-4f35-b38c-d75758cead7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 325.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7272,6 +7406,102 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+	)
+	(global_label "X_SPI3_CS0"
+		(shape bidirectional)
+		(at 233.68 330.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa37054c-0568-4ffc-8c7b-1edb106d8bfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 233.68 330.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 199.39 325.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01575cdd-7450-4e4c-9bb4-f90acea2f536")
+		(property "Reference" "J12"
+			(at 201.93 325.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 201.93 327.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 199.39 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "dc229e01-489b-471c-b79f-69fd8aae8eaf")
+		)
+		(pin "2"
+			(uuid "e9a9dc18-b70a-4e3b-ba5d-3532b12b4d93")
+		)
+		(pin "1"
+			(uuid "e1c459d0-5dd5-4d25-acb6-ca42907de3f7")
+		)
+		(pin "3"
+			(uuid "d42a39ba-fef6-434d-84ed-900ad2661610")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "J12")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -10074,6 +10304,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 186.69 330.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3147184-1857-4fbd-985a-2c52c109efc9")
+		(property "Reference" "#PWR0191"
+			(at 186.69 336.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 330.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 330.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 330.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5961a708-843a-462a-a139-022b8523e958")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "#PWR0191")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "cadence imx8_carrier_board_symbol_library:DF11-16DP-2DSA(08)")
 		(at 80.01 195.58 0)
 		(unit 1)
@@ -10502,6 +10798,82 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 238.76 325.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd16648c-5368-4540-b30b-b3931da8fd3b")
+		(property "Reference" "J13"
+			(at 241.3 325.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 241.3 327.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 238.76 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "717bae5b-cf19-4d88-9b23-76df3168c75a")
+		)
+		(pin "2"
+			(uuid "3a43381a-e087-438d-b84e-e64d15eb09a9")
+		)
+		(pin "1"
+			(uuid "c5643272-ce4d-472c-9431-d194a7d002a0")
+		)
+		(pin "3"
+			(uuid "977225f9-3bf3-43c4-928b-e21ba74bf3c2")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -10989,6 +11361,71 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 186.69 322.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd087b4a-443f-4c57-a3c2-7086934837eb")
+		(property "Reference" "#PWR0190"
+			(at 186.69 326.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "P_1V8_OUT"
+			(at 186.69 318.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 186.69 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0cdde99a-425b-4a18-94ca-ce91e95799b9")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
