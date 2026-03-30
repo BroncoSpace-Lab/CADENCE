@@ -10967,7 +10967,7 @@
 		)
 		(uuid "5bcdc286-fa3b-45ff-bc76-fabd620af154")
 	)
-	(text "m40 uart for debug"
+	(text "SCU uart for debug"
 		(exclude_from_sim no)
 		(at 320.04 194.818 0)
 		(effects
@@ -12458,6 +12458,16 @@
 	)
 	(wire
 		(pts
+			(xy 354.33 193.04) (xy 363.22 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "253d5328-e7da-4a8c-b12e-34397765e633")
+	)
+	(wire
+		(pts
 			(xy 187.96 223.52) (xy 190.5 223.52)
 		)
 		(stroke
@@ -13515,16 +13525,6 @@
 			(type default)
 		)
 		(uuid "6d185d40-7d09-45c9-9b8e-1c3f7d379813")
-	)
-	(wire
-		(pts
-			(xy 354.33 195.58) (xy 363.22 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d4862f5-0957-405c-b1e7-7579d6eeaf4e")
 	)
 	(wire
 		(pts
@@ -14828,6 +14828,16 @@
 	)
 	(wire
 		(pts
+			(xy 354.33 195.58) (xy 363.22 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d007c191-388b-4ab6-92fc-ebbe209fc6e2")
+	)
+	(wire
+		(pts
 			(xy 424.18 238.76) (xy 426.72 238.76)
 		)
 		(stroke
@@ -15385,16 +15395,6 @@
 			(type default)
 		)
 		(uuid "f367276c-08a5-4f2b-9fd3-ad7b8f186065")
-	)
-	(wire
-		(pts
-			(xy 354.33 193.04) (xy 363.22 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f58175b8-01e1-40e8-a239-0632fc12173e")
 	)
 	(wire
 		(pts
@@ -16371,28 +16371,6 @@
 			)
 		)
 	)
-	(global_label "X_M40_UART0_TX"
-		(shape bidirectional)
-		(at 354.33 195.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "18d10976-a1f5-41b6-bf7a-9cef347c43a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_MIPI_DSI1_DATA1_P"
 		(shape output)
 		(at 359.41 137.16 180)
@@ -16773,6 +16751,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -17025,6 +17005,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -17699,6 +17681,28 @@
 			)
 		)
 	)
+	(global_label "X_SCU_GPIO0_00"
+		(shape bidirectional)
+		(at 354.33 193.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "615f852d-d876-40e7-b88e-b268d52968ba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 354.33 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_USDHC1_RESET_B/NAND_RE_N"
 		(shape output)
 		(at 123.19 71.12 180)
@@ -18235,28 +18239,6 @@
 			)
 		)
 	)
-	(global_label "X_M40_UART0_RX"
-		(shape bidirectional)
-		(at 354.33 193.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "8878aabb-00a7-416e-9a01-4df202b693a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_UART2_TX"
 		(shape input)
 		(at 105.41 170.18 180)
@@ -18689,6 +18671,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -19143,6 +19127,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -19309,6 +19295,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -19539,6 +19527,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
@@ -20241,6 +20231,28 @@
 			)
 		)
 	)
+	(global_label "X_SCU_GPIO0_01"
+		(shape bidirectional)
+		(at 354.33 195.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "e80005c9-d85d-4f05-9024-1e0150d0cc95")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 354.33 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_CSI_DO7"
 		(shape input)
 		(at 445.77 96.52 0)
@@ -20743,7 +20755,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.1588)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify right)
 		)

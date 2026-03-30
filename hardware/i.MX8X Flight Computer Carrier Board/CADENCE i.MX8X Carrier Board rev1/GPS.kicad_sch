@@ -1858,6 +1858,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 40.64) (xy 91.44 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8901bada-931c-4f5f-a488-bfce4498ea2b")
+	)
+	(wire
+		(pts
 			(xy 121.92 67.31) (xy 124.46 67.31)
 		)
 		(stroke
@@ -1935,6 +1945,16 @@
 			(type default)
 		)
 		(uuid "b0d270f9-6ae3-4112-8477-f58ae06d5df9")
+	)
+	(wire
+		(pts
+			(xy 93.98 43.18) (xy 91.44 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45e02e7-9fd1-4911-a3cf-5d8ef0154edf")
 	)
 	(wire
 		(pts
@@ -2096,49 +2116,9 @@
 		)
 		(uuid "f9fe543f-bbba-48f8-a4cf-9e9641129215")
 	)
-	(global_label "X_MIPI_DSI0_I2C0_SCL"
-		(shape bidirectional)
-		(at 91.44 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "54360308-19ff-435d-a8f7-6545002c6302")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_MIPI_DSI0_I2C0_SDA"
-		(shape bidirectional)
-		(at 91.44 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "758a2bc6-401c-436f-bf15-33c0f4bcfb78")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.44 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "X_UART0_RX"
+	(global_label "X_UART2_RX"
 		(shape input)
-		(at 88.9 82.55 180)
+		(at 88.9 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2146,6 +2126,26 @@
 			(justify right)
 		)
 		(uuid "9e79174d-460a-43ae-8a7c-71a93cd54462")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_UART2_TX"
+		(shape output)
+		(at 88.9 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5422ede-c7b8-4a70-b23b-29a31428b1fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 88.9 82.55 0)
 			(effects
@@ -2156,22 +2156,46 @@
 			)
 		)
 	)
-	(global_label "X_UART0_TX"
-		(shape output)
-		(at 88.9 80.01 180)
+	(global_label "HS_I2C0_SDA"
+		(shape input)
+		(at 93.98 40.64 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "d5422ede-c7b8-4a70-b23b-29a31428b1fa")
+		(uuid "ec3107e8-65d2-4ca8-991e-514fc0405d23")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 80.01 0)
+			(at 109.3023 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "HS_I2C0_SCL"
+		(shape input)
+		(at 93.98 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f204f683-a4f4-482b-95a3-74bddf7039ce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 109.2418 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2185,7 +2209,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "110f0d94-a4f0-4b2d-b896-dbdec159794e")
-		(property "Reference" "U24"
+		(property "Reference" "U23"
 			(at 65.786 30.226 0)
 			(effects
 				(font
@@ -2257,7 +2281,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "U24")
+					(reference "U23")
 					(unit 1)
 				)
 			)
@@ -2339,7 +2363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e2bf979-960b-427d-8ef8-611402618977")
-		(property "Reference" "U25"
+		(property "Reference" "U24"
 			(at 105.41 59.69 0)
 			(effects
 				(font
@@ -2439,7 +2463,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "U25")
+					(reference "U24")
 					(unit 1)
 				)
 			)
@@ -2455,7 +2479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "751d9592-a648-4602-b93b-63683e855f03")
-		(property "Reference" "C92"
+		(property "Reference" "C96"
 			(at 129.54 45.7199 0)
 			(effects
 				(font
@@ -2509,7 +2533,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "C92")
+					(reference "C96")
 					(unit 1)
 				)
 			)
@@ -2524,7 +2548,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78bd06d4-2039-448a-9397-5007a43c09ed")
-		(property "Reference" "C90"
+		(property "Reference" "C94"
 			(at 53.848 82.55 0)
 			(effects
 				(font
@@ -2578,7 +2602,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "C90")
+					(reference "C94")
 					(unit 1)
 				)
 			)
@@ -2593,7 +2617,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "862fdd19-2045-4aeb-8a36-c693bc40b0cb")
-		(property "Reference" "C91"
+		(property "Reference" "C95"
 			(at 62.992 82.55 0)
 			(effects
 				(font
@@ -2647,7 +2671,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "C91")
+					(reference "C95")
 					(unit 1)
 				)
 			)
@@ -2930,7 +2954,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f08405a8-60f7-4d53-89c8-33e8e6fa05c5")
-		(property "Reference" "R116"
+		(property "Reference" "R112"
 			(at 63.5 44.4499 0)
 			(effects
 				(font
@@ -2984,7 +3008,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "R116")
+					(reference "R112")
 					(unit 1)
 				)
 			)
