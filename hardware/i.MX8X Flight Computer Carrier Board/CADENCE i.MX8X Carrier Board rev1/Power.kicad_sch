@@ -4241,6 +4241,18 @@
 		)
 		(uuid "32508f11-6e65-4991-886b-1e626d9d7bce")
 	)
+	(text "VBATT-->Regulator_Output-->3.3V"
+		(exclude_from_sim no)
+		(at 367.284 24.892 0)
+		(effects
+			(font
+				(size 1.7018 1.7018)
+				(thickness 0.3404)
+				(bold yes)
+			)
+		)
+		(uuid "43304dbf-b5c5-4e21-b282-3821b2f85e1c")
+	)
 	(text "did this overnight, not sure if 100% good to go"
 		(exclude_from_sim no)
 		(at 252.73 186.182 0)
@@ -4441,7 +4453,7 @@
 	)
 	(text "place these two close to power switch"
 		(exclude_from_sim no)
-		(at 195.834 207.772 0)
+		(at 192.786 203.708 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8840,28 +8852,6 @@
 			)
 		)
 	)
-	(global_label "Regulator_Output"
-		(shape input)
-		(at 190.5 210.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "82a803ed-0937-4943-b85f-f3198ac2ffc2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 171.1866 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "3V3 Power Good"
 		(shape output)
 		(at 143.51 157.48 0)
@@ -8875,28 +8865,6 @@
 		(uuid "9a48f8fb-aa2d-4dfc-89c9-3b079e85c0c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 162.2793 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Regulator_Output"
-		(shape output)
-		(at 143.51 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a0cb9580-3646-41cf-b780-c192a6930657")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.8234 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9087,6 +9055,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/0ffac7df-456d-44c0-8e9b-18d3eccc9366"
 					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 190.5 210.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0812b23a-fb53-4e15-b5ba-f78eaf389509")
+		(property "Reference" "#PWR0246"
+			(at 190.5 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "P_3V3"
+			(at 187.96 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 190.5 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4aec0c31-cf2c-497c-908b-ab96260dddc7")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/0ffac7df-456d-44c0-8e9b-18d3eccc9366"
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -10897,6 +10931,72 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/0ffac7df-456d-44c0-8e9b-18d3eccc9366"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 143.51 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4068427f-5a1c-4f49-9d04-6b6ffad1eeef")
+		(property "Reference" "#PWR0245"
+			(at 143.51 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "P_3V3"
+			(at 140.97 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 143.51 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "111cbcaa-8798-4377-87ed-29ffd6df4bd0")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/0ffac7df-456d-44c0-8e9b-18d3eccc9366"
+					(reference "#PWR0245")
 					(unit 1)
 				)
 			)
