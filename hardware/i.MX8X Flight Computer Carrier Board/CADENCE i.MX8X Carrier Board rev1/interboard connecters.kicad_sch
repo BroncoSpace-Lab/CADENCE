@@ -3347,7 +3347,7 @@
 	)
 	(rectangle
 		(start 275.59 14.478)
-		(end 405.892 105.41)
+		(end 405.892 112.268)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3435,7 +3435,7 @@
 		)
 		(uuid "4720398b-68ac-4d61-9b98-d0996c051f08")
 	)
-	(text "ADCS? Connection"
+	(text "ADCS Connection"
 		(exclude_from_sim no)
 		(at 145.288 27.178 0)
 		(effects
@@ -3488,6 +3488,18 @@
 			)
 		)
 		(uuid "b35efe3a-4c0c-4a4c-af85-026152bdf596")
+	)
+	(text "1.8V M40 UART"
+		(exclude_from_sim no)
+		(at 305.816 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "b526c19e-4ced-45be-8340-098cbc0b628c")
 	)
 	(text "3.3V SPI3"
 		(exclude_from_sim no)
@@ -3812,6 +3824,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a995dc5e-5dbc-4219-aef4-0a01a437de79")
+	)
+	(junction
+		(at 318.77 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa924899-6a3e-4122-bec1-5dc6791a6a05")
 	)
 	(junction
 		(at 107.95 58.42)
@@ -4463,6 +4481,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 100.33) (xy 318.77 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "109809af-642b-4a65-975d-cd16545b33c5")
+	)
+	(wire
+		(pts
 			(xy 354.33 35.56) (xy 354.33 36.83)
 		)
 		(stroke
@@ -4640,6 +4668,16 @@
 			(type default)
 		)
 		(uuid "298218ee-5295-4b19-9ce7-beaebfd09d81")
+	)
+	(wire
+		(pts
+			(xy 320.04 93.98) (xy 314.96 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29bd8db2-8df1-46ab-99be-b012bf96ce01")
 	)
 	(wire
 		(pts
@@ -5073,6 +5111,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 96.52) (xy 314.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63ec620a-888c-48ae-b91b-438db2fa872a")
+	)
+	(wire
+		(pts
 			(xy 177.8 176.53) (xy 177.8 175.26)
 		)
 		(stroke
@@ -5463,6 +5511,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 99.06) (xy 318.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a95d250-6ebc-47f3-a492-d1d4ebf7205d")
+	)
+	(wire
+		(pts
 			(xy 214.63 168.91) (xy 214.63 166.37)
 		)
 		(stroke
@@ -5793,6 +5851,16 @@
 	)
 	(wire
 		(pts
+			(xy 318.77 91.44) (xy 320.04 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8414b47-c10b-45e9-bb3a-7b65d6e7f483")
+	)
+	(wire
+		(pts
 			(xy 378.46 36.83) (xy 378.46 39.37)
 		)
 		(stroke
@@ -5810,6 +5878,16 @@
 			(type default)
 		)
 		(uuid "c9704748-2b00-451a-b21a-dd2e6b740c8c")
+	)
+	(wire
+		(pts
+			(xy 318.77 99.06) (xy 320.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca9adc03-dc47-44ac-9b02-abd9eb6f2e85")
 	)
 	(wire
 		(pts
@@ -8311,6 +8389,27 @@
 			)
 		)
 	)
+	(global_label "X_M40_UART0_RX_1V8"
+		(shape bidirectional)
+		(at 314.96 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "57458da6-85d0-450e-8f8f-48d7531c552f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 314.96 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "HS_I2C0_SDA_1V8"
 		(shape input)
 		(at 302.26 67.31 180)
@@ -8667,6 +8766,27 @@
 			)
 		)
 	)
+	(global_label "X_M40_UART0_TX_1V8"
+		(shape bidirectional)
+		(at 314.96 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "e269b426-8a83-4b21-9e47-6da1e2150b79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 314.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "GPIO1_25"
 		(shape bidirectional)
 		(at 106.68 40.64 0)
@@ -8870,6 +8990,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 318.77 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04a9f918-494d-41c3-bc16-d775f1795095")
+		(property "Reference" "#PWR0262"
+			(at 318.77 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 318.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 318.77 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 318.77 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b64351a-4afd-41f9-b4c9-18862f4cb44b")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "#PWR0262")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "cadence imx8_carrier_board_symbol_library:VBAT")
 		(at 25.4 38.1 0)
 		(unit 1)
@@ -8879,7 +9065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ede9cf8-7364-47ef-9344-bc7e9aa85144")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR0215"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -8929,7 +9115,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0204")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -9171,7 +9357,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2706e8e1-7f31-4d7a-9571-1825fafcbc80")
-		(property "Reference" "#PWR0213"
+		(property "Reference" "#PWR0224"
 			(at 158.75 161.29 0)
 			(effects
 				(font
@@ -9221,7 +9407,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0213")
+					(reference "#PWR0224")
 					(unit 1)
 				)
 			)
@@ -9236,7 +9422,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "35e8cd0b-3085-46fc-b452-95a50cb17a80")
-		(property "Reference" "#PWR0215"
+		(property "Reference" "#PWR0226"
 			(at 177.8 154.94 0)
 			(effects
 				(font
@@ -9286,7 +9472,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0215")
+					(reference "#PWR0226")
 					(unit 1)
 				)
 			)
@@ -9301,7 +9487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3c44f611-d3e5-4626-b261-5a941a58e9a9")
-		(property "Reference" "#PWR0224"
+		(property "Reference" "#PWR0235"
 			(at 354.33 39.37 0)
 			(effects
 				(font
@@ -9351,7 +9537,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0224")
+					(reference "#PWR0235")
 					(unit 1)
 				)
 			)
@@ -9367,7 +9553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d041ad4-6790-4a26-bda5-436e2184b2eb")
-		(property "Reference" "#PWR0212"
+		(property "Reference" "#PWR0223"
 			(at 138.43 193.04 0)
 			(effects
 				(font
@@ -9417,7 +9603,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0212")
+					(reference "#PWR0223")
 					(unit 1)
 				)
 			)
@@ -9551,7 +9737,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e1a3d2f-93e7-4322-9dd9-c9f6797194b6")
-		(property "Reference" "#PWR0217"
+		(property "Reference" "#PWR0228"
 			(at 190.5 39.37 0)
 			(effects
 				(font
@@ -9601,7 +9787,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0217")
+					(reference "#PWR0228")
 					(unit 1)
 				)
 			)
@@ -9617,7 +9803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55a1b790-1a40-4e77-85a2-12d369d9bead")
-		(property "Reference" "#PWR0222"
+		(property "Reference" "#PWR0233"
 			(at 304.8 52.07 0)
 			(effects
 				(font
@@ -9667,7 +9853,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0222")
+					(reference "#PWR0233")
 					(unit 1)
 				)
 			)
@@ -9683,7 +9869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58032139-3db2-4878-a9d1-cbe9257442c7")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR0217"
 			(at 54.61 100.33 0)
 			(effects
 				(font
@@ -9733,7 +9919,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0206")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -9824,7 +10010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "69dc4b66-eaa3-4abc-998b-7333fb606476")
-		(property "Reference" "#PWR0223"
+		(property "Reference" "#PWR0234"
 			(at 330.2 38.1 0)
 			(effects
 				(font
@@ -9874,7 +10060,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0223")
+					(reference "#PWR0234")
 					(unit 1)
 				)
 			)
@@ -9890,7 +10076,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c033815-ffa9-4c54-8560-10c2967417f5")
-		(property "Reference" "#PWR0226"
+		(property "Reference" "#PWR0236"
 			(at 378.46 39.37 0)
 			(effects
 				(font
@@ -9940,7 +10126,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0226")
+					(reference "#PWR0236")
 					(unit 1)
 				)
 			)
@@ -9955,7 +10141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6eb1a81b-804a-45d2-aaca-c6b52fa8db39")
-		(property "Reference" "U34"
+		(property "Reference" "U35"
 			(at 162.306 172.974 0)
 			(effects
 				(font
@@ -10027,7 +10213,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "U34")
+					(reference "U35")
 					(unit 1)
 				)
 			)
@@ -10042,7 +10228,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7159c686-3cb8-465a-ba08-e812081183fe")
-		(property "Reference" "R162"
+		(property "Reference" "R166"
 			(at 193.04 48.2599 0)
 			(effects
 				(font
@@ -10096,7 +10282,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "R162")
+					(reference "R166")
 					(unit 1)
 				)
 			)
@@ -10112,7 +10298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71b65ff5-1ca2-4de6-a792-7216c020a277")
-		(property "Reference" "C125"
+		(property "Reference" "C127"
 			(at 254 48.2599 0)
 			(effects
 				(font
@@ -10166,7 +10352,83 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "C125")
+					(reference "C127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 325.12 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74ab4520-aaa3-4964-9642-9f1d80f691b2")
+		(property "Reference" "J18"
+			(at 327.66 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 327.66 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 325.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 325.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 325.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "42ddf0d0-57cc-4035-bcd4-f9bffd111345")
+		)
+		(pin "2"
+			(uuid "54ab05b5-2743-4711-8a5b-138d2e306ecb")
+		)
+		(pin "1"
+			(uuid "daa8d024-7b43-4e20-b9d0-ffea418d27c9")
+		)
+		(pin "3"
+			(uuid "f53b4283-6869-48ca-a27c-59286c6f2e68")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -10182,7 +10444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c2f468d-4871-4f84-b9e2-0d0c82449558")
-		(property "Reference" "#PWR0216"
+		(property "Reference" "#PWR0227"
 			(at 177.8 182.88 0)
 			(effects
 				(font
@@ -10232,7 +10494,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0216")
+					(reference "#PWR0227")
 					(unit 1)
 				)
 			)
@@ -10248,7 +10510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86a9a6e4-7911-4008-8bd6-f8e4f910b7e6")
-		(property "Reference" "#PWR0209"
+		(property "Reference" "#PWR0220"
 			(at 81.28 66.04 0)
 			(effects
 				(font
@@ -10298,7 +10560,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0209")
+					(reference "#PWR0220")
 					(unit 1)
 				)
 			)
@@ -10313,7 +10575,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a4e1409-07da-4c4d-97d3-a6eae4545d69")
-		(property "Reference" "#PWR0218"
+		(property "Reference" "#PWR0229"
 			(at 210.82 69.85 0)
 			(effects
 				(font
@@ -10363,7 +10625,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0218")
+					(reference "#PWR0229")
 					(unit 1)
 				)
 			)
@@ -10379,7 +10641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a9c61b9-e8aa-489c-8c17-ebac5ed2ea32")
-		(property "Reference" "#PWR0211"
+		(property "Reference" "#PWR0222"
 			(at 114.3 193.04 0)
 			(effects
 				(font
@@ -10429,7 +10691,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0211")
+					(reference "#PWR0222")
 					(unit 1)
 				)
 			)
@@ -10739,7 +11001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0cfaf2e-8e00-4502-b521-b1d6dcfe2268")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR0216"
 			(at 46.99 195.58 0)
 			(effects
 				(font
@@ -10789,7 +11051,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0205")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -10805,7 +11067,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2271b8a-b7d9-41b5-b9cd-0b8e0a383aa8")
-		(property "Reference" "#PWR0210"
+		(property "Reference" "#PWR0221"
 			(at 107.95 66.04 0)
 			(effects
 				(font
@@ -10855,7 +11117,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0210")
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -10870,7 +11132,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5b74299-e040-4d76-b7db-0b4231eb0a5a")
-		(property "Reference" "U35"
+		(property "Reference" "U36"
 			(at 195.326 58.674 0)
 			(effects
 				(font
@@ -10942,7 +11204,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "U35")
+					(reference "U36")
 					(unit 1)
 				)
 			)
@@ -11175,7 +11437,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c0d99523-6ca6-4a90-b823-c3570ce8f93d")
-		(property "Reference" "R161"
+		(property "Reference" "R165"
 			(at 161.29 162.5599 0)
 			(effects
 				(font
@@ -11229,7 +11491,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "R161")
+					(reference "R165")
 					(unit 1)
 				)
 			)
@@ -11245,7 +11507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3147184-1857-4fbd-985a-2c52c109efc9")
-		(property "Reference" "#PWR0221"
+		(property "Reference" "#PWR0232"
 			(at 294.64 78.74 0)
 			(effects
 				(font
@@ -11295,7 +11557,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0221")
+					(reference "#PWR0232")
 					(unit 1)
 				)
 			)
@@ -11549,7 +11811,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7fd4ae1-cafd-41ec-8f23-c2486b94a7cf")
-		(property "Reference" "#PWR0208"
+		(property "Reference" "#PWR0219"
 			(at 71.12 194.31 0)
 			(effects
 				(font
@@ -11599,7 +11861,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0208")
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -11614,7 +11876,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c87405be-f39d-4f28-ac0f-d50696b893fa")
-		(property "Reference" "#PWR0214"
+		(property "Reference" "#PWR0225"
 			(at 162.56 66.04 0)
 			(effects
 				(font
@@ -11664,7 +11926,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0214")
+					(reference "#PWR0225")
 					(unit 1)
 				)
 			)
@@ -11756,7 +12018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d728868e-2738-481c-97cd-d8089174f7e2")
-		(property "Reference" "C124"
+		(property "Reference" "C126"
 			(at 223.52 161.2899 0)
 			(effects
 				(font
@@ -11810,7 +12072,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "C124")
+					(reference "C126")
 					(unit 1)
 				)
 			)
@@ -11825,7 +12087,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d91932aa-7022-4c43-b6fb-b4bdbaef3d9c")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR0218"
 			(at 60.96 49.53 0)
 			(effects
 				(font
@@ -11875,7 +12137,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0207")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -11891,7 +12153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ead78611-deab-4e3b-b34e-d6dfe7a48b35")
-		(property "Reference" "#PWR0219"
+		(property "Reference" "#PWR0230"
 			(at 279.4 52.07 0)
 			(effects
 				(font
@@ -11941,7 +12203,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0219")
+					(reference "#PWR0230")
 					(unit 1)
 				)
 			)
@@ -12108,7 +12370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd087b4a-443f-4c57-a3c2-7086934837eb")
-		(property "Reference" "#PWR0220"
+		(property "Reference" "#PWR0231"
 			(at 294.64 68.58 0)
 			(effects
 				(font
@@ -12158,7 +12420,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0220")
+					(reference "#PWR0231")
 					(unit 1)
 				)
 			)
@@ -12174,7 +12436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd7cc6d5-e1f7-4075-8619-1e2355303aee")
-		(property "Reference" "#PWR0225"
+		(property "Reference" "#PWR0237"
 			(at 387.35 78.74 0)
 			(effects
 				(font
@@ -12224,7 +12486,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/912a7967-b8a7-4e29-8c0b-8042b13af5ba"
-					(reference "#PWR0225")
+					(reference "#PWR0237")
 					(unit 1)
 				)
 			)
