@@ -1680,6 +1680,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" ""
@@ -1720,7 +1721,55 @@
 		(symbol "Resistor_0_1"
 			(polyline
 				(pts
-					(xy 3.81 0) (xy 2.54 1.27) (xy 1.27 0) (xy 0 1.27) (xy -1.27 0) (xy -2.54 1.27) (xy -3.81 0)
+					(xy -2.286 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.286 0) (xy -1.905 1.016) (xy -1.524 0) (xy -1.143 -1.016) (xy -0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 0) (xy -0.381 1.016) (xy 0 0) (xy 0.381 -1.016) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 0) (xy 1.143 1.016) (xy 1.524 0) (xy 1.905 -1.016) (xy 2.286 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 0) (xy 2.54 0)
 				)
 				(stroke
 					(width 0)
@@ -1732,38 +1781,38 @@
 			)
 		)
 		(symbol "Resistor_1_1"
-			(pin input line
-				(at -6.35 0 0)
-				(length 2.54)
-				(name ""
+			(pin passive line
+				(at -3.81 0 0)
+				(length 1.27)
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "~"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
-			(pin input line
-				(at 6.35 0 180)
-				(length 2.54)
-				(name ""
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "~"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "~"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
