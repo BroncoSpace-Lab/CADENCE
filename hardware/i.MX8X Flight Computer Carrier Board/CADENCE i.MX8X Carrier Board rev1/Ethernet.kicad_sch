@@ -1474,7 +1474,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "imx8_carrier_board_symbol_library:VCC_3V3_OUT"
+		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1495,7 +1495,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "VCC_3V3_OUT"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1521,7 +1521,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1539,7 +1539,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "VCC_3V3_OUT_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1577,7 +1577,7 @@
 					)
 				)
 			)
-			(symbol "VCC_3V3_OUT_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2174,7 +2174,7 @@
 		(uuid "dc3525a1-7246-4f22-87b3-497938627c5b")
 	)
 	(junction
-		(at 377.19 40.64)
+		(at 379.73 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0647ac7d-6590-4bfd-acf8-361feea8feb0")
@@ -2280,6 +2280,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be073db2-0ce1-4721-9e06-202f2356d559")
+	)
+	(junction
+		(at 359.41 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfa572af-41e5-4e5c-ae84-172839651c86")
 	)
 	(junction
 		(at 99.06 86.36)
@@ -2605,6 +2611,16 @@
 		)
 		(uuid "1ca52831-0cd3-4a1b-855b-18f0a1f58134")
 	)
+	(wire
+		(pts
+			(xy 367.03 34.29) (xy 367.03 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dc476f7-2af1-4332-a8c4-079c22796287")
+	)
 	(polyline
 		(pts
 			(xy 39.37 77.343) (xy 40.132 77.343)
@@ -2916,6 +2932,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 57.15) (xy 109.22 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf74c5a-b8f5-40bf-834c-c92ffa6e47f5")
+	)
+	(wire
+		(pts
 			(xy 292.1 71.12) (xy 342.9 71.12)
 		)
 		(stroke
@@ -2999,23 +3025,13 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 49.53) (xy 360.68 49.53)
+			(xy 370.84 49.53) (xy 360.68 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55496e1a-af03-405c-ab91-628736f686bd")
-	)
-	(wire
-		(pts
-			(xy 372.11 54.61) (xy 377.19 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56d70466-fa69-4116-85dc-7431b5590d9c")
 	)
 	(polyline
 		(pts
@@ -3113,7 +3129,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 50.8) (xy 377.19 54.61)
+			(xy 379.73 50.8) (xy 379.73 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +3358,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 40.64) (xy 377.19 36.83)
+			(xy 379.73 40.64) (xy 379.73 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3489,7 +3505,7 @@
 	)
 	(wire
 		(pts
-			(xy 377.19 40.64) (xy 377.19 43.18)
+			(xy 379.73 40.64) (xy 379.73 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3570,13 +3586,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 57.15) (xy 109.22 59.69)
+			(xy 359.41 34.29) (xy 367.03 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d00afcd-718f-489a-ae70-a4a8049f3dfc")
+		(uuid "8ca4accc-f60a-4b1e-bd68-57485ab091fa")
 	)
 	(polyline
 		(pts
@@ -3654,7 +3670,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 35.56) (xy 356.87 35.56)
+			(xy 346.71 34.29) (xy 359.41 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3664,7 +3680,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 40.64) (xy 377.19 40.64)
+			(xy 370.84 40.64) (xy 379.73 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3882,7 +3898,7 @@
 	)
 	(wire
 		(pts
-			(xy 367.03 40.64) (xy 367.03 49.53)
+			(xy 370.84 40.64) (xy 370.84 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4154,6 +4170,16 @@
 	)
 	(wire
 		(pts
+			(xy 372.11 54.61) (xy 379.73 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e832ea-291d-4cd2-ab9a-b6060b478200")
+	)
+	(wire
+		(pts
 			(xy 157.48 69.85) (xy 157.48 86.36)
 		)
 		(stroke
@@ -4164,7 +4190,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 39.37) (xy 346.71 35.56)
+			(xy 346.71 39.37) (xy 346.71 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4903,7 +4929,7 @@
 	)
 	(global_label "ETH1_LED0"
 		(shape input)
-		(at 377.19 54.61 0)
+		(at 379.73 54.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4913,7 +4939,7 @@
 		)
 		(uuid "8898e117-e2d9-4712-9d36-c3a8f3fd755e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 390.456 54.61 0)
+			(at 392.996 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5080,7 +5106,7 @@
 	)
 	(global_label "X_ETH0_LED1"
 		(shape input)
-		(at 109.22 58.42 0)
+		(at 109.22 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5090,7 +5116,7 @@
 		)
 		(uuid "fede57a3-170c-486e-8f3e-dfc460fe484c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 124.6631 58.42 0)
+			(at 124.6631 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5160,71 +5186,6 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
 					(reference "#PWR094")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
-		(at 306.07 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b15770f-a7d8-46c4-b10a-738ef73eea70")
-		(property "Reference" "#PWR0102"
-			(at 306.07 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "P_3V3_OUT"
-			(at 306.07 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 306.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 306.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 306.07 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c048daa3-9609-44f3-b5dc-afd3f90ad0a1")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
-					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -5427,6 +5388,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 359.41 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "585fa9a6-8b88-4220-b6f1-cc91ad9175bb")
+		(property "Reference" "#FLG014"
+			(at 359.41 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 359.41 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 359.41 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 359.41 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98f26702-d2d4-4d65-88ef-e5e6c8b2f94e")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
+					(reference "#FLG014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:RJHSE5384")
 		(at 152.4 57.15 0)
 		(unit 1)
@@ -5555,14 +5582,14 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
+		(lib_id "power:+3.3V")
 		(at 109.22 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7c001eb9-31a1-49d4-b05f-edd5f8bc8ba9")
+		(uuid "60bce001-1dcd-4295-b25b-28f1a5a34377")
 		(property "Reference" "#PWR096"
 			(at 109.22 48.26 0)
 			(effects
@@ -5572,7 +5599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "P_3V3"
+		(property "Value" "+3.3V"
 			(at 109.22 40.64 0)
 			(effects
 				(font
@@ -5598,7 +5625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 109.22 44.45 0)
 			(effects
 				(font
@@ -5608,7 +5635,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e9be46d2-d9dc-4bcb-ab5f-bf218dde4805")
+			(uuid "080e1570-470e-4a27-8df2-e7b9d7cbf5d5")
 		)
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
@@ -5997,6 +6024,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 180.34 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "999a029b-6f97-4866-9139-ad4bd5bd3b6e")
+		(property "Reference" "#PWR099"
+			(at 180.34 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 180.34 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 180.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f30c9271-3c49-4776-958a-4853ace36a86")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "imx8_carrier_board_symbol_library:RJHSE5384")
 		(at 347.98 52.07 0)
 		(unit 1)
@@ -6125,6 +6217,136 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 306.07 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a84e9b35-763e-4b98-9ccf-d88073832f98")
+		(property "Reference" "#PWR0102"
+			(at 306.07 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 306.07 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 306.07 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 306.07 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 306.07 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a6a35b0-df56-4b8f-8b8d-b65dc6058a2d")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 379.73 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae617cfa-49e4-4298-83d6-9603ce74905a")
+		(property "Reference" "#PWR0104"
+			(at 379.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 379.73 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 379.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 379.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 379.73 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e17a585-a9c3-4401-beca-a977c1a052fb")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 180.34 50.8 0)
 		(unit 1)
@@ -6209,16 +6431,15 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 356.87 35.56 0)
+		(at 367.03 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b567105c-1d1c-432f-9f76-e2c2da393017")
 		(property "Reference" "#PWR0103"
-			(at 356.87 40.64 0)
+			(at 367.03 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6227,7 +6448,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 356.743 40.386 0)
+			(at 367.03 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,7 +6456,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 356.87 36.83 0)
+			(at 367.03 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6244,7 +6465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 356.87 36.83 0)
+			(at 367.03 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6253,7 +6474,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 356.87 35.56 0)
+			(at 367.03 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6523,16 +6744,34 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
-		(at 377.19 36.83 0)
+		(lib_id "Device:C_Small")
+		(at 359.41 36.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf3f2c8c-365d-4f8b-a0d5-6faff18c8e61")
-		(property "Reference" "#PWR0104"
-			(at 377.19 40.64 0)
+		(uuid "c9da3347-0e14-46ff-b5f8-50a35bcbed42")
+		(property "Reference" "C128"
+			(at 356.87 38.0937 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10nF"
+			(at 356.87 35.5537 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 359.41 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6540,16 +6779,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "P_3V3_OUT"
-			(at 377.19 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 377.19 36.83 0)
+		(property "Datasheet" "~"
+			(at 359.41 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6557,8 +6788,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 377.19 36.83 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 359.41 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6566,22 +6797,32 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 377.19 36.83 0)
+		(property "LCSC" ""
+			(at 359.41 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Voltage" "2kV"
+			(at 362.712 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "bba2e282-c6ac-4e93-88e9-2e5db6e0e80b")
+			(uuid "1f0f7a7a-ce12-49e3-9a6f-5539e00d3fba")
+		)
+		(pin "2"
+			(uuid "ba82c3f2-54e6-4058-9e76-15c0acafb9bf")
 		)
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
-					(reference "#PWR0104")
+					(reference "C128")
 					(unit 1)
 				)
 			)
@@ -6840,71 +7081,6 @@
 		)
 	)
 	(symbol
-		(lib_id "imx8_carrier_board_symbol_library:VCC_3V3_OUT")
-		(at 180.34 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "da168d99-4b6d-438e-95c9-1cb0a48dcba3")
-		(property "Reference" "#PWR099"
-			(at 180.34 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "P_3V3"
-			(at 180.34 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 180.34 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8004082-4704-4e77-863a-829e7226abaf")
-		)
-		(instances
-			(project "CADENCE i.MX8X Carrier Board rev1"
-				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
-					(reference "#PWR099")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 368.3 54.61 270)
 		(unit 1)
@@ -6989,6 +7165,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 359.41 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8d3dfe0-2914-4c47-bf6a-a29e0ae1168c")
+		(property "Reference" "#PWR0263"
+			(at 359.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 359.41 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 359.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3b838c9-1dbe-49fd-92d8-7674a7bdff82")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/15f3f643-07bc-4c87-bc66-464abe3a5e1e"
+					(reference "#PWR0263")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 260.35 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7054,7 +7295,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 377.19 46.99 0)
+		(at 379.73 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7062,7 +7303,7 @@
 		(dnp no)
 		(uuid "f73ef907-74e1-4e88-9e63-016a4c92a0f7")
 		(property "Reference" "R89"
-			(at 373.38 45.72 0)
+			(at 375.92 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7070,7 +7311,7 @@
 			)
 		)
 		(property "Value" "2.49K"
-			(at 373.38 48.26 0)
+			(at 375.92 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7078,7 +7319,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 378.206 47.244 90)
+			(at 380.746 47.244 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7087,7 +7328,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 377.19 46.99 0)
+			(at 379.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7096,7 +7337,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 377.19 46.99 0)
+			(at 379.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7105,7 +7346,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 377.19 46.99 0)
+			(at 379.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7113,7 +7354,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 377.19 46.99 0)
+			(at 379.73 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
