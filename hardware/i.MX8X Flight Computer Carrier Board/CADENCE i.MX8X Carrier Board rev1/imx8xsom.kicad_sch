@@ -12870,7 +12870,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 148.59) (xy 341.63 148.59)
+			(xy 341.63 148.59) (xy 359.41 148.59)
 		)
 		(stroke
 			(width 0)
@@ -16938,26 +16938,6 @@
 			)
 		)
 	)
-	(global_label "VDD_ADC_1V8"
-		(shape input)
-		(at 349.25 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7c2262e3-9be9-4aec-914e-020396968219")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 349.25 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LSIO_GPIO3_IO01"
 		(shape bidirectional)
 		(at 353.06 85.09 0)
@@ -19366,6 +19346,71 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 359.41 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4258ef6d-2c5b-4c96-80b7-3686414ce152")
+		(property "Reference" "#PWR0269"
+			(at 359.41 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "P_1V8_OUT"
+			(at 359.41 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 359.41 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 359.41 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90b63c85-8f72-45b5-bc8e-8df9098ce357")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "#PWR0269")
 					(unit 1)
 				)
 			)
