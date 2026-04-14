@@ -268,6 +268,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EPS:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "cadence imx8_carrier_board_symbol_library:BD2204GUL-E2"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1074,6 +1181,12 @@
 		(uuid "041f89e2-330a-40de-a9d7-3ab4598febff")
 	)
 	(junction
+		(at 81.28 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04d9b395-3155-4891-a3cd-146abbee549c")
+	)
+	(junction
 		(at 35.56 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1084,6 +1197,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "166044ca-8989-4bb8-a8e4-1f4844fc58b3")
+	)
+	(junction
+		(at 119.38 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e84effe-c662-4890-b384-768236818898")
 	)
 	(junction
 		(at 85.09 46.99)
@@ -1251,7 +1370,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 46.99) (xy 85.09 46.99)
+			(xy 77.47 46.99) (xy 81.28 46.99)
 		)
 		(stroke
 			(width 0)
@@ -1301,7 +1420,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 40.64) (xy 119.38 46.99)
+			(xy 119.38 40.64) (xy 119.38 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1591,6 +1710,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 46.99) (xy 85.09 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6db903d-7dfb-4612-b1e0-cd55da2b4ed3")
+	)
+	(wire
+		(pts
 			(xy 127 91.44) (xy 127 93.98)
 		)
 		(stroke
@@ -1598,6 +1727,16 @@
 			(type default)
 		)
 		(uuid "cec885e2-341b-49da-bd6b-f9c52cab19f9")
+	)
+	(wire
+		(pts
+			(xy 119.38 43.18) (xy 119.38 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d031c865-afdd-4308-8130-d496acf8b08a")
 	)
 	(wire
 		(pts
@@ -2129,6 +2268,73 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/fe211871-5da0-4bfc-9ad4-60fa16dbacc5"
 					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EPS:TestPoint")
+		(at 119.38 43.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "176fddf9-f740-4a94-94ba-f03a5eba93be")
+		(property "Reference" "TP14"
+			(at 124.206 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 124.46 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 119.38 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf9b2999-2977-4752-b90e-a97193528dce")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/fe211871-5da0-4bfc-9ad4-60fa16dbacc5"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -2681,6 +2887,73 @@
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/fe211871-5da0-4bfc-9ad4-60fa16dbacc5"
 					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EPS:TestPoint")
+		(at 81.28 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72dd9a44-9cdc-4611-b736-e9daa2bfa14d")
+		(property "Reference" "TP15"
+			(at 81.28 42.164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 82.5499 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 86.36 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12d17cce-a515-4660-8b00-8eb942c52fd2")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/fe211871-5da0-4bfc-9ad4-60fa16dbacc5"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
