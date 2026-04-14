@@ -153,16 +153,6 @@
 	)
 	(bus
 		(pts
-			(xy 224.79 87.63) (xy 254 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e0db126-42e6-4a92-8203-efd8c2f6feab")
-	)
-	(bus
-		(pts
 			(xy 142.24 198.12) (xy 143.51 198.12)
 		)
 		(stroke
@@ -191,6 +181,16 @@
 		)
 		(uuid "b36e8d58-ec11-46d0-b81d-12ef8ed5d648")
 	)
+	(bus
+		(pts
+			(xy 224.79 87.63) (xy 254 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e59044-5616-43f9-848f-0c3911f7d715")
+	)
 	(wire
 		(pts
 			(xy 60.96 86.36) (xy 77.47 86.36)
@@ -202,7 +202,7 @@
 		(uuid "ebf8b7ad-aa55-4ee2-9d56-8e4bb3ed2c8d")
 	)
 	(label "MRAM_DATA[0..7]"
-		(at 236.22 87.63 0)
+		(at 232.41 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -212,6 +212,30 @@
 			(justify left bottom)
 		)
 		(uuid "b15f7c6c-9b68-4554-a888-cac05ad3ed7d")
+	)
+	(label "MRAM_CTRL{OE,CS,WE}"
+		(at 229.87 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5886c07-ba19-4283-8472-09f28ab36294")
+	)
+	(label "A[0..20]"
+		(at 232.41 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa5cdd41-a445-4040-beea-8981fcc8cd18")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -404,7 +428,7 @@
 				(justify left)
 			)
 		)
-		(pin "MRAM_CTRL" output
+		(pin "MRAM_CTRL{OE,CS,WE}" output
 			(at 224.79 77.47 0)
 			(uuid "b138d019-69b3-46a8-bf66-60d31be0fdb2")
 			(effects
@@ -414,9 +438,9 @@
 				(justify right)
 			)
 		)
-		(pin "MRAM_DATA" output
-			(at 224.79 87.63 0)
-			(uuid "10af768b-52a4-4efa-9b66-c1248fda46a7")
+		(pin "A[0..20]" output
+			(at 224.79 82.55 0)
+			(uuid "d3d1a9ff-7bef-4c8d-8496-1ab4f142d6f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -424,9 +448,9 @@
 				(justify right)
 			)
 		)
-		(pin "MRAM_ADDRESS" output
-			(at 224.79 82.55 0)
-			(uuid "d3d1a9ff-7bef-4c8d-8496-1ab4f142d6f4")
+		(pin "MRAM_DATA[0..7]" input
+			(at 224.79 87.63 0)
+			(uuid "7615482f-4b72-4210-bc9e-92f22802946d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -476,7 +500,7 @@
 				(justify left top)
 			)
 		)
-		(pin "MRAM_ADDRESS" input
+		(pin "A[0..20]" input
 			(at 254 82.55 180)
 			(uuid "ee671838-0ae7-42c8-84bb-a934974456b5")
 			(effects
@@ -486,7 +510,7 @@
 				(justify left)
 			)
 		)
-		(pin "MRAM_CTRL" input
+		(pin "MRAM_CTRL{OE,CS,WE}" input
 			(at 254 77.47 180)
 			(uuid "dc2caf82-faf0-4715-9276-881161804bf8")
 			(effects
@@ -496,7 +520,7 @@
 				(justify left)
 			)
 		)
-		(pin "MRAM_DATA" input
+		(pin "MRAM_DATA[0..7]" input
 			(at 254 87.63 180)
 			(uuid "23254729-7296-453d-b8c3-fd0837eeb9cd")
 			(effects
