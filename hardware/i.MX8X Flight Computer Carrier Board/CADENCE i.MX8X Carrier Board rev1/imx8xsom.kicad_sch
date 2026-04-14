@@ -5119,6 +5119,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -11364,7 +11541,7 @@
 	)
 	(text "ADC (1.8V) &\nM40 UART0 TX (1.8V)\n"
 		(exclude_from_sim no)
-		(at 381 156.972 0)
+		(at 381.254 157.734 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11623,10 +11800,10 @@
 	)
 	(text "}"
 		(exclude_from_sim no)
-		(at 369.316 155.194 0)
+		(at 369.316 155.956 0)
 		(effects
 			(font
-				(size 13.335 13.335)
+				(size 12.065 12.065)
 			)
 		)
 		(uuid "d1ec7ff4-df5f-41f5-a6b2-dc8028e961a2")
@@ -11866,6 +12043,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6785f29c-d982-4450-9a06-c50c54229e78")
+	)
+	(junction
+		(at 223.52 196.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a023c73-eb2d-4e26-a0ba-db40b33455fe")
 	)
 	(junction
 		(at 344.17 212.09)
@@ -12354,10 +12537,6 @@
 		(uuid "c2f01192-0c15-46c4-82de-e113a95a9dca")
 	)
 	(no_connect
-		(at 280.67 186.69)
-		(uuid "ccb8dcf8-405f-4c3d-bb61-a7b1e22f8343")
-	)
-	(no_connect
 		(at 341.63 110.49)
 		(uuid "d4362174-6475-4686-ab11-f0bb4e864420")
 	)
@@ -12720,6 +12899,16 @@
 			(type default)
 		)
 		(uuid "1d6f6b40-a53c-42d1-bb4d-2b3cdf94c9f5")
+	)
+	(wire
+		(pts
+			(xy 205.74 186.69) (xy 280.67 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e8dd339-8d57-4f50-8db7-b78377991515")
 	)
 	(wire
 		(pts
@@ -13643,6 +13832,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 187.96) (xy 205.74 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68f6f729-18ca-4b08-bbfe-b92680352efb")
+	)
+	(wire
+		(pts
 			(xy 88.9 204.47) (xy 86.36 204.47)
 		)
 		(stroke
@@ -13660,6 +13859,16 @@
 			(type default)
 		)
 		(uuid "6b1af79c-2270-4d2f-bac4-47cb66d60e6b")
+	)
+	(wire
+		(pts
+			(xy 223.52 196.85) (xy 205.74 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6da28982-18d4-476e-b0e9-9f65b1433489")
 	)
 	(wire
 		(pts
@@ -14413,7 +14622,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 187.96) (xy 243.84 189.23)
+			(xy 243.84 185.42) (xy 243.84 189.23)
 		)
 		(stroke
 			(width 0)
@@ -15180,6 +15389,16 @@
 			(type default)
 		)
 		(uuid "fe14c5b3-855f-4fa9-a97c-83627f59f8f1")
+	)
+	(wire
+		(pts
+			(xy 205.74 196.85) (xy 205.74 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fedafa89-804c-4024-8615-ac7e8130ef6a")
 	)
 	(wire
 		(pts
@@ -16880,7 +17099,7 @@
 			)
 		)
 	)
-	(global_label "LSIO_GPIO4_IO21"
+	(global_label "LSIO_GPIO4_IO20"
 		(shape bidirectional)
 		(at 88.9 41.91 180)
 		(fields_autoplaced yes)
@@ -17273,7 +17492,7 @@
 			)
 		)
 	)
-	(global_label "LSIO_GPIO4_IO22"
+	(global_label "LSIO_GPIO4_IO21"
 		(shape bidirectional)
 		(at 88.9 44.45 180)
 		(fields_autoplaced yes)
@@ -18829,7 +19048,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01c42df1-5125-4c5c-959d-517eaab91469")
-		(property "Reference" "R191"
+		(property "Reference" "R5"
 			(at 350.52 86.36 90)
 			(effects
 				(font
@@ -18845,7 +19064,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 345.44 89.408 90)
 			(effects
 				(font
@@ -18881,7 +19100,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "R191")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -19349,7 +19568,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3613ae67-3946-4eab-915e-d516f40c65f8")
-		(property "Reference" "R190"
+		(property "Reference" "R2"
 			(at 87.63 101.6 90)
 			(effects
 				(font
@@ -19365,7 +19584,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 104.648 90)
 			(effects
 				(font
@@ -19401,7 +19620,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "R190")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -19501,7 +19720,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4258ef6d-2c5b-4c96-80b7-3686414ce152")
-		(property "Reference" "#PWR0269"
+		(property "Reference" "#PWR010"
 			(at 359.41 152.4 0)
 			(effects
 				(font
@@ -19551,7 +19770,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "#PWR0269")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -19625,7 +19844,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 243.84 187.96 0)
+		(at 243.84 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19633,7 +19852,7 @@
 		(dnp no)
 		(uuid "67faa203-e9fd-4d71-b2bb-4f40df7f6660")
 		(property "Reference" "#PWR03"
-			(at 243.84 191.77 0)
+			(at 243.84 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19642,7 +19861,7 @@
 			)
 		)
 		(property "Value" "P_3V3"
-			(at 241.3 184.15 0)
+			(at 241.3 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19651,7 +19870,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 187.96 0)
+			(at 243.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19660,7 +19879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 187.96 0)
+			(at 243.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19669,7 +19888,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 243.84 187.96 0)
+			(at 243.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19915,7 +20134,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d244c8f-62cd-4f81-a676-a5a12c2a1732")
-		(property "Reference" "R189"
+		(property "Reference" "R1"
 			(at 87.63 99.06 90)
 			(effects
 				(font
@@ -19931,7 +20150,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 102.108 90)
 			(effects
 				(font
@@ -19967,7 +20186,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "R189")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -20950,7 +21169,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "afa85d73-8c84-470f-9dc1-144f317e6e1c")
-		(property "Reference" "TP21"
+		(property "Reference" "TP1"
 			(at 259.08 143.764 90)
 			(effects
 				(font
@@ -21002,7 +21221,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "TP21")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -21017,7 +21236,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf23f4d4-69c4-4e3a-b3e3-cd2b995f7422")
-		(property "Reference" "R192"
+		(property "Reference" "R3"
 			(at 87.63 106.68 90)
 			(effects
 				(font
@@ -21033,7 +21252,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 109.728 90)
 			(effects
 				(font
@@ -21069,7 +21288,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "R192")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -21142,6 +21361,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 205.74 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf9ae2a0-e5d9-457c-9814-5bc5fd9324bf")
+		(property "Reference" "BT1"
+			(at 208.534 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 208.534 192.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "3VBatteryCell:BAT-SMD_MY-2032-11"
+			(at 205.74 191.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 191.516 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single-cell battery"
+			(at 205.74 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7f288f73-3e6e-41af-8e8f-c07a43cd6d8a")
+		)
+		(pin "1"
+			(uuid "179ea78a-f6d5-45a0-a8ef-fa773df768e4")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 82.55 113.03 90)
 		(unit 1)
@@ -21150,7 +21438,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4396d16-7c54-4204-a07f-b2ea119c5fa6")
-		(property "Reference" "R193"
+		(property "Reference" "R4"
 			(at 87.63 111.76 90)
 			(effects
 				(font
@@ -21166,7 +21454,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 114.808 90)
 			(effects
 				(font
@@ -21202,7 +21490,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
-					(reference "R193")
+					(reference "R4")
 					(unit 1)
 				)
 			)

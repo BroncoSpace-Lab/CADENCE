@@ -1876,6 +1876,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 182.626 71.882)
@@ -2096,6 +2197,12 @@
 		(uuid "3504a570-164c-42e6-8263-f3729e8573bb")
 	)
 	(junction
+		(at 245.11 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a150cf8-2307-4457-b2b9-4eaeadebbbb5")
+	)
+	(junction
 		(at 144.78 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2287,7 +2394,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 85.09) (xy 260.35 85.09)
+			(xy 229.87 85.09) (xy 245.11 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2324,6 +2431,16 @@
 			(type default)
 		)
 		(uuid "2a229336-4aa0-40b3-af9a-73c4fb43ca18")
+	)
+	(wire
+		(pts
+			(xy 245.11 85.09) (xy 260.35 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9fc127-3ea5-4160-bbb2-a85713a3edf9")
 	)
 	(wire
 		(pts
@@ -3357,7 +3474,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "093558e3-1800-40ff-98b5-ca42fa6ac915")
-		(property "Reference" "#PWR0149"
+		(property "Reference" "#PWR0152"
 			(at 144.78 60.96 0)
 			(effects
 				(font
@@ -3407,7 +3524,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0149")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -3422,7 +3539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ab61218-f9bd-40da-9cda-7c08e652f648")
-		(property "Reference" "#PWR0152"
+		(property "Reference" "#PWR0157"
 			(at 229.87 116.84 0)
 			(effects
 				(font
@@ -3472,7 +3589,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0152")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -3487,7 +3604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "433a3731-5c99-4e9a-87a5-e63b051fcc77")
-		(property "Reference" "R119"
+		(property "Reference" "R124"
 			(at 212.09 95.2499 0)
 			(effects
 				(font
@@ -3541,7 +3658,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "R119")
+					(reference "R124")
 					(unit 1)
 				)
 			)
@@ -3557,7 +3674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bd1d221-4161-4961-aca6-82a27fe8e902")
-		(property "Reference" "U25"
+		(property "Reference" "U27"
 			(at 80.01 52.07 0)
 			(effects
 				(font
@@ -3645,7 +3762,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "U25")
+					(reference "U27")
 					(unit 1)
 				)
 			)
@@ -3661,7 +3778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59516c8d-9d89-48b3-8924-8b4846f4b39f")
-		(property "Reference" "#PWR0147"
+		(property "Reference" "#PWR0150"
 			(at 77.47 130.81 0)
 			(effects
 				(font
@@ -3711,7 +3828,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0147")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -3807,7 +3924,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5c41e25c-2fb5-4695-b38f-7ff129712e42")
-		(property "Reference" "C99"
+		(property "Reference" "C102"
 			(at 25.908 71.12 0)
 			(effects
 				(font
@@ -3861,7 +3978,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C99")
+					(reference "C102")
 					(unit 1)
 				)
 			)
@@ -3876,7 +3993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "63196ca3-94f2-4c21-96b2-7c7215ff9684")
-		(property "Reference" "R117"
+		(property "Reference" "R122"
 			(at 33.02 135.382 0)
 			(effects
 				(font
@@ -3928,7 +4045,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "R117")
+					(reference "R122")
 					(unit 1)
 				)
 			)
@@ -3944,7 +4061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65267b22-369a-4e59-a91d-1567e40132ba")
-		(property "Reference" "#PWR0154"
+		(property "Reference" "#PWR0156"
 			(at 227.33 68.58 0)
 			(effects
 				(font
@@ -3994,7 +4111,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0154")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 			)
@@ -4009,7 +4126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6531ecf1-5e2e-4b57-a1ce-db7f6a519d88")
-		(property "Reference" "R118"
+		(property "Reference" "R123"
 			(at 99.06 132.842 0)
 			(effects
 				(font
@@ -4061,7 +4178,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "R118")
+					(reference "R123")
 					(unit 1)
 				)
 			)
@@ -4163,7 +4280,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70c739c4-be84-4252-aca4-9750aec64282")
-		(property "Reference" "C101"
+		(property "Reference" "C104"
 			(at 163.068 69.85 0)
 			(effects
 				(font
@@ -4217,7 +4334,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C101")
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -4232,7 +4349,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75a18b57-45a8-4662-9fdc-c9a09792ff7d")
-		(property "Reference" "U27"
+		(property "Reference" "U28"
 			(at 134.874 86.614 0)
 			(effects
 				(font
@@ -4316,7 +4433,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "U27")
+					(reference "U28")
 					(unit 1)
 				)
 			)
@@ -4331,7 +4448,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8df13ab4-98bd-46d1-8dae-d394dac69377")
-		(property "Reference" "C102"
+		(property "Reference" "C106"
 			(at 263.144 95.25 0)
 			(effects
 				(font
@@ -4385,7 +4502,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C102")
+					(reference "C106")
 					(unit 1)
 				)
 			)
@@ -4401,7 +4518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9f9af27-4c29-476b-8459-a9150efb54bb")
-		(property "Reference" "C103"
+		(property "Reference" "C105"
 			(at 246.38 48.2599 0)
 			(effects
 				(font
@@ -4455,7 +4572,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C103")
+					(reference "C105")
 					(unit 1)
 				)
 			)
@@ -4471,7 +4588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac174a49-350d-42a9-99a9-0b103159f246")
-		(property "Reference" "#PWR0150"
+		(property "Reference" "#PWR0153"
 			(at 154.94 96.52 0)
 			(effects
 				(font
@@ -4521,7 +4638,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0150")
+					(reference "#PWR0153")
 					(unit 1)
 				)
 			)
@@ -4536,7 +4653,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b99d4bbb-78b9-473a-8bc2-b2b460c2da5b")
-		(property "Reference" "U28"
+		(property "Reference" "U30"
 			(at 214.376 105.664 0)
 			(effects
 				(font
@@ -4608,7 +4725,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "U28")
+					(reference "U30")
 					(unit 1)
 				)
 			)
@@ -4624,7 +4741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd2e43b2-1db9-4c05-8d0b-5c032ce54c5f")
-		(property "Reference" "#PWR0148"
+		(property "Reference" "#PWR0151"
 			(at 77.47 160.02 0)
 			(effects
 				(font
@@ -4674,7 +4791,73 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0148")
+					(reference "#PWR0151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 245.11 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c703e582-cce2-4039-ad33-9f8489ee9f29")
+		(property "Reference" "#FLG023"
+			(at 245.11 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 245.11 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 245.11 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 245.11 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6438edb-615d-4197-a7f8-b4143b67214d")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
+					(reference "#FLG023")
 					(unit 1)
 				)
 			)
@@ -4689,7 +4872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5199eec-35b9-425a-a3e1-d143c359ead6")
-		(property "Reference" "#PWR0153"
+		(property "Reference" "#PWR0155"
 			(at 227.33 39.37 0)
 			(effects
 				(font
@@ -4739,7 +4922,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0153")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
@@ -4755,7 +4938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6d82d64-a3d7-43b3-b0b8-68839f445678")
-		(property "Reference" "#PWR0145"
+		(property "Reference" "#PWR0148"
 			(at 33.02 60.96 0)
 			(effects
 				(font
@@ -4805,7 +4988,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0145")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -4820,7 +5003,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb37f4ff-7f61-465b-a3ae-6d2a72abe0ae")
-		(property "Reference" "C98"
+		(property "Reference" "C101"
 			(at 15.748 135.89 0)
 			(effects
 				(font
@@ -4874,7 +5057,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C98")
+					(reference "C101")
 					(unit 1)
 				)
 			)
@@ -4890,7 +5073,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f282fb0b-204d-4653-b186-9685496ef4c1")
-		(property "Reference" "#PWR0146"
+		(property "Reference" "#PWR0149"
 			(at 64.77 95.25 0)
 			(effects
 				(font
@@ -4940,7 +5123,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0146")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
@@ -4955,7 +5138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb43fdd9-2488-479e-8820-193c73c3569a")
-		(property "Reference" "C100"
+		(property "Reference" "C103"
 			(at 161.29 81.28 0)
 			(effects
 				(font
@@ -5009,7 +5192,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "C100")
+					(reference "C103")
 					(unit 1)
 				)
 			)
@@ -5024,7 +5207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff01f897-1ae7-4041-8608-d4d1fc7419f9")
-		(property "Reference" "#PWR0151"
+		(property "Reference" "#PWR0154"
 			(at 196.85 102.87 0)
 			(effects
 				(font
@@ -5074,7 +5257,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/6ac74288-79da-48fa-81ee-e9f852887f43"
-					(reference "#PWR0151")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
