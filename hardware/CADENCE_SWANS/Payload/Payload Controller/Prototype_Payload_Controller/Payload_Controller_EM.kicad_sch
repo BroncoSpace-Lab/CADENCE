@@ -143,6 +143,26 @@
 	)
 	(bus
 		(pts
+			(xy 224.79 77.47) (xy 254 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e4e058-07f5-40fc-99ac-4708523c604a")
+	)
+	(bus
+		(pts
+			(xy 224.79 87.63) (xy 254 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0db126-42e6-4a92-8203-efd8c2f6feab")
+	)
+	(bus
+		(pts
 			(xy 142.24 198.12) (xy 143.51 198.12)
 		)
 		(stroke
@@ -161,6 +181,16 @@
 		)
 		(uuid "9eb9152d-f7f5-4924-ba1e-8836ca610c64")
 	)
+	(bus
+		(pts
+			(xy 224.79 82.55) (xy 254 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b36e8d58-ec11-46d0-b81d-12ef8ed5d648")
+	)
 	(wire
 		(pts
 			(xy 60.96 86.36) (xy 77.47 86.36)
@@ -170,6 +200,18 @@
 			(type default)
 		)
 		(uuid "ebf8b7ad-aa55-4ee2-9d56-8e4bb3ed2c8d")
+	)
+	(label "MRAM_DATA[0..7]"
+		(at 236.22 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b15f7c6c-9b68-4554-a888-cac05ad3ed7d")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -238,7 +280,7 @@
 		)
 	)
 	(sheet
-		(at 156.972 96.266)
+		(at 148.336 76.708)
 		(size 31.75 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -254,7 +296,7 @@
 		)
 		(uuid "06285b9f-dba4-4d6c-b96c-ada43ac326e2")
 		(property "Sheetname" "Debug"
-			(at 156.972 95.5544 0)
+			(at 148.336 75.9964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -263,7 +305,7 @@
 			)
 		)
 		(property "Sheetfile" "debug.kicad_sch"
-			(at 156.972 122.2506 0)
+			(at 148.336 102.6926 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -272,7 +314,7 @@
 			)
 		)
 		(pin "UART" input
-			(at 188.722 108.966 0)
+			(at 180.086 89.408 0)
 			(uuid "0906a003-ab8d-4be3-be25-236893a30fba")
 			(effects
 				(font
@@ -290,8 +332,8 @@
 		)
 	)
 	(sheet
-		(at 204.47 71.12)
-		(size 33.02 25.4)
+		(at 183.642 70.866)
+		(size 41.148 32.766)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -305,7 +347,7 @@
 		)
 		(uuid "075ba521-2c69-4313-b545-104e72dad131")
 		(property "Sheetname" "Microcontroller"
-			(at 204.47 68.326 0)
+			(at 183.642 68.072 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -314,7 +356,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 204.47 69.088 0)
+			(at 183.642 68.834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -322,9 +364,9 @@
 				(justify left top)
 			)
 		)
-		(pin "CTRL_EN" input
-			(at 212.09 96.52 270)
-			(uuid "f7f09c83-7db5-4100-a6de-a7f43864cd98")
+		(pin "CTRL_EN" output
+			(at 196.85 103.632 270)
+			(uuid "51b2b85b-72ac-41e9-9165-e0c43efa7f3b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -332,9 +374,9 @@
 				(justify left)
 			)
 		)
-		(pin "CTRL_R1" input
-			(at 218.44 96.52 270)
-			(uuid "d898dd40-3d12-4c80-ac27-ad55d7ebc051")
+		(pin "CTRL_R1_" output
+			(at 204.47 103.632 270)
+			(uuid "d21de0db-9fc8-493d-bbb1-7291cc83e7aa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -342,14 +384,54 @@
 				(justify left)
 			)
 		)
-		(pin "CTRL_R2" input
-			(at 226.06 96.52 270)
-			(uuid "db897727-08a8-48e1-b08b-f8b5ad2a8c03")
+		(pin "CTRL_R2_" output
+			(at 210.82 103.632 270)
+			(uuid "cc3fa320-0fcb-4c9c-ae81-593eb875faba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "RADFET_OUT" input
+			(at 200.66 103.632 270)
+			(uuid "54e41a41-5d5d-4b9b-a817-b1d6d39a5a15")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MRAM_CTRL" output
+			(at 224.79 77.47 0)
+			(uuid "b138d019-69b3-46a8-bf66-60d31be0fdb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MRAM_DATA" output
+			(at 224.79 87.63 0)
+			(uuid "10af768b-52a4-4efa-9b66-c1248fda46a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MRAM_ADDRESS" output
+			(at 224.79 82.55 0)
+			(uuid "d3d1a9ff-7bef-4c8d-8496-1ab4f142d6f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -609,7 +691,7 @@
 		)
 	)
 	(sheet
-		(at 210.82 49.53)
+		(at 211.328 44.704)
 		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -625,7 +707,7 @@
 		)
 		(uuid "ab6c6673-69ff-4cf4-9e80-7aaa96b942b5")
 		(property "Sheetname" "Peripherals"
-			(at 210.82 48.8184 0)
+			(at 211.328 43.9924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -634,7 +716,7 @@
 			)
 		)
 		(property "Sheetfile" "perph.kicad_sch"
-			(at 210.82 62.8146 0)
+			(at 211.328 57.9886 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -651,8 +733,8 @@
 		)
 	)
 	(sheet
-		(at 204.47 114.3)
-		(size 33.02 25.4)
+		(at 185.166 119.888)
+		(size 41.402 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -667,7 +749,7 @@
 		)
 		(uuid "e5213e67-1b0d-459a-aee8-ca49d7a32651")
 		(property "Sheetname" "Instrument"
-			(at 204.47 113.5884 0)
+			(at 184.4544 145.288 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -676,7 +758,7 @@
 			)
 		)
 		(property "Sheetfile" "instrument.kicad_sch"
-			(at 204.47 140.2846 0)
+			(at 227.1526 145.288 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -684,9 +766,9 @@
 				(justify left top)
 			)
 		)
-		(pin "CTRL_EN" input
-			(at 212.09 114.3 90)
-			(uuid "3f4e7b34-d8d3-440d-8ba4-a72d0b2ebb5b")
+		(pin "CTRL_R2_" input
+			(at 210.566 119.888 90)
+			(uuid "eedf5f85-c539-4200-af0c-6ec169cadc98")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -694,9 +776,9 @@
 				(justify right)
 			)
 		)
-		(pin "CTRL_R1" input
-			(at 218.44 114.3 90)
-			(uuid "839e6591-7e0b-4ad1-904b-6fed6dc5ca9f")
+		(pin "CTRL_R1_" input
+			(at 204.216 119.888 90)
+			(uuid "c00ae272-0649-4f88-ba47-96d76453571e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -704,9 +786,19 @@
 				(justify right)
 			)
 		)
-		(pin "CTRL_R2" input
-			(at 226.06 114.3 90)
-			(uuid "0faccadf-76f1-4e98-bc1c-c76991169e8f")
+		(pin "CTRL_EN_" input
+			(at 195.326 119.888 90)
+			(uuid "e15d78c5-f1b5-43a5-9492-43f4572a1522")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RADFET_OUT" output
+			(at 199.136 119.888 90)
+			(uuid "ae2514b0-c1d8-440c-8246-0f6a404a2db8")
 			(effects
 				(font
 					(size 1.27 1.27)
