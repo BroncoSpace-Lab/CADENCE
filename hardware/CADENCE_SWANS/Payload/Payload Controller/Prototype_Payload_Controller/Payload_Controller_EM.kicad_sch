@@ -5,6 +5,131 @@
 	(uuid "866a965d-c307-40b7-9977-69e77fc0dc82")
 	(paper "A3")
 	(lib_symbols
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -241,6 +366,16 @@
 		)
 		(uuid "9eb9152d-f7f5-4924-ba1e-8836ca610c64")
 	)
+	(wire
+		(pts
+			(xy 107.95 90.17) (xy 113.03 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3de92e6-7563-4634-9a52-5d40d4e251ea")
+	)
 	(bus
 		(pts
 			(xy 271.78 158.242) (xy 271.78 189.23)
@@ -368,6 +503,72 @@
 		(uuid "fa5cdd41-a445-4040-beea-8981fcc8cd18")
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 113.03 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12605bb0-7b99-4751-90d3-70ccbac5ebdc")
+		(property "Reference" "#PWR090"
+			(at 113.03 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 113.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 113.03 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a337230e-4b3c-4644-b812-e1016aeea547")
+		)
+		(instances
+			(project ""
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 113.03 82.55 0)
 		(unit 1)
@@ -429,48 +630,6 @@
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
 					(reference "#PWR05")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 196.596 80.01)
-		(size 31.75 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "06285b9f-dba4-4d6c-b96c-ada43ac326e2")
-		(property "Sheetname" "Debug"
-			(at 196.596 79.2984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "debug.kicad_sch"
-			(at 196.596 105.9946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "8")
 				)
 			)
 		)
@@ -578,7 +737,7 @@
 				(justify left)
 			)
 		)
-		(pin "I2C0_SCL" input
+		(pin "I2C0_SCL" output
 			(at 289.56 85.09 0)
 			(uuid "e259892e-20b6-4773-84e7-bc092d20b13d")
 			(effects
@@ -588,7 +747,7 @@
 				(justify right)
 			)
 		)
-		(pin "I2C0_SDA" input
+		(pin "I2C0_SDA" bidirectional
 			(at 289.56 88.9 0)
 			(uuid "16234d0c-e138-4ca4-9097-245ccbe49704")
 			(effects
@@ -928,7 +1087,7 @@
 				(justify left)
 			)
 		)
-		(pin "I2C0_SDA" input
+		(pin "I2C0_SDA" bidirectional
 			(at 316.992 88.9 180)
 			(uuid "b485f45d-7503-4e1b-854f-22b490ffb1e3")
 			(effects
