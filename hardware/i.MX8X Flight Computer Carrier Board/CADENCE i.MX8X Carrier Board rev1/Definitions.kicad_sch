@@ -1054,6 +1054,18 @@
 		)
 		(uuid "7a750b1d-7b3f-44ab-9bbc-1d148a728101")
 	)
+	(text "recommend TXB0108PW for level shifting to 3.3V if needed\n(radiation tested & available on adafruit as breakout modules)"
+		(exclude_from_sim no)
+		(at 180.594 116.586 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "7cfb91ab-7187-4e69-b614-41b1529cbc73")
+	)
 	(text "(Ebyte Transceiver)"
 		(exclude_from_sim no)
 		(at 147.828 165.608 0)
@@ -1073,16 +1085,6 @@
 			)
 		)
 		(uuid "919976ad-57ae-4e08-b0f3-2d833f0aa0ff")
-	)
-	(text "}"
-		(exclude_from_sim no)
-		(at 262.128 132.334 0)
-		(effects
-			(font
-				(size 4.064 4.064)
-			)
-		)
-		(uuid "a127404f-0a69-4700-9fe1-b97bea674181")
 	)
 	(text "GPIO (1.8V)"
 		(exclude_from_sim no)
@@ -1124,16 +1126,6 @@
 			)
 		)
 		(uuid "c2ec1845-da38-4ecf-9ef9-4291e4126c56")
-	)
-	(text "Breakout Connector"
-		(exclude_from_sim no)
-		(at 273.05 132.842 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c68891bd-09fa-48d1-a04f-1df8bc984929")
 	)
 	(text "}"
 		(exclude_from_sim no)
@@ -1615,16 +1607,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 104.14) (xy 246.38 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6acb9f7a-a6f7-41bd-851c-8586f3c9dac0")
-	)
-	(wire
-		(pts
 			(xy 228.6 31.75) (xy 228.6 30.48)
 		)
 		(stroke
@@ -1695,16 +1677,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 106.68) (xy 246.38 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84835c12-e016-485a-98ea-72af573af361")
-	)
-	(wire
-		(pts
 			(xy 193.04 36.83) (xy 201.93 36.83)
 		)
 		(stroke
@@ -1725,7 +1697,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 133.35) (xy 246.38 133.35)
+			(xy 242.57 106.68) (xy 246.38 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1855,7 +1827,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 130.81) (xy 246.38 130.81)
+			(xy 242.57 104.14) (xy 246.38 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4041,7 +4013,7 @@
 	)
 	(global_label "GPIO4_IO02"
 		(shape bidirectional)
-		(at 246.38 133.35 0)
+		(at 246.38 106.68 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4051,7 +4023,7 @@
 		)
 		(uuid "079a7b37-3131-45aa-b6eb-e07d8ab9c7de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.4832 133.35 0)
+			(at 261.4832 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4299,28 +4271,6 @@
 		(uuid "3107e708-2ebf-4b03-8240-081b233db07e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 261.4832 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO1_IO17"
-		(shape bidirectional)
-		(at 246.38 104.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "35e66f62-4ae9-4cea-9ffd-d70565e8e153")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.4832 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4642,7 +4592,7 @@
 	)
 	(global_label "LSIO_GPIO4_IO01"
 		(shape bidirectional)
-		(at 242.57 130.81 180)
+		(at 242.57 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4654,7 +4604,7 @@
 		)
 		(uuid "5b2867fe-21ff-4964-8ec2-cb938cb75e4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.8503 130.81 0)
+			(at 221.8503 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,30 +4629,6 @@
 		(uuid "5d483cf1-a625-464a-bdb6-8df54f13abfd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 221.8503 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LSIO_GPIO1_IO18"
-		(shape bidirectional)
-		(at 242.57 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "60811d74-6088-4a8f-b606-133cd06c8f0c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.8503 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4894,30 +4820,6 @@
 			)
 		)
 	)
-	(global_label "LSIO_GPIO1_IO17"
-		(shape bidirectional)
-		(at 242.57 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "84d977f0-1036-40fe-b9e6-5c7a17cfc352")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.8503 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GPIO4_05"
 		(shape bidirectional)
 		(at 247.65 100.33 0)
@@ -5030,28 +4932,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO1_IO18"
-		(shape bidirectional)
-		(at 246.38 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a57bdbf9-18e7-462e-a911-7e643aed1009")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.4832 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5325,7 +5205,7 @@
 	)
 	(global_label "GPIO4_IO01"
 		(shape bidirectional)
-		(at 246.38 130.81 0)
+		(at 246.38 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5335,7 +5215,7 @@
 		)
 		(uuid "c4474422-0701-4637-9d58-2c1ec134c1d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 261.4832 130.81 0)
+			(at 261.4832 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5618,7 +5498,7 @@
 	)
 	(global_label "LSIO_GPIO4_IO02"
 		(shape bidirectional)
-		(at 242.57 133.35 180)
+		(at 242.57 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5630,7 +5510,7 @@
 		)
 		(uuid "ff307762-2f30-4f5d-9b07-9e16637c8a39")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 221.8503 133.35 0)
+			(at 221.8503 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)

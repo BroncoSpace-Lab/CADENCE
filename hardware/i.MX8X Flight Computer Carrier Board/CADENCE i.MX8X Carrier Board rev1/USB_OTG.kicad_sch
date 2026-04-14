@@ -1314,6 +1314,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EPS:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Protection:USBLC6-2SC6"
 			(pin_names
 				(hide yes)
@@ -2236,6 +2343,12 @@
 		(uuid "5c001012-ca73-4c89-8b74-64336ccc087c")
 	)
 	(junction
+		(at 132.08 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ad1297a-27a8-4c0c-af11-76e86137e53b")
+	)
+	(junction
 		(at 167.64 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2838,6 +2951,16 @@
 			(type default)
 		)
 		(uuid "eb0053b3-7e6e-4df6-b173-5f544b9a57ce")
+	)
+	(wire
+		(pts
+			(xy 132.08 22.86) (xy 132.08 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edbae7fc-ee9f-4d19-972a-6e5af7cfc6ec")
 	)
 	(wire
 		(pts
@@ -3548,6 +3671,73 @@
 		)
 	)
 	(symbol
+		(lib_id "EPS:TestPoint")
+		(at 132.08 25.4 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41c5ae52-a8b7-43f0-94fa-11e9b34c3d59")
+		(property "Reference" "TP17"
+			(at 136.906 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 137.16 26.6699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 132.08 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 132.08 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4a25eb7-eddd-4750-b0d7-496d0b2bb192")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 115.57 48.26 0)
 		(unit 1)
@@ -3615,7 +3805,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 132.08 25.4 0)
+		(at 132.08 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3623,7 +3813,7 @@
 		(dnp no)
 		(uuid "7851edb9-09ff-4da2-9e5a-919e6e1dad65")
 		(property "Reference" "#PWR0111"
-			(at 132.08 29.21 0)
+			(at 132.08 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3632,7 +3822,7 @@
 			)
 		)
 		(property "Value" "VBUS2"
-			(at 129.794 21.336 0)
+			(at 129.794 18.796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3641,7 +3831,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 25.4 0)
+			(at 132.08 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,7 +3840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 25.4 0)
+			(at 132.08 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3659,7 +3849,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 132.08 25.4 0)
+			(at 132.08 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,6 +4811,73 @@
 		)
 	)
 	(symbol
+		(lib_id "EPS:TestPoint")
+		(at 53.34 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dba6cb61-4f50-4c4d-83ca-3e9d770f6b02")
+		(property "Reference" "TP16"
+			(at 58.166 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 58.42 36.8299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 53.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 53.34 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e899d4c7-1973-4c36-a4fa-5899e8dfd8d6")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/a0eee505-34ca-430d-9ae7-b91d33c9a3f8"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Protection:USBLC6-2SC6")
 		(at 134.62 33.02 0)
 		(unit 1)
@@ -4628,10 +4885,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eb5e63e2-6d8a-4e42-a7f7-c79abad419f7")
 		(property "Reference" "U16"
-			(at 136.2711 25.4 0)
+			(at 135.636 39.878 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,7 +4896,7 @@
 			)
 		)
 		(property "Value" "USBLC6-2SC6"
-			(at 136.2711 27.94 0)
+			(at 135.636 42.418 0)
 			(effects
 				(font
 					(size 1.27 1.27)

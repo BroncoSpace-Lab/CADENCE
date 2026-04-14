@@ -5,7 +5,7 @@
 	(uuid "1a955600-765d-4585-96e5-32837966461c")
 	(paper "A3")
 	(lib_symbols
-		(symbol "BTH-070-02-L-D-A_2"
+		(symbol "BTH-070-02-L-D-A_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -60,7 +60,7 @@
 					)
 				)
 			)
-			(symbol "BTH-070-02-L-D-A_2_0_0"
+			(symbol "BTH-070-02-L-D-A_1_0_0"
 				(rectangle
 					(start 0 0)
 					(end 50.8 -208.28)
@@ -73,7 +73,7 @@
 					)
 				)
 			)
-			(symbol "BTH-070-02-L-D-A_2_1_0"
+			(symbol "BTH-070-02-L-D-A_1_1_0"
 				(pin power_in line
 					(at -5.08 -2.54 0)
 					(length 5.08)
@@ -2010,7 +2010,7 @@
 							)
 						)
 					)
-					(number "B54"
+					(number "B53"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -2595,7 +2595,7 @@
 					)
 				)
 			)
-			(symbol "BTH-070-02-L-D-A_2_2_0"
+			(symbol "BTH-070-02-L-D-A_1_2_0"
 				(pin output line
 					(at -5.08 -2.54 0)
 					(length 5.08)
@@ -3344,7 +3344,7 @@
 							)
 						)
 					)
-					(number "C54"
+					(number "C53"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -3496,7 +3496,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -5.08 -154.94 0)
 					(length 5.08)
 					(name "VCC_1V8"
@@ -3514,7 +3514,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -5.08 -157.48 0)
 					(length 5.08)
 					(name "VCC_3V3"
@@ -4586,7 +4586,7 @@
 							)
 						)
 					)
-					(number "D54"
+					(number "D53"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5373,6 +5373,113 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "EPS:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8722,7 +8829,7 @@
 							)
 						)
 					)
-					(number "C54"
+					(number "C53"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -9964,7 +10071,7 @@
 							)
 						)
 					)
-					(number "D54"
+					(number "D53"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -10980,6 +11087,16 @@
 		)
 		(uuid "2b29f9d3-15f9-40f2-9cbb-6efd672a263e")
 	)
+	(text "FLEXCAN1 (3.3V)\n"
+		(exclude_from_sim no)
+		(at 48.26 130.048 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2c4e6dfb-d4fe-4aca-a624-81510dcac63b")
+	)
 	(text "}"
 		(exclude_from_sim no)
 		(at 366.268 38.862 0)
@@ -11107,10 +11224,10 @@
 	)
 	(text "{"
 		(exclude_from_sim no)
-		(at 58.166 126.492 0)
+		(at 58.42 124.714 0)
 		(effects
 			(font
-				(size 6.7818 6.7818)
+				(size 3.175 3.175)
 			)
 		)
 		(uuid "6471dbe8-13ac-4e0a-954d-2416eb91e51e")
@@ -11127,7 +11244,7 @@
 	)
 	(text "GPIO1 (3.3V)\n"
 		(exclude_from_sim no)
-		(at 50.546 127 0)
+		(at 51.054 124.714 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11137,13 +11254,23 @@
 	)
 	(text "{"
 		(exclude_from_sim no)
-		(at 247.65 139.7 0)
+		(at 242.824 139.446 0)
 		(effects
 			(font
 				(size 13.335 13.335)
 			)
 		)
 		(uuid "68e27e77-4692-43ce-b8db-cbe27bf6e4e1")
+	)
+	(text "{"
+		(exclude_from_sim no)
+		(at 58.42 129.794 0)
+		(effects
+			(font
+				(size 3.175 3.175)
+			)
+		)
+		(uuid "6c10757d-35b6-4f15-ab94-4bc6c03a573f")
 	)
 	(text "{"
 		(exclude_from_sim no)
@@ -11267,7 +11394,7 @@
 	)
 	(text "(SPI1 CS0: SATNOGS, \nSPI1 CS1: EBYTE)"
 		(exclude_from_sim no)
-		(at 42.418 121.666 0)
+		(at 33.02 122.682 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11374,7 +11501,7 @@
 	)
 	(text "Control"
 		(exclude_from_sim no)
-		(at 241.554 140.716 0)
+		(at 236.728 140.462 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11456,7 +11583,7 @@
 	)
 	(text "{"
 		(exclude_from_sim no)
-		(at 247.904 162.814 0)
+		(at 248.412 163.576 0)
 		(effects
 			(font
 				(size 13.335 13.335)
@@ -11709,6 +11836,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "526bb39c-2f1e-4f68-9cf3-a2db8b250979")
+	)
+	(junction
+		(at 259.08 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bb57ebb-5742-405b-b10a-1cc23414cc34")
 	)
 	(junction
 		(at 86.36 217.17)
@@ -12980,7 +13113,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 135.89) (xy 280.67 135.89)
+			(xy 278.13 135.89) (xy 280.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -12990,7 +13123,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 143.51) (xy 280.67 143.51)
+			(xy 276.86 143.51) (xy 280.67 143.51)
 		)
 		(stroke
 			(width 0)
@@ -13430,6 +13563,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 148.59) (xy 280.67 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63dd8eef-d4a0-48c7-9156-b70004f92e26")
+	)
+	(wire
+		(pts
 			(xy 280.67 232.41) (xy 278.13 232.41)
 		)
 		(stroke
@@ -13680,7 +13823,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 128.27) (xy 88.9 128.27)
+			(xy 80.01 128.27) (xy 88.9 128.27)
 		)
 		(stroke
 			(width 0)
@@ -13930,7 +14073,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 146.05) (xy 280.67 146.05)
+			(xy 276.86 146.05) (xy 280.67 146.05)
 		)
 		(stroke
 			(width 0)
@@ -14020,7 +14163,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 130.81) (xy 88.9 130.81)
+			(xy 80.01 130.81) (xy 88.9 130.81)
 		)
 		(stroke
 			(width 0)
@@ -14030,7 +14173,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 133.35) (xy 280.67 133.35)
+			(xy 276.86 133.35) (xy 280.67 133.35)
 		)
 		(stroke
 			(width 0)
@@ -14700,7 +14843,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 148.59) (xy 280.67 148.59)
+			(xy 256.54 148.59) (xy 259.08 148.59)
 		)
 		(stroke
 			(width 0)
@@ -15943,30 +16086,6 @@
 			)
 		)
 	)
-	(global_label "LSIO_GPIO1_IO17"
-		(shape bidirectional)
-		(at 81.28 128.27 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "24336207-f9ad-4f69-8697-320b1fb9fa73")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.5603 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LSIO_GPIO3_IO13"
 		(shape bidirectional)
 		(at 280.67 36.83 180)
@@ -16440,30 +16559,6 @@
 			)
 		)
 	)
-	(global_label "LSIO_GPIO1_IO18"
-		(shape bidirectional)
-		(at 81.28 130.81 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "4bfa2d2c-9f7b-4601-9c3b-827218e22423")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.5603 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "X_QSPI0_DATA5"
 		(shape bidirectional)
 		(at 344.17 41.91 0)
@@ -16640,7 +16735,7 @@
 	)
 	(global_label "X_nRESET_IN"
 		(shape input)
-		(at 267.97 133.35 180)
+		(at 276.86 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16651,7 +16746,7 @@
 		)
 		(uuid "5e3d0f7e-257b-498d-a75f-91f2fbe9cf8f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 133.35 0)
+			(at 276.86 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17332,6 +17427,29 @@
 			)
 		)
 	)
+	(global_label "X_FLEXCAN1_RX"
+		(shape bidirectional)
+		(at 80.01 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "978725e9-d4ad-4165-b14e-462a8493e756")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.9155 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "X_SPDIF0_RX{slash}ENET1_RGMII_RXD0"
 		(shape input)
 		(at 149.86 128.27 0)
@@ -17837,7 +17955,7 @@
 	)
 	(global_label "X_POR_B_1V8"
 		(shape output)
-		(at 267.97 143.51 180)
+		(at 276.86 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17846,7 +17964,7 @@
 		)
 		(uuid "c2fa368f-d3b8-4c08-ae61-3d46319b8f2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 143.51 0)
+			(at 276.86 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17944,7 +18062,7 @@
 	)
 	(global_label "X_PGOOD"
 		(shape output)
-		(at 264.16 148.59 180)
+		(at 256.54 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17955,7 +18073,7 @@
 		)
 		(uuid "ccf7c229-7e32-4be0-9873-eca7b91e908c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 264.16 148.59 0)
+			(at 256.54 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18076,7 +18194,7 @@
 	)
 	(global_label "X_POR_B_3V3"
 		(shape output)
-		(at 267.97 146.05 180)
+		(at 276.86 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18085,7 +18203,7 @@
 		)
 		(uuid "d3ae8d64-604e-4796-ba64-d2bf39f49f6e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 267.97 146.05 0)
+			(at 276.86 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18399,7 +18517,7 @@
 	)
 	(global_label "VCC_SCU_1V8"
 		(shape input)
-		(at 269.24 135.89 180)
+		(at 278.13 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -18408,7 +18526,7 @@
 		)
 		(uuid "e5d182da-0bc3-4d50-b4ad-8bb39ebc66ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 269.24 135.89 0)
+			(at 278.13 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18454,6 +18572,29 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "X_FLEXCAN1_TX"
+		(shape bidirectional)
+		(at 80.01 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "eb3921d9-fe71-4ca7-a740-c7b35ed634e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.2179 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -19898,7 +20039,7 @@
 		)
 	)
 	(symbol
-		(lib_name "BTH-070-02-L-D-A_2")
+		(lib_name "BTH-070-02-L-D-A_1")
 		(lib_id "cadence imx8_carrier_board_symbol_library:BTH-070-02-L-D-A")
 		(at 285.75 26.67 0)
 		(unit 2)
@@ -20059,7 +20200,7 @@
 		(pin "D34"
 			(uuid "54e1b5f7-bb2e-4d8f-ac5d-1e8fad6b08a5")
 		)
-		(pin "D54"
+		(pin "B53"
 			(uuid "15f6ea07-c4f1-4560-b7ec-0fc26677ba93")
 		)
 		(pin "D44"
@@ -20275,7 +20416,7 @@
 		(pin "B69"
 			(uuid "9d0cf32b-fe75-42ab-8667-ad60bc7bfcb5")
 		)
-		(pin "B54"
+		(pin "C53"
 			(uuid "741cfd76-eeca-45a5-aed9-abb00531c85a")
 		)
 		(pin "B12"
@@ -20491,7 +20632,7 @@
 		(pin "C47"
 			(uuid "381854c9-9de8-485a-a57f-2a5ea18a4471")
 		)
-		(pin "C54"
+		(pin "D53"
 			(uuid "e7c528d5-dc0c-4381-965c-300fdc588a97")
 		)
 		(pin "C61"
@@ -20796,6 +20937,73 @@
 				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
 					(reference "J1")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EPS:TestPoint")
+		(at 259.08 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afa85d73-8c84-470f-9dc1-144f317e6e1c")
+		(property "Reference" "TP21"
+			(at 259.08 143.764 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 260.3499 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 264.16 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 259.08 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81421111-f638-4e15-9ef8-a48184857e1a")
+		)
+		(instances
+			(project "CADENCE i.MX8X Carrier Board rev1"
+				(path "/de284495-d382-47cb-b528-76e440980d40/f5f49c98-aaea-4f03-a1b3-a277d1d06600"
+					(reference "TP21")
+					(unit 1)
 				)
 			)
 		)
@@ -21357,7 +21565,7 @@
 		(pin "D34"
 			(uuid "3e4a4b97-1362-46b6-80ca-d18558222e8e")
 		)
-		(pin "D54"
+		(pin "C53"
 			(uuid "e72aabad-fae1-4c37-b3b7-edb30c2e3641")
 		)
 		(pin "D44"
@@ -21789,7 +21997,7 @@
 		(pin "C47"
 			(uuid "9ac13b1d-ef06-47ed-8e28-19014bfddb82")
 		)
-		(pin "C54"
+		(pin "D53"
 			(uuid "88f4bd69-5d2d-45ca-89af-7a1ff6ab430c")
 		)
 		(pin "C61"
