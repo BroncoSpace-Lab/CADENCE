@@ -1508,12 +1508,6 @@
 		(uuid "22e8a7ab-e2df-4a0f-980d-a45e50c5a8bb")
 	)
 	(junction
-		(at 146.05 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2eef4240-af15-4fbf-b044-5ac557fd933e")
-	)
-	(junction
 		(at 73.66 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1536,12 +1530,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58a2585d-0171-45a5-8509-2d440e30c059")
-	)
-	(junction
-		(at 146.05 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7f251f4d-ae1c-4c39-bc9c-6d70c6dcace2")
 	)
 	(wire
 		(pts
@@ -1595,7 +1583,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 63.5) (xy 146.05 63.5)
+			(xy 114.3 63.5) (xy 167.64 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1612,16 +1600,6 @@
 			(type default)
 		)
 		(uuid "3d4f12a8-0f29-417f-a143-dc98238b0545")
-	)
-	(wire
-		(pts
-			(xy 139.7 60.96) (xy 139.7 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40c39064-8b42-4625-a43a-a871d245dd21")
 	)
 	(wire
 		(pts
@@ -1755,16 +1733,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 58.42) (xy 146.05 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2200e56-2089-4b34-bcc8-da9a39fd94da")
-	)
-	(wire
-		(pts
 			(xy 139.7 66.04) (xy 146.05 66.04)
 		)
 		(stroke
@@ -1805,26 +1773,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 58.42) (xy 167.64 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4d36d18-066b-4e73-bce3-90812692feeb")
-	)
-	(wire
-		(pts
-			(xy 146.05 63.5) (xy 167.64 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d59f9c77-97e5-47d4-8750-a3c579567278")
-	)
-	(wire
-		(pts
 			(xy 143.51 95.25) (xy 157.48 95.25)
 		)
 		(stroke
@@ -1845,7 +1793,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 60.96) (xy 139.7 60.96)
+			(xy 114.3 60.96) (xy 167.64 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1944,7 +1892,7 @@
 		(uuid "ead25189-936a-471c-9706-300d957fbae5")
 	)
 	(label "Payload_TX+"
-		(at 167.64 58.42 180)
+		(at 167.64 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2633,76 +2581,6 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/7acf6d3b-d272-4af5-ad05-5ed10a438eac"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 146.05 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bafced5-7cae-48dc-8d8c-83c19ca339d1")
-		(property "Reference" "R2"
-			(at 148.59 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "120"
-			(at 148.59 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 146.05 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 146.05 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7b8207f-0675-4ecc-8311-6fd78555773a")
-		)
-		(pin "2"
-			(uuid "5e5aa6b1-c494-480d-a029-bd00540c0b71")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/7acf6d3b-d272-4af5-ad05-5ed10a438eac"
-					(reference "R2")
 					(unit 1)
 				)
 			)
