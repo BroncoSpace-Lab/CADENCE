@@ -5,6 +5,105 @@
 	(uuid "4ee99911-836b-4752-8a2d-327c8b28dc47")
 	(paper "A0")
 	(lib_symbols
+		(symbol "1_ECE_2300L_Components:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ACS37800KMACTR-030B3-I2C:ACS37800KMACTR-030B3-I2C"
 			(pin_names
 				(offset 1.016)
@@ -2589,6 +2688,196 @@
 						)
 					)
 					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector:Screw_Terminal_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6999,6 +7288,16 @@
 	)
 	(wire
 		(pts
+			(xy 995.68 264.16) (xy 1031.24 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "070c4009-197b-4edd-be8b-1ab9ea31f066")
+	)
+	(wire
+		(pts
 			(xy 624.84 127) (xy 624.84 123.19)
 		)
 		(stroke
@@ -7369,6 +7668,16 @@
 	)
 	(wire
 		(pts
+			(xy 1073.15 287.02) (xy 1066.8 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ad250c-9f68-4d88-b75b-09cb1f9763b4")
+	)
+	(wire
+		(pts
 			(xy 161.29 105.41) (xy 163.83 105.41)
 		)
 		(stroke
@@ -7469,6 +7778,16 @@
 	)
 	(wire
 		(pts
+			(xy 995.68 266.7) (xy 1031.24 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4b5135-c5dc-4c0e-b699-b13bb77509d1")
+	)
+	(wire
+		(pts
 			(xy 44.45 85.09) (xy 55.88 85.09)
 		)
 		(stroke
@@ -7506,6 +7825,26 @@
 			(type default)
 		)
 		(uuid "2dc6b571-8b80-42fc-a18d-810e8e9ae739")
+	)
+	(wire
+		(pts
+			(xy 1022.35 276.86) (xy 1031.24 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e9e1019-ed30-47d8-889a-a54e48aecf56")
+	)
+	(wire
+		(pts
+			(xy 1079.5 256.54) (xy 1079.5 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32cd549b-fce1-4a07-bc82-4dfda66c4376")
 	)
 	(wire
 		(pts
@@ -7736,6 +8075,16 @@
 			(type default)
 		)
 		(uuid "48e4b83f-0338-4ee9-a495-88f3f2dc2af3")
+	)
+	(wire
+		(pts
+			(xy 1079.5 259.08) (xy 1066.8 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4963eba7-c26c-4a76-b745-4f3624e9908d")
 	)
 	(wire
 		(pts
@@ -8376,6 +8725,16 @@
 			(type default)
 		)
 		(uuid "80590318-0d23-47d3-915b-65ca6eee5836")
+	)
+	(wire
+		(pts
+			(xy 1073.15 290.83) (xy 1073.15 287.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8064aede-bda7-4e1d-b54c-45d297fd056b")
 	)
 	(wire
 		(pts
@@ -9236,6 +9595,16 @@
 			(type default)
 		)
 		(uuid "bd76f5b0-fa4a-4476-895d-e94d06de8e4e")
+	)
+	(wire
+		(pts
+			(xy 1022.35 279.4) (xy 1031.24 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be469ee0-8f18-49d9-a10a-7682e7459b3c")
 	)
 	(wire
 		(pts
@@ -10349,6 +10718,28 @@
 			)
 		)
 	)
+	(global_label "I2C Connections Add in"
+		(shape input)
+		(at 1022.35 276.86 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "370181ca-2ad2-4c00-a7ab-c7ac4d734ac2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 996.6865 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Charge'"
 		(shape input)
 		(at 770.89 99.06 180)
@@ -10899,6 +11290,28 @@
 			)
 		)
 	)
+	(global_label "I2C Connections Add in"
+		(shape input)
+		(at 1022.35 279.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fbe5ee47-f96c-4345-8d9a-dcd9bb0ed73e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 996.6865 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 468.63 128.27 0)
@@ -11437,6 +11850,73 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1_ECE_2300L_Components:GND")
+		(at 1073.15 290.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13c8088b-825a-4a29-ac55-29705e2ae4de")
+		(property "Reference" "#PWR02"
+			(at 1073.15 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 1073.15 294.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 1073.15 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 1073.15 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 1073.15 290.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2c1026b7-12b4-481f-b5ce-7614da62bc9f")
+		)
+		(instances
+			(project ""
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -12343,6 +12823,72 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 1079.5 256.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2cc90da7-3713-4b60-a9f5-ffd5554ddd6b")
+		(property "Reference" "#PWR03"
+			(at 1079.5 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 1079.5 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 1079.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 1079.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 1079.5 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b427be8-1cb7-4aef-8a00-08434f7d6b5f")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -14267,6 +14813,74 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 990.6 266.7 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69074757-4d2c-4257-a384-57217fb8a75f")
+		(property "Reference" "J1"
+			(at 990.6 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 990.6 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 990.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 990.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 990.6 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93f81356-e556-4321-84f5-073f3073852b")
+		)
+		(pin "2"
+			(uuid "dc289eb8-649e-417a-963a-2a68f9f671dc")
+		)
+		(instances
+			(project ""
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
+					(reference "J1")
 					(unit 1)
 				)
 			)
