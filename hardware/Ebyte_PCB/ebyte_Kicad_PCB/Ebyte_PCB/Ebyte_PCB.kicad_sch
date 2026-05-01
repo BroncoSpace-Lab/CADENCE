@@ -3417,6 +3417,12 @@
 		(uuid "4a9006df-240a-4ca5-af57-5d1516512e63")
 	)
 	(junction
+		(at 114.3 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c680aeb-403a-485e-a6c6-2bb37ccde555")
+	)
+	(junction
 		(at 114.3 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3579,7 +3585,7 @@
 		(uuid "deaea50f-9556-4dd1-a050-9290c00c6bf8")
 	)
 	(junction
-		(at 110.49 121.92)
+		(at 116.84 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df9ba64a-ffda-4285-996d-0ec9174acff2")
@@ -4076,7 +4082,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 121.92) (xy 134.62 121.92)
+			(xy 116.84 121.92) (xy 134.62 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4366,6 +4372,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 104.14) (xy 110.49 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "834d5ff1-0773-4719-807c-f0328a878f1a")
+	)
+	(wire
+		(pts
 			(xy 60.96 88.9) (xy 60.96 85.09)
 		)
 		(stroke
@@ -4423,6 +4439,16 @@
 			(type default)
 		)
 		(uuid "907ae684-423b-4a7a-99a0-c6780d3243fb")
+	)
+	(wire
+		(pts
+			(xy 114.3 121.92) (xy 107.95 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90980866-3a6a-42c5-8898-7133e2d2a5c5")
 	)
 	(wire
 		(pts
@@ -4636,7 +4662,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 104.14) (xy 110.49 121.92)
+			(xy 116.84 104.14) (xy 116.84 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4816,7 +4842,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 121.92) (xy 107.95 121.92)
+			(xy 116.84 121.92) (xy 114.3 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5887,6 +5913,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 114.3 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0aad6610-5a83-4257-9768-60c95dcb0c7e")
+		(property "Reference" "#PWR031"
+			(at 114.3 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d2d37dc-0db6-413a-a49b-8d4a1028ae54")
+		)
+		(instances
+			(project "Ebyte_PCB"
+				(path "/f654da80-73c6-440d-a1fb-60b191de58e0"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 38.1 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5969,8 +6061,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100u"
-			(at 109.474 127.762 90)
+		(property "Value" "47u"
+			(at 102.616 129.032 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5978,7 +6070,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ebyte_footprints:CAP-SMD_L7.3-W4.3-R-RD"
+		(property "Footprint" "ebyte_footprints:C1210"
 			(at 107.95 124.46 0)
 			(effects
 				(font
@@ -7008,7 +7100,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "ebyte_footprints:CAP-SMD_L7.3-W4.3-R-RD"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
 			(at 219.71 92.71 0)
 			(effects
 				(font
@@ -8628,6 +8720,75 @@
 			(project ""
 				(path "/f654da80-73c6-440d-a1fb-60b191de58e0"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ebyte__symbols:Capacitor")
+		(at 114.3 124.46 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99955be5-dfcf-49e2-a06c-7537210f597a")
+		(property "Reference" "C14"
+			(at 116.332 125.476 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "47u"
+			(at 115.824 127.762 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ebyte_footprints:C1210"
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f067460-f4a4-4239-9c96-cfe6706e3d29")
+		)
+		(pin "2"
+			(uuid "fee560d4-9ab8-49b2-9e7c-6d66c146bc95")
+		)
+		(instances
+			(project "Ebyte_PCB"
+				(path "/f654da80-73c6-440d-a1fb-60b191de58e0"
+					(reference "C14")
 					(unit 1)
 				)
 			)
