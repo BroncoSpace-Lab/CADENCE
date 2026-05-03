@@ -615,6 +615,179 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.016 -0.254 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_US_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "EPS:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1664,7 +1837,7 @@
 	)
 	(rectangle
 		(start 39.624 16.0019)
-		(end 140.335 102.6159)
+		(end 185.42 102.6159)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1683,6 +1856,16 @@
 			)
 		)
 		(uuid "028655de-e53c-4443-8136-b4585f32cd23")
+	)
+	(text "JLCPCB Impedance Calcs:\n- 6 layers\n- 1.6mm PCB Thickness\n- Inner Copper Weight: 0.5oz\n- Outer Copper Weight: 1oz\n- JLC06161H-3313 (Thumbs up)\n- Impedance of Trace: 28 ohms\n- Coplanar Single Ended, Signal Layer L1, Bottom Ref L2\n- Impedance trace to copper: 0.2mm\n\nTrace Width: 0.4128mm\n22 ohm resistor + 28 ohm trace = 50 ohm impedance\n"
+		(exclude_from_sim no)
+		(at 155.448 83.566 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "17c8e974-b571-46cf-be2b-ef93c70d1f42")
 	)
 	(text "Skytraq Orion B16 UART GPS Module & Power Monitor"
 		(exclude_from_sim no)
@@ -1708,7 +1891,7 @@
 	)
 	(text "Vcc ripple should be <50mV peak to peak"
 		(exclude_from_sim no)
-		(at 53.594 109.474 0)
+		(at 151.892 29.718 0)
 		(effects
 			(font
 				(size 1.7018 1.7018)
@@ -1908,6 +2091,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 67.31) (xy 123.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1991f1e1-e880-4c92-aae0-9bc596f05770")
+	)
+	(wire
+		(pts
 			(xy 125.73 57.15) (xy 118.11 57.15)
 		)
 		(stroke
@@ -1928,7 +2121,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 72.39) (xy 129.54 73.66)
+			(xy 137.16 72.39) (xy 137.16 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2118,16 +2311,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 67.31) (xy 124.46 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9420d8f0-f845-4f35-8cd2-3315e2472e18")
-	)
-	(wire
-		(pts
 			(xy 69.85 86.36) (xy 69.85 87.63)
 		)
 		(stroke
@@ -2235,6 +2418,16 @@
 			(type default)
 		)
 		(uuid "b7b6d43f-3fd2-4c6e-a3bf-9c9ecace0ac3")
+	)
+	(wire
+		(pts
+			(xy 130.81 67.31) (xy 132.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd6e1662-21f6-4855-8bc8-ef90cd4cee97")
 	)
 	(wire
 		(pts
@@ -2365,6 +2558,16 @@
 			(type default)
 		)
 		(uuid "f9fe543f-bbba-48f8-a4cf-9e9641129215")
+	)
+	(label "GPS VCC"
+		(at 77.47 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f41f98fb-0d84-4bb2-868a-7913e5d2eb20")
 	)
 	(global_label "X_UART2_RX"
 		(shape input)
@@ -2546,7 +2749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13ec3896-ec2c-4228-889c-a1fe5ee1cb4f")
-		(property "Reference" "TP20"
+		(property "Reference" "TP22"
 			(at 50.8 65.024 90)
 			(effects
 				(font
@@ -2598,7 +2801,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "TP20")
+					(reference "TP22")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18aa88d7-cc1c-4875-b690-ffd7649923ce")
-		(property "Reference" "#FLG022"
+		(property "Reference" "#FLG020"
 			(at 72.39 65.405 0)
 			(effects
 				(font
@@ -2664,7 +2867,7 @@
 		(instances
 			(project ""
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "#FLG022")
+					(reference "#FLG020")
 					(unit 1)
 				)
 			)
@@ -2679,7 +2882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "197e4fd4-2f7d-4d64-b999-f0545757b4b7")
-		(property "Reference" "TP21"
+		(property "Reference" "TP23"
 			(at 64.77 62.484 90)
 			(effects
 				(font
@@ -2731,7 +2934,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "TP21")
+					(reference "TP23")
 					(unit 1)
 				)
 			)
@@ -2920,6 +3123,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 127 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5219cf6f-c704-4673-8110-9b11dc99d4d7")
+		(property "Reference" "R122"
+			(at 127 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 127 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 127.254 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 127 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "222fe600-627f-4897-98ba-00f5c1f4c2ff")
+		)
+		(pin "2"
+			(uuid "d2e084d4-a671-4ea3-a1d9-8b3003399509")
+		)
+		(instances
+			(project ""
+				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
+					(reference "R122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 8.89 15.24 0)
 		(unit 1)
@@ -2929,7 +3200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55865f66-2acd-4825-a622-deee3154a7b7")
-		(property "Reference" "#FLG020"
+		(property "Reference" "#FLG018"
 			(at 8.89 13.335 0)
 			(effects
 				(font
@@ -2979,7 +3250,7 @@
 		(instances
 			(project ""
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "#FLG020")
+					(reference "#FLG018")
 					(unit 1)
 				)
 			)
@@ -2995,7 +3266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69665d6e-ad72-4c20-b897-6ccb11120091")
-		(property "Reference" "#FLG021"
+		(property "Reference" "#FLG019"
 			(at 57.15 67.945 0)
 			(effects
 				(font
@@ -3045,7 +3316,7 @@
 		(instances
 			(project "CADENCE i.MX8X Carrier Board rev1"
 				(path "/de284495-d382-47cb-b528-76e440980d40/cf90c569-165f-4f06-938b-af613664cc34"
-					(reference "#FLG021")
+					(reference "#FLG019")
 					(unit 1)
 				)
 			)
@@ -3327,7 +3598,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 73.66 0)
+		(at 137.16 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3336,7 +3607,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9430fc2-eb16-4a7b-a7ec-2793cdf0bfd7")
 		(property "Reference" "#PWR0147"
-			(at 129.54 80.01 0)
+			(at 137.16 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3345,7 +3616,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 78.74 0)
+			(at 137.16 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3353,7 +3624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 73.66 0)
+			(at 137.16 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,7 +3633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 73.66 0)
+			(at 137.16 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3371,7 +3642,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 73.66 0)
+			(at 137.16 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,7 +3664,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 129.54 67.31 0)
+		(at 137.16 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3401,7 +3672,7 @@
 		(dnp no)
 		(uuid "d4d29457-76e5-4653-a18d-1bfc9c35d483")
 		(property "Reference" "J4"
-			(at 128.524 60.452 0)
+			(at 136.144 60.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3410,7 +3681,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 122.936 62.738 0)
+			(at 130.556 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +3690,7 @@
 			)
 		)
 		(property "Footprint" "Footprints:SMA-TH_132134"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3699,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3437,7 +3708,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3554,7 +3825,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 59.182 45.72 90)
 			(effects
 				(font
