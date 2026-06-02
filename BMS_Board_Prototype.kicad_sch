@@ -8223,6 +8223,18 @@
 		)
 		(uuid "70aad0ac-ef26-4e0a-9bcd-a2143428a2ab")
 	)
+	(text "This is the positive and negative of the whole pack"
+		(exclude_from_sim no)
+		(at 673.1 441.96 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "74e2cf8e-96ab-446c-8b1d-059022479496")
+	)
 	(text "EXP (Exposed Pad): Should be connected \nto boards ground copper through vias to the ground plane."
 		(exclude_from_sim no)
 		(at 773.176 85.09 0)
@@ -8285,16 +8297,6 @@
 		)
 		(uuid "81863fc8-897b-46aa-b1c3-4d33b473c789")
 	)
-	(text "Message about schottky diode, proves vs cadence\n"
-		(exclude_from_sim no)
-		(at 176.53 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "912849cd-785a-4dee-816a-ac6e20f84fc0")
-	)
 	(text "modified for 3s2p battery"
 		(exclude_from_sim no)
 		(at 157.48 26.416 0)
@@ -8325,6 +8327,18 @@
 			)
 		)
 		(uuid "984f15eb-90d4-41d4-b6b1-337780c3ee4b")
+	)
+	(text "This part will be a wire that connects to the battery pack"
+		(exclude_from_sim no)
+		(at 234.696 72.644 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(thickness 0.1524)
+				(bold yes)
+			)
+		)
+		(uuid "a0dffb18-945b-4a13-a56d-b5aed489e4ce")
 	)
 	(text "These flags connect the monitor to the manager\n"
 		(exclude_from_sim no)
@@ -8470,6 +8484,18 @@
 			)
 		)
 		(uuid "facb2834-e9ee-4728-bc56-36e41b4f97ea")
+	)
+	(text "These will be the individual battery cells that we connect to"
+		(exclude_from_sim no)
+		(at 403.098 290.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fb4a208b-682c-462f-b20b-bfa2c406e215")
 	)
 	(text "has low ripple burst mode, but then limited to 700mA\n(not implemented in this design)"
 		(exclude_from_sim no)
@@ -8734,6 +8760,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48a817a5-6e2f-46c0-a906-cf9775053ceb")
+	)
+	(junction
+		(at 538.48 342.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48c636ba-115c-41e7-9a17-0096e36fdd5d")
 	)
 	(junction
 		(at 570.23 276.86)
@@ -9066,6 +9098,12 @@
 		(uuid "a87ed38d-d1de-4928-8f73-a39d912bf5a6")
 	)
 	(junction
+		(at 580.39 466.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8ba0427-82f3-44e4-b091-bc7dd63679e1")
+	)
+	(junction
 		(at 179.07 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9120,12 +9158,6 @@
 		(uuid "beac3ba5-11bd-4816-b0e6-4b4a328e4d7c")
 	)
 	(junction
-		(at 538.48 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfa10272-c4ff-4426-8184-4bed6ec5e8fd")
-	)
-	(junction
 		(at 419.1 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9154,12 +9186,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6adf2cb-e7ff-44f7-ac7d-401d252e720b")
-	)
-	(junction
-		(at 530.86 342.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c77e8de0-569a-4416-b9e3-0951cb8a4076")
 	)
 	(junction
 		(at 124.46 293.37)
@@ -9214,6 +9240,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da264c8c-479b-44c2-b4e4-9c18ba76cb67")
+	)
+	(junction
+		(at 530.86 342.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db6304df-30a3-4bd2-84d3-6a1ab01d8feb")
 	)
 	(junction
 		(at 598.17 450.85)
@@ -9292,12 +9324,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f70a0d0b-db8f-4f30-9063-1d7757b6cc09")
-	)
-	(junction
-		(at 580.39 466.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fa54a307-8e83-482b-a67b-3100aaca1c7f")
 	)
 	(junction
 		(at 474.98 139.7)
@@ -10973,7 +10999,7 @@
 	)
 	(wire
 		(pts
-			(xy 580.39 466.09) (xy 580.39 467.36)
+			(xy 580.39 466.09) (xy 580.39 468.63)
 		)
 		(stroke
 			(width 0)
@@ -11403,7 +11429,7 @@
 	)
 	(wire
 		(pts
-			(xy 580.39 474.98) (xy 580.39 478.79)
+			(xy 580.39 476.25) (xy 580.39 478.79)
 		)
 		(stroke
 			(width 0)
@@ -36631,7 +36657,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100 pF"
+		(property "Value" "100pF"
 			(at 551.18 247.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40805,7 +40831,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1 uF"
+		(property "Value" "1uF"
 			(at 535.94 247.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48253,7 +48279,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 580.39 471.17 0)
+		(at 580.39 472.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -48263,7 +48289,7 @@
 		(dnp no)
 		(uuid "f5484d12-4e43-4584-bf9a-827807ff4274")
 		(property "Reference" "R44"
-			(at 583.692 470.154 0)
+			(at 583.692 471.424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48273,7 +48299,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 583.946 472.694 0)
+			(at 583.946 473.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48283,7 +48309,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 578.612 471.17 90)
+			(at 578.612 472.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48294,7 +48320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 580.39 471.17 0)
+			(at 580.39 472.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48305,7 +48331,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 580.39 471.17 0)
+			(at 580.39 472.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
