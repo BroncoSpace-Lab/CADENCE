@@ -8085,6 +8085,18 @@
 		)
 		(uuid "2019d471-394d-4a17-8862-b377e1e578df")
 	)
+	(text "Shows that bats are charging"
+		(exclude_from_sim no)
+		(at 140.97 107.188 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2a974e4c-67de-40a2-b131-9efe11752ffb")
+	)
 	(text "Under Changes Not Finished\n"
 		(exclude_from_sim no)
 		(at 157.988 32.512 0)
@@ -8405,9 +8417,21 @@
 		)
 		(uuid "c41951ef-2820-4e46-a8ea-e8cee243cb71")
 	)
+	(text "Ask Pragun if 20V schottky diode is okay"
+		(exclude_from_sim no)
+		(at 208.534 88.646 0)
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c8c99dae-049f-44d0-bef2-e4be208d0d99")
+	)
 	(text "This part needs to get modified once we find a Zener that \nhas low current and needs a resistor change"
 		(exclude_from_sim no)
-		(at 403.098 177.8 0)
+		(at 392.176 170.18 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -8738,6 +8762,12 @@
 		(uuid "43c7b7ed-bbb3-4520-8fb3-9c116a50a70e")
 	)
 	(junction
+		(at 439.42 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "459c4b4c-f757-42cc-81bc-841e7569398d")
+	)
+	(junction
 		(at 463.55 238.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8834,12 +8864,6 @@
 		(uuid "534d342b-7d04-4a14-b3c2-f6521fbacc05")
 	)
 	(junction
-		(at 419.1 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c4a1d63-00ef-4c81-bdc8-7461df68c7ea")
-	)
-	(junction
 		(at 195.58 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8852,6 +8876,12 @@
 		(uuid "5ea631c1-1b45-4dd3-9254-cb89099a5cd6")
 	)
 	(junction
+		(at 419.1 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe637f7-98eb-41d7-ba4e-78988dacd40b")
+	)
+	(junction
 		(at 474.98 450.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8862,12 +8892,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "63f959ca-9425-40a3-bece-6fe8ae9f3c44")
-	)
-	(junction
-		(at 439.42 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66c11173-9efd-42b0-8b4d-ff9ea491590c")
 	)
 	(junction
 		(at 198.12 111.76)
@@ -8948,6 +8972,12 @@
 		(uuid "7fb2e77d-06b9-4207-93d3-2fc8d9044f3c")
 	)
 	(junction
+		(at 434.34 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fe7a181-f44d-4a6a-a56d-88e7c17013bf")
+	)
+	(junction
 		(at 626.11 302.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8969,7 +8999,7 @@
 		(at 148.59 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "84fbfd54-e9d5-4d44-9cad-ffdc9a244b1a")
+		(uuid "86117587-1e5e-46c8-8b13-b88d9106cd11")
 	)
 	(junction
 		(at 402.59 147.32)
@@ -9068,6 +9098,12 @@
 		(uuid "9fce446e-eb23-439d-a5b7-bb219c2572c9")
 	)
 	(junction
+		(at 474.98 433.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a00e7614-93ec-4679-ba4b-3df48f7c8423")
+	)
+	(junction
 		(at 713.74 182.118)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9140,22 +9176,10 @@
 		(uuid "ba839e00-63a5-4386-874d-eafc59d1782d")
 	)
 	(junction
-		(at 474.98 433.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc335c38-516d-4312-9761-00e81eea68e1")
-	)
-	(junction
 		(at 923.29 245.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be5feac5-d889-42d5-9ce8-c9d9c37daa19")
-	)
-	(junction
-		(at 434.34 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "beac3ba5-11bd-4816-b0e6-4b4a328e4d7c")
 	)
 	(junction
 		(at 419.1 124.46)
@@ -9719,13 +9743,23 @@
 	)
 	(wire
 		(pts
-			(xy 439.42 163.83) (xy 439.42 167.64)
+			(xy 439.42 162.56) (xy 439.42 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0e53bc14-c954-4f30-a023-7ecfde0acac6")
+	)
+	(wire
+		(pts
+			(xy 434.34 166.37) (xy 434.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb78113-ed0e-4669-aae5-81acf029da74")
 	)
 	(wire
 		(pts
@@ -9909,16 +9943,6 @@
 	)
 	(wire
 		(pts
-			(xy 439.42 167.64) (xy 449.58 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17f53442-a805-4b20-b907-a1f21adf5123")
-	)
-	(wire
-		(pts
 			(xy 716.28 182.118) (xy 721.36 182.118)
 		)
 		(stroke
@@ -9979,7 +10003,7 @@
 	)
 	(wire
 		(pts
-			(xy 414.02 167.64) (xy 402.59 167.64)
+			(xy 414.02 166.37) (xy 402.59 166.37)
 		)
 		(stroke
 			(width 0)
@@ -10459,16 +10483,6 @@
 	)
 	(wire
 		(pts
-			(xy 434.34 167.64) (xy 434.34 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37cfe681-3c75-4f2f-bb33-c5642dce6ced")
-	)
-	(wire
-		(pts
 			(xy 539.75 252.73) (xy 547.37 252.73)
 		)
 		(stroke
@@ -10929,7 +10943,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 104.14) (xy 148.59 104.14)
+			(xy 147.32 104.14) (xy 148.59 104.14)
 		)
 		(stroke
 			(width 0)
@@ -11216,6 +11230,16 @@
 			(type default)
 		)
 		(uuid "60624f15-2cb2-4c73-ae24-33d4e92ada2b")
+	)
+	(wire
+		(pts
+			(xy 439.42 166.37) (xy 449.58 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60fd1978-485f-4b04-9831-a4ff722a1f13")
 	)
 	(wire
 		(pts
@@ -12479,7 +12503,7 @@
 	)
 	(wire
 		(pts
-			(xy 449.58 152.4) (xy 449.58 167.64)
+			(xy 449.58 152.4) (xy 449.58 166.37)
 		)
 		(stroke
 			(width 0)
@@ -12599,7 +12623,7 @@
 	)
 	(wire
 		(pts
-			(xy 419.1 160.02) (xy 419.1 157.48)
+			(xy 419.1 158.75) (xy 419.1 157.48)
 		)
 		(stroke
 			(width 0)
@@ -12759,7 +12783,7 @@
 	)
 	(wire
 		(pts
-			(xy 471.17 433.07) (xy 474.98 433.07)
+			(xy 458.47 433.07) (xy 474.98 433.07)
 		)
 		(stroke
 			(width 0)
@@ -13099,7 +13123,7 @@
 	)
 	(wire
 		(pts
-			(xy 434.34 167.64) (xy 439.42 167.64)
+			(xy 434.34 166.37) (xy 439.42 166.37)
 		)
 		(stroke
 			(width 0)
@@ -13209,7 +13233,7 @@
 	)
 	(wire
 		(pts
-			(xy 424.18 167.64) (xy 434.34 167.64)
+			(xy 424.18 166.37) (xy 434.34 166.37)
 		)
 		(stroke
 			(width 0)
@@ -13869,7 +13893,7 @@
 	)
 	(wire
 		(pts
-			(xy 402.59 157.48) (xy 402.59 167.64)
+			(xy 402.59 157.48) (xy 402.59 166.37)
 		)
 		(stroke
 			(width 0)
@@ -34728,7 +34752,7 @@
 	)
 	(global_label "REGIN"
 		(shape input)
-		(at 439.42 163.83 90)
+		(at 439.42 162.56 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -34738,7 +34762,7 @@
 		)
 		(uuid "5829b6fe-adbc-40d8-af41-d74c3a6501b1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 439.42 155.2205 90)
+			(at 439.42 153.9505 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34872,7 +34896,7 @@
 	)
 	(global_label "7P"
 		(shape input)
-		(at 471.17 433.07 180)
+		(at 458.47 433.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -34882,7 +34906,7 @@
 		)
 		(uuid "8076b15e-32e0-4871-8356-f67b85dd3ba7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 465.7053 433.07 0)
+			(at 453.0053 433.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35208,7 +35232,7 @@
 	)
 	(global_label "Charge'"
 		(shape input)
-		(at 146.05 104.14 180)
+		(at 147.32 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -35218,7 +35242,7 @@
 		)
 		(uuid "dd82d123-e172-4b74-977a-684e69f54f08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 135.8682 104.14 0)
+			(at 137.1382 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -48976,7 +49000,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 419.1 165.1 90)
+		(at 419.1 163.83 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -48988,7 +49012,7 @@
 		(fields_autoplaced yes)
 		(uuid "ff34ffbd-d2d3-4a73-9728-2cae916eea99")
 		(property "Reference" "Q3"
-			(at 419.1 171.45 90)
+			(at 419.1 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48998,7 +49022,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 419.1 173.99 90)
+			(at 419.1 172.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49008,7 +49032,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 421.005 170.18 0)
+			(at 421.005 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49021,7 +49045,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 422.91 170.18 0)
+			(at 422.91 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -49033,7 +49057,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 419.1 165.1 0)
+			(at 419.1 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
