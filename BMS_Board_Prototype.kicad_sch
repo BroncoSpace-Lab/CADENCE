@@ -8714,6 +8714,16 @@
 		)
 		(uuid "0354a484-a562-482e-b1bb-6c9773c4d811")
 	)
+	(text "Confused on what the pullup voltage value should be"
+		(exclude_from_sim no)
+		(at 191.008 501.396 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "03b6ddf6-347a-4052-bae5-546d5304b541")
+	)
 	(text "4 Solar boards outputs tied together"
 		(exclude_from_sim no)
 		(at 52.578 366.522 0)
@@ -8812,7 +8822,7 @@
 		)
 		(uuid "18f10012-d0ca-4df6-b5da-e0e744ab8ce3")
 	)
-	(text "Potential short from V_mppt to Pack+"
+	(text "Potential short from Solar Power to Pack+"
 		(exclude_from_sim no)
 		(at 164.592 390.906 0)
 		(effects
@@ -9042,6 +9052,16 @@
 			)
 		)
 		(uuid "55519842-7242-42e2-8a67-997aafb46778")
+	)
+	(text "Activation inhibit\n"
+		(exclude_from_sim no)
+		(at 115.57 366.014 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6187e7e9-5cf1-44f0-8300-9e3d367fdca2")
 	)
 	(text "Vgs = -5.9V\n\n"
 		(exclude_from_sim no)
@@ -9295,6 +9315,16 @@
 			)
 		)
 		(uuid "a7d951d5-df2b-4d76-b3be-40529115a1cc")
+	)
+	(text "Power rail inhibits\n"
+		(exclude_from_sim no)
+		(at 178.562 363.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aec6f24b-9ffc-48ba-a5e1-5d16c77ea26b")
 	)
 	(text "Tied to ground because they will not be used\n"
 		(exclude_from_sim no)
@@ -10134,6 +10164,12 @@
 		(uuid "a92bcc05-d706-41f2-b69c-a6c0426b6516")
 	)
 	(junction
+		(at 190.5 405.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a94805e7-5afe-434a-a37e-1a7ac490610d")
+	)
+	(junction
 		(at 179.07 266.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10212,7 +10248,7 @@
 		(uuid "c6adf2cb-e7ff-44f7-ac7d-401d252e720b")
 	)
 	(junction
-		(at 148.59 415.29)
+		(at 154.94 415.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9e60fbb-d20f-4137-b378-358bc7fae58e")
@@ -10318,12 +10354,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb63a2e3-4e63-4163-838d-b2d7e7d511df")
-	)
-	(junction
-		(at 190.5 405.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee5642be-0294-4b9c-8975-156ec56dea02")
 	)
 	(junction
 		(at 643.89 459.74)
@@ -11483,7 +11513,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 405.13) (xy 135.89 405.13)
+			(xy 134.62 405.13) (xy 142.24 405.13)
 		)
 		(stroke
 			(width 0)
@@ -11773,7 +11803,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 412.75) (xy 157.48 415.29)
+			(xy 163.83 412.75) (xy 163.83 415.29)
 		)
 		(stroke
 			(width 0)
@@ -13743,7 +13773,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 415.29) (xy 148.59 415.29)
+			(xy 163.83 415.29) (xy 154.94 415.29)
 		)
 		(stroke
 			(width 0)
@@ -14433,7 +14463,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 405.13) (xy 152.4 405.13)
+			(xy 152.4 405.13) (xy 158.75 405.13)
 		)
 		(stroke
 			(width 0)
@@ -15543,7 +15573,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 419.1) (xy 148.59 415.29)
+			(xy 154.94 419.1) (xy 154.94 415.29)
 		)
 		(stroke
 			(width 0)
@@ -15713,7 +15743,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 415.29) (xy 140.97 412.75)
+			(xy 147.32 415.29) (xy 147.32 412.75)
 		)
 		(stroke
 			(width 0)
@@ -16073,7 +16103,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 405.13) (xy 190.5 405.13)
+			(xy 168.91 405.13) (xy 190.5 405.13)
 		)
 		(stroke
 			(width 0)
@@ -16493,7 +16523,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 415.29) (xy 140.97 415.29)
+			(xy 154.94 415.29) (xy 147.32 415.29)
 		)
 		(stroke
 			(width 0)
@@ -36434,7 +36464,7 @@
 			)
 		)
 	)
-	(global_label "V_mppt"
+	(global_label "Solar Power"
 		(shape input)
 		(at 68.58 370.84 180)
 		(fields_autoplaced yes)
@@ -36446,7 +36476,7 @@
 		)
 		(uuid "0da69cf5-36fe-4c04-98ef-f27f3062dac9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.8216 370.84 0)
+			(at 54.044 370.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36676,7 +36706,7 @@
 	)
 	(global_label "EN"
 		(shape input)
-		(at 148.59 419.1 270)
+		(at 154.94 419.1 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -36686,7 +36716,7 @@
 		)
 		(uuid "3748aea4-f973-4779-8f37-03664108c6f5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.59 424.5647 90)
+			(at 154.94 424.5647 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37372,7 +37402,7 @@
 	)
 	(global_label "Pack+"
 		(shape input)
-		(at 128.27 405.13 180)
+		(at 134.62 405.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -37382,7 +37412,7 @@
 		)
 		(uuid "8820da47-85c8-4b05-a23e-314f7f780801")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.1767 405.13 0)
+			(at 125.5267 405.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37514,7 +37544,7 @@
 			)
 		)
 	)
-	(global_label "V_mppt"
+	(global_label "Solar Power"
 		(shape bidirectional)
 		(at 83.82 96.52 180)
 		(fields_autoplaced yes)
@@ -37526,7 +37556,7 @@
 		)
 		(uuid "9552cec8-010b-458c-90ce-ff23b918b22a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.9503 96.52 0)
+			(at 68.1727 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37658,7 +37688,7 @@
 			)
 		)
 	)
-	(global_label "V_mppt"
+	(global_label "Solar Power"
 		(shape input)
 		(at 186.69 368.3 180)
 		(fields_autoplaced yes)
@@ -37670,7 +37700,7 @@
 		)
 		(uuid "a29b5eb9-54c3-42ac-9f5a-7dd7fde9499a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.9316 368.3 0)
+			(at 172.154 368.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42097,6 +42127,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_NMOS")
+		(at 207.01 405.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3868ef20-674c-4c8a-91c8-bce68009567b")
+		(property "Reference" "Q14"
+			(at 213.36 403.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS"
+			(at 213.36 406.3999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 402.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 405.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "N-MOSFET transistor"
+			(at 207.01 405.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "D"
+			(uuid "064f4ab0-f9c6-459f-a536-3acd196dc0f3")
+		)
+		(pin "G"
+			(uuid "a2fb1d1b-35ea-49d9-b2ba-7b3f9318e839")
+		)
+		(pin "S"
+			(uuid "d9519b68-f297-4028-b5c8-554b6bf7deb9")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47"
+					(reference "Q14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 102.87 96.52 180)
 		(unit 1)
@@ -45087,7 +45202,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "678da09d-ea3a-4516-b707-b9da440d0610")
 		(property "Reference" "#PWR057"
 			(at 160.02 509.27 0)
@@ -45100,14 +45214,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 160.02 500.38 0)
+		(property "Value" "Pack+"
+			(at 157.48 501.396 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -45718,7 +45833,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NMOS")
-		(at 157.48 407.67 270)
+		(at 163.83 407.67 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -45729,7 +45844,7 @@
 		(dnp no)
 		(uuid "74025250-220e-4b00-9266-ff191d23dff0")
 		(property "Reference" "Q11"
-			(at 158.7501 401.32 0)
+			(at 165.1001 401.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45740,7 +45855,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS"
-			(at 156.2101 401.32 0)
+			(at 162.5601 401.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -45751,7 +45866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 402.59 0)
+			(at 166.37 402.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45762,7 +45877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 407.67 0)
+			(at 163.83 407.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -45773,7 +45888,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor"
-			(at 157.48 407.67 0)
+			(at 163.83 407.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46484,7 +46599,7 @@
 				)
 			)
 		)
-		(property "Value" ".0067"
+		(property "Value" ".006"
 			(at 534.416 382.524 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51232,7 +51347,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NMOS")
-		(at 140.97 407.67 90)
+		(at 147.32 407.67 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -51243,7 +51358,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca53d011-79ea-41ca-ad72-f3315bf9be40")
 		(property "Reference" "Q12"
-			(at 139.6999 401.32 0)
+			(at 146.0499 401.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51254,7 +51369,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS"
-			(at 142.2399 401.32 0)
+			(at 148.5899 401.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -51265,7 +51380,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 402.59 0)
+			(at 144.78 402.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51276,7 +51391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 407.67 0)
+			(at 147.32 407.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -51287,7 +51402,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor"
-			(at 140.97 407.67 0)
+			(at 147.32 407.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
