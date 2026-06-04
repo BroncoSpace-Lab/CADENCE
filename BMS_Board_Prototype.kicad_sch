@@ -9061,12 +9061,13 @@
 		)
 		(uuid "1c706ac0-ad19-415c-b18a-58d6b7e80620")
 	)
-	(text "12.6V\n"
+	(text "10.8V"
 		(exclude_from_sim no)
 		(at 397.002 149.098 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.1588)
 			)
 		)
 		(uuid "1d679fd1-12cf-405c-8f38-d78e2b34af3d")
@@ -9080,6 +9081,16 @@
 			)
 		)
 		(uuid "2019d471-394d-4a17-8862-b377e1e578df")
+	)
+	(text "In an ideal case both of these fets are on and current flows\nfrom the 7P over to the pack connectors we have with no issues"
+		(exclude_from_sim no)
+		(at 531.114 448.564 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+		)
+		(uuid "21a93d6d-4ab6-4398-b989-0a8dd56897b6")
 	)
 	(text "Shows that bats are charging"
 		(exclude_from_sim no)
@@ -9291,9 +9302,9 @@
 		)
 		(uuid "6187e7e9-5cf1-44f0-8300-9e3d367fdca2")
 	)
-	(text "Vgs = -5.9V\n\n"
+	(text "Vgs = -4.075V"
 		(exclude_from_sim no)
-		(at 423.672 140.97 0)
+		(at 424.942 140.716 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -9460,16 +9471,6 @@
 		)
 		(uuid "9351a77f-0054-440b-b564-01565f22d7cb")
 	)
-	(text "Relook at the FETS \n"
-		(exclude_from_sim no)
-		(at 530.098 444.754 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "952fcd5a-5fc3-486e-b868-dd386be21743")
-	)
 	(text "Solar Charger: Take power generated from solar panels and\nsafely turns it into power used to charge a battery. "
 		(exclude_from_sim no)
 		(at 168.656 143.764 0)
@@ -9523,6 +9524,16 @@
 			)
 		)
 		(uuid "a54950dc-cde9-41e5-92c1-69aacfc43a0e")
+	)
+	(text "These caps are used to store charge and smooth out our DC voltage"
+		(exclude_from_sim no)
+		(at 526.288 428.498 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a5a0e9b6-828c-408c-bac1-0310f20d02e3")
 	)
 	(text "Ground System Equipment pin to \nverify if the inhibit is working."
 		(exclude_from_sim no)
@@ -9689,6 +9700,16 @@
 		)
 		(uuid "e604d394-b352-4410-b3d3-5a9269f7b936")
 	)
+	(text "High quality, low ESR diode"
+		(exclude_from_sim no)
+		(at 92.71 105.156 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e88b1e61-afa5-400e-9af3-34cf3644faa7")
+	)
 	(text "FC board\n"
 		(exclude_from_sim no)
 		(at 37.846 552.958 0)
@@ -9719,9 +9740,9 @@
 		)
 		(uuid "ed1c1f99-cbaa-48fd-96b0-eec55b6057d1")
 	)
-	(text "Turns on LED when something is wrong could be useful for testing"
+	(text "Turns on LED when something is wrong could be useful for testing\nCurrently off as we do not plan to add an LED to this circuit."
 		(exclude_from_sim no)
-		(at 475.488 135.382 0)
+		(at 475.488 134.874 0)
 		(effects
 			(font
 				(size 0.508 0.508)
@@ -52825,7 +52846,7 @@
 		(dnp no)
 		(uuid "b41253cb-039b-4fdb-b344-809f67a19e9e")
 		(property "Reference" "R6"
-			(at 438.15 138.43 0)
+			(at 444.246 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -54610,7 +54631,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 464.82 140.716 0)
+			(at 464.566 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -56803,7 +56824,7 @@
 		(dnp no)
 		(uuid "e65dafd5-262c-488a-8c80-61447209292d")
 		(property "Reference" "C6"
-			(at 447.294 137.668 0)
+			(at 454.66 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -56814,7 +56835,7 @@
 			)
 		)
 		(property "Value" "3300pF"
-			(at 452.628 142.748 0)
+			(at 452.882 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
