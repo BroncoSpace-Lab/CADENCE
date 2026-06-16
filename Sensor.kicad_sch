@@ -5718,7 +5718,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 151.13) (xy 87.63 151.13)
+			(xy 92.71 151.13) (xy 87.63 151.13)
 		)
 		(stroke
 			(width 0)
@@ -6248,6 +6248,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 147.32) (xy 102.87 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49961de0-f4b1-4a62-adbc-3b3ba5f37f44")
+	)
+	(wire
+		(pts
 			(xy 76.2 137.16) (xy 77.47 137.16)
 		)
 		(stroke
@@ -6555,16 +6565,6 @@
 			(type default)
 		)
 		(uuid "698aec8e-9a96-4644-9902-5fd33d2140f1")
-	)
-	(wire
-		(pts
-			(xy 102.87 151.13) (xy 99.06 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d19111-26b0-44d2-98a8-8be2b789146b")
 	)
 	(wire
 		(pts
@@ -6928,6 +6928,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 151.13) (xy 102.87 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c5aa5b-37c7-46ce-8fa6-bc33cf634519")
+	)
+	(wire
+		(pts
 			(xy 367.03 97.79) (xy 367.03 111.76)
 		)
 		(stroke
@@ -7085,6 +7095,16 @@
 			(type default)
 		)
 		(uuid "a12ad63b-1552-489e-95ac-a1784dc15b79")
+	)
+	(wire
+		(pts
+			(xy 102.87 134.62) (xy 102.87 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a262955a-86b2-41ff-95dd-58cd5b893617")
 	)
 	(wire
 		(pts
@@ -7395,16 +7415,6 @@
 			(type default)
 		)
 		(uuid "c2ab8d70-6f5b-4a1a-ae75-5ea599aa0239")
-	)
-	(wire
-		(pts
-			(xy 102.87 134.62) (xy 102.87 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2f67a70-761f-455d-8ae9-f25284f2f114")
 	)
 	(wire
 		(pts
@@ -25557,6 +25567,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 102.87 143.51 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2d1b3fa6-9532-47bc-b6fa-161f7cd20ff0")
+		(property "Reference" "D13"
+			(at 96.266 141.224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LED"
+			(at 96.266 143.764 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 102.87 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5cf1f47f-53af-410e-adfd-84cb110c751a")
+		)
+		(pin "2"
+			(uuid "37ef6416-4b4e-4326-9d5c-ca5bd491c49f")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 81.28 153.67 0)
 		(unit 1)
@@ -25632,6 +25734,85 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 96.52 151.13 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f4f3258-7ab8-45c9-a6da-0482cec2a372")
+		(property "Reference" "R42"
+			(at 96.266 154.686 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 96.266 157.226 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 152.908 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 96.52 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "79e5f74a-1142-481e-8a71-07c82da5d064")
+		)
+		(pin "1"
+			(uuid "43f06c9a-a7f3-43d7-ae5c-35f6bdbddee9")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -26106,97 +26287,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 95.25 151.13 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44fa6568-6a3f-4266-989b-809eec1be72e")
-		(property "Reference" "D12"
-			(at 96.8375 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 96.8375 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 95.25 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 95.25 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 95.25 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e16c298f-7efc-4299-b702-4c5e3f0e904d")
-		)
-		(pin "2"
-			(uuid "775af661-a832-4613-9ab1-f4b6e64017b8")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
-					(reference "D12")
 					(unit 1)
 				)
 			)
