@@ -1,0 +1,638 @@
+// SPDX-License-Identifier: GPL-2.0+
+/*
+ * Copyright (C) 2018 PHYTEC Messtechnik GmbH
+ *
+ * Copyright (C) 2019-2021 PHYTEC America, LLC
+ */
+
+/dts-v1/;
+
+#include "imx8qxp-phycore-som-emmc.dtsi"
+#include <dt-bindings/leds/common.h>
+
+/ {
+	model = "PHYTEC i.MX8QX PCM-942";
+	compatible = "phytec,imx8qxp-pcm-942", "phytec,imx8qxp-phycore-som", "fsl,imx8qxp";
+
+	chosen {
+		bootargs = "console=ttyLP0,115200 earlycon=lpuart32,0x5a060000,115200";
+		stdout-path = &lpuart0;
+	};
+
+	reg_1p8v: regulator-1p8v {
+		compatible = "regulator-fixed";
+		regulator-name = "1P8V";
+		regulator-min-microvolt = <1800000>;
+		regulator-max-microvolt = <1800000>;
+		regulator-always-on;
+	};
+
+	reg_3p3v: regulator-3p3v {
+		compatible = "regulator-fixed";
+		regulator-name = "3P3V";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		regulator-always-on;
+	};
+
+	
+	reg_5p0v: regulator-5p0v {
+		compatible = "regulator-fixed";
+		regulator-name = "5P0V";
+		regulator-min-microvolt = <5000000>;
+		regulator-max-microvolt = <5000000>;
+		regulator-always-on;
+	};
+
+	reg_12p0v: regulator-12p0v {
+        compatible = "regulator-fixed";
+        regulator-name = "12P0V";
+        regulator-min-microvolt = <12000000>;
+        regulator-max-microvolt = <12000000>;
+        regulator-always-on;
+	};
+};
+
+&i2c1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpi2c1>;
+	status = "okay";
+
+	tps6598x: tps6598x@3f {
+		compatible = "ti,tps6598x";
+		reg = <0x3f>;
+	};
+
+	i2c_rtc: rtc@52 {
+		compatible = "microcrystal,rv3028";
+		reg = <0x52>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&pinctrl_i2crtc>;
+		interrupt-parent = <&lsio_gpio0>;
+		interrupts = <25 IRQ_TYPE_LEVEL_LOW>;
+		backup-switchover-mode = <0x1>;
+		status = "okay";
+	};
+
+	eeprom_cb: eeprom@51 {
+		compatible = "atmel,24c32";
+		pagesize = <32>;
+		reg = <0x51>;
+		status = "okay";
+	};
+
+	sgtl5000: codec@a {
+		#sound-dai-cells = <0>;
+		compatible = "fsl,sgtl5000";
+		reg = <0xa>;
+		assigned-clocks = <&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_PLL>,
+				<&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_SLV_BUS>,
+				<&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_MST_BUS>,
+				<&mclkout0_lpcg 0>;
+		assigned-clock-rates = <786432000>, <49152000>, <12000000>, <12000000>;
+		clocks = <&mclkout0_lpcg 0>;
+		clock-names = "mclk";
+		VDDA-supply = <&reg_3p3v>;
+		VDDIO-supply = <&reg_3p3v>;
+		VDDD-supply = <&reg_1p8v>;
+	};
+
+	xio: gpio@20 {
+		compatible = "nxp,pcf8574a";
+		reg = <0x20>;
+		gpio-controller;
+		#gpio-cells = <2>;
+	};
+};
+
+&lpuart0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpuart0>;
+	status = "okay";
+};
+
+&lpuart1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpuart1>;
+	status = "okay";
+};
+
+&gpu_3d0 {
+	status = "okay";
+};
+
+&imx8_gpu_ss {
+	status = "okay";
+};
+
+&dc0_prg1 {
+	status = "okay";
+};
+
+&dc0_prg2 {
+	status = "okay";
+};
+
+&dc0_prg3 {
+	status = "okay";
+};
+
+&dc0_prg4 {
+	status = "okay";
+};
+
+&dc0_prg5 {
+	status = "okay";
+};
+
+&dc0_prg6 {
+	status = "okay";
+};
+
+&dc0_prg7 {
+	status = "okay";
+};
+
+&dc0_prg8 {
+	status = "okay";
+};
+
+&dc0_prg9 {
+	status = "okay";
+};
+
+&dc0_dpr1_channel1 {
+	status = "okay";
+};
+
+&dc0_dpr1_channel2 {
+	status = "okay";
+};
+
+&dc0_dpr1_channel3 {
+	status = "okay";
+};
+
+&dc0_dpr2_channel1 {
+	status = "okay";
+};
+
+&dc0_dpr2_channel2 {
+	status = "okay";
+};
+
+&dc0_dpr2_channel3 {
+	status = "okay";
+};
+
+&dpu1 {
+	status = "okay";
+};
+
+&usbphy1 {
+	status = "okay";
+};
+
+/* USB-C Data */
+&usbotg1 {
+	dr_mode = "host";
+	srp-disable;
+	hnp-disable;
+	adp-disable;
+	disable-over-current;
+	status = "okay";
+};
+
+&usb3_phy {
+	status = "okay";
+};
+
+&usbotg3 {
+	status = "okay";
+};
+
+&usbotg3_cdns3 {
+	dr_mode = "host";
+	usb-role-switch;
+	status = "okay";
+};
+
+/* SD Card */
+&usdhc2 {
+	pinctrl-names = "default", "state_100mhz", "state_200mhz";
+	pinctrl-0 = <&pinctrl_usdhc2_sd>, <&pinctrl_usdhc2_gpio>;
+	pinctrl-1 = <&pinctrl_usdhc2_sd>, <&pinctrl_usdhc2_gpio>;
+	pinctrl-2 = <&pinctrl_usdhc2_sd>, <&pinctrl_usdhc2_gpio>;
+	bus-width = <4>;
+	no-1-8-v;
+	cd-gpios = <&lsio_gpio4 22 GPIO_ACTIVE_LOW>;
+	status = "okay";
+};
+
+&fec2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_fec2>;
+	phy-mode = "rgmii-id";
+	phy-handle = <&ethphy1>;
+	fsl,magic-packet;
+	nvmem-cells = <&fec_mac1>;
+	nvmem-cell-names = "mac-address";
+	status = "okay";
+};
+
+&mdio {
+	ethphy1: ethernet-phy@3 {
+		compatible = "ethernet-phy-ieee802.3-c22";
+		reg = <3>;
+		ti,rx-internal-delay = <DP83867_RGMIIDCTL_2_50_NS>;
+		ti,tx-internal-delay = <DP83867_RGMIIDCTL_2_50_NS>;
+		ti,fifo-depth = <DP83867_PHYCR_FIFO_DEPTH_8_B_NIB>;
+		ti,led-0-active-low;
+		ti,led-2-active-low;
+		enet-phy-lane-no-swap;
+	};
+};
+
+&flexcan2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_flexcan2>;
+	status = "okay";
+};
+
+&i2c0_mipi_lvds0 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_i2c0_mipi_lvds0>;
+	clock-frequency = <100000>;
+	status = "disabled";
+};
+
+&i2c0_mipi_lvds1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_i2c0_mipi_lvds1>;
+	clock-frequency = <100000>;
+	status = "disabled";
+};
+
+&ldb1_phy {
+	status = "disabled";
+};
+
+&ldb2_phy {
+	status = "disabled";
+};
+
+&ldb1 {
+	status = "disabled";
+};
+
+&ldb2 {
+	status = "disabled";
+};
+
+&dc0_pc {
+	status = "disabled";
+};
+
+&phyx1 {
+	fsl,refclk-pad-mode = <IMX8_PCIE_REFCLK_PAD_INPUT>;
+	status = "okay";
+};
+
+&pcieb{
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_pcieb>;
+	reset-gpio = <&lsio_gpio4 0 GPIO_ACTIVE_LOW>;
+	vpcie-supply = <&reg_pcieb>;
+	ext_osc = <1>;
+	status = "okay";
+};
+
+&sai1 {
+	#sound-dai-cells = <0>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_sai1>;
+	status = "okay";
+};
+
+/* MRAM Storage with MR20H40 */
+/* MR25H40 Driver used because the MRAM chips are functionally the same */
+&lpspi0 {
+    fsl,spi-num-chipselects = <2>;
+    pinctrl-names = "default";
+    pinctrl-0 = <&pinctrl_lpspi0>;
+    status = "okay";
+/* MR20H40 using CS0 */
+    mram0: mram0@0 {
+        reg = <0>;
+        compatible = "everspin,mr25h40";
+        spi-max-frequency = <50000000>;
+		spi-rx-bus-width = <1>;
+		spi-tx-bus-width = <1>;
+    };
+/* MR20H40 using CS1 */
+    mram1: mram1@1 {
+        reg = <1>;
+        compatible = "everspin,mr25h40";
+        spi-max-frequency = <50000000>;
+		spi-rx-bus-width = <1>;
+		spi-tx-bus-width = <1>;
+    };
+};
+/* Satnogs & EBYTE */
+&lpspi1 {
+	fsl,spi-num-chipselects = <2>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpspi1>;
+	status = "okay";
+/* SatNogs Radio */
+/* Generic SPI driver */
+	satnogs: satnogs@0 {
+		reg = <0>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+		spi-rx-bus-width = <1>;
+		spi-tx-bus-width = <1>;
+	};
+/* EBYTE Transceiver */
+/* Generic SPI driver */
+	ebyte: ebyte@1 {
+		reg = <1>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+		spi-rx-bus-width = <1>;
+		spi-tx-bus-width = <1>;
+	};
+};
+
+/* NAND Flash */
+&lpspi2 {
+	fsl,spi-num-chipselects = <1>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpspi2>;
+	status = "okay";
+/* ZDSD04GLGEAG */ */
+	nandflash: flash@0 {
+		reg = <0>;
+		compatible = "spi-nand";
+		spi-max-frequency = <50000000>;
+		spi-rx-bus-width = <1>;
+    	spi-tx-bus-width = <1>;
+	};
+};
+
+&lpspi3 {
+	fsl,spi-num-chipselects = <1>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpspi3>;
+	status = "okay";
+
+	spidev3_0: spi3@0 {
+		reg = <0>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+	};
+};
+
+&lsio_gpio0{
+	usb_port_select-hog {
+		gpio-hog;
+		gpios = <30 GPIO_ACTIVE_HIGH>;
+		output-low;
+		line-name = "USB port select GPIO";
+	};
+};
+
+&iomuxc {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_hog>;
+
+	pcm942 {
+		pinctrl_hog: hoggrp {
+			fsl,pins = <
+				IMX8QXP_MCLK_OUT0_ADMA_ACM_MCLK_OUT0   0x0600004c	 /* Audio Clock*/
+				IMX8QXP_SPI0_CS1_LSIO_GPIO1_IO07       0x06000021	 /* ETH1 OR Gate */
+			>;
+		};
+
+		pinctrl_gpio0: lsio_gpio0grp {
+			fsl,pins =<
+				IMX8QXP_MCLK_IN0_LSIO_GPIO0_IO19	   0x06000021	 
+				IMX8QXP_MCLK_OUT0_LSIO_GPIO0_IO20      0x06000021
+				IMX8QXP_SAI1_RXC_LSIO_GPIO0_IO30	   0x06000021	 
+				IMX8QXP_SAI1_RXFS_LSIO_GPIO0_IO31      0x06000021	 
+			>
+		}
+
+		pinctrl_gpio1: lsio_gpio1grp {
+			fsl,pins =<
+				IMX8QXP_FLEXCAN0_RX_LSIO_GPIO1_IO15	   0x06000021
+				IMX8QXP_FLEXCAN0_TX_LSIO_GPIO1_IO16	   0x06000021 
+			>
+		}
+
+		pinctrl_i2crtc: i2crtcgrp {
+			fsl,pins = <
+				IMX8QXP_SAI0_TXD_LSIO_GPIO0_IO25        0x06000021
+			>;
+		};
+
+		pinctrl_fec2: fec2grp {
+			fsl,pins = <
+				IMX8QXP_ESAI0_SCKR_CONN_ENET1_RGMII_TX_CTL	   0x06000020
+				IMX8QXP_ESAI0_FSR_CONN_ENET1_RGMII_TXC		   0x06000020
+				IMX8QXP_ESAI0_TX4_RX1_CONN_ENET1_RGMII_TXD0	   0x06000020
+				IMX8QXP_ESAI0_TX5_RX0_CONN_ENET1_RGMII_TXD1	   0x06000020
+				IMX8QXP_ESAI0_FST_CONN_ENET1_RGMII_TXD2		   0x06000020
+				IMX8QXP_ESAI0_SCKT_CONN_ENET1_RGMII_TXD3	   0x06000020
+				IMX8QXP_ESAI0_TX0_CONN_ENET1_RGMII_RXC		   0x06000020
+				IMX8QXP_SPDIF0_TX_CONN_ENET1_RGMII_RX_CTL	   0x06000020
+				IMX8QXP_SPDIF0_RX_CONN_ENET1_RGMII_RXD0		   0x06000020
+				IMX8QXP_ESAI0_TX3_RX2_CONN_ENET1_RGMII_RXD1	   0x06000020
+				IMX8QXP_ESAI0_TX2_RX3_CONN_ENET1_RGMII_RXD2	   0x06000020
+				IMX8QXP_ESAI0_TX1_CONN_ENET1_RGMII_RXD3		   0x06000020
+			>;
+		};
+
+		/* Will need to worry about the addresses, not sure if that is correct */
+		pinctrl_flexcan1: flexcan1grp {
+			fsl,pins = <
+				IMX8QXP_FLEXCAN1_RX_ADMA_FLEXCAN1_RX		0x06000020
+				IMX8QXP_FLEXCAN1_TX_ADMA_FLEXCAN1_TX		0x06000020
+			>;
+		};
+
+		pinctrl_lpi2c1: lpi1cgrp {
+			fsl,pins = <
+				IMX8QXP_USB_SS3_TC1_ADMA_I2C1_SCL	0x06000020
+				IMX8QXP_USB_SS3_TC3_ADMA_I2C1_SDA	0x06000020
+			>;
+		};
+
+		pinctrl_lpuart0: lpuart0grp {
+			fsl,pins = <
+				IMX8QXP_UART0_RX_ADMA_UART0_RX	   0x0600002c
+				IMX8QXP_UART0_TX_ADMA_UART0_TX	   0x0600002c
+			>;
+		};
+
+		pinctrl_lpuart1: lpuart1grp {
+			fsl,pins = <
+				IMX8QXP_UART1_TX_ADMA_UART1_TX	   		   0x0600002c
+				IMX8QXP_UART1_RX_ADMA_UART1_RX	   		   0x0600002c
+				IMX8QXP_UART1_CTS_B_ADMA_UART1_CTS_B	   0x0600002c
+				IMX8QXP_UART1_RTS_B_ADMA_UART1_RTS_B	   0x0600002c
+			>;
+		};
+
+		pinctrl_lpuart2: lpuart2grp {
+			fsl,pins = <
+				IMX8QXP_UART2_TX_ADMA_UART2_TX	   0x0600002c
+				IMX8QXP_UART2_RX_ADMA_UART2_RX	   0x0600002c
+			>;
+		};
+
+		pinctrl_lpuart3: lpuart3grp {
+			fsl,pins = <
+				IMX8QXP_UART3_TX_ADMA_UART3_TX	   0x0600002c
+				IMX8QXP_UART3_RX_ADMA_UART3_RX	   0x0600002c
+			>;
+		}
+
+		pinctrl_lpuart1_rtscts: lpuart1rtsctsgrp {
+			fsl,pins = <
+				IMX8QXP_UART1_RTS_B_ADMA_UART1_RTS_B     0x06000020
+				IMX8QXP_UART1_CTS_B_ADMA_UART1_CTS_B     0x06000020
+			>;f
+		};
+
+		pinctrl_usdhc2_gpio: usdhc2gpiogrp {
+			fsl,pins = <
+				IMX8QXP_USDHC1_CD_B_LSIO_GPIO4_IO22			0x06000020
+			>;
+		};
+
+		pinctrl_usdhc2_sd: usdhc2sdgrp {
+			fsl,pins = <
+				IMX8QXP_USDHC1_RESET_B_CONN_USDHC1_RESET_B		0x06000020
+				IMX8QXP_USDHC1_CLK_CONN_USDHC1_CLK				0x06000040
+				IMX8QXP_USDHC1_CMD_CONN_USDHC1_CMD				0x06000060
+				IMX8QXP_USDHC1_DATA0_CONN_USDHC1_DATA0			0x06000060
+				IMX8QXP_USDHC1_DATA1_CONN_USDHC1_DATA1			0x06000060
+				IMX8QXP_USDHC1_DATA2_CONN_USDHC1_DATA2			0x06000060
+				IMX8QXP_USDHC1_DATA3_CONN_USDHC1_DATA3			0x06000060
+			>;
+		};
+
+		/* NOT USED IN CADENCE
+
+		pinctrl_usdhc2_wifi: usdhc2wifigrp {
+			fsl,pins = <
+				IMX8QXP_USDHC1_CLK_CONN_USDHC1_CLK      0x06000040
+				IMX8QXP_USDHC1_CMD_CONN_USDHC1_CMD      0x06000020
+				IMX8QXP_USDHC1_DATA0_CONN_USDHC1_DATA0  0x06000020
+				IMX8QXP_USDHC1_DATA1_CONN_USDHC1_DATA1  0x06000020
+				IMX8QXP_USDHC1_DATA2_CONN_USDHC1_DATA2  0x06000020
+				IMX8QXP_USDHC1_DATA3_CONN_USDHC1_DATA3  0x06000020
+			>;
+		};
+
+		pinctrl_i2c0_mipi_lvds0: mipi_lvds0_i2c0_grp {
+			fsl,pins = <
+				IMX8QXP_MIPI_DSI0_I2C0_SCL_MIPI_DSI0_I2C0_SCL	   0x06000020
+				IMX8QXP_MIPI_DSI0_I2C0_SDA_MIPI_DSI0_I2C0_SDA	   0x06000020
+			>;
+		};
+
+		pinctrl_i2c0_mipi_lvds1: mipi_lvds1_i2c0_grp {
+			fsl,pins = <
+				IMX8QXP_MIPI_DSI1_I2C0_SCL_MIPI_DSI1_I2C0_SCL	   0x06000020
+				IMX8QXP_MIPI_DSI1_I2C0_SDA_MIPI_DSI1_I2C0_SDA	   0x06000020
+			>;
+		};
+
+		pinctrl_lvds0: lvds0grp {
+			fsl,pins = <
+				IMX8QXP_MIPI_DSI0_GPIO0_01_LSIO_GPIO1_IO28 0x06000021
+			>;
+		};
+
+		pinctrl_lvds1: lvds1grp {
+			fsl,pins = <
+				IMX8QXP_MIPI_DSI1_GPIO0_01_LSIO_GPIO2_IO00 0x06000021
+			>;
+		};
+
+		pinctrl_pcieb: pcieagrp{
+			fsl,pins = <
+				IMX8QXP_PCIE_CTRL0_PERST_B_LSIO_GPIO4_IO00    0x06000021
+				IMX8QXP_PCIE_CTRL0_CLKREQ_B_LSIO_GPIO4_IO01   0x06000021
+				IMX8QXP_PCIE_CTRL0_WAKE_B_LSIO_GPIO4_IO02     0x04000021
+			>;
+		}; */
+
+		pinctrl_sai1: sai1grp {
+			fsl,pins = <
+				IMX8QXP_FLEXCAN1_TX_ADMA_SAI1_RXD     0x06000040
+				IMX8QXP_FLEXCAN1_RX_ADMA_SAI1_TXD     0x06000060
+				IMX8QXP_FLEXCAN0_TX_ADMA_SAI1_TXFS    0x06000040
+				IMX8QXP_FLEXCAN0_RX_ADMA_SAI1_TXC     0x06000040
+			>;
+		};
+
+		/* MRAM PinCtrl */
+		pinctrl_lpspi0: lpspi0grp {
+			fsl,pins = <
+				IMX8QXP_SPI0_SCK_ADMA_SPI0_SCK          0x600004c
+				IMX8QXP_SPI0_SDO_ADMA_SPI0_SDO          0x600004c
+				IMX8QXP_SPI0_SDI_ADMA_SPI0_SDI          0x600004c
+				IMX8QXP_SPI0_CS0_ADMA_SPI0_CS0          0x600004c
+				IMX8QXP_SPI0_CS1_ADMA_SPI0_CS1			0x600004c
+			>;
+		};
+
+		/* SatNogs and EBYTE */
+		pinctrl_lpspi1: lpspi1grp {
+			fsl,pins = <
+				IMX8QXP_SPI1_SDO_ADMA_SPI1_SDO          0x600004c
+				IMX8QXP_SPI1_SDI_ADMA_SPI1_SDI          0x600004c
+				IMX8QXP_SPI1_CS0_ADMA_SPI1_CS0          0x600004c
+				IMX8QXP_SPI1_CS1_ADMA_SPI1_CS1          0x600004c
+			>;
+		};
+
+		/* NAND Flash PinCtrl */
+		pinctrl_lpspi2: lpspi2grp {
+			fsl,pins = <
+				IMX8QXP_SPI2_SCK_ADMA_SPI2_SCK          0x600004c
+				IMX8QXP_SPI2_SDO_ADMA_SPI2_SDO          0x600004c
+				IMX8QXP_SPI2_SDI_ADMA_SPI2_SDI          0x600004c
+				IMX8QXP_SPI2_CS0_ADMA_SPI2_CS0          0x600004c
+			>;
+		};
+
+		pinctrl_lpspi3: lpspi3grp {
+			fsl,pins = <
+				IMX8QXP_SPI3_SCK_ADMA_SPI3_SCK          0x600004c
+				IMX8QXP_SPI3_SDO_ADMA_SPI3_SDO          0x600004c
+				IMX8QXP_SPI3_SDI_ADMA_SPI3_SDI          0x600004c
+				IMX8QXP_SPI3_CS0_ADMA_SPI3_CS0          0x600004c
+				IMX8QXP_SPI3_CS1_ADMA_SPI3_CS1          0x600004c
+			>;
+		};
+
+		pinctrl_bt_en: btengpiogrp {
+			fsl,pins = <
+				
+			>;
+		};
+
+		pinctrl_wifi_en: wifiengpiogrp {
+			fsl,pins = <
+				
+			>;
+		};
+	};
+};
