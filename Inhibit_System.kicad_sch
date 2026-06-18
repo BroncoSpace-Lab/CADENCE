@@ -376,207 +376,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Light emitting diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "LED diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_0_1"
-				(polyline
-					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:Q_NMOS"
 			(pin_numbers
 				(hide yes)
@@ -1198,6 +997,252 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Driver_FET:MIC4427"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "MIC4427"
+				(at 1.27 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MIC4426-7-8-Dual-1-5A-Peak-Low-Side-MOSFET-DRivers-DS20006202A.pdf"
+				(at 0 -16.764 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual 1.5A-Peak Low-Side MOSFET Driver, 4.5..18V supply voltage, TTL/CMOS compatible inputs, non-inverting drivers, DIP-8 / SOIC-8 / MSOP-8"
+				(at 0 -14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Microchip Micrel BiCMOS DMOS clock-driver clock-buffer MIC427 MIC1427"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm*P1.27mm* MSOP*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MIC4427_0_1"
+				(rectangle
+					(start -7.62 -7.62)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MIC4427_1_1"
+				(pin no_connect line
+					(at -7.62 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "INA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "INB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "OUTB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "V_{S}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUTA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 7.62 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3536,7 +3581,7 @@
 	)
 	(text "Chassis\n"
 		(exclude_from_sim no)
-		(at 60.96 134.62 0)
+		(at 119.126 149.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3565,6 +3610,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0b30dc30-25e9-4c2c-968c-6aa4b83b4b5d")
+	)
+	(junction
+		(at 107.95 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10cd3555-a593-46d4-bfc0-b82a906008ad")
 	)
 	(junction
 		(at 74.93 63.5)
@@ -3747,12 +3798,6 @@
 		(uuid "c95975fa-4ddb-44f2-a289-e490baa179a7")
 	)
 	(junction
-		(at 52.07 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cff9b33c-2813-4e4a-b1df-46f7dffa105f")
-	)
-	(junction
 		(at 189.23 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3800,6 +3845,22 @@
 		(color 0 0 0 0)
 		(uuid "fd60229b-9945-4cdf-b68d-1d5639903faf")
 	)
+	(no_connect
+		(at 76.2 111.76)
+		(uuid "40eef182-ff95-4200-8361-5bd680b1dcc8")
+	)
+	(no_connect
+		(at 96.52 111.76)
+		(uuid "5e90ccce-723a-421f-8614-541f6d1fff48")
+	)
+	(no_connect
+		(at 76.2 139.7)
+		(uuid "c868b939-f68d-4a33-8cec-84dc4537af25")
+	)
+	(no_connect
+		(at 96.52 139.7)
+		(uuid "da66be4f-127f-4c96-87b6-bb02e1bf2673")
+	)
 	(wire
 		(pts
 			(xy 190.5 86.36) (xy 189.23 86.36)
@@ -3829,6 +3890,16 @@
 			(type default)
 		)
 		(uuid "0271b881-cefc-4be7-ad70-85f782d7548b")
+	)
+	(wire
+		(pts
+			(xy 86.36 148.59) (xy 86.36 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07af96ad-c332-4b6b-a2b2-13e8e881348b")
 	)
 	(wire
 		(pts
@@ -3882,7 +3953,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 128.27) (xy 60.96 125.73)
+			(xy 114.3 151.13) (xy 114.3 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3999,6 +4070,36 @@
 			(type default)
 		)
 		(uuid "32963482-a128-4d51-8277-cb1212e5885b")
+	)
+	(wire
+		(pts
+			(xy 96.52 106.68) (xy 100.33 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33cc10e1-af63-4036-b9fc-bef003815599")
+	)
+	(wire
+		(pts
+			(xy 107.95 129.54) (xy 107.95 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34bb500e-0072-4f3b-92df-6f6d0e3a9eeb")
+	)
+	(wire
+		(pts
+			(xy 82.55 125.73) (xy 86.36 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "370fa88c-9327-4bfd-995e-54d145dafc52")
 	)
 	(wire
 		(pts
@@ -4122,6 +4223,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 134.62) (xy 100.33 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "527ba6c1-ba34-42fc-9141-feceba65e438")
+	)
+	(wire
+		(pts
 			(xy 198.12 160.02) (xy 198.12 170.18)
 		)
 		(stroke
@@ -4142,7 +4253,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 124.46) (xy 52.07 125.73)
+			(xy 86.36 125.73) (xy 86.36 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58bae1a2-40b6-4642-b905-2907f8097198")
+	)
+	(wire
+		(pts
+			(xy 107.95 139.7) (xy 107.95 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4282,6 +4403,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 134.62) (xy 76.2 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f36d9e9-8b5c-45e2-a169-4f393a182c3a")
+	)
+	(wire
+		(pts
 			(xy 180.34 212.09) (xy 179.07 212.09)
 		)
 		(stroke
@@ -4382,7 +4513,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 96.52) (xy 52.07 104.14)
+			(xy 107.95 93.98) (xy 107.95 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4542,16 +4673,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 119.38) (xy 59.69 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6387f80-0be4-442a-864c-95aae4d7934f")
-	)
-	(wire
-		(pts
 			(xy 157.48 59.69) (xy 157.48 68.58)
 		)
 		(stroke
@@ -4609,6 +4730,16 @@
 			(type default)
 		)
 		(uuid "ab2742bf-02e5-4f02-83df-366307571870")
+	)
+	(wire
+		(pts
+			(xy 73.66 106.68) (xy 76.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aba48a56-fbc9-4f95-9e67-57888cd9db7b")
 	)
 	(wire
 		(pts
@@ -4772,6 +4903,26 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 97.79) (xy 86.36 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c30b9345-d8b8-4cbc-91a2-eb6e2d1a6cd5")
+	)
+	(wire
+		(pts
+			(xy 107.95 148.59) (xy 107.95 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c323485f-c021-43da-8ed3-0d1e4d370a74")
+	)
+	(wire
+		(pts
 			(xy 162.56 218.44) (xy 162.56 219.71)
 		)
 		(stroke
@@ -4809,6 +4960,16 @@
 			(type default)
 		)
 		(uuid "ce98dede-96a6-4957-8c58-a686822fefa5")
+	)
+	(wire
+		(pts
+			(xy 86.36 120.65) (xy 86.36 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb1a4bb-66f0-4886-ad42-e54f768ea9d6")
 	)
 	(wire
 		(pts
@@ -4882,17 +5043,17 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 109.22) (xy 59.69 109.22)
+			(xy 82.55 97.79) (xy 86.36 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d63f9b4f-2779-4e5d-abfb-6c7661357757")
+		(uuid "d70dc897-2e9c-4b04-9653-78e0a18f9e8e")
 	)
 	(wire
 		(pts
-			(xy 57.15 96.52) (xy 52.07 96.52)
+			(xy 102.87 93.98) (xy 107.95 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4919,16 +5080,6 @@
 			(type default)
 		)
 		(uuid "de48f623-4fa1-4411-b3ba-9f732f805c8d")
-	)
-	(wire
-		(pts
-			(xy 52.07 125.73) (xy 52.07 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df3cd2a4-5997-47e1-95f7-c405bea9c0e2")
 	)
 	(wire
 		(pts
@@ -5222,7 +5373,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 125.73) (xy 52.07 125.73)
+			(xy 114.3 148.59) (xy 107.95 148.59)
 		)
 		(stroke
 			(width 0)
@@ -5231,7 +5382,7 @@
 		(uuid "ff68dc2f-f7b5-452b-9e5c-773747464186")
 	)
 	(image
-		(at 62.738 161.798)
+		(at 110.998 160.528)
 		(scale 0.746929)
 		(uuid "19b55c78-e80f-4eb5-a663-ec6fc242f38f")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA4MAAABKCAYAAAABmIEbAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
@@ -35573,17 +35724,17 @@
 	)
 	(global_label "EN"
 		(shape input)
-		(at 66.04 109.22 0)
+		(at 73.66 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "2f77308a-c3a9-41b1-bac7-2d28dfb8d543")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.5047 109.22 0)
+			(at 68.1953 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35591,23 +35742,23 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(global_label "Pack-"
 		(shape input)
-		(at 57.15 96.52 0)
+		(at 102.87 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "349d7104-c373-4a06-b866-f927b9d29744")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.2433 96.52 0)
+			(at 93.7767 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35615,7 +35766,31 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Pack+"
+		(shape input)
+		(at 82.55 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b0f9c88-f5b8-4b2b-affd-d851665e4088")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.4567 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -35704,6 +35879,30 @@
 		(uuid "6f02d309-45fd-49c1-a930-9a5cef6c57d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 138.2267 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Pack+"
+		(shape input)
+		(at 82.55 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72235e9d-4410-4cda-8d86-023f32fa9ff0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.4567 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35861,6 +36060,30 @@
 		)
 	)
 	(global_label "EN"
+		(shape input)
+		(at 73.66 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e162e5b4-1975-44d4-8ed8-b2aea590693b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.1953 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "EN"
 		(shape output)
 		(at 127 63.5 0)
 		(fields_autoplaced yes)
@@ -35929,30 +36152,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "EN"
-		(shape input)
-		(at 66.04 119.38 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fbf2bf02-bb4a-4599-a60f-ce310110d093")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.5047 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -36422,8 +36621,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 104.14 90.17 0)
+		(lib_id "Switch:SW_SPST")
+		(at 81.28 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36432,9 +36631,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2b74b022-543d-47fd-8bdf-71290365cd9e")
-		(property "Reference" "D15"
-			(at 102.5525 83.82 0)
+		(uuid "374bc942-dd12-4dd2-a336-461bec434422")
+		(property "Reference" "SW3"
+			(at 81.28 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36443,8 +36642,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 102.5525 86.36 0)
+		(property "Value" "SW_SPST"
+			(at 81.28 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36454,7 +36653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 90.17 0)
+			(at 81.28 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36464,8 +36663,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 104.14 90.17 0)
+		(property "Datasheet" "https://www.mcmaster.com/7658K208/"
+			(at 81.28 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36475,8 +36674,8 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 104.14 90.17 0)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 81.28 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36485,28 +36684,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 104.14 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7af06f46-230b-4c7a-99a7-83aab0c22a5d")
 		)
 		(pin "1"
-			(uuid "6fa42266-256e-4a6e-8c82-663a864dfaee")
+			(uuid "b0f89da5-0141-4146-9bc2-9badfb3a792c")
+		)
+		(pin "2"
+			(uuid "a4992a96-f075-4ec2-ab86-5ed74d66123c")
 		)
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "D15")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -36891,7 +37079,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 60.96 128.27 0)
+		(at 114.3 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36899,10 +37087,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4735217f-861d-4719-812c-ed755815d623")
 		(property "Reference" "#PWR058"
-			(at 60.96 133.35 0)
+			(at 114.3 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36913,7 +37100,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 60.833 132.08 0)
+			(at 119.38 151.638 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36923,7 +37110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 129.54 0)
+			(at 114.3 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36934,7 +37121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 129.54 0)
+			(at 114.3 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36945,7 +37132,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 60.96 128.27 0)
+			(at 114.3 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36962,86 +37149,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 92.71 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "47474d6d-2774-40e1-8563-27bf023dea0c")
-		(property "Reference" "SW4"
-			(at 92.71 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 92.71 116.84 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 92.71 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "517c91bd-feac-48a6-af0d-dd539c2def70")
-		)
-		(pin "1"
-			(uuid "346648ae-a111-4a92-b169-af0c2552762f")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -37288,6 +37395,186 @@
 		)
 	)
 	(symbol
+		(lib_id "Driver_FET:MIC4427")
+		(at 86.36 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58020257-9899-4c67-8309-910b070b7ecc")
+		(property "Reference" "U7"
+			(at 88.5033 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MIC4427"
+			(at 88.5033 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MIC4426-7-8-Dual-1-5A-Peak-Low-Side-MOSFET-DRivers-DS20006202A.pdf"
+			(at 86.36 125.984 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual 1.5A-Peak Low-Side MOSFET Driver, 4.5..18V supply voltage, TTL/CMOS compatible inputs, non-inverting drivers, DIP-8 / SOIC-8 / MSOP-8"
+			(at 86.36 123.444 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdb87fdf-64fd-4fe8-b50e-190f6c6d9bee")
+		)
+		(pin "5"
+			(uuid "9771317a-831d-4dd5-86bd-fd60de5d304d")
+		)
+		(pin "3"
+			(uuid "d723b1b6-c516-447d-814e-0915572e7ecf")
+		)
+		(pin "4"
+			(uuid "0a1ad412-ee5c-4928-b792-9fd798d3ba93")
+		)
+		(pin "2"
+			(uuid "1f9b16f1-ac8a-4535-8e46-ebe15bc8e1d2")
+		)
+		(pin "6"
+			(uuid "a747e4e6-7cc7-4399-b692-e0d8e94a0380")
+		)
+		(pin "7"
+			(uuid "842cbc6f-81a5-4e26-b0c9-86fcacd39ec1")
+		)
+		(pin "8"
+			(uuid "179c94b0-5bc1-4f26-be13-17051ff15544")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 111.76 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "585c5977-4e29-48cc-927a-b200177edde8")
+		(property "Reference" "SW5"
+			(at 111.76 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 111.76 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mcmaster.com/7658K208/"
+			(at 111.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 111.76 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07561bc1-8bf3-458a-bd87-e180442d846d")
+		)
+		(pin "2"
+			(uuid "bb498bda-eed3-4f05-8fdf-d1c8b2e53e74")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 137.16 198.12 0)
 		(unit 1)
@@ -37436,86 +37723,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 87.63 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "698d431c-6327-4bfd-a46e-acc625b6dc4e")
-		(property "Reference" "SW2"
-			(at 87.63 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 87.63 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 87.63 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "48511b90-9f2c-450e-a696-692a8cb6f968")
-		)
-		(pin "1"
-			(uuid "b04df42f-18f0-4822-8a02-20fb813ed629")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -37889,6 +38096,83 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "83d4c472-75ef-4e4b-8044-667d8b46d8e1")
+		(property "Reference" "#PWR071"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VSS"
+			(at 88.9 149.098 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f46eea2d-6a8c-4c45-ae26-2f52ab4b3aa3")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -38355,7 +38639,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 127 0)
+		(at 107.95 149.86 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38365,7 +38650,7 @@
 		(dnp no)
 		(uuid "9c025660-41dd-4644-a8c0-88a2b4a54293")
 		(property "Reference" "#PWR057"
-			(at 52.07 133.35 0)
+			(at 107.95 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38376,7 +38661,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 50.8 131.826 0)
+			(at 109.22 154.686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38387,7 +38672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 127 0)
+			(at 107.95 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38398,7 +38683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 127 0)
+			(at 107.95 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38409,7 +38694,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 127 0)
+			(at 107.95 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38433,7 +38718,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_SPST")
-		(at 83.82 83.82 0)
+		(at 96.52 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38442,9 +38727,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e874b51-ab84-4a37-99bf-943d1fbad408")
-		(property "Reference" "SW3"
-			(at 83.82 77.47 0)
+		(uuid "a40979f2-3b99-4881-aae0-72d9b0744f5b")
+		(property "Reference" "SW4"
+			(at 96.52 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38454,7 +38739,7 @@
 			)
 		)
 		(property "Value" "SW_SPST"
-			(at 83.82 80.01 0)
+			(at 96.52 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38464,7 +38749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 83.82 0)
+			(at 96.52 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38474,8 +38759,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 83.82 83.82 0)
+		(property "Datasheet" "https://www.mcmaster.com/7658K208/"
+			(at 96.52 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38486,7 +38771,7 @@
 			)
 		)
 		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 83.82 83.82 0)
+			(at 96.52 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38497,15 +38782,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a26cf7a-877a-4754-ae66-2dc7d4a9b1b2")
+			(uuid "26d86ac2-c29f-4d41-bcbf-6115827cb3d8")
 		)
 		(pin "2"
-			(uuid "a0436174-2572-4de7-b76e-235e32f639d4")
+			(uuid "73f84a88-d9b8-44d7-91eb-dceaef4b69d6")
 		)
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "SW3")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
@@ -38778,8 +39063,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NMOS")
-		(at 54.61 109.22 0)
-		(mirror y)
+		(at 105.41 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -38789,7 +39073,7 @@
 		(dnp no)
 		(uuid "b883a98f-141f-4bcf-a2db-2555ee849cf0")
 		(property "Reference" "Q11"
-			(at 48.26 107.9499 0)
+			(at 111.76 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38800,7 +39084,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS"
-			(at 48.26 110.4899 0)
+			(at 111.76 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38811,7 +39095,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 106.68 0)
+			(at 110.49 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38822,7 +39106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 109.22 0)
+			(at 105.41 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38833,7 +39117,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor"
-			(at 54.61 109.22 0)
+			(at 105.41 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39816,7 +40100,8 @@
 	)
 	(symbol
 		(lib_id "Device:Q_NMOS")
-		(at 54.61 119.38 180)
+		(at 105.41 134.62 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39826,7 +40111,7 @@
 		(dnp no)
 		(uuid "f1f40ed0-3410-4dd9-80c7-068a9c83b673")
 		(property "Reference" "Q12"
-			(at 48.26 120.6501 0)
+			(at 111.76 135.8901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39837,7 +40122,7 @@
 			)
 		)
 		(property "Value" "Q_NMOS"
-			(at 48.26 118.1101 0)
+			(at 111.76 133.3501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39848,7 +40133,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 121.92 0)
+			(at 110.49 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39859,7 +40144,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 119.38 0)
+			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39870,7 +40155,7 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor"
-			(at 54.61 119.38 0)
+			(at 105.41 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39893,6 +40178,183 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "Q12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f240284c-a5a5-4ea7-af0e-46c896be5c2c")
+		(property "Reference" "#PWR070"
+			(at 86.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VSS"
+			(at 88.9 121.158 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c49fbf4a-1488-4954-8bc2-9b695df25060")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_FET:MIC4427")
+		(at 86.36 137.16 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48ea7e6-3226-4679-ad7f-512c7469bf8b")
+		(property "Reference" "U8"
+			(at 88.5033 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MIC4427"
+			(at 88.5033 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MIC4426-7-8-Dual-1-5A-Peak-Low-Side-MOSFET-DRivers-DS20006202A.pdf"
+			(at 86.36 153.924 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual 1.5A-Peak Low-Side MOSFET Driver, 4.5..18V supply voltage, TTL/CMOS compatible inputs, non-inverting drivers, DIP-8 / SOIC-8 / MSOP-8"
+			(at 86.36 151.384 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d01fd48a-f3f9-4a68-8c4e-875de664b3ea")
+		)
+		(pin "5"
+			(uuid "59751e19-d3bf-498c-8498-f23496c9c181")
+		)
+		(pin "3"
+			(uuid "52744332-4adb-431f-95d8-4c9b890ca4fc")
+		)
+		(pin "4"
+			(uuid "7289859b-e35e-4685-91cc-03b53adb789b")
+		)
+		(pin "2"
+			(uuid "66a5d6ec-1ceb-435d-beee-a8b76a3b7293")
+		)
+		(pin "6"
+			(uuid "d97ed8d4-bee9-45be-a7eb-a8465c0ce013")
+		)
+		(pin "7"
+			(uuid "a8f079f4-3598-4665-89a1-fa00514bfaa5")
+		)
+		(pin "8"
+			(uuid "6434b13a-3c29-4df8-950c-80535e238358")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "U8")
 					(unit 1)
 				)
 			)
