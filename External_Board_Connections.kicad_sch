@@ -1548,6 +1548,17 @@
 		)
 		(uuid "7641f3ab-e838-4bd0-a05a-038193faa496")
 	)
+	(text "Following the PROVES combination of the solar output they \nsimply tied together all the outputs and fed it into the \nsolar charger using copper traces and planes"
+		(exclude_from_sim no)
+		(at 122.174 151.13 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "83aaed81-b3a9-49fe-9ada-323d8525e464")
+	)
 	(text "other board\n"
 		(exclude_from_sim no)
 		(at 98.552 180.594 0)
@@ -1643,6 +1654,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52ecb90b-7085-4eb6-91f6-24c3919b3573")
+	)
+	(junction
+		(at 140.97 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "573265f9-5834-4871-9f91-f6fe6b0d8eb7")
 	)
 	(junction
 		(at 48.26 119.38)
@@ -1818,6 +1835,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 142.24) (xy 140.97 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0991c7-be96-44ea-a090-89154955affa")
+	)
+	(wire
+		(pts
 			(xy 121.92 118.11) (xy 121.92 119.38)
 		)
 		(stroke
@@ -1835,6 +1862,16 @@
 			(type default)
 		)
 		(uuid "3a4b3578-f471-490b-8c72-8f0fc258f3fa")
+	)
+	(wire
+		(pts
+			(xy 140.97 146.05) (xy 140.97 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b13b318-7fa0-4fe0-8b89-2c7846916e25")
 	)
 	(wire
 		(pts
@@ -1958,6 +1995,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 142.24) (xy 147.32 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6704512d-1a0c-4213-9d23-5312dcb2aeb4")
+	)
+	(wire
+		(pts
 			(xy 184.15 116.84) (xy 184.15 113.03)
 		)
 		(stroke
@@ -2005,6 +2052,16 @@
 			(type default)
 		)
 		(uuid "6a83509a-c8ba-4f90-8eb2-db4c28ff8a4a")
+	)
+	(wire
+		(pts
+			(xy 147.32 130.81) (xy 147.32 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dda5344-0aac-4b9e-bb2c-e1f9af76251e")
 	)
 	(wire
 		(pts
@@ -2408,6 +2465,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 130.81) (xy 134.62 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7429198-c637-4e01-8178-e3393982bb60")
+	)
+	(wire
+		(pts
 			(xy 87.63 138.43) (xy 90.17 138.43)
 		)
 		(stroke
@@ -2435,6 +2502,30 @@
 			(type default)
 		)
 		(uuid "ffe91ca6-d97b-42ff-b40d-3dd451c8f3c3")
+	)
+	(global_label "Solar3+"
+		(shape input)
+		(at 134.62 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "04640dfa-d6b8-4bb2-88b3-3670e5b2cf85")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.894 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
 	(global_label "HS_I2C1_SCL"
 		(shape input)
@@ -2569,6 +2660,78 @@
 		(uuid "37612f47-4234-4c1c-8c2f-65c64c5693a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 146.616 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Solar1-"
+		(shape input)
+		(at 147.32 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c8b9a12-d004-4a49-9b4e-7230c352ba6a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.046 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Solar2-"
+		(shape input)
+		(at 147.32 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "504e022b-29f7-403c-ac83-4a8d84e1b446")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.046 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Solar4-"
+		(shape input)
+		(at 147.32 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "608d24ea-3bfb-4530-bb7f-0dbdc97408a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.046 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2737,6 +2900,30 @@
 		(uuid "855563bf-31c3-490f-a804-1725b8058c08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 73.5777 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Solar4+"
+		(shape input)
+		(at 134.62 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "902e33a2-973e-4bad-84b9-9d9340481277")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.894 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2918,6 +3105,54 @@
 	)
 	(global_label "Solar1+"
 		(shape input)
+		(at 134.62 130.81 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b215f77d-3222-425d-b2da-37ffd479d003")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.894 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Solar Power"
+		(shape input)
+		(at 140.97 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b5bce760-f9ff-49bc-8cdc-ff62da869f59")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.506 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Solar1+"
+		(shape input)
 		(at 34.29 119.38 180)
 		(fields_autoplaced yes)
 		(effects
@@ -3057,6 +3292,54 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "Solar3-"
+		(shape input)
+		(at 147.32 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ecf84619-cd6c-4b67-9d4a-2df69e7102fa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 158.046 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Solar2+"
+		(shape input)
+		(at 134.62 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee34dbdb-acfb-4e1f-b766-116741bd6a13")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 123.894 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
