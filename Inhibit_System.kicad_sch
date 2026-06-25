@@ -5,6 +5,129 @@
 	(uuid "3bec5bdb-919d-4b6f-a07b-0d78392e3ac4")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
 			(pin_names
 				(offset 1.016)
@@ -3651,6 +3774,12 @@
 		(uuid "2d7ae1b2-d98a-4b25-a383-dbd65538e919")
 	)
 	(junction
+		(at 138.43 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f03f620-a06c-4c7b-847c-c46bda1f62ed")
+	)
+	(junction
 		(at 175.26 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3817,6 +3946,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b054fab2-bb15-47f6-b9f6-fed5329181fd")
+	)
+	(junction
+		(at 133.35 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7b880a4-b17d-45e0-8a87-5746baa302fe")
 	)
 	(junction
 		(at 176.53 63.5)
@@ -5072,7 +5207,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 63.5) (xy 143.51 63.5)
+			(xy 133.35 63.5) (xy 138.43 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5372,6 +5507,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 73.66) (xy 133.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2adfd4-0114-4433-be79-f236acda39f8")
+	)
+	(wire
+		(pts
 			(xy 160.02 125.73) (xy 160.02 129.54)
 		)
 		(stroke
@@ -5479,6 +5624,16 @@
 			(type default)
 		)
 		(uuid "e22b0eb6-37c1-4823-859c-079ca581e3c2")
+	)
+	(wire
+		(pts
+			(xy 138.43 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4767955-7a79-45bb-88e7-ff65a5aac500")
 	)
 	(wire
 		(pts
@@ -5709,6 +5864,16 @@
 			(type default)
 		)
 		(uuid "f74ed1af-cb1c-4a20-a8bf-3b29c104a32c")
+	)
+	(wire
+		(pts
+			(xy 138.43 58.42) (xy 138.43 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d252aa-3b2a-4610-a435-7e4e0952ca8d")
 	)
 	(wire
 		(pts
@@ -35990,30 +36155,6 @@
 			)
 		)
 	)
-	(global_label "GSE"
-		(shape output)
-		(at 217.17 177.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8b1d8485-8e38-41eb-bd10-87a80079a233")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.7837 177.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "EN"
 		(shape input)
 		(at 137.16 195.58 180)
@@ -36342,7 +36483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-11N"
+		(property "Footprint" ""
 			(at 189.23 129.21 0)
 			(hide yes)
 			(show_name no)
@@ -36695,7 +36836,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-11N"
+		(property "Footprint" ""
 			(at 189.23 280.34 0)
 			(hide yes)
 			(show_name no)
@@ -38030,6 +38171,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 217.17 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6aa6f855-3269-43d6-a444-15d9ea980080")
+		(property "Reference" "TP21"
+			(at 219.71 173.2279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GSE"
+			(at 219.71 175.7679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 217.17 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05b59b10-719d-4f2c-8bf8-98b954e1034c")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "TP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LTC7004IMSE#WTRPBF:LTC7004IMSE#WTRPBF")
 		(at 161.29 143.51 0)
 		(unit 1)
@@ -38061,7 +38281,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-11N"
+		(property "Footprint" ""
 			(at 187.96 238.43 0)
 			(hide yes)
 			(show_name no)
@@ -38431,14 +38651,15 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 133.35 78.74 0)
+		(property "Value" "VSS"
+			(at 135.89 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -38591,14 +38812,15 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 143.51 78.74 0)
+		(property "Value" "VSS"
+			(at 146.05 74.9299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -38756,7 +38978,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-11N"
+		(property "Footprint" ""
 			(at 189.23 163.5 0)
 			(hide yes)
 			(show_name no)
@@ -38929,7 +39151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d547100-e564-456f-80bd-fcd0332ac28d")
-		(property "Reference" "Q8"
+		(property "Reference" "Q15"
 			(at 215.9 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38996,7 +39218,7 @@
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q8")
+					(reference "Q15")
 					(unit 1)
 				)
 			)
@@ -39014,7 +39236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8dbe580f-a0a4-47e6-b189-e21f91ae0c6f")
-		(property "Reference" "Q10"
+		(property "Reference" "Q17"
 			(at 203.2 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39079,7 +39301,7 @@
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q10")
+					(reference "Q17")
 					(unit 1)
 				)
 			)
@@ -39678,6 +39900,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 128.27 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9d0c3b9-ba29-4e42-b60f-feca7605a2e8")
+		(property "Reference" "TP22"
+			(at 124.968 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VSS"
+			(at 124.968 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 128.27 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "171c213b-441f-4e15-8807-2f0d3458e24c")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "TP22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N914")
 		(at 66.04 55.88 180)
 		(unit 1)
@@ -39791,7 +40090,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae17f055-31b4-4c5d-ba3a-b4424b482724")
-		(property "Reference" "Q9"
+		(property "Reference" "Q16"
 			(at 215.9 73.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39858,7 +40157,7 @@
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q9")
+					(reference "Q16")
 					(unit 1)
 				)
 			)
@@ -40738,7 +41037,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP50P490X110-11N"
+		(property "Footprint" ""
 			(at 187.96 204.14 0)
 			(hide yes)
 			(show_name no)
@@ -41053,6 +41352,85 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 138.43 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3be5035-e721-4c41-b07c-9d50963957e8")
+		(property "Reference" "TP23"
+			(at 140.97 53.8479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "EN"
+			(at 140.97 56.3879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 138.43 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a4ab073f-755a-4912-85a0-4e05b929295b")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "TP23")
 					(unit 1)
 				)
 			)
