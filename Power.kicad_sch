@@ -3606,6 +3606,16 @@
 		)
 		(uuid "36f560e5-8386-4c0d-8490-7dd9d9dc0c10")
 	)
+	(text "https://www.youtube.com/watch?v=0pLvkSis51Q"
+		(exclude_from_sim no)
+		(at 250.444 124.206 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3b464345-fa8d-4c30-8dd0-0630e8f5ebbe")
+	)
 	(text "Rsense"
 		(exclude_from_sim no)
 		(at 295.656 62.23 0)
@@ -3999,16 +4009,6 @@
 		)
 		(uuid "d89e1529-fdd3-4256-889e-8d587f168188")
 	)
-	(text "ADD EBYTE CONNECTOR"
-		(exclude_from_sim no)
-		(at 114.808 121.158 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "e716977b-f766-4823-a7bc-3eea1608fdc4")
-	)
 	(text ""
 		(exclude_from_sim no)
 		(at 193.04 190.5 0)
@@ -4032,15 +4032,15 @@
 		)
 		(uuid "ea675be6-0b62-4438-9b1e-cb042b915f45")
 	)
-	(text "Use SHDN pin"
+	(text "Add connector for thermistor"
 		(exclude_from_sim no)
-		(at 105.156 125.984 0)
+		(at 228.092 115.57 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
 		)
-		(uuid "ef283993-2643-4e5c-aa25-17612b908772")
+		(uuid "ecb9edc8-00f9-484e-85b1-d50565811a65")
 	)
 	(text "A rectifying diode (D3) \nfrom Bat to boost. \nAlso a 1uF from boost to \nSW pin.(6)\n\nAdded series zener (6.1)"
 		(exclude_from_sim no)
@@ -31764,6 +31764,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 215.9 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "159fd3fd-8c9f-43ac-86ae-5425b5f8c779")
+		(property "Reference" "R8"
+			(at 217.678 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 217.678 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
+			(at 214.122 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "https://jlcpcb.com/partdetail/YAGEO-RC1210FR0710KL/C309586"
+			(at 215.9 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c1cc8f3f-cc8d-4fb6-8895-53b9fda44e8a")
+		)
+		(pin "1"
+			(uuid "50249bab-0f12-418c-adb0-f299dcd065e9")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 219.71 347.98 180)
 		(unit 1)
@@ -32102,8 +32183,8 @@
 				)
 			)
 		)
-		(property "Value" "LT3652"
-			(at 227.33 54.61 0)
+		(property "Value" "LT3652IMSE#PBF"
+			(at 231.648 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32721,7 +32802,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 270.002 86.36 90)
 			(hide yes)
 			(show_name no)
@@ -32743,7 +32824,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/55333-25121WF1001T4E/C54315"
 			(at 271.78 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -33433,7 +33514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 270.002 71.12 90)
 			(hide yes)
 			(show_name no)
@@ -33455,7 +33536,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/56586-25121WF4703T4E/C55559"
 			(at 271.78 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -33762,7 +33843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 270.002 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -33784,7 +33865,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/56586-25121WF4703T4E/C55559"
 			(at 271.78 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -34059,87 +34140,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 215.9 52.07 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "65913b1c-32c6-4f82-9689-fdc10c8fbb33")
-		(property "Reference" "R8"
-			(at 220.726 50.546 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 220.726 52.578 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.884 51.816 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 215.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d90c7c14-b781-495f-a4a1-4dc4d13be2bd")
-		)
-		(pin "1"
-			(uuid "03a82e5a-8933-4a49-9520-84973f5147c0")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 279.4 54.61 90)
 		(unit 1)
@@ -34250,7 +34250,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 355.6 84.328 90)
 			(hide yes)
 			(show_name no)
@@ -34272,7 +34272,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/YAGEO-RC1210FR0710KL/C309586"
 			(at 355.6 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -34491,7 +34491,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 211.582 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -34513,7 +34513,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/YAGEO-RC1210FR0710KL/C309586"
 			(at 213.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -34728,7 +34728,7 @@
 				)
 			)
 		)
-		(property "Value" "430K"
+		(property "Value" "340k"
 			(at 277.368 96.012 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34738,7 +34738,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 278.13 91.948 90)
 			(hide yes)
 			(show_name no)
@@ -34760,7 +34760,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/2878231-HP06W2F3403T5E/C2759152"
 			(at 278.13 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -35056,7 +35056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 206.502 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -35078,7 +35078,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/YAGEO-RC1210FR0747KL/C728383"
 			(at 208.28 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -35533,7 +35533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 196.342 77.47 90)
 			(hide yes)
 			(show_name no)
@@ -35555,7 +35555,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/VishayIntertech-CRCW1206100KFKEAHP/C3960492"
 			(at 198.12 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -35808,7 +35808,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "https://jlcpcb.com/partdetail/TEConnectivity-TLRP3A30CR100FTE/C4033889"
 			(at 293.37 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -35829,85 +35829,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
 					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor")
-		(at 264.16 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e3f5033d-af51-411a-b400-234bb99e52f4")
-		(property "Reference" "TH1"
-			(at 261.112 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Thermistor"
-			(at 267.208 73.406 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Temperature dependent resistor"
-			(at 264.16 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6c31c90-8657-449e-87d9-723600ec2f20")
-		)
-		(pin "2"
-			(uuid "0cc49d27-852f-4057-8909-1b6ca09c550c")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
-					(reference "TH1")
 					(unit 1)
 				)
 			)
@@ -36148,6 +36069,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 259.08 68.58 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f3c06d8c-6961-4a31-8b95-64cf2f42ef4d")
+		(property "Reference" "R11"
+			(at 256.794 71.374 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "910"
+			(at 256.794 73.914 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 259.08 70.358 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "https://jlcpcb.com/partdetail/23991-0603WAF9100T5E/C23264"
+			(at 259.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fda2538b-95e7-4ccd-96e7-86b063396567")
+		)
+		(pin "1"
+			(uuid "2ff330d4-eadb-422b-96a2-99b6cc3c6205")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 264.16 336.55 0)
 		(unit 1)
@@ -36339,7 +36339,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
 			(at 196.342 64.77 90)
 			(hide yes)
 			(show_name no)
@@ -36361,7 +36361,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "https://jlcpcb.com/partdetail/VishayIntertech-CRCW0402590KFKED/C2085400"
 			(at 198.12 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -36561,8 +36561,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 259.08 68.58 270)
+		(lib_id "Device:Thermistor")
+		(at 215.9 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36570,9 +36570,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fc23cd75-c6e6-4ca7-b9cf-ca21004d9373")
-		(property "Reference" "R11"
-			(at 259.08 66.294 90)
+		(uuid "ffd29862-5553-474b-901e-8a17ea451a6f")
+		(property "Reference" "TH1"
+			(at 212.852 127 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36581,8 +36581,8 @@
 				)
 			)
 		)
-		(property "Value" "910"
-			(at 258.826 71.12 90)
+		(property "Value" "Thermistor"
+			(at 218.948 126.746 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36592,7 +36592,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 258.826 69.596 90)
+			(at 215.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36603,7 +36603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 68.58 0)
+			(at 215.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36613,8 +36613,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 259.08 68.58 0)
+		(property "Description" "https://jlcpcb.com/partdetail/372742-MF52D_103F3435100/C394023"
+			(at 215.9 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36625,15 +36625,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "a080853f-a43d-47cd-8d58-fab810a87401")
+			(uuid "1eea85bf-44c3-4d34-82b3-c7f130c1be9d")
 		)
 		(pin "2"
-			(uuid "69d636da-67af-40b2-b825-ac70bf8217bd")
+			(uuid "72478701-0389-4074-9edc-630b284cce21")
 		)
 		(instances
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
-					(reference "R11")
+					(reference "TH1")
 					(unit 1)
 				)
 			)
