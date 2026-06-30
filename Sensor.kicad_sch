@@ -1572,223 +1572,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Zener_Dual_CommonAnode_AKK_Parallel"
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener_Dual_CommonAnode_AKK_Parallel"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Dual Zener diode, common anode on pin 1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Zener_Dual_CommonAnode_AKK_Parallel_0_0"
-				(polyline
-					(pts
-						(xy 2.032 1.27) (xy 2.54 1.27) (xy 2.54 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy 2.54 -3.81) (xy 2.032 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_Dual_CommonAnode_AKK_Parallel_0_1"
-				(circle
-					(center -1.27 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 2.54 2.54) (xy 0 1.27) (xy 0 3.81) (xy 0 3.81) (xy 0 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 2.54 -2.54) (xy 0 -3.81) (xy 0 -1.27) (xy 0 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -1.27 2.54) (xy -1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -4967,7 +4750,7 @@
 	)
 	(text "These diode are in case of overvoltage they will\ntake the hit instead of the buffer or the IC"
 		(exclude_from_sim no)
-		(at 165.1 91.186 0)
+		(at 160.274 92.964 0)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -5674,6 +5457,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "865514ac-99d5-44eb-8746-8f506bb94ad8")
+	)
+	(junction
+		(at 185.42 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bfb868d-665d-42d2-a9de-d812e8cc68b3")
 	)
 	(junction
 		(at 447.04 118.11)
@@ -6506,6 +6295,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 83.82) (xy 198.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a074d6-95e1-4ebc-8e51-41f069b22ca0")
+	)
+	(wire
+		(pts
 			(xy 229.87 127) (xy 234.95 127)
 		)
 		(stroke
@@ -6883,6 +6682,16 @@
 			(type default)
 		)
 		(uuid "7cfee6fd-5103-4d89-94b7-058a3f4164bd")
+	)
+	(wire
+		(pts
+			(xy 180.34 83.82) (xy 180.34 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d1b3c5b-ca90-4fa6-af42-584812aaf1ea")
 	)
 	(wire
 		(pts
@@ -7696,6 +7505,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 83.82) (xy 185.42 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89ffdf5-8599-47f5-a7d6-bf365d781e84")
+	)
+	(wire
+		(pts
 			(xy 158.75 134.62) (xy 158.75 139.7)
 		)
 		(stroke
@@ -7713,16 +7532,6 @@
 			(type default)
 		)
 		(uuid "ca994b49-c145-4d33-9018-6efa5a8ab8d2")
-	)
-	(wire
-		(pts
-			(xy 182.88 83.82) (xy 198.12 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbd07717-4206-4a37-a625-b4eef1fd1504")
 	)
 	(wire
 		(pts
@@ -7966,16 +7775,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 85.09) (xy 182.88 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e26e58d7-e73d-400a-9bb0-ccaf5c9fb63b")
-	)
-	(wire
-		(pts
 			(xy 331.47 120.65) (xy 331.47 123.19)
 		)
 		(stroke
@@ -8153,6 +7952,16 @@
 			(type default)
 		)
 		(uuid "f92e0b95-0d55-44b5-a5fe-18d258a1e6a3")
+	)
+	(wire
+		(pts
+			(xy 185.42 83.82) (xy 185.42 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa29362e-84d7-43c7-9e4e-9347b012af9c")
 	)
 	(wire
 		(pts
@@ -24935,7 +24744,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 171.45 109.728 90)
 			(hide yes)
 			(show_name no)
@@ -25092,7 +24901,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 499.11 81.788 90)
 			(hide yes)
 			(show_name no)
@@ -25174,7 +24983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 460.7052 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -25255,7 +25064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 491.49 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -25339,7 +25148,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1210_3225Metric"
 			(at 90.678 119.38 90)
 			(hide yes)
 			(show_name no)
@@ -25420,7 +25229,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "50mohm_Resistor:STA_CSSH2728_STP"
 			(at 368.808 93.98 90)
 			(hide yes)
 			(show_name no)
@@ -25499,7 +25308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 226.06 154.178 90)
 			(hide yes)
 			(show_name no)
@@ -25548,6 +25357,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 180.34 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23691c79-4ca6-44cd-bcae-be0c2928990a")
+		(property "Reference" "D9"
+			(at 173.99 90.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3.5V"
+			(at 173.99 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 180.34 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ddd061a3-f4c7-4a47-ad5f-d583064fbd94")
+		)
+		(pin "2"
+			(uuid "5d95f1d3-a711-49db-bfa6-30cc70ab6a90")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 226.06 137.16 90)
 		(unit 1)
@@ -25578,7 +25468,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 226.06 138.938 90)
 			(hide yes)
 			(show_name no)
@@ -25814,7 +25704,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 499.11 79.248 90)
 			(hide yes)
 			(show_name no)
@@ -25973,7 +25863,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
 			(at 102.87 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -26144,7 +26034,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 96.52 152.908 90)
 			(hide yes)
 			(show_name no)
@@ -26224,7 +26114,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "OV_OC:SOP65P760X140-24N"
 			(at 424.18 178.74 0)
 			(hide yes)
 			(show_name no)
@@ -26533,7 +26423,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 333.248 127 90)
 			(hide yes)
 			(show_name no)
@@ -26582,91 +26472,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener_Dual_CommonAnode_AKK_Parallel")
-		(at 182.88 90.17 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "402561f5-8442-44af-b399-5e911fc62405")
-		(property "Reference" "D9"
-			(at 187.96 88.9634 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V5"
-			(at 187.96 91.5034 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 182.88 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Dual Zener diode, common anode on pin 1"
-			(at 182.88 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fa2c47c8-100f-4c68-867a-e6f6d345e156")
-		)
-		(pin "1"
-			(uuid "e091c7d2-8f1c-4cea-9de3-8904d929a83c")
-		)
-		(pin "3"
-			(uuid "5d463c43-4ec5-41d0-83d3-1a28aae4d628")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 168.91 101.6 90)
 		(unit 1)
@@ -26697,7 +26502,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 168.91 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -26776,7 +26581,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Cap_X7R_1uF:CAP_CL21_SAM"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 123.4948 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -26858,7 +26663,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 335.28 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -27018,7 +26823,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 199.39 109.728 90)
 			(hide yes)
 			(show_name no)
@@ -27174,7 +26979,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 57.15 105.918 90)
 			(hide yes)
 			(show_name no)
@@ -27253,7 +27058,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 199.39 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -27332,7 +27137,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 499.11 110.998 90)
 			(hide yes)
 			(show_name no)
@@ -27411,7 +27216,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 77.47 128.778 90)
 			(hide yes)
 			(show_name no)
@@ -27490,7 +27295,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 378.46 99.568 90)
 			(hide yes)
 			(show_name no)
@@ -27885,7 +27690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 431.292 71.12 90)
 			(hide yes)
 			(show_name no)
@@ -28101,7 +27906,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "82ba4e6c-89e6-4f59-b23f-3a0be9d377bf")
 		(property "Reference" "Q3"
 			(at 107.95 97.79 90)
@@ -28113,8 +27917,8 @@
 				)
 			)
 		)
-		(property "Value" "Q_NMOS"
-			(at 107.95 100.33 90)
+		(property "Value" "60V Enhancement"
+			(at 112.776 100.584 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28123,7 +27927,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 105.41 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -28207,7 +28011,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 482.6 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -28367,7 +28171,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "bat_manager:PW14_TEX"
 			(at 154.94 214.3 0)
 			(hide yes)
 			(show_name no)
@@ -28720,7 +28524,7 @@
 				)
 			)
 		)
-		(property "Value" "2N7002"
+		(property "Value" "60V Enhancement"
 			(at 66.04 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28730,7 +28534,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 67.945 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -29056,7 +28860,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 364.49 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -29139,7 +28943,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 106.68 273.05 0)
 			(hide yes)
 			(show_name no)
@@ -29218,7 +29022,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 372.11 56.642 90)
 			(hide yes)
 			(show_name no)
@@ -29299,7 +29103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 100.0252 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -29381,7 +29185,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 339.598 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -29441,7 +29245,7 @@
 		(dnp no)
 		(uuid "a5676d9a-6e1f-4233-82c6-c958726040e3")
 		(property "Reference" "Q1"
-			(at 59.944 118.364 90)
+			(at 56.896 113.792 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29450,8 +29254,8 @@
 				)
 			)
 		)
-		(property "Value" "BSS84"
-			(at 59.944 120.904 90)
+		(property "Value" "P-Channel FET"
+			(at 57.15 115.824 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29460,7 +29264,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 66.04 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -29508,6 +29312,87 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 185.42 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a740200b-86e9-4e1d-9cce-b7928f8129a5")
+		(property "Reference" "D15"
+			(at 188.976 89.916 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "3.5V"
+			(at 188.976 92.456 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 185.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 185.42 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56272c68-7236-4bf8-a13a-7d85082168af")
+		)
+		(pin "2"
+			(uuid "c12e5825-cdd7-4425-bad9-fddbdf6e4cd1")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -29784,7 +29669,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 460.7052 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -29863,7 +29748,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 76.2 105.918 90)
 			(hide yes)
 			(show_name no)
@@ -29942,7 +29827,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 60.96 138.938 90)
 			(hide yes)
 			(show_name no)
@@ -30103,7 +29988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 364.49 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -30185,7 +30070,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 236.982 144.78 90)
 			(hide yes)
 			(show_name no)
@@ -30264,7 +30149,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 52.07 138.938 90)
 			(hide yes)
 			(show_name no)
@@ -30423,7 +30308,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 72.39 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -30504,7 +30389,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 488.95 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -30578,7 +30463,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12.6V"
+		(property "Value" "15V"
 			(at 523.24 96.5199 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30589,7 +30474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 520.7 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -30824,7 +30709,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 382.27 66.802 90)
 			(hide yes)
 			(show_name no)
@@ -30903,7 +30788,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 499.11 105.918 90)
 			(hide yes)
 			(show_name no)
@@ -30973,7 +30858,7 @@
 				)
 			)
 		)
-		(property "Value" "MCP96RL00-E_MX"
+		(property "Value" "MCP9600-E_MX"
 			(at 138.43 260.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30983,7 +30868,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MCP96RL00-E_MX:QFN65P500X500X100-21N_MCP96RL00-E_MX"
+		(property "Footprint" "Thermocouple:MQFN20_NU_MCH"
 			(at 138.43 280.67 0)
 			(hide yes)
 			(show_name no)
@@ -31357,7 +31242,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 499.11 91.948 90)
 			(hide yes)
 			(show_name no)
@@ -31515,7 +31400,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 499.11 95.758 90)
 			(hide yes)
 			(show_name no)
@@ -31675,7 +31560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 460.7052 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -31827,8 +31712,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N7002"
-			(at 118.618 144.018 0)
+		(property "Value" "60V Enhancement"
+			(at 127 144.526 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31838,7 +31723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Custom_Footprints:TO-252-2"
 			(at 106.68 141.605 0)
 			(hide yes)
 			(show_name no)
