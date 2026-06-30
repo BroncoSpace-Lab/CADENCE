@@ -524,6 +524,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "D_Schottky_1"
 			(pin_numbers
 				(hide yes)
@@ -3775,7 +3933,7 @@
 	)
 	(text "https://www.youtube.com/watch?v=0pLvkSis51Q"
 		(exclude_from_sim no)
-		(at 250.444 124.206 0)
+		(at 260.604 132.842 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4188,16 +4346,6 @@
 			)
 		)
 		(uuid "ea675be6-0b62-4438-9b1e-cb042b915f45")
-	)
-	(text "Add connector for thermistor"
-		(exclude_from_sim no)
-		(at 228.092 115.57 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "ecb9edc8-00f9-484e-85b1-d50565811a65")
 	)
 	(text "A rectifying diode (D3) \nfrom Bat to boost. \nAlso a 1uF from boost to \nSW pin.(6)\n\nAdded series zener (6.1)"
 		(exclude_from_sim no)
@@ -4746,6 +4894,16 @@
 			(type default)
 		)
 		(uuid "07d33a14-eed7-44c6-b9cc-2f80b7399363")
+	)
+	(wire
+		(pts
+			(xy 255.27 113.03) (xy 256.54 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092431d0-3853-4e5a-8b8e-89f20a3c5fa8")
 	)
 	(wire
 		(pts
@@ -5729,7 +5887,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 80.01) (xy 264.16 78.74)
+			(xy 256.54 116.84) (xy 256.54 115.57)
 		)
 		(stroke
 			(width 0)
@@ -31072,6 +31230,30 @@
 			)
 		)
 	)
+	(global_label "NTC"
+		(shape input)
+		(at 255.27 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c848e74-2ac0-41c8-829b-df5b57232739")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 248.7167 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "3V3 Power Good"
 		(shape output)
 		(at 224.79 342.9 0)
@@ -31165,6 +31347,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "NTC"
+		(shape output)
+		(at 264.16 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d61882d9-eb20-4188-bccf-f9c7b6f0695f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 270.7133 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -32241,7 +32447,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "https://jlcpcb.com/partdetail/2200-CL31B105KBHNNNE/C1848"
 			(at 256.54 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -33434,7 +33640,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 80.01 0)
+		(at 256.54 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33444,7 +33650,7 @@
 		(dnp no)
 		(uuid "341144da-ce68-4aea-a28b-2e5ba64303c5")
 		(property "Reference" "#PWR012"
-			(at 264.16 86.36 0)
+			(at 256.54 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33455,7 +33661,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 259.08 81.28 0)
+			(at 251.46 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33466,7 +33672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 80.01 0)
+			(at 256.54 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33477,7 +33683,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 80.01 0)
+			(at 256.54 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33488,7 +33694,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 80.01 0)
+			(at 256.54 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33820,6 +34026,88 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 261.62 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4141976a-e121-4c9d-b59f-0905d1f1a136")
+		(property "Reference" "J20"
+			(at 264.16 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 264.16 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_SM02B-GHS-TB_1x02-1MP_P1.25mm_Horizontal"
+			(at 261.62 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "https://jlcpcb.com/partdetail/JST-SM02B_GHS_TB_LF_SN/C189893"
+			(at 261.62 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "285b0a53-43c1-4182-8e88-460fd2dc676a")
+		)
+		(pin "2"
+			(uuid "e804e622-f68e-48d7-af7d-a7b03440127f")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/f4fcff51-0cdb-4e70-aba0-d567fd3e6a03"
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -34675,7 +34963,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_10.4x10.4_H4.8"
 			(at 279.4 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -37791,7 +38079,7 @@
 	)
 	(symbol
 		(lib_id "Device:Thermistor")
-		(at 215.9 127 0)
+		(at 261.62 127 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -37801,7 +38089,7 @@
 		(dnp no)
 		(uuid "ffd29862-5553-474b-901e-8a17ea451a6f")
 		(property "Reference" "TH1"
-			(at 212.852 127 90)
+			(at 261.62 130.048 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37811,7 +38099,7 @@
 			)
 		)
 		(property "Value" "Thermistor"
-			(at 218.948 126.746 90)
+			(at 261.366 123.952 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37821,7 +38109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 127 0)
+			(at 261.62 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37832,7 +38120,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 127 0)
+			(at 261.62 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37843,7 +38131,7 @@
 			)
 		)
 		(property "Description" "https://jlcpcb.com/partdetail/372742-MF52D_103F3435100/C394023"
-			(at 215.9 127 0)
+			(at 261.62 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

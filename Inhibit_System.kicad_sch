@@ -3465,7 +3465,7 @@
 	)
 	(text "Positive Terminal of \nBattery Pack\n"
 		(exclude_from_sim no)
-		(at 159.766 101.854 0)
+		(at 154.178 102.108 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3548,6 +3548,17 @@
 		)
 		(uuid "6d72746e-a99c-4875-8d53-5632e90b55c6")
 	)
+	(text "NC ->\n\n"
+		(exclude_from_sim no)
+		(at 99.06 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6df7c8f3-b1f4-4ee6-bb62-44d900618652")
+	)
 	(text "4 Solar boards\noutputs tied together"
 		(exclude_from_sim no)
 		(at 14.986 55.372 0)
@@ -3583,7 +3594,7 @@
 	)
 	(text "NC\n"
 		(exclude_from_sim no)
-		(at 146.05 200.914 0)
+		(at 149.86 200.914 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3646,9 +3657,20 @@
 		)
 		(uuid "a761dd25-8175-411c-b120-a8d490179083")
 	)
+	(text "C->\n"
+		(exclude_from_sim no)
+		(at 79.756 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a78b5fea-cdbc-4770-b857-9084f842e1c2")
+	)
 	(text "NO\n"
 		(exclude_from_sim no)
-		(at 145.796 190.754 0)
+		(at 93.98 192.786 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3669,7 +3691,7 @@
 	)
 	(text "C"
 		(exclude_from_sim no)
-		(at 135.636 193.294 0)
+		(at 125.476 195.834 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3734,7 +3756,7 @@
 	)
 	(text "External RBF pin that \nwill need connectors"
 		(exclude_from_sim no)
-		(at 132.08 203.962 0)
+		(at 131.572 226.568 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3832,6 +3854,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5509b940-0d07-47ed-92e2-68e38bed04ac")
+	)
+	(junction
+		(at 130.81 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c656276-0865-4705-81f2-a20c74e62100")
 	)
 	(junction
 		(at 118.11 63.5)
@@ -4024,6 +4052,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d91e86cd-9ea0-4475-b5c9-a1263b2f2f30")
+	)
+	(junction
+		(at 146.05 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9e2317a-c1ae-490f-8d29-c8aab80e1a38")
 	)
 	(junction
 		(at 201.93 130.81)
@@ -4307,6 +4341,36 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 196.85) (xy 144.78 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27912997-4b29-4cca-b83c-0d229af93b01")
+	)
+	(wire
+		(pts
+			(xy 132.08 196.85) (xy 130.81 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "282b8f10-f98a-41d6-9719-389965c72faf")
+	)
+	(wire
+		(pts
+			(xy 132.08 199.39) (xy 130.81 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c98461-ca9b-46d7-8386-223741922e0e")
+	)
+	(wire
+		(pts
 			(xy 177.8 213.36) (xy 176.53 213.36)
 		)
 		(stroke
@@ -4424,16 +4488,6 @@
 			(type default)
 		)
 		(uuid "3e55a64b-3d42-4f50-8547-1f4790dc6c4e")
-	)
-	(wire
-		(pts
-			(xy 147.32 193.04) (xy 151.13 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f0abe63-edc3-4fe8-91fe-9ec331ec5e76")
 	)
 	(wire
 		(pts
@@ -4767,6 +4821,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 198.12) (xy 127 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dc0a32f-d118-4a76-9257-6447fa0c79a2")
+	)
+	(wire
+		(pts
 			(xy 193.04 129.54) (xy 193.04 130.81)
 		)
 		(stroke
@@ -4987,6 +5051,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 196.85) (xy 130.81 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e01e7dd-0ac9-4f2b-ac14-8456d98e6306")
+	)
+	(wire
+		(pts
 			(xy 102.87 63.5) (xy 102.87 64.77)
 		)
 		(stroke
@@ -5004,6 +5078,16 @@
 			(type default)
 		)
 		(uuid "93c93777-2c06-4f5f-a4f4-1b1a2029d0b7")
+	)
+	(wire
+		(pts
+			(xy 146.05 198.12) (xy 162.56 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "942e834e-cfba-428c-b84f-74f13fef7027")
 	)
 	(wire
 		(pts
@@ -5377,16 +5461,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 198.12) (xy 162.56 198.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2352531-81b7-4975-8558-ed86fbd51e82")
-	)
-	(wire
-		(pts
 			(xy 74.93 101.6) (xy 74.93 102.87)
 		)
 		(stroke
@@ -5427,6 +5501,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 199.39) (xy 130.81 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca3f7434-0fd1-455f-a645-fa423f385e2a")
+	)
+	(wire
+		(pts
 			(xy 176.53 213.36) (xy 176.53 214.63)
 		)
 		(stroke
@@ -5454,6 +5538,16 @@
 			(type default)
 		)
 		(uuid "cbe6e84e-0b36-47b6-891a-907e2ab852b1")
+	)
+	(wire
+		(pts
+			(xy 146.05 198.12) (xy 146.05 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc01e965-1c65-4181-a065-7759080c2b45")
 	)
 	(wire
 		(pts
@@ -5514,6 +5608,16 @@
 			(type default)
 		)
 		(uuid "cf2adfd4-0114-4433-be79-f236acda39f8")
+	)
+	(wire
+		(pts
+			(xy 144.78 199.39) (xy 146.05 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13e8108-cf49-4abc-877d-13937e9c0f8f")
 	)
 	(wire
 		(pts
@@ -5884,6 +5988,16 @@
 			(type default)
 		)
 		(uuid "f970e70c-7f68-41ab-b894-35608d27b72d")
+	)
+	(wire
+		(pts
+			(xy 146.05 199.39) (xy 146.05 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9bdcb05-7e65-4674-8ffe-2efae0a4aff1")
 	)
 	(wire
 		(pts
@@ -36157,7 +36271,7 @@
 	)
 	(global_label "EN"
 		(shape input)
-		(at 137.16 195.58 180)
+		(at 127 198.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -36168,7 +36282,7 @@
 		)
 		(uuid "942140ae-895e-4225-a342-00d15d47553f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.6953 195.58 0)
+			(at 121.5353 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37083,88 +37197,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 142.24 195.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3b3e5e89-0c7a-4687-889f-743db74d4483")
-		(property "Reference" "SW4"
-			(at 138.938 189.484 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 138.938 187.198 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.mcmaster.com/7658K208/"
-			(at 142.24 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 142.24 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8dc3e40-d87f-4fa3-bffb-0113e4ecf7a1")
-		)
-		(pin "3"
-			(uuid "6ba72267-94a5-47c1-a5dc-3ced1d26500e")
-		)
-		(pin "2"
-			(uuid "65629a47-3321-4e3b-9621-d336cb24beb7")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N914")
 		(at 53.34 73.66 180)
 		(unit 1)
@@ -38011,83 +38043,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "R56")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 151.13 193.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5fb453d3-3c52-4db8-ad09-9c51cb303c93")
-		(property "Reference" "#PWR068"
-			(at 151.13 199.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSS"
-			(at 153.67 193.294 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "afd86c3e-d12f-456d-aff9-86f976d37025")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -39390,6 +39345,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 86.36 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f09c6c4-57bf-40e2-a472-9be4f363fb26")
+		(property "Reference" "SW4"
+			(at 83.058 190.754 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 83.058 188.468 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mcmaster.com/7658K208/"
+			(at 86.36 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 86.36 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d434c64-520a-434f-811c-a975ed07f517")
+		)
+		(pin "3"
+			(uuid "9f82781e-42b9-48ea-8206-f4fa1c7ef848")
+		)
+		(pin "2"
+			(uuid "59bb8961-4e32-4a43-af52-1c4fc9da74a4")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 194.31 201.93 180)
 		(unit 1)
@@ -40574,6 +40611,92 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
+		(at 137.16 196.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8c578ba-c368-4d5a-9f43-cc3e35cfc877")
+		(property "Reference" "J19"
+			(at 138.43 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INHIBIT_P2"
+			(at 138.43 193.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Hirose:Hirose_DF11-4DP-2DSA_2x02_P2.00mm_Vertical"
+			(at 137.16 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 137.16 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "81191264-74ae-4161-92bd-550c631821e0")
+		)
+		(pin "1"
+			(uuid "78279589-8a36-459b-9379-7dae9ee20e56")
+		)
+		(pin "3"
+			(uuid "285f17c9-c6c8-4a42-8ac7-29b802f8a7b9")
+		)
+		(pin "2"
+			(uuid "cf0fac06-125c-42cf-93f5-e09a6819e259")
+		)
+		(instances
+			(project "BMS_Board_Prototype"
+				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
+					(reference "J19")
 					(unit 1)
 				)
 			)
