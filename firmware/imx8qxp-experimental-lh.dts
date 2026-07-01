@@ -406,8 +406,14 @@
 	pinctrl-0 = <&pinctrl_lpspi1>;
 	status = "okay";
 
-	spidev1_0: spi1@0 {
+	satnogs@0 {
 		reg = <0>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+	};
+
+	ebyte@1 {
+		reg = <1>;
 		compatible = "rohm,dh2228fv";
 		spi-max-frequency = <10000000>;
 	};
@@ -419,10 +425,14 @@
 	pinctrl-0 = <&pinctrl_lpspi2>;
 	status = "okay";
 
-	/* spidev means that no specific, specialized 
-	kernel-space driver is being loaded for that chip */
-	spidev2_0: spi2@0 {
+	nand_flash@0 {
 		reg = <0>;
+		compatible = "spi-nand"; /* looking at where this comes from */
+		spi-max-frequency = <10000000>;
+	};
+
+	breakout@1 {
+		reg = <1>;
 		compatible = "rohm,dh2228fv";
 		spi-max-frequency = <10000000>;
 	};
@@ -434,8 +444,14 @@
 	pinctrl-0 = <&pinctrl_lpspi3>;
 	status = "okay";
 
-	spidev3_0: spi3@0 {
+	adcs@0 {
 		reg = <0>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+	};
+
+	breakout@1 {
+		reg = <1>;
 		compatible = "rohm,dh2228fv";
 		spi-max-frequency = <10000000>;
 	};
