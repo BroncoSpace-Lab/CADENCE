@@ -57,7 +57,12 @@
 
 /************************ I2C *************************/
 &i2c0 {
-
+	#address-cells = <1>;
+	#size-cells = <0>;
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpi2c0>;
+	status = "okay";
 };
 
 // Onboard power monitors
@@ -107,11 +112,21 @@
 
 // EPS Board
 &i2c2 {
-
+	#address-cells = <1>;
+	#size-cells = <0>;
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpi2c2>;
+	status = "okay";
 };
 
 &i2c3 {
-
+	#address-cells = <1>;
+	#size-cells = <0>;
+	clock-frequency = <100000>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_lpi2c3>;
+	status = "okay";
 };
 
 /*********************** UART *********************/
@@ -125,6 +140,7 @@
 &lpuart1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_lpuart1>, <&pinctrl_lpuart1_rtscts>;
+	fsl,uart-has-rtscts;  /* activation property */
 	status = "okay";
 };
 
@@ -371,9 +387,17 @@
 	pinctrl-0 = <&pinctrl_lpspi0>;
 	status = "okay";
 
-/* not sure if we need to add the child node since the 
-chip select function is mram */
+	mram@0 {
+		reg = <0>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+	};
 
+	mram@1 {
+		reg = <1>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
+	};
 };
 
 &lpspi1 {
@@ -384,8 +408,8 @@ chip select function is mram */
 
 	spidev1_0: spi1@0 {
 		reg = <0>;
-		compatible = "";
-		spi-max-frequency = <>;
+		compatible = "rohm,dh2228fv";
+		spi-max-frequency = <10000000>;
 	};
 };
 
@@ -500,7 +524,7 @@ chip select function is mram */
                 IMX8QXP_SPI0_SCK_ADMA_SPI0_SCK              0x06000060
                 IMX8QXP_SPI0_SDI_ADMA_SPI0_SDI              0x06000060
                 IMX8QXP_SPI0_SDO_ADMA_SPI0_SDO              0x06000060
-			>
+			>;
 		};
 
 		// SATNOGS Board & EBYTE UHF Transceiver Module
