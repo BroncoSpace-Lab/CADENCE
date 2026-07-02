@@ -9,6 +9,14 @@
 # - https://gist.github.com/darkxst/f713268e5469645425eed40115fb8b49 (with comments)
 # - https://gist.github.com/denniskupec/e163d13b0a64c2044bd259f64659485e (with comments)
 
+#
+#
+# NOTE: Constraints edited 7/2/2026. Not sure if some additional margin was added 
+# to design rules, but seemed like there were some, so I adjusted according JLCPCB capabilities website.
+# KiCAD documentation link also doesnt work.
+# -William
+#
+
 # TODO new rule: NPTH pads.
 # Inner diameter of pad should be 0.4-0.5 mm larger than NPTH drill diameter.
 # JLCPCB: "We make NPTH via dry sealing film process, if customer would like a NPTH but around with pad/copper, our engineer will dig out around pad/copper about 0.2mm-0.25mm, otherwise the metal potion will be flowed into the hole and it becomes a PTH. (there will be no copper dig out optimization for single board)."
@@ -22,13 +30,13 @@
 (rule "Track width, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track'")
-	(constraint track_width (min 0.127mm))
+	(constraint track_width (min 0.09mm))
 )
 
 (rule "Track spacing, outer layer (1oz copper)"
 	(layer outer)
 	(condition "A.Type == 'track' && B.Type == A.Type")
-	(constraint clearance (min 8mil))
+	(constraint clearance (min 0.09mm))
 )
 
 (rule "Track width, inner layer"
@@ -71,7 +79,7 @@
 # This rule handles diameter minimum and maximum for ALL holes.
 # Other specialized rules handle restrictions (e.g. Via, PTH, NPTH) 
 (rule "Hole diameter"
-	(constraint hole_size (min 0.2mm) (max 6.3mm))
+	(constraint hole_size (min 0.15mm) (max 6.3mm))
 )
 
 (rule "Hole (NPTH) diameter"
@@ -98,35 +106,40 @@
 (rule "Clearance: hole to hole (perimeter), different nets"
 	(layer outer)
 	(condition "A.Net != B.Net")
-	(constraint hole_to_hole (min 0.5mm))
+	(constraint hole_to_hole (min 0.2mm))
 )
 
 (rule "Clearance: hole to hole (perimeter), same net"
 	(layer outer)
 	(condition "A.Net == B.Net")
-	(constraint hole_to_hole (min 0.254mm))
+	(constraint hole_to_hole (min 0.2mm))
 )
 
 (rule "Clearance: track to NPTH hole (perimeter)"
 #	(condition "A.Pad_Type == 'NPTH, mechanical' && B.Type == 'track' && A.Net != B.Net")
 	(condition "!A.isPlated() && B.Type == 'track' && A.Net != B.Net")
-	(constraint hole_clearance (min 0.254mm))
+	(constraint hole_clearance (min 0.2mm))
 )
 
 (rule "Clearance: track to PTH hole perimeter"
 	(condition "A.isPlated() && B.Type == 'track' && A.Net != B.Net")
-	(constraint hole_clearance (min 0.33mm))
+	(constraint hole_clearance (min 0.28mm))
 )
 
 # TODO: try combining with rule "Clearance: PTH to track, different nets"
 (rule "Clearance: track to pad"
 	(condition "A.Type == 'pad' && B.Type == 'track' &&  A.Net != B.Net")
-	(constraint clearance (min 0.2mm))
+	(constraint clearance (min 0.1mm))
 )
 
 (rule "Clearance: pad/via to pad/via"
 	(layer outer)
 #	(condition "(A.Type == 'Pad' || A.Type == 'Via') && (B.Type == 'Pad' || B.Type == 'Via') && A.Net != B.Net")	
 	(condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
-	(constraint clearance (min 0.127mm))
+	(constraint clearance (min 0.1mm))
 )
+
+#Added by William:
+(rule "Pad to Pad Clearance"
+  (constraint clearance (min 0.15mm))
+  (condition "A.Type == 'Pad' && B.Type == 'Pad'"))
