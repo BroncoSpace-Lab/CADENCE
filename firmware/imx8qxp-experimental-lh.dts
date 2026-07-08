@@ -493,9 +493,9 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_fec2>;
 	phy-mode = "rgmii-id";
-	phy-handle = <&ethphy1>;
+	phy-handle = <&ethphy2>;
 	fsl,magic-packet;
-	nvmem-cells = <&fec_mac1>;
+	nvmem-cells = <&fec_mac2>;
 	nvmem-cell-names = "mac-address";
 	status = "okay";
 };
@@ -518,12 +518,6 @@
 &flexcan1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_flexcan1>;
-	status = "okay";
-};
-
-&flexcan2 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_flexcan2>;
 	status = "okay";
 };
 
