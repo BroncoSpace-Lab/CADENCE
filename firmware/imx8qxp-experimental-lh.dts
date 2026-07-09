@@ -232,6 +232,11 @@
 };
 
 &usbotg1 {
+	dr_mode = "host";
+	srp-disable;
+	hnp-disable;
+	adp-disable;
+	disable-over-current;
 	status = "okay";
 };
 
@@ -246,7 +251,7 @@
 &usbotg3_cdns3 {
 	dr_mode = "host";
 	usb-role-switch;
-	status = "disabled";
+	status = "okay";
 };
 
 &usdhc2 {
@@ -381,7 +386,7 @@
 
 	ebyte@1 {
 		reg = <1>;
-		compatible = "rohm,dh2228fv";
+		compatible = "semtech,sx1278";
 		spi-max-frequency = <10000000>;
 	};
 };
