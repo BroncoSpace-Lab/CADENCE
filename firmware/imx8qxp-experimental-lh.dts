@@ -64,12 +64,12 @@
 	status = "okay";
 
 	imu_accel_gyro@6a {
-		compatible = "st,lsm6dsx";
+		compatible = "st,lsm6dso";
 		reg = <0x6a>;
 	};
 
 	imu_mag@1e {
-		compatible = "st,st-sensors";
+		compatible = "st,lis2mdl";
 		reg = <0x1e>;
 	};
 
@@ -136,7 +136,6 @@
 	status = "okay";
 };
 
-/* not sure about having uart1 and uart1_rtscts under the same parent node */
 &lpuart1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_lpuart1>, <&pinctrl_lpuart1_rtscts>;
@@ -229,27 +228,19 @@
 };
 
 &usbphy1 {
-	status = "disabled";
+	status = "okay";
 };
 
 &usbotg1 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_usbotg1>;
-	dr_mode = "host";
-	srp-disable;
-	hnp-disable;
-	adp-disable;
-	power-active-high;
-	disable-over-current;
-	status = "disabled";
+	status = "okay";
 };
 
 &usb3_phy {
-	status = "disabled";
+	status = "okay";
 };
 
 &usbotg3 {
-	status = "disabled";
+	status = "okay";
 };
 
 &usbotg3_cdns3 {
@@ -270,15 +261,6 @@
 };
 
 /******************** ETHERNET *********************/
-&fec1 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_fec1>;
-	fsl,magic-packet;
-	nvmem-cells = <&fec_mac1>;
-	nvmem-cell-names = "mac-address";
-	status = "okay";
-};
-
 &fec2 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_fec2>;
@@ -290,7 +272,6 @@
 	status = "okay";
 };
 
-// don't know if we need
 &mdio {
 	ethphy1: ethernet-phy@3 {
 		compatible = "ethernet-phy-ieee802.3-c22";
@@ -375,14 +356,14 @@
 
 	mram@0 {
 		reg = <0>;
-		compatible = "everspin,mr20h40";
-		spi-max-frequency = <50000000>;
+		compatible = "everspin,mr25h40";
+		spi-max-frequency = <40000000>;
 	};
 
 	mram@1 {
 		reg = <1>;
-		compatible = "everspin,mr20h40";
-		spi-max-frequency = <50000000>;
+		compatible = "everspin,mr25h40";
+		spi-max-frequency = <40000000>;
 	};
 };
 
@@ -413,7 +394,7 @@
 
 	nand_flash@0 {
 		reg = <0>;
-		compatible = "spi-nand"; /* looking at where this comes from */
+		compatible = "spi-nand";
 		spi-max-frequency = <10000000>;
 	};
 
@@ -440,16 +421,6 @@
 		reg = <1>;
 		compatible = "rohm,dh2228fv";
 		spi-max-frequency = <10000000>;
-	};
-};
-
-// idk if we need this
-&lsio_gpio0 {
-	usb_port_select-hog {
-		gpio-hog;
-		gpios = <30 GPIO_ACTIVE_HIGH>;
-		output-low;
-		line-name = "USB port select GPIO";
 	};
 };
 
@@ -485,9 +456,6 @@
 		line-name = "QSPI nor reset";
 	};
 };
-
-// m40 parent node needed
-
 
 &iomuxc {
 	pinctrl-names = "default";
@@ -657,12 +625,12 @@
 		// usdhc1 clk is set to pull down instead of no pull from the dts given to us, but I set it to no pull
 		pinctrl_usdhc2_sd: usdhc2sdgrp {
 			fsl,pins = <
-				IMX8QXP_USDHC1_CLK_CONN_USDHC1_CLK	0x06000040 
-				IMX8QXP_USDHC1_CMD_CONN_USDHC1_CMD	0x06000060
-				IMX8QXP_USDHC1_DATA0_CONN_USDHC1_DATA0	0x06000060
-				IMX8QXP_USDHC1_DATA1_CONN_USDHC1_DATA1	0x06000060
-				IMX8QXP_USDHC1_DATA2_CONN_USDHC1_DATA2	0x06000060
-				IMX8QXP_USDHC1_DATA3_CONN_USDHC1_DATA3	0x06000060
+				IMX8QXP_USDHC1_CLK_CONN_USDHC1_CLK			0x06000040 
+				IMX8QXP_USDHC1_CMD_CONN_USDHC1_CMD			0x06000060
+				IMX8QXP_USDHC1_DATA0_CONN_USDHC1_DATA0		0x06000060
+				IMX8QXP_USDHC1_DATA1_CONN_USDHC1_DATA1		0x06000060
+				IMX8QXP_USDHC1_DATA2_CONN_USDHC1_DATA2		0x06000060
+				IMX8QXP_USDHC1_DATA3_CONN_USDHC1_DATA3		0x06000060
 				IMX8QXP_USDHC1_RESET_B_CONN_USDHC1_RESET_B  0x06000060
 			>;
 		};
