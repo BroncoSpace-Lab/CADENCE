@@ -10,8 +10,6 @@
 #include "imx8qxp-phycore-som-emmc.dtsi"
 #include <dt-bindings/leds/common.h>
 
-#include <dt-bindings/clock/vf610-clock.h>
-
 / {
 	model = "PHYTEC i.MX8QX PCM-942";
 	compatible = "phytec,imx8qxp-pcm-942", "phytec,imx8qxp-phycore-som", "fsl,imx8qxp";
@@ -54,213 +52,6 @@
         regulator-always-on;
 	};
 
-// Need to add default state for all of the child nodes
-// Need to change if gpio is active or low
-	ebyte_transceiver {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_ebyte>;
-
-		ebyte_io25 {
-			label = "ebyte:io25";
-			gpios = <&lsio_gpio1 25 GPIO_ACTIVE_HIGH>;
-		};
-
-		ebyte_io26 {
-			label = "ebyte:io26";
-			gpios = <&lsio_gpio1 26 GPIO_ACTIVE_HIGH>;
-		};
-
-		ebyte_io27 {
-			label = "ebyte:io27";
-			gpios = <&lsio_gpio1 27 GPIO_ACTIVE_HIGH>;
-		};
-
-		ebyte_io28 {
-			label = "ebyte:io28";
-			gpios = <&lsio_gpio1 28 GPIO_ACTIVE_HIGH>;
-		};
-
-		ebyte_io30 {
-			label = "ebyte:io30";
-			gpios = <&lsio_gpio1 30 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	qspi_nor_flash_reset {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_qspi_nor_reset>;
-
-		nor_reset_io14 {
-			label = "nor_reset:io14";
-			gpios = <&lsio_gpio3 14 GPIO_ACTIVE_HIGH>;
-		};
-		
-	};
-
-	heater_trigger_connection {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_heater_trigger>;
-
-		heater_io29 {
-			label = "heater:io29";
-			gpios = <&lsio_gpio1 29 GPIO_ACTIVE_HIGH>;
-		};
-
-		heater_io1 {
-			label = "heater:io1";
-			gpios = <&lsio_gpio3 1 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	payload_connection {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_payload>;
-
-		payload_io15 {
-			label = "payload:io15";
-			gpios = <&lsio_gpio1 15 GPIO_ACTIVE_HIGH>;
-		};
-
-		payload_io16 {
-			label = "payload:io16";
-			gpios = <&lsio_gpio1 16 GPIO_ACTIVE_HIGH>;
-		};
-
-		payload_io3 {
-			label = "payload:io3";
-			gpios = <&lsio_gpio4 3 GPIO_ACTIVE_HIGH>;
-		};
-
-		payload_io5 {
-			label = "payload:io5";
-			gpios = <&lsio_gpio4 5 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	power_management {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_power_management>;
-
-		power_manag_io1 {
-			label = "power_manag:io1";
-			gpios = <&lsio_gpio4 1 GPIO_ACTIVE_HIGH>;
-		};
-
-		power_manag_io2 {
-			label = "power_manag:io2";
-			gpios = <&lsio_gpio4 2 GPIO_ACTIVE_HIGH>;
-		};
-
-		power_manag_io19 {
-			label = "power_manag:io19";
-			gpios = <&lsio_gpio0 19 GPIO_ACTIVE_HIGH>;
-		};
-
-		power_manag_io20 {
-			label = "power_manag:io20";
-			gpios = <&lsio_gpio0 20 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	adcs_connection {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_adcs>;
-
-		adcs_io20 {
-			label = "adcs:io20";
-			gpios = <&lsio_gpio4 20 GPIO_ACTIVE_HIGH>;
-		};
-
-		adcs_io21 {
-			label = "adcs:io21";
-			gpios = <&lsio_gpio4 21 GPIO_ACTIVE_HIGH>;
-		};
-
-		adcs_io30 {
-			label = "adcs:io30";
-			gpios = <&lsio_gpio0 30 GPIO_ACTIVE_HIGH>;
-		};
-
-		adcs_io31 {
-			label = "adcs:io31";
-			gpios = <&lsio_gpio0 31 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	satnogs_load_switch {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_satnogs>;
-
-		satnogs_io0 {
-			label = "satnogs:io0";
-			gpios = <&lsio_gpio4 0 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	breakout_connector_3v3 {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_breakout_connector>;
-
-		breakout_io23 {
-			label = "breakout:io23";
-			gpios = <&lsio_gpio3 23 GPIO_ACTIVE_HIGH>;
-		};
-
-		breakout_io24 {
-			label = "breakout:io24";
-			gpios = <&lsio_gpio3 24 GPIO_ACTIVE_HIGH>;
-		};
-
-		breakout_io17 {
-			label = "breakout:io17";
-			gpios = <&lsio_gpio3 17 GPIO_ACTIVE_HIGH>;
-		};
-
-		breakout_io22 {
-			label = "breakout:io22";
-			gpios = <&lsio_gpio3 22 GPIO_ACTIVE_HIGH>;
-		};
-
-		breakout_io4 {
-			label = "breakout:io4";
-			gpios = <&lsio_gpio3 4 GPIO_ACTIVE_HIGH>;
-		};
-
-		breakout_io5 {
-			label = "breakout:io5";
-			gpios = <&lsio_gpio3 5 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	imager_load_switch {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_imager_load>;
-
-		imager_io6 {
-			label = "imager:io6";
-			gpios = <&lsio_gpio3 6 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	adcs_load_switch {
-		compatible = "gpio-leds";
-		pinctrl-names = "default";
-		pinctrl-0 = <&pinctrl_adcs_load_switch>;
-
-		adcs_load_io13 {
-			label = "adcs_load:io13";
-			gpios = <&lsio_gpio3 13 GPIO_ACTIVE_HIGH>;
-		};
-	};
 };
 
 /************************ I2C *************************/
@@ -271,9 +62,40 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_lpi2c0>;
 	status = "okay";
+
+	imu_accel_gyro@6a {
+		compatible = "st,lsm6dsx";
+		reg = <0x6a>;
+	};
+
+	imu_mag@1e {
+		compatible = "st,st-sensors";
+		reg = <0x1e>;
+	};
+
+	rtc@52 {
+		compatible = "microcrystal,rv3028";
+		reg = <0x52>;
+	};
+
+	temp_sensor@48 {
+		compatible = "ti,tmp112";
+		reg = <0x48>;
+	};
+	
+	power_monitor@40 {
+		compatible = "ti,ina219";
+		reg = <0x40>;
+		shunt-resistor = <2000>; // in micro-ohm
+	};
+
+	gps_power@44 {
+		compatible = "ti,ina219";
+		reg = <0x44>;
+		shunt-resistor = <2000>; 
+	};
 };
 
-// Onboard power monitors
 &i2c1 {
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -281,44 +103,8 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_lpi2c1>;
 	status = "okay";
-
-	tps6598x: tps6598x@3f {
-		compatible = "ti,tps6598x";
-		reg = <0x3f>;
-	};
-
-	eeprom_cb: eeprom@51 {
-		compatible = "atmel,24c32";
-		pagesize = <32>;
-		reg = <0x51>;
-		status = "okay";
-	};
-
-	sgtl5000: codec@a {
-		#sound-dai-cells = <0>;
-		compatible = "fsl,sgtl5000";
-		reg = <0xa>;
-		assigned-clocks = <&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_PLL>,
-				<&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_SLV_BUS>,
-				<&clk IMX_SC_R_AUDIO_PLL_0 IMX_SC_PM_CLK_MST_BUS>,
-				<&mclkout0_lpcg 0>;
-		assigned-clock-rates = <786432000>, <49152000>, <12000000>, <12000000>;
-		clocks = <&mclkout0_lpcg 0>;
-		clock-names = "mclk";
-		VDDA-supply = <&reg_3p3v>;
-		VDDIO-supply = <&reg_3p3v>;
-		VDDD-supply = <&reg_1p8v>;
-	};
-
-	xio: gpio@20 {
-		compatible = "nxp,pcf8574a";
-		reg = <0x20>;
-		gpio-controller;
-		#gpio-cells = <2>;
-	};
 };
 
-// EPS Board
 &i2c2 {
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -326,6 +112,12 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_lpi2c2>;
 	status = "okay";
+
+	adcs@4f {
+		compatible = "ti,ina219";
+		reg = <0x4f>;
+		shunt-resistor = <2000>;
+	};
 };
 
 &i2c3 {
@@ -481,8 +273,6 @@
 &fec1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_fec1>;
-	phy-mode = "rgmii-id";
-	phy-handle = <&ethphy1>;
 	fsl,magic-packet;
 	nvmem-cells = <&fec_mac1>;
 	nvmem-cell-names = "mac-address";
@@ -493,9 +283,9 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_fec2>;
 	phy-mode = "rgmii-id";
-	phy-handle = <&ethphy2>;
+	phy-handle = <&ethphy1>;
 	fsl,magic-packet;
-	nvmem-cells = <&fec_mac2>;
+	nvmem-cells = <&fec_mac1>;
 	nvmem-cell-names = "mac-address";
 	status = "okay";
 };
@@ -585,14 +375,14 @@
 
 	mram@0 {
 		reg = <0>;
-		compatible = "rohm,dh2228fv";
-		spi-max-frequency = <10000000>;
+		compatible = "everspin,mr20h40";
+		spi-max-frequency = <50000000>;
 	};
 
 	mram@1 {
 		reg = <1>;
-		compatible = "rohm,dh2228fv";
-		spi-max-frequency = <10000000>;
+		compatible = "everspin,mr20h40";
+		spi-max-frequency = <50000000>;
 	};
 };
 
@@ -673,6 +463,12 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_qspidatalines>, <&pinctrl_selectandclk>;
 	status = "okay";
+
+	nor_flash@0 {
+		reg = <0>;
+		compatible = "jedec,spi-nor";
+		spi-max-frequency = <84000000>;
+	};
 };
 
 &wdog0 {
@@ -681,12 +477,24 @@
 	status = "okay";
 };
 
+&lsio_gpio3 {
+	nor_reset-hog {
+		gpio-hog;
+		gpios = <14 GPIO_ACTIVE_LOW>;
+		output-high;
+		line-name = "QSPI nor reset";
+	};
+};
+
 // m40 parent node needed
 
 
 &iomuxc {
 	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_hog>;
+	pinctrl-0 = <&pinctrl_hog>, <&pinctrl_ebyte>, <&pinctrl_heater_trigger>, 
+				<&pinctrl_payload>, <&pinctrl_power_management>, <&pinctrl_adcs>, 
+				<&pinctrl_satnogs>, <&pinctrl_breakout_connector>, 
+				<&pinctrl_imager_load>, <&pinctrl_adcs_load_switch>, <&pinctrl_m40>;
 
 	pcm942 {
 		// 10/100/1000 Mbps Ethernet1 RGMII Interface
