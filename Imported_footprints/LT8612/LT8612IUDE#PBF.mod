@@ -1,0 +1,203 @@
+PCBNEW-LibModule-V1  2026-06-30 20:14:41
+# encoding utf-8
+Units mm
+$INDEX
+QFN50P300X600X80-29N-D
+$EndINDEX
+$MODULE QFN50P300X600X80-29N-D
+Po 0 0 0 15 6a4415a1 00000000 ~~
+Li QFN50P300X600X80-29N-D
+Cd UDE Package 28-Lead Plastic QFN (3mm × 6mm) (Reference LTC DWG # 05-08-1926 Rev Ø)
+Kw Integrated Circuit
+Sc 0
+At SMD
+AR 
+Op 0 0 0
+T0 0 0 1.27 1.27 0 0.254 N V 21 N "IC**"
+T1 0 0 1.27 1.27 0 0.254 N I 21 N "QFN50P300X600X80-29N-D"
+DS -2.125 -3.625 2.125 -3.625 0.05 24
+DS 2.125 -3.625 2.125 3.625 0.05 24
+DS 2.125 3.625 -2.125 3.625 0.05 24
+DS -2.125 3.625 -2.125 -3.625 0.05 24
+DS -1.5 -3 1.5 -3 0.1 24
+DS 1.5 -3 1.5 3 0.1 24
+DS 1.5 3 -1.5 3 0.1 24
+DS -1.5 3 -1.5 -3 0.1 24
+DS -1.5 -2.5 -1 -3 0.1 24
+DC -1.9 -3 -1.775 -3 0.254 21
+$PAD
+Po -1.5 -2.25
+Sh "1" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 -1.75
+Sh "2" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 -1.25
+Sh "3" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 -0.75
+Sh "4" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 -0.25
+Sh "5" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 0.25
+Sh "6" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 0.75
+Sh "7" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 1.25
+Sh "8" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 1.75
+Sh "9" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -1.5 2.25
+Sh "10" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -0.75 3
+Sh "11" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -0.25 3
+Sh "12" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0.25 3
+Sh "13" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0.75 3
+Sh "14" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 2.25
+Sh "15" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 1.75
+Sh "16" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 1.25
+Sh "17" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 0.75
+Sh "18" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 0.25
+Sh "19" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 -0.25
+Sh "20" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 -0.75
+Sh "21" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 -1.25
+Sh "22" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 -1.75
+Sh "23" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 1.5 -2.25
+Sh "24" R 0.3 0.8 0 0 900
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0.75 -3
+Sh "25" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0.25 -3
+Sh "26" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -0.25 -3
+Sh "27" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po -0.75 -3
+Sh "28" R 0.3 0.8 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0 0
+Sh "29" R 1.8 4.85 0 0 0
+At SMD N 00888000
+Ne 0 ""
+$EndPAD
+$EndMODULE QFN50P300X600X80-29N-D
+$EndLIBRARY
