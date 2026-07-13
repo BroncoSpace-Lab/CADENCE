@@ -344,276 +344,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Battery"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "BT"
-				(at 2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Battery"
-				(at 2.54 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.524 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 1.524 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Multiple-cell battery"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Type" "DC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "batt voltage-source cell"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Battery_0_1"
-				(rectangle
-					(start -2.286 1.778)
-					(end 2.286 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -2.286 -1.27)
-					(end 2.286 -1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 1.016)
-					(end 1.524 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.524 -2.032)
-					(end 1.524 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.778) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.508) (xy 0 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.016) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 3.048) (xy 1.778 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 3.556) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Battery_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -752,194 +482,6 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3769,145 +3311,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+1V0"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+1V0"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+1V0\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+1V0_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+1V0_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -4037,18 +3440,6 @@
 		(uuid "220a3f5d-d7b3-4f17-9d50-43cbfc71d8ea")
 	)
 	(rectangle
-		(start 73.66 401.32)
-		(end 137.16 419.1)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "249f4ce9-2fb1-440e-b8bf-792dc255610f")
-	)
-	(rectangle
 		(start 339.09 63.5)
 		(end 387.35 92.71)
 		(stroke
@@ -4156,18 +3547,6 @@
 			)
 		)
 		(uuid "6244cbb6-c463-4ee4-8bd8-9ec64b910c7a")
-	)
-	(text "RBF"
-		(exclude_from_sim no)
-		(at 124.714 404.114 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-		)
-		(uuid "6308d5f6-61cb-4e47-93ba-2ae48c9ed41d")
 	)
 	(text "Place holder for BOM "
 		(exclude_from_sim no)
@@ -4413,12 +3792,6 @@
 		(uuid "15d4a8df-9841-4aa0-aae7-9cbf34ba13dd")
 	)
 	(junction
-		(at 27.94 392.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "173d8f40-ac04-41c7-82d1-0e09e0b99a9e")
-	)
-	(junction
 		(at 121.92 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4557,12 +3930,6 @@
 		(uuid "6f537828-c5f2-4e5c-a260-24a2f6ae7218")
 	)
 	(junction
-		(at 26.67 355.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7a8844be-5ab4-4ffc-87b1-fe38d0f1d0a7")
-	)
-	(junction
 		(at 175.26 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4609,12 +3976,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c92aaef-ed81-413f-9e13-b79413655253")
-	)
-	(junction
-		(at 27.94 367.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8f63f726-df49-433f-97ca-ed93e20c6b16")
 	)
 	(junction
 		(at 176.53 97.79)
@@ -4701,12 +4062,6 @@
 		(uuid "add8536d-c224-4ab3-85f8-09f64f03cb7b")
 	)
 	(junction
-		(at 106.68 373.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae59e2d6-f9c7-4b00-b52b-2555c714868a")
-	)
-	(junction
 		(at 212.09 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4741,12 +4096,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf10e73c-1b1a-4403-b0bf-c8cbe22350b6")
-	)
-	(junction
-		(at 58.42 373.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c205f1cf-8e75-45e4-99f7-22384496c975")
 	)
 	(junction
 		(at 203.2 90.17)
@@ -4875,12 +4224,6 @@
 		(uuid "eae9ca70-f1a9-450d-9ba6-6dc1fa1f2da6")
 	)
 	(junction
-		(at -2.54 360.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "efcfa978-dec0-4e17-8d4e-075f358dd66c")
-	)
-	(junction
 		(at 175.26 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4928,16 +4271,6 @@
 	)
 	(wire
 		(pts
-			(xy -5.08 350.52) (xy 6.35 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "008688de-8530-4f63-a6b6-9b27e2cde34a")
-	)
-	(wire
-		(pts
 			(xy 50.8 73.66) (xy 53.34 73.66)
 		)
 		(stroke
@@ -4955,16 +4288,6 @@
 			(type default)
 		)
 		(uuid "0271b881-cefc-4be7-ad70-85f782d7548b")
-	)
-	(wire
-		(pts
-			(xy 26.67 355.6) (xy 26.67 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "032b6790-d052-4fb1-a0d9-658ce9840cc5")
 	)
 	(wire
 		(pts
@@ -5005,16 +4328,6 @@
 			(type default)
 		)
 		(uuid "09aaf74f-aca1-464a-a0da-1bb294c60e4f")
-	)
-	(wire
-		(pts
-			(xy 26.67 360.68) (xy 26.67 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cca4043-50c7-4841-bd1f-da3463aa7bef")
 	)
 	(wire
 		(pts
@@ -5078,36 +4391,6 @@
 	)
 	(wire
 		(pts
-			(xy -2.54 360.68) (xy -2.54 367.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10022a74-8851-426d-82bf-8806b97a1143")
-	)
-	(wire
-		(pts
-			(xy 27.94 367.03) (xy 27.94 375.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10b87ea6-7c1f-49d0-8e8e-1def729f1678")
-	)
-	(wire
-		(pts
-			(xy 106.68 417.83) (xy 125.73 417.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "110db837-794d-468b-a8c3-dacd67fb4f05")
-	)
-	(wire
-		(pts
 			(xy 72.39 58.42) (xy 72.39 59.69)
 		)
 		(stroke
@@ -5145,16 +4428,6 @@
 			(type default)
 		)
 		(uuid "16679ef3-8b0b-409d-873b-e65f04c52a81")
-	)
-	(wire
-		(pts
-			(xy 58.42 373.38) (xy 58.42 383.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "178fec22-c536-4369-8028-8e19378c68c3")
 	)
 	(wire
 		(pts
@@ -5398,16 +4671,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 367.03) (xy 58.42 367.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32428a3b-dd77-4f90-abb5-e1a23d1fe5fd")
-	)
-	(wire
-		(pts
 			(xy 208.28 27.94) (xy 212.09 27.94)
 		)
 		(stroke
@@ -5458,16 +4721,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 422.91) (xy 27.94 420.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34a0e056-90e6-4086-9349-a7ba298296ac")
-	)
-	(wire
-		(pts
 			(xy 102.87 146.05) (xy 102.87 139.7)
 		)
 		(stroke
@@ -5505,16 +4758,6 @@
 			(type default)
 		)
 		(uuid "3a417a03-5409-48dc-ac0e-af0213abaf35")
-	)
-	(wire
-		(pts
-			(xy -2.54 367.03) (xy 27.94 367.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ae2d963-7f2f-4370-84a1-11901b0447c3")
 	)
 	(wire
 		(pts
@@ -5585,16 +4828,6 @@
 			(type default)
 		)
 		(uuid "439619f4-bece-4ca7-a7a7-99cea9eb5c30")
-	)
-	(wire
-		(pts
-			(xy 27.94 406.4) (xy 27.94 410.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4458f55d-d126-4df4-bf46-260737287748")
 	)
 	(wire
 		(pts
@@ -5788,16 +5021,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 360.68) (xy 26.67 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61863a3b-7936-4f40-bde9-bfd6d15bf5ac")
-	)
-	(wire
-		(pts
 			(xy 203.2 40.64) (xy 204.47 40.64)
 		)
 		(stroke
@@ -5815,16 +5038,6 @@
 			(type default)
 		)
 		(uuid "63287e78-433a-4de8-a09a-3b1e5dfc699b")
-	)
-	(wire
-		(pts
-			(xy 106.68 373.38) (xy 106.68 375.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "634c0c80-f7eb-4e21-91ca-11afbb6bfbfa")
 	)
 	(wire
 		(pts
@@ -5855,16 +5068,6 @@
 			(type default)
 		)
 		(uuid "67093aef-cb28-43b4-8127-11469b71deda")
-	)
-	(wire
-		(pts
-			(xy -2.54 360.68) (xy 6.35 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "675e86a4-5c67-456c-b47e-3e2fe6660b14")
 	)
 	(wire
 		(pts
@@ -5915,16 +5118,6 @@
 			(type default)
 		)
 		(uuid "6a5d67fa-0491-4cf7-a132-022d370c9fb1")
-	)
-	(wire
-		(pts
-			(xy 73.66 383.54) (xy 106.68 383.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bc9b7e3-90fe-4e26-b7da-b03dfd1da16a")
 	)
 	(wire
 		(pts
@@ -6128,16 +5321,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 350.52) (xy 21.59 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80ae3c4d-0d7d-4b6d-bc93-3193e5f3c77f")
-	)
-	(wire
-		(pts
 			(xy 212.09 92.71) (xy 212.09 90.17)
 		)
 		(stroke
@@ -6278,16 +5461,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 393.7) (xy 106.68 403.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "982c9874-5385-4bc5-9339-a30b99dfd0d2")
-	)
-	(wire
-		(pts
 			(xy 193.04 130.81) (xy 201.93 130.81)
 		)
 		(stroke
@@ -6325,26 +5498,6 @@
 			(type default)
 		)
 		(uuid "9b107a6e-248d-4274-8a2b-81b0aa193569")
-	)
-	(wire
-		(pts
-			(xy 26.67 355.6) (xy 36.83 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b1d9fc9-e3a3-4673-adb2-6d2d952f0f74")
-	)
-	(wire
-		(pts
-			(xy 58.42 367.03) (xy 58.42 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b452b02-2e2b-4d7d-8017-4899dae53c8b")
 	)
 	(wire
 		(pts
@@ -6448,16 +5601,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 383.54) (xy 63.5 383.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a49f96db-758e-4d19-a562-b6350aeca574")
-	)
-	(wire
-		(pts
 			(xy 44.45 151.13) (xy 46.99 151.13)
 		)
 		(stroke
@@ -6535,16 +5678,6 @@
 			(type default)
 		)
 		(uuid "ab2742bf-02e5-4f02-83df-366307571870")
-	)
-	(wire
-		(pts
-			(xy -8.89 360.68) (xy -2.54 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aca3a4f5-b39b-4e44-8141-39d3018cc632")
 	)
 	(wire
 		(pts
@@ -6728,16 +5861,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 392.43) (xy 27.94 392.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be32b309-4069-4497-8589-80aa50fa726e")
-	)
-	(wire
-		(pts
 			(xy 193.04 74.93) (xy 203.2 74.93)
 		)
 		(stroke
@@ -6885,16 +6008,6 @@
 			(type default)
 		)
 		(uuid "ca3f7434-0fd1-455f-a645-fa423f385e2a")
-	)
-	(wire
-		(pts
-			(xy 27.94 386.08) (xy 27.94 392.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "caf66ba9-5e12-493e-8dd9-aff2fe3d589b")
 	)
 	(wire
 		(pts
@@ -7268,16 +6381,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 370.84) (xy 106.68 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e717d1a9-181c-42d1-925a-19622593d29e")
-	)
-	(wire
-		(pts
 			(xy 38.1 73.66) (xy 43.18 73.66)
 		)
 		(stroke
@@ -7378,16 +6481,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 373.38) (xy 106.68 373.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee2e092c-27fc-451f-8a08-92c5556e7790")
-	)
-	(wire
-		(pts
 			(xy 201.93 114.3) (xy 203.2 114.3)
 		)
 		(stroke
@@ -7395,16 +6488,6 @@
 			(type default)
 		)
 		(uuid "ee32dd1a-44d6-475b-a20a-13f87ce195a2")
-	)
-	(wire
-		(pts
-			(xy 106.68 414.02) (xy 106.68 417.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee3a9089-4e08-4307-9b08-112c48da7a3c")
 	)
 	(wire
 		(pts
@@ -7458,16 +6541,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 392.43) (xy 27.94 396.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1a4c54a-f11d-4360-b0a4-139b85cdf04b")
-	)
-	(wire
-		(pts
 			(xy 93.98 140.97) (xy 93.98 139.7)
 		)
 		(stroke
@@ -7515,26 +6588,6 @@
 			(type default)
 		)
 		(uuid "f78505f9-16ec-445e-bf64-6edce0b1d5a1")
-	)
-	(wire
-		(pts
-			(xy -5.08 347.98) (xy -5.08 350.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7d4cdcc-9730-45b9-a3e3-e75c56c43b11")
-	)
-	(wire
-		(pts
-			(xy 106.68 349.25) (xy 106.68 360.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f879bb7b-85f4-4a43-b9ee-c5cd87e62f61")
 	)
 	(wire
 		(pts
@@ -7615,16 +6668,6 @@
 			(type default)
 		)
 		(uuid "fc500a67-f94c-4b65-8429-2f3b0dff59dd")
-	)
-	(wire
-		(pts
-			(xy 106.68 331.47) (xy 106.68 339.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcb7e0cb-8ec3-4d8b-b03d-d25dbbb00f30")
 	)
 	(wire
 		(pts
@@ -37602,30 +36645,6 @@
 			)
 		)
 	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 20.32 415.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "07e4c045-813a-45c1-829a-0c6cfca9e321")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -2.0174 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "EN"
 		(shape input)
 		(at 160.02 156.21 180)
@@ -37722,30 +36741,6 @@
 			)
 		)
 	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 99.06 408.94 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3d581abb-ebb4-4809-b263-c4aeaeee613d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.7226 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "Cell 1+"
 		(shape input)
 		(at 160.02 114.3 180)
@@ -37759,78 +36754,6 @@
 		(uuid "3d84e7ae-5480-4a20-909c-364072e7c545")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.5963 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 20.32 401.32 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3da975d8-4402-4892-8133-1572b5ae64c0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -2.0174 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 99.06 388.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3e5f8e28-a51d-44c3-89f0-312094a429bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.7226 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Battery -"
-		(shape input)
-		(at 22.86 392.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48a38dec-3565-4299-84aa-4f24a5a4598a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 10.622 392.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37938,30 +36861,6 @@
 			)
 		)
 	)
-	(global_label "Battery PWR {slash} Solar Charger output"
-		(shape input)
-		(at 106.68 375.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6414ae8c-a867-46a1-a013-b00a5779fb6a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.9222 375.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "Cell 1+"
 		(shape input)
 		(at 58.42 90.17 180)
@@ -38010,30 +36909,6 @@
 			)
 		)
 	)
-	(global_label "Battery +"
-		(shape input)
-		(at -8.89 360.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7bf81099-688f-4662-a966-93c2b11fef9b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -21.128 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "Cell 1+"
 		(shape input)
 		(at 161.29 39.37 180)
@@ -38047,30 +36922,6 @@
 		(uuid "899e595f-1086-4143-a26b-98dc9bc8e621")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 150.8663 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 99.06 365.76 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8a8c63d9-2648-49f6-8558-4073136b5a50")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.7226 365.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38192,78 +37043,6 @@
 		(uuid "b31ee96e-6803-4e88-9615-f18a26ded5e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.5963 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 99.06 344.17 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b8f96b21-1456-43b8-b38e-46294bf4e548")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.7226 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 36.83 355.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cfbd3db7-a056-45da-ade4-81e10240ecb3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.1674 355.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "Mosfet Driver signal"
-		(shape input)
-		(at 68.58 391.16 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d1dc8193-9a56-4dda-a9bf-c94a5d59a0e6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 413.4974 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -40272,124 +39051,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 104.14 365.76 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42aa250d-9821-4685-8955-bf80fff787b8")
-		(property "Reference" "Q19"
-			(at 110.49 364.4899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 110.49 367.0299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 363.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 104.14 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 104.14 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 104.14 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 104.14 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 104.14 365.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "e6f2cd34-b4e0-4a4f-b3a7-923a49e46e57")
-		)
-		(pin "2"
-			(uuid "1e996577-e13b-4fde-8298-5b46126656be")
-		)
-		(pin "1"
-			(uuid "f3a40ed2-91ae-4e4a-8ba4-0ea43c6d28bb")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 78.74 100.33 0)
 		(unit 1)
@@ -40579,125 +39240,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "Q15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 25.4 415.29 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c615c94-6ce7-4643-b389-c8bd6164b86c")
-		(property "Reference" "Q24"
-			(at 31.75 416.5601 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 31.75 414.0201 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 417.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 25.4 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 25.4 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 25.4 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 25.4 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 25.4 415.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "d46e3b78-1311-4a0e-9e1f-7f22a3e5a32e")
-		)
-		(pin "2"
-			(uuid "bb87bd56-a693-403c-8ad5-669f55fd8889")
-		)
-		(pin "1"
-			(uuid "2575b4fa-7b3e-4998-8a15-67c873993621")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q24")
 					(unit 1)
 				)
 			)
@@ -41606,107 +40148,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 10.16 360.68 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5fc225e4-6b53-4683-b72c-52bbe21c8cb7")
-		(property "Reference" "D20"
-			(at 10.16 363.474 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 10.16 366.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 10.16 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 10.16 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 10.16 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 10.16 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 10.16 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "315171aa-c69a-46ff-af4a-59413e8fb200")
-		)
-		(pin "1"
-			(uuid "6b932bca-ad20-49a8-ace1-3a6344bd3070")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "D20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 175.26 173.99 0)
 		(unit 1)
@@ -41778,124 +40219,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR073")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 104.14 408.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69227c25-7ea6-4733-998b-810a2a3c6b63")
-		(property "Reference" "Q21"
-			(at 110.49 407.6699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 110.49 410.2099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 406.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 104.14 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 104.14 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 104.14 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 104.14 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 104.14 408.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "6de25f95-a537-459e-ac71-e86084c62a07")
-		)
-		(pin "2"
-			(uuid "824ab00c-6636-4724-a3ed-7bcf5123ec95")
-		)
-		(pin "1"
-			(uuid "e53606bd-789e-4a6b-8fbb-656b1e338f2c")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q21")
 					(unit 1)
 				)
 			)
@@ -42008,84 +40331,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "TP21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V0")
-		(at 106.68 331.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6b739b1a-99e9-4c7c-b47a-bed91fc648b4")
-		(property "Reference" "#PWR085"
-			(at 106.68 335.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SOLAR PWR/Solar Charger input"
-			(at 92.456 327.152 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 106.68 331.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f8283d4b-6cf4-4a65-a7d2-35775bf6a044")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -42525,121 +40770,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery")
-		(at 27.94 381 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ac0b73a-3386-4e70-b8f1-90f4a091882a")
-		(property "Reference" "BT1"
-			(at 31.75 379.1584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery"
-			(at 31.75 381.6984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 379.476 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 379.476 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Multiple-cell battery"
-			(at 27.94 381 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 27.94 381 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 27.94 381 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 27.94 381 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e79c0d88-9cbc-4475-8750-39d3b6109123")
-		)
-		(pin "1"
-			(uuid "736c75c3-343d-4d7e-b2a2-693d26c8da6c")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -43963,107 +42093,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 17.78 350.52 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9889f9fa-3cec-4020-83f6-4e9ff8d0835c")
-		(property "Reference" "D19"
-			(at 17.78 345.186 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 17.78 347.726 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 17.78 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 17.78 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 17.78 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "5e7b8eee-daca-4487-9cb1-a0b2dd411d33")
-		)
-		(pin "1"
-			(uuid "3410da7c-92bf-4cc1-a77b-e81c650204f3")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "D19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 59.69 104.14 270)
 		(unit 1)
@@ -44374,124 +42403,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 104.14 344.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9fd64c3f-4a5f-402c-9558-107d1bd42753")
-		(property "Reference" "Q18"
-			(at 110.49 342.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 110.49 345.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 341.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 104.14 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 104.14 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 104.14 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 104.14 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 104.14 344.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f6e04e62-adf7-4142-8e28-de5830a09bfa")
-		)
-		(pin "2"
-			(uuid "2848a361-099a-4f8e-a8c5-f26c71d822ba")
-		)
-		(pin "1"
-			(uuid "8c78ca63-2ffb-4aab-90df-161b6ff6dde3")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q18")
 					(unit 1)
 				)
 			)
@@ -45034,123 +42945,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 68.58 386.08 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a895d3ae-48ac-40e5-accd-67754bc64001")
-		(property "Reference" "Q22"
-			(at 71.628 377.444 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 75.9459 379.73 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 381 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 68.58 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 68.58 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 68.58 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 68.58 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 68.58 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "4f964f26-46ce-4762-ac78-b3d0426a6808")
-		)
-		(pin "2"
-			(uuid "35c29424-e54d-4aae-8cd8-9f79988ce6b3")
-		)
-		(pin "1"
-			(uuid "efac5208-ff9a-4428-9aa8-961eed6750fc")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 128.27 73.66 90)
 		(unit 1)
@@ -45390,83 +43184,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V0")
-		(at 125.73 417.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad92ed60-e7a2-438d-bc01-ea71c1e4db46")
-		(property "Reference" "#PWR084"
-			(at 125.73 421.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR OUTPUT"
-			(at 125.222 413.258 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 417.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 417.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at 125.73 417.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8799c874-9c82-4ac5-9356-c283a666c87e")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -45785,124 +43502,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "C36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 25.4 401.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc67b903-afc0-49e1-8e60-6ae9f416c63f")
-		(property "Reference" "Q23"
-			(at 31.75 400.0499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 31.75 402.5899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 398.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 25.4 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 25.4 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 25.4 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 25.4 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 25.4 401.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "1d83648a-fec3-438a-9365-97d44ef22942")
-		)
-		(pin "2"
-			(uuid "d4e026c3-b097-4d68-b8fe-e91d9feddae5")
-		)
-		(pin "1"
-			(uuid "15bab808-7d1d-43c2-a646-4e06e83a4508")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q23")
 					(unit 1)
 				)
 			)
@@ -46769,185 +44368,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "J22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+1V0")
-		(at -5.08 347.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0331bf4-24a4-4e3c-a894-fa7cb72db0ed")
-		(property "Reference" "#PWR01"
-			(at -5.08 351.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SOLAR PWR/Solar Charger input"
-			(at -26.416 343.662 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at -5.08 347.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at -5.08 347.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+1V0\""
-			(at -5.08 347.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6de9375c-d03f-4de8-832e-492a2f46a720")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 17.78 360.68 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d1bea6de-e562-472d-a970-54805b9ba0d1")
-		(property "Reference" "D21"
-			(at 17.78 363.474 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 17.78 366.014 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 17.78 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 17.78 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 17.78 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 17.78 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 17.78 360.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c6d4892b-279f-485b-be95-3ab4c18e9ee8")
-		)
-		(pin "1"
-			(uuid "ec57f758-2d24-4019-8fdc-a6de64827eec")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -47923,107 +45343,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 10.16 350.52 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e184cae1-b677-431c-99c0-ffdf6d1e1c50")
-		(property "Reference" "D18"
-			(at 10.16 345.186 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 10.16 347.726 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 10.16 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 10.16 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 10.16 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 10.16 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 10.16 350.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "feaf898e-5a40-4d44-8489-fb5853373823")
-		)
-		(pin "1"
-			(uuid "62c03e2a-2269-4b10-804d-f9901ad1a7f0")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "D18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_SGD")
 		(at 100.33 151.13 0)
 		(mirror x)
@@ -48142,85 +45461,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 27.94 422.91 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e93ec876-8fd0-43a1-b0e5-c0f0c2ab592e")
-		(property "Reference" "#PWR082"
-			(at 27.94 429.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSS"
-			(at 29.21 427.736 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 422.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 422.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 422.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "37364c48-d069-4579-90da-537a0ec14f66")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "#PWR082")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 133.35 68.58 0)
 		(unit 1)
@@ -48330,124 +45570,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
 					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_SGD")
-		(at 104.14 388.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f0686c29-c019-400d-b9bc-24a0f985272a")
-		(property "Reference" "Q20"
-			(at 110.49 387.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "N-Channel Fet"
-			(at 110.49 389.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 386.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/68857/sud23n06.pdf"
-			(at 104.14 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, source/gate/drain"
-			(at 104.14 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" ""
-			(at 104.14 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 104.14 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Voltage" ""
-			(at 104.14 388.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c8e33d95-095b-4eee-ae1f-9640feee2122")
-		)
-		(pin "2"
-			(uuid "2a9a87b9-f3a7-44e0-8a6d-092041c99986")
-		)
-		(pin "1"
-			(uuid "4c965a30-b6d3-422e-9407-96f33d52f125")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/2dd73af5-fef2-4c63-a174-1636b1b663bb"
-					(reference "Q20")
 					(unit 1)
 				)
 			)
