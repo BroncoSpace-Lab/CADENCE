@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 4.85,
-          "width": 1.8
+          "drill": 0.92,
+          "height": 1.428,
+          "width": 1.428
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -74,26 +74,14 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2032,
+          "via_gap": 0.2032,
+          "width": 0.3076
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|100529200|36786000|1a39db3c-61b9-4173-900d-d58202beaed7|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|33500000|47000000|73a53b43-5fc7-48fe-a65f-1a0881468c62|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|43250000|51911100|b3e2bdad-38ac-4240-b51a-97bcd8d39bb1|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "lib_footprint_mismatch|45750000|28250000|7929f347-4599-49a7-9738-cc06889471e0|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -133,9 +121,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "error",
+        "npth_inside_courtyard": "ignore",
         "padstack": "warning",
-        "pth_inside_courtyard": "error",
+        "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -163,22 +151,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.3,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.2,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -228,8 +216,17 @@
       ],
       "track_widths": [
         0.0,
-        0.781437,
-        2.0
+        0.1525,
+        0.2,
+        0.25,
+        0.2695,
+        0.28,
+        0.4,
+        0.4128,
+        0.5,
+        0.6,
+        0.85,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -261,6 +258,22 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.3,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false
@@ -477,14 +490,11 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
-      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -507,7 +517,6 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
-      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -521,7 +530,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BMS_Board_Prototype.kicad_pro",
+    "filename": "CADENCE i.MX8X Carrier Board rev1.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -544,18 +553,172 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.2695,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.5,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
-    "net_colors": {
-      "Cell 1+": "rgb(255, 153, 1)",
-      "Solar Power": "rgb(0, 10, 255)",
-      "UNREG": "rgb(241, 0, 255)"
+    "net_colors": null,
+    "netclass_assignments": {
+      "/FTDI/DEBUG_USB_DN": [
+        "DP_90R"
+      ],
+      "/FTDI/DEBUG_USB_DP": [
+        "DP_90R"
+      ],
+      "ETH1_A_TX_N": [
+        "DP_100R"
+      ],
+      "ETH1_A_TX_P": [
+        "DP_100R"
+      ],
+      "ETH1_B_TX_N": [
+        "DP_100R"
+      ],
+      "ETH1_B_TX_P": [
+        "DP_100R"
+      ],
+      "ETH1_C_TXCLK_N": [
+        "DP_100R"
+      ],
+      "ETH1_C_TXCLK_P": [
+        "DP_100R"
+      ],
+      "ETH1_D_RXDV_N": [
+        "DP_100R"
+      ],
+      "ETH1_D_RXDV_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_A_TX_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_A_TX_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_B_TX_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_B_TX_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_C_TXCLK_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_C_TXCLK_P": [
+        "DP_100R"
+      ],
+      "X_ETH0_D_RXDV_N": [
+        "DP_100R"
+      ],
+      "X_ETH0_D_RXDV_P": [
+        "DP_100R"
+      ]
     },
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "DEBUG_USB"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/DEBUG_USB_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/DEBUG_USB_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "X_USB_OTG2_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "X_USB_OTG2_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "FTDI USB-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "FTDI USB+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBA2 D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBA2 D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBA1 D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBA1 D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBC2 D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBC1 D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBC1 D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB OTG/USBC2 D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "X_USB_OTG1_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "X_USB_OTG1_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/FTDI D+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/FTDI D-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/FTDI USB-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/FTDI/FTDI USB+"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -573,11 +736,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "annotation": {
-      "method": 0,
-      "sort_order": 0
-    },
-    "bom_export_filename": "C:\\Users\\octar\\Downloads\\BMS_Board_Prototype.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -642,32 +801,14 @@
         },
         {
           "group_by": false,
-          "label": "Arrow Price/Stock",
-          "name": "Arrow Price/Stock",
+          "label": "DST",
+          "name": "DST",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DigiKey_Part_Number",
-          "name": "DigiKey_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Height",
-          "name": "Height",
+          "label": "DigiKey Part Number",
+          "name": "DigiKey Part Number",
           "show": false
         },
         {
@@ -678,62 +819,26 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
+          "label": "LCSC Part",
+          "name": "LCSC Part",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
+          "label": "MFR",
+          "name": "MFR",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
+          "label": "MPN",
+          "name": "MPN",
           "show": false
         },
         {
           "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
+          "label": "Power Rating",
+          "name": "Power Rating",
           "show": false
         },
         {
@@ -750,20 +855,8 @@
         },
         {
           "group_by": false,
-          "label": "Sim.Type",
-          "name": "Sim.Type",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
+          "label": "Tolerance",
+          "name": "Tolerance",
           "show": false
         },
         {
@@ -774,8 +867,8 @@
         },
         {
           "group_by": false,
-          "label": "Arrow Part Number",
-          "name": "Arrow Part Number",
+          "label": "DPN",
+          "name": "DPN",
           "show": false
         },
         {
@@ -792,8 +885,50 @@
         },
         {
           "group_by": false,
-          "label": "link",
-          "name": "link",
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
           "show": false
         }
       ],
@@ -801,8 +936,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "${EXCLUDE_FROM_BOARD}"
+      "sort_asc": true,
+      "sort_field": "Reference"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -812,7 +947,6 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
-      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -834,17 +968,8 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
-    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -856,38 +981,88 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "BMS_Board_Prototype.kicad_sch",
-        "name": "BMS_Board_Prototype",
-        "uuid": "4ee99911-836b-4752-8a2d-327c8b28dc47"
+        "filename": "CADENCE i.MX8X Carrier Board rev1.kicad_sch",
+        "name": "CADENCE i.MX8X Carrier Board rev1",
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
-    ],
-    "used_designators": "Q25-26,R63-68,C50-54,#PWR88-92",
-    "variants": []
+    ]
   },
   "sheets": [
     [
-      "4ee99911-836b-4752-8a2d-327c8b28dc47",
-      "BMS_Board_Prototype"
+      "de284495-d382-47cb-b528-76e440980d40",
+      "Root"
     ],
     [
-      "f4fcff51-0cdb-4e70-aba0-d567fd3e6a03",
+      "f5f49c98-aaea-4f03-a1b3-a277d1d06600",
+      "i.MX8X SOM Connectors"
+    ],
+    [
+      "0ffac7df-456d-44c0-8e9b-18d3eccc9366",
       "Power"
     ],
     [
-      "3281f8b8-f9b3-4f29-933c-5d0b1d830ef9",
-      "Sensors"
+      "59642966-a844-41dc-8ff0-cc80b38f7a57",
+      "Watchdog"
     ],
     [
-      "420608bc-a1a4-412d-a20e-6570cff27a90",
+      "089c604b-0863-4822-93dd-cc06ae04e525",
+      "System Control"
+    ],
+    [
+      "fe211871-5da0-4bfc-9ad4-60fa16dbacc5",
+      "uSD"
+    ],
+    [
+      "711a63dc-df49-4577-a994-dfb9f7680289",
+      "Flash"
+    ],
+    [
+      "4aabc73f-db52-4a11-b1f9-4cf3f25794bd",
+      "Eth1PHY"
+    ],
+    [
+      "15f3f643-07bc-4c87-bc66-464abe3a5e1e",
+      "Ethernet"
+    ],
+    [
+      "a0eee505-34ca-430d-9ae7-b91d33c9a3f8",
+      "USB OTG"
+    ],
+    [
+      "c0bf5d3f-4cfb-4c0b-b448-903517df1d5a",
+      "RS422"
+    ],
+    [
+      "c9abda44-b435-415f-87cb-f95498594e84",
+      "I2C Buff"
+    ],
+    [
+      "cf90c569-165f-4f06-938b-af613664cc34",
+      "GPS"
+    ],
+    [
+      "6ac74288-79da-48fa-81ee-e9f852887f43",
+      "Peripherals"
+    ],
+    [
+      "149df53a-1b22-4ded-9d62-67ccb3056c8e",
+      "FTDI"
+    ],
+    [
+      "912a7967-b8a7-4e29-8c0b-8042b13af5ba",
       "External Board Connections"
     ],
     [
-      "faab3ee8-ea24-4642-bb04-240164625363",
-      "I2C Components"
+      "b523867a-62fb-4a81-ab53-06050067b1aa",
+      "Pin Definitions"
     ],
     [
-      "2dd73af5-fef2-4c63-a174-1636b1b663bb",
-      "Inhibit System"
+      "e35e41fd-e135-4112-8137-793af3847b76",
+      "SOM Signals"
+    ],
+    [
+      "4938050c-5b8c-41b8-adac-d01ada43934d",
+      "SOM Signals 2"
     ]
   ],
   "text_variables": {},
