@@ -4905,12 +4905,6 @@
 		(uuid "fe85b142-b342-4600-a3ce-055322db0387")
 	)
 	(junction
-		(at 520.7 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0986e8d5-49bb-4489-a7cc-9a3c32b8d9fa")
-	)
-	(junction
 		(at 502.92 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6355,6 +6349,16 @@
 	)
 	(wire
 		(pts
+			(xy 459.74 118.11) (xy 520.7 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80678571-2043-4016-ac1e-7bd85d0fd38d")
+	)
+	(wire
+		(pts
 			(xy 64.77 137.16) (xy 66.04 137.16)
 		)
 		(stroke
@@ -6682,6 +6686,16 @@
 			(type default)
 		)
 		(uuid "9d7d6343-64af-4d6c-9880-686846d1afbd")
+	)
+	(wire
+		(pts
+			(xy 459.74 118.11) (xy 459.74 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7e9960-54aa-4c59-9062-2c911d518296")
 	)
 	(wire
 		(pts
@@ -7342,16 +7356,6 @@
 			(type default)
 		)
 		(uuid "df3f1e9a-3339-4975-883f-87ed00df7b9e")
-	)
-	(wire
-		(pts
-			(xy 459.74 118.11) (xy 520.7 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0dfbb5b-6838-4ab5-876e-5be440dd1e3c")
 	)
 	(wire
 		(pts
@@ -24179,6 +24183,30 @@
 			)
 		)
 	)
+	(global_label "Inhibit_VSS"
+		(shape input)
+		(at 459.74 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d5ac04bc-b0f0-4970-8388-17d8fba3726a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 473.1875 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "HS_I2C1_SCL"
 		(shape bidirectional)
 		(at 207.01 107.95 0)
@@ -25807,84 +25835,6 @@
 			(project "BMS_Board_Prototype"
 				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
 					(reference "R36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 520.7 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d0d0f09-de8a-427f-9ac1-89fa5fc10847")
-		(property "Reference" "#PWR035"
-			(at 520.7 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSS"
-			(at 519.43 122.936 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 520.7 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 520.7 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 520.7 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0248966c-8606-4ab2-b303-e43f0c79b1c5")
-		)
-		(instances
-			(project "BMS_Board_Prototype"
-				(path "/4ee99911-836b-4752-8a2d-327c8b28dc47/3281f8b8-f9b3-4f29-933c-5d0b1d830ef9"
-					(reference "#PWR035")
 					(unit 1)
 				)
 			)
