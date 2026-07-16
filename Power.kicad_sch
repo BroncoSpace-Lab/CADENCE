@@ -4599,16 +4599,16 @@
 		(uuid "4f07bbde-c0e6-425c-881c-575d0df203ab")
 	)
 	(junction
+		(at 256.54 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "508befdd-4311-45c7-9f32-d44a5c297f54")
+	)
+	(junction
 		(at 142.24 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "54a15c4d-5aab-4431-921d-e8266e2e1260")
-	)
-	(junction
-		(at 256.54 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5670a14f-7638-4c5b-888a-741fd2c69300")
 	)
 	(junction
 		(at 323.85 78.74)
@@ -4639,6 +4639,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6bdc1149-1984-4057-bc46-e48d657984fd")
+	)
+	(junction
+		(at 281.94 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6df9f6c2-4bbc-4037-a61b-66325427a44c")
 	)
 	(junction
 		(at 247.65 322.58)
@@ -4711,12 +4717,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2e42edc-93e1-4d1d-bdc7-d9ccd5ac03cd")
-	)
-	(junction
-		(at 281.94 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3060f65-8080-44ad-bee8-cdf8e0a6e50d")
 	)
 	(junction
 		(at 232.41 322.58)
@@ -5040,16 +5040,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 60.96) (xy 269.24 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c3b5bc7-ca08-4233-a370-50210b2b3e1d")
-	)
-	(wire
-		(pts
 			(xy 81.28 327.66) (xy 88.9 327.66)
 		)
 		(stroke
@@ -5290,6 +5280,16 @@
 	)
 	(wire
 		(pts
+			(xy 281.94 60.96) (xy 279.4 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3450e4b2-2832-462e-9be1-6d950c9b93ae")
+	)
+	(wire
+		(pts
 			(xy 99.06 58.42) (xy 104.14 58.42)
 		)
 		(stroke
@@ -5357,16 +5357,6 @@
 			(type default)
 		)
 		(uuid "3ddbbd80-896d-47ad-aa5b-e8c57389fd81")
-	)
-	(wire
-		(pts
-			(xy 256.54 60.96) (xy 259.08 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dfeedf1-07b6-450b-8567-433cb1351778")
 	)
 	(wire
 		(pts
@@ -6760,16 +6750,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 60.96) (xy 281.94 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e30b61fc-9426-4af2-8187-e1b4167e651e")
-	)
-	(wire
-		(pts
 			(xy 323.85 74.93) (xy 323.85 78.74)
 		)
 		(stroke
@@ -6887,6 +6867,16 @@
 			(type default)
 		)
 		(uuid "f4f81e77-4dcc-4395-ad64-4f538e508864")
+	)
+	(wire
+		(pts
+			(xy 257.81 60.96) (xy 256.54 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5261a9e-126a-479e-aaad-61cc5095c5ea")
 	)
 	(wire
 		(pts
@@ -7037,6 +7027,16 @@
 			(type default)
 		)
 		(uuid "feb6d3d4-dee9-4c33-9ca8-065ee70645ac")
+	)
+	(wire
+		(pts
+			(xy 265.43 60.96) (xy 271.78 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff9e5c18-b40e-43e3-b70e-b6aa7d7555ab")
 	)
 	(image
 		(at 273.812 190.246)
@@ -32376,7 +32376,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 262.89 60.96 180)
+		(at 275.59 60.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -32386,7 +32386,7 @@
 		(dnp no)
 		(uuid "0bdb6beb-e31c-41ec-931f-a324ba897b64")
 		(property "Reference" "D3"
-			(at 254 62.23 0)
+			(at 274.32 56.642 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32396,7 +32396,7 @@
 			)
 		)
 		(property "Value" "1N4730APF-M (3V9)"
-			(at 263.144 64.516 0)
+			(at 276.098 58.674 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32406,7 +32406,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P12.70mm_Horizontal"
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32417,7 +32417,7 @@
 			)
 		)
 		(property "Datasheet" "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8756601058498367488-C7497908.pdf?response-content-disposition=attachment%3B%20filename%3DC7497908.pdf%3B%20filename%2A%3DUTF-8%27%27C7497908.pdf&x-oss-date=20260624T054434Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rcf9Ll2JxY5amCVGr00TgEZe1o1rXj1jz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qZh5nyZG4J7b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWgrhSvMBYnSgc5lCkRRYwGs1287ugXlSQzo890KPDAEovaKCnZ2ZSfh7Y4sNknI6i%2Bfc2Se2MIkINmmmvKKWD5sagAFFFk53OfHjaqvlOsyRda8wzajzMqbhTzhWsbUnJgH5IaaUvUe5tgyfa3kYTQoHuv7eWdtp22TGsAL2Z5TPBc3kVwCiLQvdn4qmHBpdrfa6ESv%2BPHXfy2DUR5yy%2B2g%2BIPuOk%2FBc%2BUTkQfoFtZsV3%2BNSD5HRaFb4ME5V0ON%2BR41SuCAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYi4hQ5CyRkiVLE58QibD9pH4%2F20260624%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=663f02ea4d7f9b72b14d4ebcd9bb5c36515a81bbd23390430cdfbe3dbc66968c"
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32428,7 +32428,7 @@
 			)
 		)
 		(property "Description" "https://jlcpcb.com/partdetail/ST_Semtech-1N4730APFM/C7497908"
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32439,7 +32439,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32450,7 +32450,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -32461,7 +32461,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 262.89 60.96 0)
+			(at 275.59 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37700,7 +37700,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "VSS"
 			(at 284.48 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39533,7 +39533,7 @@
 	(symbol
 		(lib_name "D_Schottky_1")
 		(lib_id "Device:D_Schottky")
-		(at 273.05 60.96 0)
+		(at 261.62 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -39543,7 +39543,7 @@
 		(dnp no)
 		(uuid "f55ad4c4-fcd9-47f9-afcd-5219cc0750e1")
 		(property "Reference" "D4"
-			(at 268.986 58.166 0)
+			(at 254.762 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39553,7 +39553,7 @@
 			)
 		)
 		(property "Value" "STPS1045B-TR"
-			(at 277.876 58.166 0)
+			(at 263.652 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39563,7 +39563,7 @@
 			)
 		)
 		(property "Footprint" "Schottky_diode_45V_10A:DPAK_STM"
-			(at 273.05 60.96 0)
+			(at 261.62 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39574,7 +39574,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps1045b.pdf"
-			(at 273.304 56.896 0)
+			(at 261.874 56.896 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39585,7 +39585,7 @@
 			)
 		)
 		(property "Description" "https://jlcpcb.com/partdetail/STMicroelectronics-STPS1045BTR/C86596"
-			(at 273.558 54.356 0)
+			(at 262.128 54.356 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39596,7 +39596,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 273.05 60.96 0)
+			(at 261.62 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39607,7 +39607,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 273.05 60.96 0)
+			(at 261.62 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -39618,7 +39618,7 @@
 			)
 		)
 		(property "Voltage" ""
-			(at 273.05 60.96 0)
+			(at 261.62 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
