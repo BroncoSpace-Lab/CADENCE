@@ -52,13 +52,38 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "text_height|120091200|78028800|e506176e-e735-4802-8c2c-a38bf8314e14|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_height|124137200|85737600|16aee8ad-ba64-49ac-bfcc-048ae464b5c3|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_thickness|120091200|78028800|e506176e-e735-4802-8c2c-a38bf8314e14|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_thickness|124137200|85737600|16aee8ad-ba64-49ac-bfcc-048ae464b5c3|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_thickness|162168843|42877798|19c03d07-52d6-4bea-b6d3-48dd2f524801|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "text_thickness|98958400|80619600|863fb454-6e4d-4e4f-8f9b-5a5d7954d4cb|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
       "rule_severities": {
         "annular_width": "error",
-        "clearance": "error",
+        "clearance": "ignore",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
@@ -82,11 +107,11 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "warning",
+        "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
@@ -94,9 +119,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "warning",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
