@@ -1,0 +1,78 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "0d823a8b-e951-420b-9d42-66d977227f44")
+	(paper "A4")
+	(lib_symbols)
+	(text "selected three channel variant due to availability in 1000s\n(2 channel variant has like 50 left)"
+		(exclude_from_sim no)
+		(at 248.666 34.544 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4c779546-e49d-4eb1-9cfc-46c8448c82b7")
+	)
+	(text "replaced REF200 with LM234 (available on JLCPCB and acceptable\noperating temperature range for space: -25C to 100C)\nWould prefer LM134 but not available on JLCPCB\nLM334 operating temperature range too high and not wide enough"
+		(exclude_from_sim no)
+		(at 111.506 22.098 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "69bf6223-5023-47ec-979d-68ca93e827b3")
+	)
+	(text "Dont forget to add decoupling capacitors!"
+		(exclude_from_sim no)
+		(at 212.09 21.59 0)
+		(effects
+			(font
+				(size 4.064 4.064)
+			)
+		)
+		(uuid "a514a5e6-1f52-452e-ac83-518225786995")
+	)
+	(text "when off, readout mode\nwhen on, irradiation mode"
+		(exclude_from_sim no)
+		(at 221.488 57.658 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a52e3c58-f3a5-4be4-a0a8-337df8c645c6")
+	)
+	(text "RADFET VT01 Footprint:\nPackage_TO_SOT_SMD:SOT-23-6"
+		(exclude_from_sim no)
+		(at 156.972 193.548 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "df3e988c-7035-43ca-ac86-eac8e18ec37c")
+	)
+	(text "when off, readout mode\nwhen on, irradiation mode"
+		(exclude_from_sim no)
+		(at 245.872 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e9a6fd11-702f-4a77-b32e-38770fe2d0c0")
+	)
+	(text "Need this specific diode: 1N457\n(about 100 available on JLCPCB)\nR44:R45 ratio 10 to 1 using diode temperature coefficient provided\nby datasheet"
+		(exclude_from_sim no)
+		(at 49.784 20.574 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ed9416ac-23fb-4424-bc1a-30fa84963034")
+	)
+)
